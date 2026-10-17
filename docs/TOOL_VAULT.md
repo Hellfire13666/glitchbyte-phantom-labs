@@ -6,6 +6,12 @@
 
 > **Vault inventory:** 16 Python scripts and one Go project checked against the GitHub `main` directory listing on 17 October 2026. All source links are relative, so they also work from a pull-request preview branch.
 
+## 📋 The Phantom Build Recipe standard
+
+**Every tool gets copy-and-paste terminal instructions right on its own page.** Each recipe covers **Install → Build → Test → Run → Find Results → Troubleshoot**. The steps must match that tool's real flags, requirements and report formats, with honest test status and permission checks for network research.
+
+[👻 VOIDLANTERN's complete build recipe](tool-showcases/VOIDLANTERN.md#-copy--paste-build-recipe--ubuntu-or-linux-bash) · [🧪 Official showcase template](tool-showcases/SHOWCASE_TEMPLATE.md)
+
 ## ⚡ Spotlight: VOIDLANTERN
 
 **Go • Website diagnostics • Local JSON output**
