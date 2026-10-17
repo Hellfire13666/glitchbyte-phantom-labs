@@ -1,0 +1,24 @@
+name: VOIDLANTERN Go Checks
+on:
+  push:
+    paths:
+      - 'tools/go/voidlantern-go/**'
+      - '.github/workflows/voidlantern-go-checks.yml'
+  pull_request:
+    paths:
+      - 'tools/go/voidlantern-go/**'
+      - '.github/workflows/voidlantern-go-checks.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools/go/voidlantern-go
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: tools/go/voidlantern-go/go.mod
+      - run: go test ./...
+      - run: go vet ./...
+      - run: go build -o voidlantern .
