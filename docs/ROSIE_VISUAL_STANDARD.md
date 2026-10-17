@@ -14,19 +14,19 @@ This official repository rebuild uses the **approved RosieGlitchbyte character**
 
 ## Approved assets and publishing
 
-The approved visual preview is currently available in the ChatGPT project workspace but **has not been committed to this GitHub repository**. Until a verified asset is uploaded, the main README intentionally shows a text-based hero rather than a broken image or substitute face.
+The approved Rosie opening artwork has been uploaded to the existing repository at:
 
-**Reserved GitHub path for the official opening hero:**
+[`artwork/labface2.png`](../artwork/labface2.png)
 
-`artwork/glitchbyte-phantom-labs-official-hero.png`
-
-Once the exact approved artwork has been uploaded, insert this Markdown line near the beginning of the root README:
+The homepage now embeds this exact file using:
 
 ```markdown
-![RosieGlitchbyte: GlitchByte Phantom Labs official opening banner](artwork/glitchbyte-phantom-labs-official-hero.png)
+![Official RosieGlitchbyte Phantom Labs hero artwork](artwork/labface2.png)
 ```
 
-Use the actual uploaded file, not a copied sample. Original artwork should be credited appropriately and follow the existing [license notice](../LICENSE-NOTICE.md).
+Keep the source filename intact to preserve the upload and Git history. Do not replace this with a generic Rosie character or rename it without also updating the README link.
+
+Original artwork should be credited appropriately and follow the existing [license notice](../LICENSE-NOTICE.md).
 
 ## Design language
 
