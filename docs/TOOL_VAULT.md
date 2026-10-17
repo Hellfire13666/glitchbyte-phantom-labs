@@ -36,6 +36,14 @@ The first-run recipe generates **safe sample logs without network requests**, pe
 
 The initial Bash recipe checks requirements and syntax, then requests an authorized domain before performing a DNS lookup. It saves timestamped JSON reports outside the source tree.
 
+## 🕵️ Python Spotlight: Rosie Username Intel
+
+**Eight public profile links · Offline-first mode · JSON reporting**
+
+[💙 Rosie Username Intel showcase and build recipe](tool-showcases/USERNAME_INTEL.md) · [🐍 Python source](../tools/rosie_username_intel.py)
+
+The first-run Bash recipe checks syntax, prints the actual help, and generates eight links without accessing any social websites. An optional live mode checks only four platforms and distinguishes uncertain or rate-limited results.
+
 ## 🔎 Research and analysis
 
 | Tool | Language | Source |
@@ -47,7 +55,7 @@ The initial Bash recipe checks requirements and syntax, then requests an authori
 | Rose Crawler | Python | [rose_crawler.py](../tools/rose_crawler.py) |
 | Rosie IP Shadow Scraper | Python | [rosie_ip_shadow_scraper.py](../tools/rosie_ip_shadow_scraper.py) |
 | Rosie Signal Garden | Python | [rosie_signal_garden.py](../tools/rosie_signal_garden.py) |
-| Rosie Username Intel | Python | [rosie_username_intel.py](../tools/rosie_username_intel.py) |
+| Rosie Username Intel | Python | [Source](../tools/rosie_username_intel.py) · [Build recipe](tool-showcases/USERNAME_INTEL.md) |
 | RosieGlitchbyte Domain Phantom | Python | [rosieglitchbyte_domain_phantom.py](../tools/rosieglitchbyte_domain_phantom.py) |
 | RosieGlitchbyte IP Specter | Python | [rosieglitchbyte_ip_specter.py](../tools/rosieglitchbyte_ip_specter.py) |
 | VOIDLANTERN | Go | [Project directory](../tools/go/voidlantern-go/) · [Showcase](tool-showcases/VOIDLANTERN.md) |
