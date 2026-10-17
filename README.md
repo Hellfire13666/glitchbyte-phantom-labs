@@ -4,6 +4,16 @@
 
 ### 👻 ROSIEGLITCHBYTE // CYBER TOOL FORGE
 
+<!--
+OFFICIAL ROSIE HERO:
+When the approved banner is uploaded to artwork/glitchbyte-phantom-labs-official-hero.png,
+uncomment the following line to display it at the very top of the repository.
+The official artwork must show brown eyes, black hair with electric-blue highlights.
+Do not substitute an unfamiliar face.
+<img src="artwork/glitchbyte-phantom-labs-official-hero.png" alt="Official RosieGlitchbyte Phantom Labs cyber workshop banner" width="100%" />
+-->
+
+
 **Public OSINT · Python 3 · Go · Ubuntu/Linux · Creative Coding**
 
 ![Python](https://img.shields.io/badge/Python-3.x-00D6F5?style=for-the-badge&logo=python&logoColor=white)
@@ -23,11 +33,36 @@
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 ```
 
-[**🕷️ Browse tools**](docs/TOOL_SHOWCASE.md) · [**📚 Start here**](docs/TOOL_STARTER_GUIDE.md) · [**🛡️ Security**](SECURITY.md) · [**🌹 Original artwork**](artwork/)
+[**🏠 Ecosystem**](#-whats-inside-the-lab) · [**🕷️ Tool gallery**](docs/TOOL_SHOWCASE.md) · [**📚 Start here**](docs/TOOL_STARTER_GUIDE.md) · [**📊 Results**](#-locate-your-html-json-and-csv-reports) · [**🛡️ Security**](SECURITY.md) · [**🌹 Artwork**](artwork/)
 
 </div>
 
 ---
+
+## 🕸️ The Phantom command ecosystem
+
+```text
+╔════════════════════════════════════════════════════════╗
+║  ROSIE@PHANTOM-LABS:~$ ecosystem --open                ║
+╠════════════════════════════════════════════════════════╣
+║  01  START HERE    → setup, examples and documentation ║
+║  02  PYTHON        → research tools and creative code  ║
+║  03  GO            → compiled diagnostic utilities     ║
+║  04  INTELLIGENCE  → public data, logs and link maps   ║
+║  05  RESULTS       → HTML / JSON / CSV report reading   ║
+║                                                        ║
+║  > One tool. One identity. No accidental overwrites. █ ║
+╚════════════════════════════════════════════════════════╝
+```
+
+| Launch pad | Destination |
+| --- | --- |
+| 🧭 **NEW HERE?** | [Open the installation and starter guide](docs/TOOL_STARTER_GUIDE.md) |
+| 🕷️ **TOOLS** | [Browse our verified tool gallery](docs/TOOL_SHOWCASE.md) |
+| 🐍 **PYTHON** | [Explore the Python projects](tools/) |
+| ⚙️ **GO** | [Build and run VOIDLANTERN](tools/go/voidlantern-go/) |
+| 🗃️ **RESULTS** | [Find and understand saved reports](docs/TOOL_STARTER_GUIDE.md#2-find-reports-and-clickable-links) |
+| 🎨 **ARTWORK** | [View available artwork](artwork/) |
 
 ## ⚡ What's inside the lab?
 
@@ -101,6 +136,12 @@ go build -o voidlantern .
 ```
 
 Some tools require network access, optional dependencies or user-supplied API credentials. Syntax and unit tests do **not** constitute a complete integration or security audit.
+
+## 🌹 Official Rosie artwork
+
+Our approved creative direction uses **Rosie's brown eyes, dark hair with electric-blue highlights, and established reference variants**. The finalized hero illustration is being prepared for repository upload. The artwork slot above is intentionally disabled until the **approved image** exists in the repository. This keeps the real GitHub README from displaying a broken image or an unrelated replacement.
+
+For a working public website with searchable cards, galleries and interactive controls, GitHub Pages would be a **separate future build**. This README is a real, navigable GitHub homepage, not an interactive web application.
 
 ## 🔐 Ownership, safety and release status
 
