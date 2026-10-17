@@ -4,6 +4,8 @@
 
 ### 👻 ROSIEGLITCHBYTE // OFFICIAL COMMAND ECOSYSTEM
 
+![Official RosieGlitchbyte Phantom Labs hero artwork](artwork/labface2.png)
+
 **PYTHON 3 · GO · UBUNTU/LINUX · PUBLIC INTELLIGENCE · CREATIVE CODE**
 
 ![Python 3](https://img.shields.io/badge/Python-3.x-00D6F5?style=for-the-badge&logo=python&logoColor=white)
@@ -119,7 +121,7 @@ Go projects should be tested and built **inside their individual module folders*
 
 Our official Rosie has **brown eyes, dark hair with electric-blue highlights, and established special-face variants**. We use approved references rather than introducing an unfamiliar replacement.
 
-The official GitHub hero illustration will be linked once the exact approved file is committed under `artwork/glitchbyte-phantom-labs-official-hero.png`. The page deliberately avoids a broken image link meanwhile. [Artwork integration guide](docs/ROSIE_VISUAL_STANDARD.md).
+Our approved Rosie hero artwork is uploaded as [`artwork/labface2.png`](artwork/labface2.png) and displayed at the top of this homepage. [Artwork and character standards](docs/ROSIE_VISUAL_STANDARD.md).
 
 ## 🔐 Ownership, licenses and security
 
