@@ -66,6 +66,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 **Rosie Username Intel:** [Copy-and-paste Bash setup, offline links and JSON results](docs/tool-showcases/USERNAME_INTEL.md). A matching username is not proof of a shared identity.
 
+## 🌱 Offline Python build recipe
+
+**Rosie Signal Garden:** [Copy-and-paste setup, demo, HTML/JSON/CSV reports and troubleshooting](docs/tool-showcases/SIGNAL_GARDEN.md).
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
