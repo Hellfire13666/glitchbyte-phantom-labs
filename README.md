@@ -74,6 +74,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 **RosieGlitchByte Domain Phantom:** [Copy-and-paste setup, eight modes, JSON results and troubleshooting](docs/tool-showcases/DOMAIN_PHANTOM.md).
 
+## 📡 IP Specter build recipe
+
+**RosieGlitchByte IP Specter:** [Copy-and-paste offline-first setup, JSON results, authorized modules and troubleshooting](docs/tool-showcases/IP_SPECTER.md).
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
