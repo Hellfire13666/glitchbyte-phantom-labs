@@ -70,6 +70,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 **Rosie Signal Garden:** [Copy-and-paste setup, demo, HTML/JSON/CSV reports and troubleshooting](docs/tool-showcases/SIGNAL_GARDEN.md).
 
+## 👻 Domain Phantom build recipe
+
+**RosieGlitchByte Domain Phantom:** [Copy-and-paste setup, eight modes, JSON results and troubleshooting](docs/tool-showcases/DOMAIN_PHANTOM.md).
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
