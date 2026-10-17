@@ -1,0 +1,6 @@
+/voidlantern
+/voidlantern.exe
+/reports/
+*.test
+*.out
+.DS_Store
