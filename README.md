@@ -20,11 +20,21 @@ python3 tools/rose_crawler.py --help
 
 Some tools may need optional dependencies, an API key you supply, or network access. Read each script before running. Never commit passwords, session cookies, tokens, personal data, or sensitive research reports.
 
+## Dependencies
+
+Python 3 is required. DNS research features use dnspython.
+
+On Ubuntu, install it with:
+
+    sudo apt install python3-dnspython
+
+Alternatively, install requirements.txt in a Python virtual environment.
+
 ## Ownership and reuse
 
 **Project publisher and attribution:** RosieGlitchByte.
 
-Copyright © 2026 RosieGlitchByte, to the extent applicable. No public software license is granted by this repository at this time. See `LICENSE-NOTICE.md`. AI-assisted material may not qualify for copyright protection in all jurisdictions; attribution and a copyright notice do not establish exclusive ownership.
+Copyright © 2026 RosieGlitchByte, to the extent applicable. The custom source-available license permits downloading and running the unmodified tools. Modifications and redistribution require prior written permission from RosieGlitchByte. See `LICENSE-NOTICE.md`. AI-assisted material may not qualify for copyright protection in all jurisdictions; attribution and a copyright notice do not establish exclusive ownership.
 
 ## Status
 
