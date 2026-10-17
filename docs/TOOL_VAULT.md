@@ -44,6 +44,14 @@ The initial Bash recipe checks requirements and syntax, then requests an authori
 
 The first-run Bash recipe checks syntax, prints the actual help, and generates eight links without accessing any social websites. An optional live mode checks only four platforms and distinguishes uncertain or rate-limited results.
 
+## 🌹 Python Spotlight: Rose Crawler
+
+**Twelve platform link destinations · Respectful optional public fetch · HTML, JSON and CSV**
+
+[🌹 Rose Crawler showcase and complete Bash build recipe](tool-showcases/ROSE_CRAWLER.md) · [🐍 Original Python source](../tools/rose_crawler.py)
+
+The first-run recipe generates candidate public profile links **offline**. An optional fetch mode checks robots.txt, applies a minimum delay and labels unverified and uncertain outcomes.
+
 ## 🔎 Research and analysis
 
 | Tool | Language | Source |
@@ -52,7 +60,7 @@ The first-run Bash recipe checks syntax, prints the actual help, and generates e
 | GlitchByte Log Constellation | Python | [Source](../tools/glitchbyte_log_constellation.py) · [Build recipe](tool-showcases/LOG_CONSTELLATION.md) |
 | GlitchByteRosie X Intel | Python | [glitchbyterosie_x_intel.py](../tools/glitchbyterosie_x_intel.py) |
 | GlitchByteRosie X No API | Python | [glitchbyterosie_x_no_api.py](../tools/glitchbyterosie_x_no_api.py) |
-| Rose Crawler | Python | [rose_crawler.py](../tools/rose_crawler.py) |
+| Rose Crawler | Python | [Source](../tools/rose_crawler.py) · [Build recipe](tool-showcases/ROSE_CRAWLER.md) |
 | Rosie IP Shadow Scraper | Python | [rosie_ip_shadow_scraper.py](../tools/rosie_ip_shadow_scraper.py) |
 | Rosie Signal Garden | Python | [rosie_signal_garden.py](../tools/rosie_signal_garden.py) |
 | Rosie Username Intel | Python | [Source](../tools/rosie_username_intel.py) · [Build recipe](tool-showcases/USERNAME_INTEL.md) |
