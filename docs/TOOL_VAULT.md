@@ -52,6 +52,14 @@ The first-run Bash recipe checks syntax, prints the actual help, and generates e
 
 The first-run recipe generates candidate public profile links **offline**. An optional fetch mode checks robots.txt, applies a minimum delay and labels unverified and uncertain outcomes.
 
+## 🌱 Python Spotlight: Rosie Signal Garden
+
+**Offline note analysis · Source fingerprints · Searchable HTML, JSON and CSV**
+
+[🌱 Rosie Signal Garden showcase and full Bash recipe](tool-showcases/SIGNAL_GARDEN.md) · [🐍 Actual Python source](../tools/rosie_signal_garden.py)
+
+The first-run recipe uses harmless demo notes with no external website scans. The tool extracts links and date-looking entries from your own local files.
+
 ## 🔎 Research and analysis
 
 | Tool | Language | Source |
@@ -62,7 +70,7 @@ The first-run recipe generates candidate public profile links **offline**. An op
 | GlitchByteRosie X No API | Python | [glitchbyterosie_x_no_api.py](../tools/glitchbyterosie_x_no_api.py) |
 | Rose Crawler | Python | [Source](../tools/rose_crawler.py) · [Build recipe](tool-showcases/ROSE_CRAWLER.md) |
 | Rosie IP Shadow Scraper | Python | [rosie_ip_shadow_scraper.py](../tools/rosie_ip_shadow_scraper.py) |
-| Rosie Signal Garden | Python | [rosie_signal_garden.py](../tools/rosie_signal_garden.py) |
+| Rosie Signal Garden | Python | [Source](../tools/rosie_signal_garden.py) · [Build recipe](tool-showcases/SIGNAL_GARDEN.md) |
 | Rosie Username Intel | Python | [Source](../tools/rosie_username_intel.py) · [Build recipe](tool-showcases/USERNAME_INTEL.md) |
 | RosieGlitchbyte Domain Phantom | Python | [rosieglitchbyte_domain_phantom.py](../tools/rosieglitchbyte_domain_phantom.py) |
 | RosieGlitchbyte IP Specter | Python | [rosieglitchbyte_ip_specter.py](../tools/rosieglitchbyte_ip_specter.py) |
