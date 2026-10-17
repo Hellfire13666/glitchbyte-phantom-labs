@@ -20,12 +20,20 @@
 
 Check HTTP status, elapsed time, up to five redirects, TLS certificate issuer/expiry and six HTTP security headers of a site you own or are authorized to assess. **This is not a penetration test, vulnerability confirmation, or bulk website crawler.**
 
+## ✨ Python Spotlight: Log Constellation
+
+**Offline log analysis · Python 3 · HTML + JSON reports**
+
+[🌌 Read the Log Constellation showcase and complete build recipe](tool-showcases/LOG_CONSTELLATION.md) · [🐍 Actual Python source](../tools/glitchbyte_log_constellation.py)
+
+The first-run recipe generates **safe sample logs without network requests**, performs Python syntax validation, creates an HTML dashboard and JSON report, and explains where to find the files.
+
 ## 🔎 Research and analysis
 
 | Tool | Language | Source |
 | --- | --- | --- |
 | GlitchByte Domain Intel | Python | [glitchbyte_domain_intel.py](../tools/glitchbyte_domain_intel.py) |
-| GlitchByte Log Constellation | Python | [glitchbyte_log_constellation.py](../tools/glitchbyte_log_constellation.py) |
+| GlitchByte Log Constellation | Python | [Source](../tools/glitchbyte_log_constellation.py) · [Build recipe](tool-showcases/LOG_CONSTELLATION.md) |
 | GlitchByteRosie X Intel | Python | [glitchbyterosie_x_intel.py](../tools/glitchbyterosie_x_intel.py) |
 | GlitchByteRosie X No API | Python | [glitchbyterosie_x_no_api.py](../tools/glitchbyterosie_x_no_api.py) |
 | Rose Crawler | Python | [rose_crawler.py](../tools/rose_crawler.py) |
