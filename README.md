@@ -54,7 +54,7 @@ Our creation standard: **each new project is original and independent**. We only
 | Name | Language | Use | Go to source |
 | --- | --- | --- | --- |
 | 👻 **VOIDLANTERN** | Go | Authorized HTTP, TLS and security-header diagnostics | [Tool spotlight](docs/tool-showcases/VOIDLANTERN.md) |
-| ✨ **Log Constellation** | Python | Analyze local log events and reports | [View source](tools/glitchbyte_log_constellation.py) |
+| ✨ **Log Constellation** | Python | Analyze local log events and reports | [Build recipe](docs/tool-showcases/LOG_CONSTELLATION.md) |
 | 🌐 **GlitchByte Domain Intel** | Python | Research public domain information | [View source](tools/glitchbyte_domain_intel.py) |
 | 🕷️ **Rose Crawler** | Python | Public website crawling experiment | [View source](tools/rose_crawler.py) |
 | 💗 **Rosie Username Intel** | Python | Public username research | [View source](tools/rosie_username_intel.py) |
