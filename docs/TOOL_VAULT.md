@@ -60,6 +60,14 @@ The first-run recipe generates candidate public profile links **offline**. An op
 
 The first-run recipe uses harmless demo notes with no external website scans. The tool extracts links and date-looking entries from your own local files.
 
+## 👻 Python Spotlight: Domain Phantom
+
+**Eight modules · Public domain signals · Offline RDAP-link first run · JSON reports**
+
+[👻 Domain Phantom showcase and copy-paste Bash recipe](tool-showcases/DOMAIN_PHANTOM.md) · [🐍 Python source](../tools/rosieglitchbyte_domain_phantom.py)
+
+Start safely with mode 7, which constructs a public RDAP research link without connecting to a target. Other modes cover DNS, metadata, links, TLS and headers, with documented authorization and safety restrictions.
+
 ## 🔎 Research and analysis
 
 | Tool | Language | Source |
@@ -72,7 +80,7 @@ The first-run recipe uses harmless demo notes with no external website scans. Th
 | Rosie IP Shadow Scraper | Python | [rosie_ip_shadow_scraper.py](../tools/rosie_ip_shadow_scraper.py) |
 | Rosie Signal Garden | Python | [Source](../tools/rosie_signal_garden.py) · [Build recipe](tool-showcases/SIGNAL_GARDEN.md) |
 | Rosie Username Intel | Python | [Source](../tools/rosie_username_intel.py) · [Build recipe](tool-showcases/USERNAME_INTEL.md) |
-| RosieGlitchbyte Domain Phantom | Python | [rosieglitchbyte_domain_phantom.py](../tools/rosieglitchbyte_domain_phantom.py) |
+| RosieGlitchbyte Domain Phantom | Python | [Source](../tools/rosieglitchbyte_domain_phantom.py) · [Build recipe](tool-showcases/DOMAIN_PHANTOM.md) |
 | RosieGlitchbyte IP Specter | Python | [rosieglitchbyte_ip_specter.py](../tools/rosieglitchbyte_ip_specter.py) |
 | VOIDLANTERN | Go | [Project directory](../tools/go/voidlantern-go/) · [Showcase](tool-showcases/VOIDLANTERN.md) |
 
