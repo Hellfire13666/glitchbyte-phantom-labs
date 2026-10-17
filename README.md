@@ -14,7 +14,7 @@
 
 **One tool. One identity. Infinite creative directions.**
 
-[**🕷️ TOOL ECOSYSTEM**](docs/ECOSYSTEM.md) · [**📚 START HERE**](docs/TOOL_STARTER_GUIDE.md) · [**🌹 ROSIE ARTWORK**](docs/ROSIE_VISUAL_STANDARD.md) · [**🛡️ SECURITY**](SECURITY.md)
+[**🕷️ PHANTOM TOOL VAULT**](docs/TOOL_VAULT.md) · [**🔍 ECOSYSTEM**](docs/ECOSYSTEM.md) · [**📚 START HERE**](docs/TOOL_STARTER_GUIDE.md) · [**🌹 ROSIE ARTWORK**](docs/ROSIE_VISUAL_STANDARD.md) · [**🛡️ SECURITY**](SECURITY.md)
 
 </div>
 
@@ -42,7 +42,8 @@ Our creation standard: **each new project is original and independent**. We only
 | Station | Enter |
 | --- | --- |
 | 🧭 **START HERE** | [Setup, first run, and troubleshooting](docs/TOOL_STARTER_GUIDE.md) |
-| 🕸️ **TOOL ECOSYSTEM** | [Browse every verified Python and Go project](docs/ECOSYSTEM.md) |
+| 🕸️ **PHANTOM TOOL VAULT** | [Browse verified source links and tool spotlights](docs/TOOL_VAULT.md) |
+| 🔍 **TOOL ECOSYSTEM** | [Browse every verified Python and Go project](docs/ECOSYSTEM.md) |
 | 🐍 **PYTHON LAB** | [Python scripts, crawlers, research and creative code](tools/) |
 | ⚙️ **GO LAB** | [VOIDLANTERN source, tests and build instructions](tools/go/voidlantern-go/) |
 | 🌹 **ART & IDENTITY** | [Approved Rosie reference rules and official hero upload](docs/ROSIE_VISUAL_STANDARD.md) |
@@ -52,7 +53,7 @@ Our creation standard: **each new project is original and independent**. We only
 
 | Name | Language | Use | Go to source |
 | --- | --- | --- | --- |
-| 👻 **VOIDLANTERN** | Go | Authorized HTTP, TLS and security-header diagnostics | [Launch guide](tools/go/voidlantern-go/) |
+| 👻 **VOIDLANTERN** | Go | Authorized HTTP, TLS and security-header diagnostics | [Tool spotlight](docs/tool-showcases/VOIDLANTERN.md) |
 | ✨ **Log Constellation** | Python | Analyze local log events and reports | [View source](tools/glitchbyte_log_constellation.py) |
 | 🌐 **GlitchByte Domain Intel** | Python | Research public domain information | [View source](tools/glitchbyte_domain_intel.py) |
 | 🕷️ **Rose Crawler** | Python | Public website crawling experiment | [View source](tools/rose_crawler.py) |
