@@ -44,12 +44,12 @@ def tls(ip,port=443):
     try:
         ctx=ssl.create_default_context()
         # TLS certificate retrieval without claiming a verified hostname match.
-        ctx.check_hostname=False
-        ctx.verify_mode=ssl.CERT_NONE
+        ctx.check_hostname=True
+        ctx.verify_mode=ssl.CERT_REQUIRED
         with socket.create_connection((str(ip),port),timeout=TIMEOUT) as sock:
-            with ctx.wrap_socket(sock) as wrapped:
+            with ctx.wrap_socket(sock, server_hostname=str(ip)) as wrapped:
                 der=wrapped.getpeercert(binary_form=True)
-                return {'tls_version':wrapped.version(),'cipher':wrapped.cipher()[0] if wrapped.cipher() else None,'certificate_sha256':__import__('hashlib').sha256(der).hexdigest() if der else None,'note':'Certificate fingerprint only; no hostname verification performed.'}
+                return {'tls_version':wrapped.version(),'cipher':wrapped.cipher()[0] if wrapped.cipher() else None,'certificate_sha256':__import__('hashlib').sha256(der).hexdigest() if der else None,'note':'Certificate verified against the target IP address.'}
     except Exception as e: return {'error':str(e)}
 
 def http_head(ip,scheme='https'):
@@ -58,7 +58,7 @@ def http_head(ip,scheme='https'):
     cls=http.client.HTTPSConnection if scheme=='https' else http.client.HTTPConnection
     try:
         kw={'timeout':TIMEOUT}
-        if scheme=='https': kw['context']=ssl._create_unverified_context()
+        if scheme=='https': kw['context']=ssl.create_default_context()
         conn=cls(str(ip),443 if scheme=='https' else 80,**kw)
         try:
             conn.request('HEAD','/',headers={'User-Agent':'RosieGlitchByte-IP-Research/2.0'})
