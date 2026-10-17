@@ -12,6 +12,18 @@ A collection of Python projects, experiments, and research utilities created for
 - `artwork/` companion original artwork
 - `docs/` project inventory and publishing checklist
 
+## 🕷️ Start here: Find • Build • Run • Read
+
+**New to the lab?** Follow the [Phantom Labs Tool Starter Guide](docs/TOOL_STARTER_GUIDE.md) for discovering projects, running Python or Go tools, finding generated HTML/JSON/CSV reports, and our required new-tool testing checklist.
+
+Find saved reports from your current folder:
+
+```bash
+find . -type f \( -name "*.html" -o -name "*.json" -o -name "*.csv" \)
+```
+
+**Every new creation:** unique project and report names, a documented build/test process, readable sample commands and output, and live site-by-site progress where technically practical. Upgrades and remakes happen only when specifically requested.
+
 ## Run a tool
 
 ```bash
