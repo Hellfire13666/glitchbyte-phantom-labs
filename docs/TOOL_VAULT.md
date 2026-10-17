@@ -28,11 +28,19 @@ Check HTTP status, elapsed time, up to five redirects, TLS certificate issuer/ex
 
 The first-run recipe generates **safe sample logs without network requests**, performs Python syntax validation, creates an HTML dashboard and JSON report, and explains where to find the files.
 
+## 🌐 Python Spotlight: Domain Intel
+
+**Public domain research · Python 3 · DNS, website, links, TLS and RDAP**
+
+[🌐 Complete Domain Intel showcase and copy-paste build recipe](tool-showcases/DOMAIN_INTEL.md) · [🐍 Python source](../tools/glitchbyte_domain_intel.py)
+
+The initial Bash recipe checks requirements and syntax, then requests an authorized domain before performing a DNS lookup. It saves timestamped JSON reports outside the source tree.
+
 ## 🔎 Research and analysis
 
 | Tool | Language | Source |
 | --- | --- | --- |
-| GlitchByte Domain Intel | Python | [glitchbyte_domain_intel.py](../tools/glitchbyte_domain_intel.py) |
+| GlitchByte Domain Intel | Python | [Source](../tools/glitchbyte_domain_intel.py) · [Build recipe](tool-showcases/DOMAIN_INTEL.md) |
 | GlitchByte Log Constellation | Python | [Source](../tools/glitchbyte_log_constellation.py) · [Build recipe](tool-showcases/LOG_CONSTELLATION.md) |
 | GlitchByteRosie X Intel | Python | [glitchbyterosie_x_intel.py](../tools/glitchbyterosie_x_intel.py) |
 | GlitchByteRosie X No API | Python | [glitchbyterosie_x_no_api.py](../tools/glitchbyterosie_x_no_api.py) |
