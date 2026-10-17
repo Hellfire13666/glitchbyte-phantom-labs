@@ -1,0 +1,33 @@
+{
+  "publisher": "RosieGlitchByte",
+  "status": "private release candidate",
+  "scripts": 16,
+  "files": {
+    "LICENSE-NOTICE.md": "bbf0bde08b7d7e002a338de7cdd5420f0bfb7d07d3f71d200c623bae30e04d65",
+    "SECURITY.md": "82fa7f4107dcda4cd3f5810a6b3c2d2bbb61330fc5e6c2d6387bcdaf29f54cdd",
+    "README.md": "fa66995809e372bbd9946b6607f4c7ed762d17dff2afb814efeba61faf25e27d",
+    ".gitignore": "2e03d5854044682f33b561f0e70ae9c055d64916658ac1837aad8ce38c3c13cd",
+    "docs/PUBLISHING.md": "9a5dfa101526746ea68226c07471d2b8495b91b0b4577674158454a0a5cc4242",
+    "docs/RELEASE_CHECKLIST.md": "01b1514d1b6307c987a777594d3796422d8c002f45cff46b7e386c740678e96f",
+    "docs/INVENTORY.md": "fd82a4b82fc0a7135c2d8d37d5a711c92564c0f7717a63c06a57d5054b51d458",
+    "artwork/rosie_ip_shadow_art.png": "ce159bbf498189211bb2123341f65c46ecfca7f14ba3b67592226c3ce59e82d8",
+    "tests/test_repository.py": "5d8d218effd31ab6735daf82a58ff05b61112e6ce39235f33ec9ae9ad01c252b",
+    "tools/glitchbyterosie_x_intel.py": "a41e2c87b94b6149a4d8ff0616ed57bde087924b58b94500fd0c5babc444e2fb",
+    "tools/rose_crawler.py": "58b0150c1e8257157852c84b2c8ef1d66c0d97112bbf0dd63787a2be367d104a",
+    "tools/rosieglitchbyte_neon_rose_phantom_3.py": "435523659a7864cfa2f3878f326c0b3b29daded2565fdfac3c48d22b0e20f644",
+    "tools/rosie_hide_seek.py": "89353c06bf27f3a2ee453ea6c61a51c1ffa4076f28990fc38c829fcc361aedd3",
+    "tools/glitchbyterosie_x_no_api.py": "2ce0a2f6bf7d4e7b877f8da0a5498c845fba72b987f78df9e1bab2c61b8d34bb",
+    "tools/rosie_ghost_heart.py": "e761ced0da81b2e1a684cef86fd467cfbcc9fda68711d34be27da20469a71ecc",
+    "tools/glitchbyte_domain_intel.py": "ab5818a0c6aa77c431fc62ce86d76151b336fec59a27576cc8d8752f2b06b44a",
+    "tools/rosieglitchbyte_domain_phantom.py": "3ac4b24cf5de4ef04e630c141b86333666570100a0a1f3eae8177dbe98aaecb0",
+    "tools/rosie_ip_shadow_scraper.py": "499bebdf6527ef58406d0144ea910c44b30d6ab82e2650e57f781ca92ff5cb19",
+    "tools/rosie_signal_garden.py": "f5f5304a16895f60f5a6628dc238553d04985e4efeda1ecff111c19a50755bb7",
+    "tools/rosie_dark_desire.py": "0f0e6b633c549b9bd8f13b13a7ebb274ce2fa69034bce025a9d720bca285d575",
+    "tools/rosieglitchbyte_ip_specter.py": "9978b8c56ac160f137d7f2356ee2d7caf49a4abc19e225fb815b1090ac7e896b",
+    "tools/rosie_catch_me_chaos.py": "07513a3cd67b7e7ca16084bdd73a3dbc6cbac9acc3a8a23289b2635c11a7bf10",
+    "tools/rosie_username_intel.py": "76ff51d7a8f3aeaeb0252631470fcba471ebf76d7db768f775ca2e74e7510495",
+    "tools/glitchbyte_log_constellation.py": "1165a1fe1a4901fa1a7973b8d13ae96295e67776caf1b39965af04fecba6aef0",
+    "tools/rosieglitchbyte_hackgirl.py": "642a5f2170f4f2fd25e62fb6fe61f9f929c7de28e41104c298e5b0328889438c",
+    ".github/workflows/python-checks.yml": "ea9a935b984551e265b829c025627b91d3676c4ecb45ff3d7d10582bb0c5839f"
+  }
+}
