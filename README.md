@@ -1,66 +1,140 @@
+<div align="center">
+
 # 🌹 GLITCHBYTE PHANTOM LABS
 
-**RosieGlitchByte | Python • Linux • Terminal • Public OSINT • Creative Coding**
+### 👻 ROSIEGLITCHBYTE // OFFICIAL COMMAND ECOSYSTEM
 
-A collection of Python projects, experiments, and research utilities created for the Glitchbyte Phantom Labs workshop.
+**PYTHON 3 · GO · UBUNTU/LINUX · PUBLIC INTELLIGENCE · CREATIVE CODE**
 
-> Built in the shadows. Preserved in the code.
+![Python 3](https://img.shields.io/badge/Python-3.x-00D6F5?style=for-the-badge&logo=python&logoColor=white)
+![Go 1.21+](https://img.shields.io/badge/Go-1.21%2B-FF1493?style=for-the-badge&logo=go&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-Terminal-8A2BE2?style=for-the-badge&logo=linux&logoColor=white)
 
-## Contents
+**One tool. One identity. Infinite creative directions.**
 
-- `tools/` Python 3 scripts and utilities
-- `artwork/` companion original artwork
-- `docs/` project inventory and publishing checklist
+[**🕷️ TOOL ECOSYSTEM**](docs/ECOSYSTEM.md) · [**📚 START HERE**](docs/TOOL_STARTER_GUIDE.md) · [**🌹 ROSIE ARTWORK**](docs/ROSIE_VISUAL_STANDARD.md) · [**🛡️ SECURITY**](SECURITY.md)
 
-## 🕷️ Start here: Find • Build • Run • Read
+</div>
 
-**New to the lab?** Follow the [Phantom Labs Tool Starter Guide](docs/TOOL_STARTER_GUIDE.md) for discovering projects, running Python or Go tools, finding generated HTML/JSON/CSV reports, and our required new-tool testing checklist.
+```text
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃   GLITCHBYTE // PHANTOM LABS :: OFFICIAL WORKSHOP          ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃   [✓] PYTHON TOOLS       [✓] GO DEVELOPMENT                 ┃
+┃   [✓] PUBLIC RESEARCH    [✓] CREATIVE EXPERIMENTS          ┃
+┃   [✓] README & GUIDES    [✓] TESTED RELEASE WORKFLOWS      ┃
+┃                                                           ┃
+┃   rosie@phantom-labs:~$ explore                            ┃
+┃   > Build. Test. Run. Learn. █                              ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+```
 
-Find saved reports from your current folder:
+## 💗 Welcome to the official ecosystem
+
+This is **RosieGlitchbyte's GlitchByte Phantom Labs**, the next evolution of our original workshop. The existing repository, its full Git history, Python tools, Go projects, security rules and source-available license are retained.
+
+Our creation standard: **each new project is original and independent**. We only remake or upgrade an existing creation when explicitly requested.
+
+### 🕷️ Explore the workshop
+
+| Station | Enter |
+| --- | --- |
+| 🧭 **START HERE** | [Setup, first run, and troubleshooting](docs/TOOL_STARTER_GUIDE.md) |
+| 🕸️ **TOOL ECOSYSTEM** | [Browse every verified Python and Go project](docs/ECOSYSTEM.md) |
+| 🐍 **PYTHON LAB** | [Python scripts, crawlers, research and creative code](tools/) |
+| ⚙️ **GO LAB** | [VOIDLANTERN source, tests and build instructions](tools/go/voidlantern-go/) |
+| 🌹 **ART & IDENTITY** | [Approved Rosie reference rules and official hero upload](docs/ROSIE_VISUAL_STANDARD.md) |
+| 🔐 **SAFETY** | [Security guidance](SECURITY.md) and [release checklist](docs/RELEASE_CHECKLIST.md) |
+
+## ⚡ Featured tools
+
+| Name | Language | Use | Go to source |
+| --- | --- | --- | --- |
+| 👻 **VOIDLANTERN** | Go | Authorized HTTP, TLS and security-header diagnostics | [Launch guide](tools/go/voidlantern-go/) |
+| ✨ **Log Constellation** | Python | Analyze local log events and reports | [View source](tools/glitchbyte_log_constellation.py) |
+| 🌐 **GlitchByte Domain Intel** | Python | Research public domain information | [View source](tools/glitchbyte_domain_intel.py) |
+| 🕷️ **Rose Crawler** | Python | Public website crawling experiment | [View source](tools/rose_crawler.py) |
+| 💗 **Rosie Username Intel** | Python | Public username research | [View source](tools/rosie_username_intel.py) |
+| 🎮 **Rosie Catch Me Chaos** | Python | Creative coding and games | [View source](tools/rosie_catch_me_chaos.py) |
+
+These links point to **files present in this repository**, not merely concepts or local ZIP archives. Project maturity varies. View the [complete tool ecosystem](docs/ECOSYSTEM.md) for the rest.
+
+## 🚀 Quick-start terminal
+
+Clone the public repository:
+
+```bash
+git clone https://github.com/Hellfire13666/glitchbyte-phantom-labs.git
+cd glitchbyte-phantom-labs
+```
+
+Find tools:
+
+```bash
+find tools -type f \( -name '*.py' -o -name 'go.mod' \) | sort
+```
+
+For Python, look at individual tool help and instructions:
+
+```bash
+python3 tools/glitchbyte_log_constellation.py --help
+```
+
+To build VOIDLANTERN:
+
+```bash
+cd tools/go/voidlantern-go
+go test ./...
+go vet ./...
+go build -o voidlantern .
+./voidlantern -url https://example.com -out reports/example.json
+```
+
+Read the [starter guide](docs/TOOL_STARTER_GUIDE.md) if `requirements.txt` or the working directory isn't found. Some scripts require optional packages or network access; don't assume all use the same arguments.
+
+## 📊 Find your HTML, JSON and CSV results
+
+From the directory where you ran a tool:
 
 ```bash
 find . -type f \( -name "*.html" -o -name "*.json" -o -name "*.csv" \)
 ```
 
-**Every new creation:** unique project and report names, a documented build/test process, readable sample commands and output, and live site-by-site progress where technically practical. Upgrades and remakes happen only when specifically requested.
+This lists local report files, **not live public web links**. It may show no output until a tool finishes and writes a report.
 
-## Run a tool
+## 🧪 Build • Test • Run: our development standard
 
-```bash
-python3 tools/rose_crawler.py --help
-```
+Every **new** creation should have independent names and report paths, a useful README, specific build/test/run examples, honest test status and live site-by-site progress where practical. We prioritize free permitted public sources; identity matches are never assumed from a matching username alone.
 
-Some tools may need optional dependencies, an API key you supply, or network access. Read each script before running. Never commit passwords, session cookies, tokens, personal data, or sensitive research reports.
-
-## Dependencies
-
-Python 3 is required. DNS research features use dnspython.
-
-On Ubuntu, install it with:
-
-    sudo apt install python3-dnspython
-
-Alternatively, install requirements.txt in a Python virtual environment.
-
-## Ownership and reuse
-
-**Project publisher and attribution:** RosieGlitchByte.
-
-Copyright © 2026 RosieGlitchByte, to the extent applicable. The custom source-available license permits downloading and running the unmodified tools. Modifications and redistribution require prior written permission from RosieGlitchByte. See `LICENSE-NOTICE.md`. AI-assisted material may not qualify for copyright protection in all jurisdictions; attribution and a copyright notice do not establish exclusive ownership.
-
-## Status
-
-Initial preservation archive. Code has been syntax-checked; individual tools are not all integration-tested or security-audited. Review before public release.
-
-## Release candidate status
-
-This package is a **private release candidate**, not an approved public release. Review `SECURITY.md` and `docs/RELEASE_CHECKLIST.md` before changing repository visibility.
-
-## Local checks
+Run repository-level Python checks:
 
 ```bash
-python3 -m unittest discover -s tests -v
 python3 -m compileall -q tools
+python3 -m unittest discover -s tests -v
 ```
 
-The repository layout is intentionally flat: `README.md`, `tools/`, `artwork/`, and `docs/` sit at the repository root.
+Go projects should be tested and built **inside their individual module folders**. See [the full standards and examples](docs/TOOL_STARTER_GUIDE.md).
+
+## 🌹 Rosie is the face of the workshop
+
+Our official Rosie has **brown eyes, dark hair with electric-blue highlights, and established special-face variants**. We use approved references rather than introducing an unfamiliar replacement.
+
+The official GitHub hero illustration will be linked once the exact approved file is committed under `artwork/glitchbyte-phantom-labs-official-hero.png`. The page deliberately avoids a broken image link meanwhile. [Artwork integration guide](docs/ROSIE_VISUAL_STANDARD.md).
+
+## 🔐 Ownership, licenses and security
+
+**Published and attributed to RosieGlitchbyte.**
+
+Copyright © 2026 RosieGlitchbyte, to the extent applicable. This repository has a **custom source-available license**, not an unrestricted open-source license. Review [LICENSE-NOTICE.md](LICENSE-NOTICE.md) before redistributing or modifying source code. AI-assisted content may not be copyright-protectable in every jurisdiction.
+
+The repository is publicly accessible, but the legacy tool collection is a **preservation/release-candidate archive**. Syntax tests and limited unit tests do not prove full live functionality or security auditing. Consult [SECURITY.md](SECURITY.md) and [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md). Do not publish credentials, tokens, browser cookies, sensitive reports, or private data.
+
+---
+
+<div align="center">
+
+**🌹 GLITCHBYTE PHANTOM LABS**
+
+*Built in the shadows. Preserved in the code.*
+
+</div>
