@@ -47,9 +47,9 @@ def tls(ip,port=443):
         ctx.check_hostname=True
         ctx.verify_mode=ssl.CERT_REQUIRED
         with socket.create_connection((str(ip),port),timeout=TIMEOUT) as sock:
-            with ctx.wrap_socket(sock) as wrapped:
+            with ctx.wrap_socket(sock, server_hostname=str(ip)) as wrapped:
                 der=wrapped.getpeercert(binary_form=True)
-                return {'tls_version':wrapped.version(),'cipher':wrapped.cipher()[0] if wrapped.cipher() else None,'certificate_sha256':__import__('hashlib').sha256(der).hexdigest() if der else None,'note':'Certificate fingerprint only; no hostname verification performed.'}
+                return {'tls_version':wrapped.version(),'cipher':wrapped.cipher()[0] if wrapped.cipher() else None,'certificate_sha256':__import__('hashlib').sha256(der).hexdigest() if der else None,'note':'Certificate verified against the target IP address.'}
     except Exception as e: return {'error':str(e)}
 
 def http_head(ip,scheme='https'):
