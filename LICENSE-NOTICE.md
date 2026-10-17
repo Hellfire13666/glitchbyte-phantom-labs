@@ -1,26 +1,21 @@
-# GLITCHBYTE PHANTOM LABS — RIGHTS RESERVED
+# GLITCHBYTE PHANTOM LABS — USE PERMITTED, MODIFICATIONS BY PERMISSION
 
-**Project publisher:** RosieGlitchByte  
-**Copyright notice:** © 2026 RosieGlitchByte, to the extent applicable under law. All rights reserved.
+Copyright © 2026 RosieGlitchByte, to the extent copyright protection applies.
 
-## Permission policy
+## Permission to use
+Subject to the conditions below, RosieGlitchByte grants you a non-exclusive, worldwide, royalty-free permission to download, copy as needed to install, and run the unmodified software distributed in this repository for personal, educational, research, or commercial purposes.
 
-This repository is provided for viewing and evaluation only. **No license to copy, modify, adapt, redistribute, republish, sell, sublicense, or incorporate its contents into other projects is granted** by this notice.
+## Conditions
+1. **No modifications without permission.** You may not modify, adapt, translate, or create derivative versions of the software, or distribute modified versions, without prior written permission from RosieGlitchByte.
+2. **No redistribution without permission.** You may not republish, redistribute, sublicense, sell copies of, or bundle the software with another product without prior written permission. You may share a link to the official repository.
+3. **Keep notices intact.** Do not remove or misrepresent copyright, attribution, or license notices in any permitted copy.
+4. **Respect applicable law and third-party rights.** This license grants no rights in third-party materials or rights the publisher does not hold.
 
-Anyone wishing to reuse, modify, redistribute, or publish material from this workshop must **request and receive written permission from RosieGlitchByte first**. Permission may be granted separately for specific files, purposes, or projects.
+## Permissions and contact
+To request permission to modify or redistribute, open an issue in the official GitHub repository: https://github.com/Hellfire13666/glitchbyte-phantom-labs/issues . Do not post private information in a public issue.
 
-GitHub's platform terms and applicable law may permit certain limited actions, including viewing and platform-enabled forking. This notice does not override those terms or legal exceptions.
+## No warranty
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, TO THE EXTENT PERMITTED BY APPLICABLE LAW. THE COPYRIGHT HOLDER IS NOT LIABLE FOR DAMAGES ARISING FROM USE OF THE SOFTWARE TO THE EXTENT PERMITTED BY APPLICABLE LAW.
 
-## Attribution
-
-If written permission is granted, the recipient must follow the attribution and other conditions specified in that permission. Merely crediting RosieGlitchByte does not substitute for permission.
-
-## Third-party and AI-assisted materials
-
-This notice covers only rights the publisher actually owns or controls. Third-party components remain subject to their own terms. Some AI-generated material may not be copyright-protectable; a copyright notice cannot create rights that do not exist.
-
-## Contact
-
-To request permission, open an issue in this repository labeled **Permission Request** if issues are enabled, or contact the repository owner through their published GitHub contact details. Do not post private information in public issues.
-
-**This is a project notice, not legal advice.**
+## Legal note
+This is a custom source-available license, **not an OSI-approved open-source license**. It applies only to material the publisher is legally entitled to license. Statutory exceptions and applicable platform terms may still apply.
