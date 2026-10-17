@@ -62,6 +62,10 @@ Our creation standard: **each new project is original and independent**. We only
 
 These links point to **files present in this repository**, not merely concepts or local ZIP archives. Project maturity varies. View the [complete tool ecosystem](docs/ECOSYSTEM.md) for the rest.
 
+## 🕵️ Featured Python build recipe
+
+**Rosie Username Intel:** [Copy-and-paste Bash setup, offline links and JSON results](docs/tool-showcases/USERNAME_INTEL.md). A matching username is not proof of a shared identity.
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
