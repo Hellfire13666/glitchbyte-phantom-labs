@@ -141,6 +141,8 @@ Some tools require network access, optional dependencies or user-supplied API cr
 
 Our approved creative direction uses **Rosie's brown eyes, dark hair with electric-blue highlights, and established reference variants**. The finalized hero illustration is being prepared for repository upload. The artwork slot above is intentionally disabled until the **approved image** exists in the repository. This keeps the real GitHub README from displaying a broken image or an unrelated replacement.
 
+See the [official Rosie visual kit](docs/OFFICIAL_VISUAL_KIT.md) for the exact upload path, image requirements and publish instructions.
+
 For a working public website with searchable cards, galleries and interactive controls, GitHub Pages would be a **separate future build**. This README is a real, navigable GitHub homepage, not an interactive web application.
 
 ## 🔐 Ownership, safety and release status
