@@ -1,0 +1,96 @@
+# 👻 VOIDLANTERN // THE FIRST PHANTOM TOOL SPOTLIGHT
+
+**Go 1.21+ · HTTP(S) website diagnostics · local JSON output · v1.0.0**
+
+> **One lantern. One authorized destination. Clear diagnostic signals.**
+
+[🔗 Source code](../../tools/go/voidlantern-go/main.go) · [📖 Project README](../../tools/go/voidlantern-go/README.md) · [🧪 Offline test file](../../tools/go/voidlantern-go/main_test.go) · [⚙️ CI workflow](../../.github/workflows/voidlantern-go-checks.yml)
+
+## 🔮 What it does
+
+VOIDLANTERN makes **one HTTP(S) GET request** to a specified website, follows at most **five redirects**, and writes a local JSON report. It records:
+
+| Signal | Output keys | Meaning |
+| --- | --- | --- |
+| Target and destination | `url`, `final_url` | Submitted URL and eventual destination |
+| HTTP response | `status`, `server` | Status code and server header (if present) |
+| Timing and redirects | `duration_ms`, `redirects` | Elapsed request time and observed redirects |
+| TLS certificate | `tls_issuer`, `tls_expiry`, `tls_days_remaining` | Available TLS leaf certificate details |
+| Security header inventory | `security_headers`, `missing_headers` | Presence/absence among six configured response headers |
+| Run result | `checked_at`, `error` | UTC check timestamp, and error message where applicable |
+
+The six inspected headers are `Strict-Transport-Security`, `Content-Security-Policy`, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, and `X-Frame-Options`.
+
+**Missing headers are not proof of an exploitable vulnerability.** This utility is not a credential guesser, crawler, exploit, or port scanner.
+
+## 🛠️ Install / Build / Test
+
+These commands are for Bash on Ubuntu/Linux; builds also support macOS and Windows with Go installed.
+
+From the repository root:
+
+```bash
+cd tools/go/voidlantern-go
+go version
+go test ./...
+go vet ./...
+go build -o voidlantern .
+```
+
+The module has [`go.mod`](../../tools/go/voidlantern-go/go.mod) and **no third-party Go module dependencies**. Run these commands *inside* `tools/go/voidlantern-go/`, not from the Python-oriented repository root.
+
+## ⚡ Run it
+
+```bash
+./voidlantern -h
+./voidlantern -url https://example.com -out reports/example.json
+./voidlantern -url https://example.com -timeout 20 -out reports/example.json
+```
+
+The `-timeout` flag is in seconds (valid range: **1 to 60**, default **12**). `-out` defaults to `voidlantern_report.json` and creates parent directories. The program prints a terminal summary and writes JSON. For errors during an assessment, it attempts to save an error report and exits with a nonzero status.
+
+**Use only website addresses you control or have permission to assess.** The example domain here is illustrative. Redirects can leave the original host; verify that redirected destinations are also within your authorization.
+
+## 📁 Find and read the report
+
+From the Go project directory:
+
+```bash
+find . -type f -name '*.json'
+python3 -m json.tool reports/example.json
+```
+
+Replace `reports/example.json` with your actual saved path. This report is **JSON**, not an HTML dashboard or CSV export. It stores URLs, response headers, and details that can be sensitive: don't commit live reports.
+
+### Illustrative JSON shape (not output from a real scan)
+
+```json
+{
+  "url": "https://example.com",
+  "final_url": "https://example.com",
+  "status": 200,
+  "duration_ms": 123,
+  "security_headers": {},
+  "missing_headers": ["Content-Security-Policy"],
+  "checked_at": "2026-10-17T00:00:00Z"
+}
+```
+
+Optional fields are omitted by Go's `omitempty` behavior and the actual report depends on the destination. The example above demonstrates the JSON **shape** only. It is not evidence that the host was checked, and does not imply this is the complete set of missing headers.
+
+## 🧪 What has been verified
+
+This spotlight was prepared by inspecting existing `main.go`, `main_test.go`, `go.mod`, `README.md` and the repository's Go GitHub Actions workflow.
+
+- Existing offline tests use `httptest.NewServer` and invalid URL input.
+- The existing workflow runs `go test ./...`, `go vet ./...`, and `go build -o voidlantern .` when matching Go paths change.
+- These **documentation-only** changes do not themselves trigger that path-filtered Go workflow.
+- No live target was scanned as part of writing this showcase.
+
+## 🔐 Safety and licensing
+
+The [repository's custom source-available license](../../LICENSE-NOTICE.md) governs the project. The Go project's original README contains an older "No license has been selected yet" statement; that text predates or conflicts with the repository-wide license notice. **Treat the repository-wide license notice as authoritative**, and do not assume unrestricted modification or redistribution.
+
+Review [SECURITY.md](../../SECURITY.md) before operating network-related tools. Avoid committing private research output, secrets, cookies or session data.
+
+[← Phantom Tool Vault](../TOOL_VAULT.md) · [← Main homepage](../../README.md)
