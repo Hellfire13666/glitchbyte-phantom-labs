@@ -1,0 +1,2 @@
+# Dependency for DNS research features
+dnspython>=2.6,<3
