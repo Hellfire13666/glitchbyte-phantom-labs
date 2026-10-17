@@ -6,7 +6,7 @@
 
 **Language and version · What it actually does · Output types**
 
-[Source](../../tools/PATH_TO_EXISTING_SOURCE) · [Tests, if they exist](../../tools/PATH_TO_TESTS) · [Project README, if present](../../tools/PATH_TO_README)
+Replace these placeholders with **verified Markdown links** when creating a tool page: `../../tools/PATH_TO_EXISTING_SOURCE`, `../../tools/PATH_TO_TESTS`, and `../../tools/PATH_TO_README`. Do not leave dead placeholder links in a published spotlight.
 
 ## What it does
 Describe verified functionality from source, not concepts shown in screenshots. Explain key limitations and the permission model.
