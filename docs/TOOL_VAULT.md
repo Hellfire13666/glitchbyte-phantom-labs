@@ -68,6 +68,14 @@ The first-run recipe uses harmless demo notes with no external website scans. Th
 
 Start safely with mode 7, which constructs a public RDAP research link without connecting to a target. Other modes cover DNS, metadata, links, TLS and headers, with documented authorization and safety restrictions.
 
+## 📡 Python Spotlight: IP Specter
+
+**Offline IP classification · Optional public network research · JSON reports**
+
+[📡 IP Specter showcase and complete Bash recipe](tool-showcases/IP_SPECTER.md) · [🐍 Python source](../tools/rosieglitchbyte_ip_specter.py)
+
+The first run classifies a reserved documentation IP entirely offline. Additional public networking modes are documented separately, with authorization required for connectivity checks.
+
 ## 🔎 Research and analysis
 
 | Tool | Language | Source |
@@ -81,7 +89,7 @@ Start safely with mode 7, which constructs a public RDAP research link without c
 | Rosie Signal Garden | Python | [Source](../tools/rosie_signal_garden.py) · [Build recipe](tool-showcases/SIGNAL_GARDEN.md) |
 | Rosie Username Intel | Python | [Source](../tools/rosie_username_intel.py) · [Build recipe](tool-showcases/USERNAME_INTEL.md) |
 | RosieGlitchbyte Domain Phantom | Python | [Source](../tools/rosieglitchbyte_domain_phantom.py) · [Build recipe](tool-showcases/DOMAIN_PHANTOM.md) |
-| RosieGlitchbyte IP Specter | Python | [rosieglitchbyte_ip_specter.py](../tools/rosieglitchbyte_ip_specter.py) |
+| RosieGlitchbyte IP Specter | Python | [Source](../tools/rosieglitchbyte_ip_specter.py) · [Build recipe](tool-showcases/IP_SPECTER.md) |
 | VOIDLANTERN | Go | [Project directory](../tools/go/voidlantern-go/) · [Showcase](tool-showcases/VOIDLANTERN.md) |
 
 ## 💗 Creative code and experiments
