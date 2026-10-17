@@ -23,6 +23,78 @@ The six inspected headers are `Strict-Transport-Security`, `Content-Security-Pol
 
 **Missing headers are not proof of an exploitable vulnerability.** This utility is not a credential guesser, crawler, exploit, or port scanner.
 
+## 📋 COPY & PASTE BUILD RECIPE // Ubuntu or Linux (Bash)
+
+**Recipe verified against VOIDLANTERN's documented Go flags and source.** It checks for Go 1.21+, runs local tests and vet, builds the executable, prompts you for **a website you own or have explicit authorization to assess**, and saves a dated JSON report. Paste the whole block into a **Bash terminal** from any directory. Network checks begin only after you enter a target.
+
+```bash
+# PHANTOM LABS // VOIDLANTERN complete build recipe
+set -e
+if ! command -v git >/dev/null 2>&1; then
+  echo "Install Git first (for Ubuntu: sudo apt update && sudo apt install git)"
+  exit 1
+fi
+if ! command -v go >/dev/null 2>&1; then
+  echo "Install Go 1.21+ from https://go.dev/dl/ and re-open your terminal."
+  exit 1
+fi
+
+# Use an existing clone, or download the repository without replacing it.
+if [ ! -d glitchbyte-phantom-labs/.git ]; then
+  git clone https://github.com/Hellfire13666/glitchbyte-phantom-labs.git
+fi
+cd glitchbyte-phantom-labs/tools/go/voidlantern-go
+
+echo "== Go version =="
+go version
+echo "== Offline tests =="
+go test ./...
+echo "== Static checks =="
+go vet ./...
+echo "== Build =="
+go build -o voidlantern .
+
+echo "Only enter a website you own or are authorized to assess."
+read -r -p "Authorized http(s) URL: " TARGET_URL
+if [ -z "$TARGET_URL" ]; then
+  echo "No URL supplied; compiled successfully without contacting a website."
+else
+  mkdir -p reports
+  REPORT="reports/voidlantern_$(date +%Y%m%d_%H%M%S).json"
+  ./voidlantern -url "$TARGET_URL" -timeout 12 -out "$REPORT"
+  echo "Report saved to: $PWD/$REPORT"
+  python3 -m json.tool "$REPORT"
+fi
+```
+
+**Prerequisites:** Git, Go **1.21 or newer**, and Python 3 only for pretty-printing JSON. The Go project itself has no third-party Go dependencies. On Ubuntu, install Git via `sudo apt install git` if it is missing; install a sufficiently recent Go distribution following your operating system's trusted instructions.
+
+**Important:** This paste-from-anywhere recipe assumes you don't already have a **different directory named `glitchbyte-phantom-labs`** in the current working directory. If you do, `cd` into your actual repo and use the manual steps below instead. It runs the released `main` branch, so this Phase 3 recipe will be visible there only after this PR is merged.
+
+### Copy & paste commands for an existing clone
+
+From the repository root, the shorter alternative is:
+
+```bash
+cd tools/go/voidlantern-go
+go test ./... && go vet ./... && go build -o voidlantern .
+./voidlantern -h
+```
+
+Then enter your own approved URL into the command documented in **Run it** below.
+
+### Troubleshoot
+
+| Problem | What to check |
+| --- | --- |
+| `go: command not found` | Install Go 1.21+; verify `go version` |
+| `git: command not found` | Install Git; verify `git --version` |
+| `cd: ... No such file or directory` | Check where you cloned the repo and run `pwd` |
+| `permission denied` | Run the freshly built `./voidlantern` from its directory; avoid `sudo` for the tool |
+| `timeout` or TLS error | Confirm internet access, target authorization, TLS setup, and `-timeout` (1–60 seconds) |
+| JSON report missing | Check `-out` path and permissions; the tool writes errors to stderr if unable to save |
+| Output needs inspection | `python3 -m json.tool path/to/your_report.json` |
+
 ## 🛠️ Install / Build / Test
 
 These commands are for Bash on Ubuntu/Linux; builds also support macOS and Windows with Go installed.
