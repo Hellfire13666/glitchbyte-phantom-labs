@@ -1,3 +1,7 @@
+<!-- GLITCHBYTE-UPLOAD-DOOR:START -->
+<div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF1493?style=flat-square&logo=github&logoColor=white"></a></div>
+<!-- GLITCHBYTE-UPLOAD-DOOR:END -->
+
 # 🕷️ PHANTOM TOOL VAULT // PHASE 02
 
 > **QUICK LAB DOORS:** [👻 Headquarters](../README.md) · [🌱 Cultivation Room](CULTIVATION_ROOM.md) · [⚡ RosieRiot Overdrive](https://github.com/Hellfire13666/rosieriot-overdrive-2026) · [🔐 Backup Vault](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases)  
