@@ -4,6 +4,53 @@
 
 ![Official RosieGlitchbyte Phantom Labs](../artwork/labface2.png)
 
+<!-- PHANTOM-DOOR-INDEX:START -->
+## 🚪 All tool doors: find any project in two clicks
+
+**23 independent tools**. Pick **Open source** for the real Python file or Go project, or **Setup guide** for exact Ubuntu commands, tests and output locations. GitHub shows code; it does not run programs in your browser.
+
+**For every new tool:** create its unique source and setup guide, add one row here, and run `python3 -m unittest discover -s tests -v`. The `test_tool_vault_doors.py` guard checks that every published top-level/nested Python entry point and Go module is indexed.
+
+### 🔎 Domain, network and public-intelligence doors
+
+| Tool | Purpose | GitHub door | Start here |
+| --- | --- | --- | --- |
+| SUBDOMINATRIX | Passive subdomain discovery | [Open source](../tools/subdominatrix.py) | [Setup guide](tool-showcases/SUBDOMINATRIX.md) |
+| Rosie Phantom Scan V2 | DNS, TLS and public-domain observations | [Open source](../tools/rosie_phantom_scan_v2.py) | [Setup guide](tool-showcases/ROSIE_PHANTOM_SCAN_V2.md) |
+| GlitchByte Domain Intel | Public domain research | [Open source](../tools/glitchbyte_domain_intel.py) | [Setup guide](tool-showcases/DOMAIN_INTEL.md) |
+| Domain Phantom | Domain investigation modes | [Open source](../tools/rosieglitchbyte_domain_phantom.py) | [Setup guide](tool-showcases/DOMAIN_PHANTOM.md) |
+| Neon Rose Phantom 3.0 | Multi-mode domain research | [Open source](../tools/rosieglitchbyte_neon_rose_phantom_3.py) | [Setup guide](tool-showcases/NEON_ROSE_PHANTOM_3.md) |
+| IP Specter | IP address classification | [Open source](../tools/rosieglitchbyte_ip_specter.py) | [Setup guide](tool-showcases/IP_SPECTER.md) |
+| IP Shadow Scraper | IP signals and local reports | [Open source](../tools/rosie_ip_shadow_scraper.py) | [Setup guide](tool-showcases/IP_SHADOW_SCRAPER.md) |
+| VOIDLANTERN (Go) | Authorized HTTP/TLS diagnostics | [Open project](../tools/go/voidlantern-go/) | [Setup guide](tool-showcases/VOIDLANTERN.md) |
+| Rosie Username Intel | Public username research links | [Open source](../tools/rosie_username_intel.py) | [Setup guide](tool-showcases/USERNAME_INTEL.md) |
+| Rose Crawler | Public-profile links and metadata | [Open source](../tools/rose_crawler.py) | [Setup guide](tool-showcases/ROSE_CRAWLER.md) |
+| X Intel Phantom | Official X API research | [Open source](../tools/glitchbyterosie_x_intel.py) | [Setup guide](tool-showcases/X_INTEL_PHANTOM.md) |
+| X Shadow Intel | Local X post analysis | [Open source](../tools/glitchbyterosie_x_no_api.py) | [Setup guide](tool-showcases/X_SHADOW_NO_API.md) |
+| HackGirl Intel | Offline CSV/JSON investigations | [Open source](../tools/rosieglitchbyte_hackgirl.py) | [Setup guide](tool-showcases/HACKGIRL_INTEL.md) |
+
+### 🧬 Local analysis and evidence doors
+
+| Tool | Purpose | GitHub door | Start here |
+| --- | --- | --- | --- |
+| SCREAMFRAME Pixel Autopsy | Screenshot metadata and visual matches | [Open source](../tools/screamframe-pixel-autopsy/screamframe_pixel_autopsy.py) | [Setup guide](tool-showcases/SCREAMFRAME.md) |
+| GHOSTMARK Integrity Atlas | Read-only file hashes and duplicates | [Open source](../tools/ghostmark_integrity_atlas.py) | [Setup guide](tool-showcases/GHOSTMARK.md) |
+| Log Constellation | Offline local log analysis | [Open source](../tools/glitchbyte_log_constellation.py) | [Setup guide](tool-showcases/LOG_CONSTELLATION.md) |
+| Rosie Signal Garden | Offline notes and source fingerprints | [Open source](../tools/rosie_signal_garden.py) | [Setup guide](tool-showcases/SIGNAL_GARDEN.md) |
+
+### 💗 Creative code and puzzle doors
+
+| Tool | Purpose | GitHub door | Start here |
+| --- | --- | --- | --- |
+| HEXWAKE Palette Foundry | Offline Glitch HEX palettes | [Open source](../tools/hexwake_palette_foundry.py) | [Setup guide](tool-showcases/HEXWAKE.md) |
+| PHANTOM CIPHERBOX | Reversible codebreaking puzzles | [Open source](../tools/phantom_cipherbox.py) | [Setup guide](tool-showcases/PHANTOM_CIPHERBOX.md) |
+| Catch Me in the Chaos | Three-lock terminal puzzle | [Open source](../tools/rosie_catch_me_chaos.py) | [Setup guide](tool-showcases/CATCH_ME_IN_THE_CHAOS.md) |
+| Dark Desire | Encoded love message script | [Open source](../tools/rosie_dark_desire.py) | [Setup guide](tool-showcases/DARK_DESIRE.md) |
+| Ghost in My Heart | Interactive romance game | [Open source](../tools/rosie_ghost_heart.py) | [Setup guide](tool-showcases/GHOST_IN_MY_HEART.md) |
+| Find Me If You Love Me | Three-clue romantic puzzle | [Open source](../tools/rosie_hide_seek.py) | [Setup guide](tool-showcases/FIND_ME_IF_YOU_LOVE_ME.md) |
+
+<!-- PHANTOM-DOOR-INDEX:END -->
+
 > **Vault inventory:** 16 preserved original Python scripts, six additional standalone Python tools (HEXWAKE, PHANTOM CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK, SUBDOMINATRIX and SCREAMFRAME), and the preserved VOIDLANTERN Go project. New tools merge only after their review PRs; linked sources are present on this branch.
 
 [🧪 Phase 20 documentation audit and verification guide](RECIPE_AUDIT.md). The automated test checks all 17 source-linked showcases, recipe coverage, and local Markdown links on PRs after the audit merges.
