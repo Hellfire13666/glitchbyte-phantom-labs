@@ -10,7 +10,7 @@ Collects metadata for your **own local image files** without sending their pixel
 
 The original dark-and-lime HTML identity uses midnight charcoal, radioactive lime, signal orange, restrained terminal typography and visual thumbnail cards. No external stylesheet, tracking pixel, remote font, or hosted javascript.
 
-## Copy, paste and run on Ubuntu/Linux
+## 📋 COPY & PASTE BUILD RECIPE // UBUNTU/LINUX
 
 This builds an independent folder, never resets or merges an existing project. `apt`, `git clone`, and `pip install` are the only setup steps requiring network access.
 
@@ -52,5 +52,13 @@ find "$HOME/PhantomLabsBuilds/screamframe-pixel-studio/screamframe-reports" -max
 Tested locally with Python 3 and Pillow 12.3.0: 8 dedicated unit tests passed, compilation succeeded, and the synthetic demo produced 4 inspected images / 1 identical set / 2 visual pairs / 1 format mismatch / 0 skips. GitHub Actions / Ubuntu CI, external screenshot quality, and long-running scans have not been separately certified by those local tests.
 
 **Boundaries:** no networking, no OCR, no file modification or deletion, no proof of forgery, limited metadata extraction. EXIF fields are untrusted. Scan avoids symlinks, limits size and pixel count, caps total files, and skips its report folder. Reports still contain filenames, hashes, timestamps and optionally thumbnails, so keep them private.
+
+## Troubleshoot
+
+- **Pillow missing:** Activate the project venv and install `requirements.txt`.
+- **Folder not found:** Replace the screenshot path with a real folder that your user can read.
+- **Firefox did not open:** Open the `[REPORT]` path shown in the terminal manually.
+- **No near matches:** dHash is an approximate visual signal; increase `--distance` cautiously, knowing false positives can rise.
+- **Reports contain private filenames or previews:** Keep reports local, and omit `--previews` to avoid embedding pixels.
 
 [License notice](../../LICENSE-NOTICE.md) · [Security guide](../../SECURITY.md)
