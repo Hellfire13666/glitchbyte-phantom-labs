@@ -16,6 +16,8 @@
 
 [🛡️ Phase 24 security and release-readiness review](RELEASE_READINESS_REVIEW.md). Corrected an obsolete TLS warning while keeping live security checks and report/artwork issues open.
 
+[🌹 Phase 25 artwork and filename reliability fixes](PHASE25_RELIABILITY.md). Targeted source adjustments and offline regression tests preserve the original artwork and report contents.
+
 ## 📋 The Phantom Build Recipe standard
 
 **Every tool gets copy-and-paste terminal instructions right on its own page.** Each recipe covers **Install → Build → Test → Run → Find Results → Troubleshoot**. The steps must match that tool's real flags, requirements and report formats, with honest test status and permission checks for network research.
