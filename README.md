@@ -134,6 +134,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 [Read the security findings, corrected TLS verification policy, and remaining release gates](docs/RELEASE_READINESS_REVIEW.md). Offline validation is verified; authorized live integration and a full security review remain outstanding.
 
+## 🌹 Phase 25: Artwork and report reliability
+
+[Read the Phase 25 fixes and regression-test details](docs/PHASE25_RELIABILITY.md). Rosie IP Shadow Scraper now locates approved art; it and Rose Crawler avoid overwriting rapid reports and preserve dotted handles.
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:

@@ -42,9 +42,9 @@ No source changes to the Python tools or Go module are included in this audit ph
 
 1. **Manual terminal verification still needed.** Run each full one-block recipe on a clean Ubuntu environment, verify the actual output, and record results before labeling all projects release-tested.
 2. **IP Shadow Scraper TLS security-policy discrepancy resolved in Phase 24.** The preserved source uses a verifying context and checks the target IP hostname; the stale warning was corrected and mocked regression tests were added. Live certificate integration remains open.
-3. **IP Shadow Scraper artwork placement.** The source expects `rosie_ip_shadow_art.png` alongside its script, while repository artwork is kept in `artwork/`. The optional art viewer may not find it. Any source fix should be a separate reviewed change.
-4. **Rose Crawler output filename behavior.** The source uses `Path.with_suffix()` on a username-based stem; handles with periods may result in unexpected file names. See the dedicated tool page. Fix source separately if approved.
-5. **Report overwrites and privacy.** Multiple tools use fixed report filenames or second-resolution timestamps. Preserve older reports in unique directories and never commit unreviewed research output.
+3. **IP Shadow Scraper artwork placement (Phase 25 fixed).** The optional art viewer now locates the original file in the repository's `artwork/` folder without modifying the image.
+4. **Rose Crawler dotted-handle filename behavior (Phase 25 fixed).** The reporter now preserves the username in all three output extensions; dedicated offline regression tests cover this.
+5. **Report overwrites and privacy.** Phase 25 adds unique filenames to Rose Crawler and IP Shadow Scraper. Other tools may still use fixed names or second-resolution timestamps; preserve important reports and never commit unreviewed research output.
 
 ## Future-tool rule
 
