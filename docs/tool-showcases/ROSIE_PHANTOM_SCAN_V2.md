@@ -1,5 +1,8 @@
 # 🌹👻 ROSIE PHANTOM SCAN V2 | PUBLIC DOMAIN INTEL STUDIO
 
+**⚡ NO-DOWNLOAD-ATTACHMENT QUICK START:** [Copy one terminal command, generate HTML and open Firefox](../COPY_PASTE_OPEN.md). No Git pull, merge or rebase. The command is hosted in our GitHub lab and uses its own safe home folder.
+
+
 **Independent Python 3 tool · Responsive Rosie-branded HTML dashboard · JSON evidence · 11 report panels · Optional Findomain + WHOIS**
 
 [🐍 Source](../../tools/rosie_phantom_scan_v2.py) · [🧪 Automated tests](../../tests/test_rosie_phantom_scan_v2.py) · [🕷️ Tool Vault](../TOOL_VAULT.md)
