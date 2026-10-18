@@ -94,6 +94,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 **Ghost In My Heart:** [Copy-and-paste installation, automated game smoke test, saved transcript and troubleshooting](docs/tool-showcases/GHOST_IN_MY_HEART.md).
 
+## 🖤 Dark Desire build recipe
+
+**RosieGlitchByte Dark Desire:** [Copy-and-paste Python setup, decoded love letter, animated run and troubleshooting](docs/tool-showcases/DARK_DESIRE.md).
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
