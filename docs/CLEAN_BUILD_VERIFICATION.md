@@ -1,3 +1,9 @@
+<!-- GLITCHBYTE-UPLOAD-DOOR:START -->
+<div align="right">
+  <a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main" title="UPLOAD FILES to glitchbyte-phantom-labs"><img alt="📤 UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF1493?style=flat-square&logo=github&logoColor=white"></a>
+</div>
+<!-- GLITCHBYTE-UPLOAD-DOOR:END -->
+
 # 🌹 PHASE 22 // CLEAN UBUNTU COPY-AND-PASTE RECIPE VERIFICATION
 
 **Result: PASS, all 17 documented first-run Bash recipes.**
