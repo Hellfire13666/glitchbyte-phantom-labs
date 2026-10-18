@@ -1,0 +1,6 @@
+{
+  "sites": [
+    {"name": "Example public creative profile", "category": "creative", "url": "https://example.com/people/{username}"},
+    {"name": "Example public community profile", "category": "community", "url": "https://example.org/@{username}"}
+  ]
+}
