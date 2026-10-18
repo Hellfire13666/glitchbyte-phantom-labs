@@ -1,0 +1,19 @@
+{
+  "type": "SCREAMFRAME SYNTHETIC DEMO EXPECTATIONS - NOT LIVE CASE DATA",
+  "name": "SCREAMFRAME Pixel Autopsy",
+  "source": "synthetic generated images",
+  "sample_files": [
+    "pretend_jpeg.jpg",
+    "screen_exact_copy.png",
+    "screen_original.png",
+    "screen_small_edit.png"
+  ],
+  "sample_counts_at_default_settings": {
+    "inspected": 4,
+    "exact_groups": 1,
+    "visual_pairs": 2,
+    "format_mismatches": 1,
+    "skipped": 0
+  },
+  "notice": "Preview-only reference; the CLI creates independent timestamped JSON and HTML reports when run."
+}
