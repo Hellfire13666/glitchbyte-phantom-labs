@@ -116,3 +116,12 @@ The repository's [license notice](../LICENSE-NOTICE.md), [security policy](../SE
 > 🌹 One tool. One identity. Infinite creative directions.
 
 [← Back to the homepage](../README.md)
+
+
+## ✦ Newly built offline screenshot workshop: SCREAMFRAME
+
+| New project | Source, recipe and tests |
+|---|---|
+| SCREAMFRAME Pixel Autopsy Studio | [Python tool](../tools/screamframe-pixel-autopsy/screamframe_pixel_autopsy.py) · [Ubuntu offline recipe](tool-showcases/SCREAMFRAME.md) · [8 offline tests](../tools/screamframe-pixel-autopsy/tests/test_screamframe_pixel_autopsy.py) |
+
+This independent tool does not alter any previous Python or Go project. Local screenshot analysis is read-only; report filenames, digests and previews may be private.
