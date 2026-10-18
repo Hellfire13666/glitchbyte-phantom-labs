@@ -33,7 +33,7 @@ class ToolRecipeAudit(unittest.TestCase):
         vault = VAULT.read_text(encoding="utf-8")
         mapping = TABLE_MAPPING.findall(vault)
         mapped = [name for name, _ in mapping]
-        self.assertGreaterEqual(len(source_files), 19, "Missing original collection or newer tools")
+        self.assertGreaterEqual(len(source_files), 20, "Missing original collection or newer tools")
         self.assertEqual(len(mapped), len(set(mapped)), "A Python script is listed twice")
         self.assertEqual(set(mapped), source_files, "Vault lacks a one-to-one recipe for each tool")
         for name, page in mapping:
