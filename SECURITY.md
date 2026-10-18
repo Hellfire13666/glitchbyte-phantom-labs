@@ -10,7 +10,7 @@ This is a collection of educational, public-information and local research tools
 
 **Verification scope:** the Phase 24 offline regression test uses mocked TLS connections to confirm these settings and the certificate-failure behavior. It does **not** test a live HTTPS server, guarantee system trust-store configuration, or establish that all networking paths are secure. Authorized live integration review is still required before claiming security-sensitive production readiness.
 
-**Known release limitations:** The optional artwork action expects `rosie_ip_shadow_art.png` beside the Python script, while the current preserved file lives in `artwork/`. Report names can collide on repeated same-second runs. These are tracked for separate, reviewed fixes; neither issue implies a certificate-verification bypass.
+**Known release limitations:** Phase 25 corrected the IP Shadow Scraper's optional artwork lookup to point to the existing repository `artwork/rosie_ip_shadow_art.png`. It also added collision-resistant microsecond/UUID report filenames to IP Shadow Scraper and Rose Crawler. These changes have offline regression coverage; other tools may still have fixed report filenames or timestamp collisions. Neither the artwork fix nor report naming establishes live-network security.
 
 Other tools may require further testing of networking behavior, rate limits, terms-of-service compliance and error handling. No external penetration testing or live integration testing has been performed as part of this release candidate.
 
