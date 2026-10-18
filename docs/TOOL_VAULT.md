@@ -4,7 +4,7 @@
 
 ![Official RosieGlitchbyte Phantom Labs](../artwork/labface2.png)
 
-> **Vault inventory:** 16 preserved original Python scripts, five additional standalone Python tools (HEXWAKE, PHANTOM CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK and SUBDOMINATRIX), and the preserved VOIDLANTERN Go project. New tools merge only after their review PRs; linked sources are present on this branch.
+> **Vault inventory:** 16 preserved original Python scripts, six additional standalone Python tools (HEXWAKE, PHANTOM CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK, SUBDOMINATRIX and SCREAMFRAME), and the preserved VOIDLANTERN Go project. New tools merge only after their review PRs; linked sources are present on this branch.
 
 [🧪 Phase 20 documentation audit and verification guide](RECIPE_AUDIT.md). The automated test checks all 17 source-linked showcases, recipe coverage, and local Markdown links on PRs after the audit merges.
 
@@ -222,3 +222,8 @@ A **source link is not a passing integration test**. Historic tools may need rev
 **Source-available, not unrestricted open source:** consult [LICENSE-NOTICE.md](../LICENSE-NOTICE.md) before modification or redistribution.
 
 [← Official homepage](../README.md) · [Full ecosystem](ECOSYSTEM.md) · [Official Rosie identity](ROSIE_VISUAL_STANDARD.md)
+
+
+## ✦ SCREAMFRAME Pixel Autopsy (offline screenshots)
+
+**Image metadata · SHA-256 exact duplicates · 64-bit difference-hash visual echoes · local HTML/JSON.** [Ubuntu setup and tests](tool-showcases/SCREAMFRAME.md) · [Standalone Python project](../tools/screamframe-pixel-autopsy/). Screenshots stay local. Matching imagery, edited EXIF and filename mismatches are clues only, never proof of identity or tampering.
