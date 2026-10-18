@@ -1,3 +1,9 @@
+<!-- QUICK-UPLOAD-DOOR:START -->
+<div align="right">
+<a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main" title="Open GitHub Upload Files door"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/📤_UPLOAD-FILES-75cc00?style=flat-square&logo=github&logoColor=white" /></a>
+</div>
+<!-- QUICK-UPLOAD-DOOR:END -->
+
 # 🌱 Cultivation Room | Foundation & Building Lab
 
 **GlitchByte Phantom Labs** · Tool blueprints · Python 3 / Go · Ubuntu/Linux · Testing · Patches
