@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """ROSE CRAWLER | Public social-profile discovery and respectful metadata collection."""
-import argparse, csv, datetime as dt, html, json, re, sys, time
+import argparse
+import uuid, csv, datetime as dt, html, json, re, sys, time
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse, quote
@@ -86,15 +87,15 @@ def inspect(name,url,fetch,delay):
 
 def write_report(records,output,username):
     output.mkdir(parents=True,exist_ok=True)
-    stamp=dt.datetime.now().strftime('%Y%m%d_%H%M%S')
-    base=output/f'rose_{username}_{stamp}'
-    (base.with_suffix('.json')).write_text(json.dumps(records,indent=2,ensure_ascii=False),encoding='utf-8')
-    with base.with_suffix('.csv').open('w',newline='',encoding='utf-8') as f:
+    stamp=dt.datetime.now().strftime('%Y%m%d_%H%M%S_%f')
+    base=output/f'rose_{username}_{stamp}_{uuid.uuid4().hex[:12]}'
+    (Path(str(base)+'.json')).write_text(json.dumps(records,indent=2,ensure_ascii=False),encoding='utf-8')
+    with Path(str(base)+'.csv').open('w',newline='',encoding='utf-8') as f:
         cols=['platform','url','status','http_status','title','description','note','checked_at']
         w=csv.DictWriter(f,fieldnames=cols); w.writeheader(); w.writerows({k:r.get(k,'') for k in cols} for r in records)
     rows=''.join('<tr>'+''.join(f'<td>{html.escape(str(r.get(k,"")))}</td>' for k in ('platform','url','status','title','description','note'))+'</tr>' for r in records)
     page='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rose Crawler</title><style>body{background:#100c1b;color:#f5eaff;font:16px system-ui;margin:0;padding:30px}h1{color:#ff58af}p{color:#75e9ee}input{padding:12px;width:95%;background:#20172c;color:white;border:1px solid #ff58af;border-radius:8px}table{width:100%;border-collapse:collapse;margin-top:18px}td,th{border-bottom:1px solid #41324d;padding:12px;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{color:#75e9ee}tr:hover{background:#251a35}</style><h1>🌹 ROSE CRAWLER // PHANTOM LABS</h1><p>Public-profile research. Reachable does not mean confirmed.</p><input id="q" placeholder="Filter platforms, titles, statuses..." oninput="document.querySelectorAll('tbody tr').forEach(r=>r.hidden=!r.innerText.toLowerCase().includes(this.value.toLowerCase()))"><table><thead><tr><th>Platform</th><th>URL</th><th>Status</th><th>Title</th><th>Description</th><th>Notes</th></tr></thead><tbody>'''+rows+'</tbody></table></html>'
-    base.with_suffix('.html').write_text(page,encoding='utf-8')
+    Path(str(base)+'.html').write_text(page,encoding='utf-8')
     return base
 
 def main():
