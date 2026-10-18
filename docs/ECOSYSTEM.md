@@ -29,6 +29,7 @@ This document is the live navigation hub for the repository. All linked tools be
 | Tool | Source |
 |---|---|
 | GlitchByte Domain Intel | [glitchbyte_domain_intel.py](../tools/glitchbyte_domain_intel.py) |
+| VELVETECHO Persona Observatory | [Python source](../tools/velvetecho-persona-observatory/velvetecho_persona_observatory.py) · [Full setup and colorful outcome guide](tool-showcases/VELVETECHO.md) |
 | ROSIE PHANTOM SCAN V2 | [Python source](../tools/rosie_phantom_scan_v2.py) · [Ubuntu showcase + WHOIS/Findomain](tool-showcases/ROSIE_PHANTOM_SCAN_V2.md) |
 | GlitchByte Log Constellation | [glitchbyte_log_constellation.py](../tools/glitchbyte_log_constellation.py) |
 | GHOSTMARK Integrity Atlas (offline local files) | [Python 3 source](../tools/ghostmark_integrity_atlas.py) · [Firefox dashboard + Ubuntu recipe](tool-showcases/GHOSTMARK.md) |
