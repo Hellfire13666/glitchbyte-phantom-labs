@@ -22,7 +22,7 @@
 
 ## 🌹⚡ ONE-PASTE OPEN COMMANDS // NO ATTACHMENTS
 
-[**Copy, Paste & Open: HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2 and GHOSTMARK**](COPY_PASTE_OPEN.md) · [Launcher source](../scripts/phantom_quickopen.py). One command per tool downloads the official launcher, caches the published script in a separate home folder, generates HTML, and opens Firefox when available. The default network-capable scanner preview performs no live lookups. Original tools' own recipe pages remain available below.
+[**Copy, Paste & Open: HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK and SUBDOMINATRIX**](COPY_PASTE_OPEN.md) · [Launcher source](../scripts/phantom_quickopen.py). One command per tool downloads the official launcher, caches the published script in a separate home folder, generates HTML, and opens Firefox when available. The default network-capable scanner preview performs no live lookups. Original tools' own recipe pages remain available below.
 
 ## 📋 The Phantom Build Recipe standard
 
