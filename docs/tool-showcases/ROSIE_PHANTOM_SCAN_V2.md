@@ -1,3 +1,7 @@
+<!-- GLITCHBYTE-UPLOAD-DOOR:START -->
+<div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF8B1F?style=flat-square&logo=github&logoColor=white"></a></div>
+<!-- GLITCHBYTE-UPLOAD-DOOR:END -->
+
 # 🌹👻 ROSIE PHANTOM SCAN V2 | PUBLIC DOMAIN INTEL STUDIO
 
 **⚡ NO-DOWNLOAD-ATTACHMENT QUICK START:** [Copy one terminal command, generate HTML and open Firefox](../COPY_PASTE_OPEN.md). No Git pull, merge or rebase. The command is hosted in our GitHub lab and uses its own safe home folder.
