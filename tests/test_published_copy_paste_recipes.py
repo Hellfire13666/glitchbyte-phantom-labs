@@ -21,13 +21,14 @@ PAGES = (
     "X_SHADOW_NO_API", "GHOST_IN_MY_HEART", "DARK_DESIRE",
     "FIND_ME_IF_YOU_LOVE_ME", "CATCH_ME_IN_THE_CHAOS",
     "HACKGIRL_INTEL", "NEON_ROSE_PHANTOM_3", "VOIDLANTERN",
+    "HEXWAKE",
 )
 FIRST_BASH = re.compile(r"(?m)^\x60{3}bash[ \t]*\n(.*?)^\x60{3}[ \t]*$", re.S | re.M)
 
 
 class PublishedRecipeExecution(unittest.TestCase):
-    def test_all_17_published_first_blocks(self):
-        self.assertEqual(len(PAGES), 17)
+    def test_all_published_first_blocks(self):
+        self.assertEqual(len(PAGES), len(list((ROOT / "tools").glob("*.py"))) + 1)
         for page in PAGES:
             with self.subTest(page=page):
                 path = DOCS / (page + ".md")

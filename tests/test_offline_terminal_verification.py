@@ -33,9 +33,9 @@ class OfflineTerminalVerification(unittest.TestCase):
         self.addCleanup(self.tmp.cleanup)
         self.home = Path(self.tmp.name)
 
-    def test_all_16_python_scripts_parse(self):
+    def test_all_python_scripts_parse(self):
         scripts = sorted(TOOLS.glob("*.py"))
-        self.assertEqual(16, len(scripts))
+        self.assertGreaterEqual(len(scripts), 17)
         for script in scripts:
             with self.subTest(script=script.name):
                 compile(script.read_bytes(), str(script), "exec")
@@ -43,6 +43,7 @@ class OfflineTerminalVerification(unittest.TestCase):
     def test_cli_help_for_argparse_tools(self):
         scripts = (
             "glitchbyte_domain_intel.py", "glitchbyte_log_constellation.py",
+            "hexwake_palette_foundry.py",
             "glitchbyterosie_x_intel.py", "glitchbyterosie_x_no_api.py",
             "rose_crawler.py", "rosie_ip_shadow_scraper.py",
             "rosie_signal_garden.py", "rosie_username_intel.py",
