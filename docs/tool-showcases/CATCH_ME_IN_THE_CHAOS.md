@@ -55,6 +55,7 @@ import builtins
 import contextlib
 import importlib.util
 import pathlib
+import re
 import sys
 
 source = pathlib.Path(sys.argv[1])
@@ -79,9 +80,10 @@ finally:
     builtins.input = original_input
 
 result = destination.read_text(encoding="utf-8")
-assert result.count("[ACCESS GRANTED]") == 3, "A lock was not completed."
-assert "GAME COMPLETE" in result, "Final chapter not reached."
-assert "RosieGlitchbyte <3" in result, "Hex-decoded letter missing."
+plain = re.sub(r"\x1b\[[0-9;]*m", "", result)
+assert plain.count("[ACCESS GRANTED]") == 3, "A lock was not completed."
+assert "GAME COMPLETE" in plain, "Final chapter not reached."
+assert "RosieGlitchbyte <3" in plain, "Hex-decoded letter missing."
 print("PASS: three locks, full ending and decoded letter")
 print("Transcript:", destination)
 PY
