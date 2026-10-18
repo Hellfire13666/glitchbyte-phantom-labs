@@ -5,21 +5,19 @@
 # 🌹👻 ROSIE PHANTOM SCAN V2 | PUBLIC DOMAIN INTEL STUDIO
 
 <!-- PHANTOM-SCAN-V2-ART:START -->
-## 🌹 Official Rosie Phantom Scan V2 artwork
+## 🌹 Rosie Phantom Scan V2 artwork
 
 *Read the signals. Respect the boundary.*
 
-Two approved RosieGlitchbyte visual concepts for this public-domain intelligence dashboard. These are **illustrative artwork**, not live scan results; the statistics and screens depicted are fictional examples.
+**Uploaded artwork**
 
-**Repository banner (final visual)**
+![Uploaded artwork for the Phantom Scan gallery](../../artwork/labs4.png)
 
-![Rosie Phantom Scan V2 official repository banner](../../artwork/rosie_phantom_scan_v2_banner.png)
+The uploaded file is named `labs4.png`. This image is a design illustration, not a live scanner screenshot or validated scan result.
 
-**Original design concept**
+The second concept file has not yet been uploaded under its expected name.
 
-![Rosie Phantom Scan V2 concept artwork](../../artwork/rosie_phantom_scan_v2_concept.png)
-
-[📤 Upload artwork through the pink Phantom Labs file door](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) · [🔐 Open Phantom Vault](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases)
+[📤 Upload more artwork](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main/artwork) · [🔐 Phantom Vault](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases)
 
 <!-- PHANTOM-SCAN-V2-ART:END -->
 
