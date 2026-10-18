@@ -21,6 +21,7 @@ This document is the live navigation hub for the repository. All linked tools be
 | Tool | Source |
 |---|---|
 | GlitchByte Domain Intel | [glitchbyte_domain_intel.py](../tools/glitchbyte_domain_intel.py) |
+| ROSIE PHANTOM SCAN V2 | [Python source](../tools/rosie_phantom_scan_v2.py) · [Ubuntu showcase + WHOIS/Findomain](tool-showcases/ROSIE_PHANTOM_SCAN_V2.md) |
 | GlitchByte Log Constellation | [glitchbyte_log_constellation.py](../tools/glitchbyte_log_constellation.py) |
 | GlitchByteRosie X Intel | [glitchbyterosie_x_intel.py](../tools/glitchbyterosie_x_intel.py) |
 | GlitchByteRosie X No API | [glitchbyterosie_x_no_api.py](../tools/glitchbyterosie_x_no_api.py) |
