@@ -56,9 +56,9 @@ Our creation standard: **each new project is original and independent**. We only
 | 👻 **VOIDLANTERN** | Go | Authorized HTTP, TLS and security-header diagnostics | [Tool spotlight](docs/tool-showcases/VOIDLANTERN.md) |
 | ✨ **Log Constellation** | Python | Analyze local log events and reports | [Build recipe](docs/tool-showcases/LOG_CONSTELLATION.md) |
 | 🌐 **GlitchByte Domain Intel** | Python | Research public domain information | [Build recipe](docs/tool-showcases/DOMAIN_INTEL.md) |
-| 🕷️ **Rose Crawler** | Python | Public website crawling experiment | [Build recipe](docs/tool-showcases/ROSE_CRAWLER.md) |
-| 💗 **Rosie Username Intel** | Python | Public username research | [View source](tools/rosie_username_intel.py) |
-| 🎮 **Rosie Catch Me Chaos** | Python | Creative coding and games | [View source](tools/rosie_catch_me_chaos.py) |
+| 🕷️ **Rose Crawler** | Python | Public profile links and optional robots-aware metadata checks | [Build recipe](docs/tool-showcases/ROSE_CRAWLER.md) |
+| 💗 **Rosie Username Intel** | Python | Public username research | [Build recipe](docs/tool-showcases/USERNAME_INTEL.md) |
+| 🎮 **Rosie Catch Me Chaos** | Python | Creative coding and games | [Build recipe](docs/tool-showcases/CATCH_ME_IN_THE_CHAOS.md) |
 
 These links point to **files present in this repository**, not merely concepts or local ZIP archives. Project maturity varies. View the [complete tool ecosystem](docs/ECOSYSTEM.md) for the rest.
 
@@ -113,6 +113,10 @@ These links point to **files present in this repository**, not merely concepts o
 ## 🌺 Neon Rose Phantom 3.0 build recipe
 
 **RosieGlitchByte Neon Rose Phantom 3.0:** [Copy-and-paste Python setup, eight real modes, safe offline sample, JSON report validation and troubleshooting](docs/tool-showcases/NEON_ROSE_PHANTOM_3.md).
+
+## 🧪 Phase 20: Automatic tool-recipe audit
+
+[Read the Tool Recipe Audit](docs/RECIPE_AUDIT.md). Our Python CI now checks that every existing tool has its own recipe page and that local Markdown links resolve. Documentation coverage is **not** the same as a completed Ubuntu end-to-end test.
 
 ## 🚀 Quick-start terminal
 
