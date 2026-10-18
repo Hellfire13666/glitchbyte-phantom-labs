@@ -22,7 +22,7 @@
 
 **Not in this release:** global asset geolocation, screenshots, automatic technology fingerprints beyond selected headers, vulnerability scoring, login automation, unlimited crawling, brute-force enumeration, or automatic ownership attribution. These appear only as design directions in the concept picture, not as implemented features.
 
-## 🧪 Ubuntu/Linux full first-run recipe
+## 🧪 COPY & PASTE BUILD RECIPE // Ubuntu/Linux first run
 
 **Install → Build → Test → Run → Find results → Troubleshoot.** The first Bash block is independently exercised in Linux CI under a disposable home folder. It generates an **offline synthetic preview**, not a live scan. It uses a dedicated checkout and does not alter a user's original Git clone.
 
