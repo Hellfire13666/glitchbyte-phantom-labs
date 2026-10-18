@@ -98,6 +98,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 **RosieGlitchByte Dark Desire:** [Copy-and-paste Python setup, decoded love letter, animated run and troubleshooting](docs/tool-showcases/DARK_DESIRE.md).
 
+## 💗 Find Me If You Love Me build recipe
+
+**Rosie Hide Seek:** [Complete Python setup, actual three-gate game test, saved text transcript and troubleshooting](docs/tool-showcases/FIND_ME_IF_YOU_LOVE_ME.md).
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
