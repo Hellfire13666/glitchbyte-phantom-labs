@@ -92,6 +92,14 @@ Start with mode 1, which classifies a reserved documentation address without con
 
 Start with offline syntax/help checks. Live API operations require your own permitted developer bearer token and endpoint access, with private input instructions on the showcase page.
 
+## 🪞 Python Spotlight: X Shadow Intel (No API)
+
+**Offline post analysis · Public research links · JSON and CSV · No API token**
+
+[🪞 X Shadow No-API showcase and complete Bash recipe](tool-showcases/X_SHADOW_NO_API.md) · [🐍 Original Python source](../tools/glitchbyterosie_x_no_api.py)
+
+The first run analyzes fictional sample CSV posts entirely offline; keyword-only research URLs do not contact X. Profile metadata checks are optional and distinct from the official X API tool.
+
 ## 🔎 Research and analysis
 
 | Tool | Language | Source |
@@ -99,7 +107,7 @@ Start with offline syntax/help checks. Live API operations require your own perm
 | GlitchByte Domain Intel | Python | [Source](../tools/glitchbyte_domain_intel.py) · [Build recipe](tool-showcases/DOMAIN_INTEL.md) |
 | GlitchByte Log Constellation | Python | [Source](../tools/glitchbyte_log_constellation.py) · [Build recipe](tool-showcases/LOG_CONSTELLATION.md) |
 | GlitchByteRosie X Intel | Python | [Source](../tools/glitchbyterosie_x_intel.py) · [Build recipe](tool-showcases/X_INTEL_PHANTOM.md) |
-| GlitchByteRosie X No API | Python | [glitchbyterosie_x_no_api.py](../tools/glitchbyterosie_x_no_api.py) |
+| GlitchByteRosie X No API | Python | [Source](../tools/glitchbyterosie_x_no_api.py) · [Build recipe](tool-showcases/X_SHADOW_NO_API.md) |
 | Rose Crawler | Python | [Source](../tools/rose_crawler.py) · [Build recipe](tool-showcases/ROSE_CRAWLER.md) |
 | Rosie IP Shadow Scraper | Python | [Source](../tools/rosie_ip_shadow_scraper.py) · [Build recipe](tool-showcases/IP_SHADOW_SCRAPER.md) |
 | Rosie Signal Garden | Python | [Source](../tools/rosie_signal_garden.py) · [Build recipe](tool-showcases/SIGNAL_GARDEN.md) |
