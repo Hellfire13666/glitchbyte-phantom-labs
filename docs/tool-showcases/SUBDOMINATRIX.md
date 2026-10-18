@@ -6,7 +6,7 @@
 
 ![SUBDOMINATRIX Second Artwork](../../artwork/Screenshot_2026-10-17_23-22-21.png)
 
-**Note on promotional artwork:** The neon SUBDOMINATRIX poster is a visual concept, not a screenshot of collected intelligence, a working website, or validated installation instructions. Any numbers, sample hostnames, screenshot thumbnails, world maps and claims shown there are illustrative. The actual report contains only observed records or conspicuously labeled synthetic demo content. Rosie is the official mascot. The chosen promotional image can be added to this page after its actual binary artwork is uploaded to GitHub.
+**Official SUBDOMINATRIX artwork:** Both Rosie-themed pictures above are stored in this repository and displayed on this tool page. They are promotional illustrations, not live scanner screenshots. The statistics, maps, sample hostnames and command-like text depicted in the artwork are illustrative; use the verified commands below to run the actual tool. Real reports contain observed records or clearly labeled synthetic demo data.
 
 [Python 3 source](../../tools/subdominatrix.py) · [Offline tests](../../tests/test_subdominatrix.py) · [One-paste launcher page](../COPY_PASTE_OPEN.md) · [Full Tool Vault](../TOOL_VAULT.md)
 
