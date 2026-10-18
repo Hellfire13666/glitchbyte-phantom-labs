@@ -123,31 +123,37 @@ def make_html(manifest, art=None):
     icon = "<div class='fallback'>🌹</div>"
     if art:
         picture = Path(art).expanduser()
-        if picture.is_file() and picture.suffix.lower() in (".png", ".jpg", ".jpeg") and picture.stat().st_size <= 2500000:
+        if (picture.is_file() and picture.suffix.lower() in (".png", ".jpg", ".jpeg")
+                and picture.stat().st_size <= 2500000):
             import base64
             mime = "image/png" if picture.suffix.lower() == ".png" else "image/jpeg"
-            icon = "<img class='hero' alt='GlitchByte Phantom Labs Rosie artwork' src='data:" + mime + ";base64," + base64.b64encode(picture.read_bytes()).decode("ascii") + "'>"
+            payload = base64.b64encode(picture.read_bytes()).decode("ascii")
+            icon = "<img class='hero' alt='Rosie Phantom Labs artwork' src='data:" + mime + ";base64," + payload + "'>"
     files = manifest["files"]
     doubles = manifest["duplicates"]
     comparison = manifest.get("comparison")
-    rows = "".join("<tr><td>" + esc(f["path"]) + "</td><td>" +
-                   esc(f["size"]) + "</td><td><code>" + esc(f["sha256"]) +
-                   "</code></td></tr>" for f in files)
-    duphtml = "".join("<li><code>" + esc(group["sha256"][:16]) +
-                      "…</code><ul>" + "".join("<li>" + esc(path) + "</li>"
-                      for path in group["paths"]) + "</ul></li>" for group in doubles)
-    comparehtml = "<p>No baseline selected. Run again with --baseline path/to/previous.json.</p>"
+    rows = "".join(
+        "<tr><td>" + esc(f["path"]) + "</td><td>" + esc(f["size"]) +
+        "</td><td><code>" + esc(f["sha256"]) + "</code></td></tr>"
+        for f in files
+    )
+    duphtml = "".join(
+        "<li><code>" + esc(group["sha256"][:16]) + "…</code><ul>" +
+        "".join("<li>" + esc(path) + "</li>" for path in group["paths"]) +
+        "</ul></li>" for group in doubles
+    )
+    comparehtml = "<p>No baseline selected. Use --baseline with a prior JSON report.</p>"
     if comparison is not None:
         comparehtml = "".join(
             "<h3>" + esc(label.capitalize()) + " (" + str(len(comparison[label])) +
             ")</h3><ul>" + ("".join("<li>" + esc(v) + "</li>"
                             for v in comparison[label]) or "<li>None</li>") + "</ul>"
-            for label in ("added", "changed", "removed"))
-        comparehtml += "<p>" + esc(comparison["warning"]) + "</p>"
+            for label in ("added", "changed", "removed")
+        ) + "<p>" + esc(comparison["warning"]) + "</p>"
     notes = "".join("<li>" + esc(v) + "</li>" for v in manifest["notes"])
     skipped = "".join("<tr><td>" + esc(v["path"]) + "</td><td>" +
                       esc(v["reason"]) + "</td></tr>" for v in manifest["skipped"])
-    return """<!doctype html><html lang="en"><head><meta charset="utf-8">
+    template = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GHOSTMARK | GLITCHBYTE PHANTOM LABS</title><style>
 :root{color-scheme:dark}*{box-sizing:border-box}
@@ -167,23 +173,38 @@ border-bottom:1px solid #33414b;vertical-align:top;overflow-wrap:anywhere}
 th{color:#8be4df}code{font-size:12px;color:#a9ff9b;overflow-wrap:anywhere}
 li{margin:7px 0}footer{color:#9ab5b1;padding:20px 0;font-size:13px}
 @media(max-width:650px){header{flex-direction:column;text-align:center}}
-</style></head><body><main><header>""" + icon + """<div><small>GLITCHBYTE PHANTOM LABS / OFFLINE INTEGRITY</small>
-<h1>GHOSTMARK<br>ATLAS_</h1><p>READ ONLY · SHA-256 · FILE CONSTELLATION</p></div></header>
-<div class="grid"><section><h2>01 / INVENTORY</h2><p><strong>Root:</strong> """ + esc(manifest["root"]) + """</p>
-<p><strong>Files hashed:</strong> """ + str(len(files)) + """</p><p><strong>Partial scan:</strong> """ +
-        esc(manifest["partial"]) + """</p><p><strong>UTC:</strong> """ +
-        esc(manifest["created_utc"]) + """</p></section>
-<section><h2>02 / DUPLICATE CONTENT</h2><p>""" + str(len(doubles)) +
-        """ matching SHA-256 groups. Equal hash means equal observed file contents.</p><ul>""" +
-        (duphtml or "<li>No identical-content groups found.</li>") + """</ul></section>
-<section><h2>03 / CHANGE DETECTOR</h2>""" + comparehtml + """</section>
-<section><h2>04 / SCAN NOTES</h2><ul>""" + notes + """</ul></section>
+</style></head><body><main><header>__ICON__
+<div><small>GLITCHBYTE PHANTOM LABS / OFFLINE INTEGRITY</small>
+<h1>GHOSTMARK<br>ATLAS_</h1><p>READ ONLY · SHA-256 · FILE CONSTELLATION</p>
+</div></header><div class="grid">
+<section><h2>01 / INVENTORY</h2><p><strong>Root:</strong> __ROOT__</p>
+<p><strong>Files hashed:</strong> __COUNT__</p>
+<p><strong>Partial scan:</strong> __PARTIAL__</p>
+<p><strong>UTC:</strong> __CREATED__</p></section>
+<section><h2>02 / DUPLICATE CONTENT</h2><p>__DUPCOUNT__ matching SHA-256 groups.</p><ul>__DUPS__</ul></section>
+<section><h2>03 / CHANGE DETECTOR</h2>__COMPARE__</section>
+<section><h2>04 / SCAN NOTES</h2><ul>__NOTES__</ul></section>
 <section><h2>05 / FILE SIGNATURES</h2><table><thead><tr>
-<th>Relative path</th><th>Bytes</th><th>SHA-256</th></tr></thead><tbody>""" +
-        rows + """</tbody></table></section>
+<th>Relative path</th><th>Bytes</th><th>SHA-256</th></tr></thead><tbody>__ROWS__</tbody></table></section>
 <section><h2>06 / SKIPPED ITEMS</h2><table><thead><tr><th>Path</th>
-<th>Reason</th></tr></thead><tbody>""" + skipped + """</tbody></table></section>
-</div><footer>No files were changed or uploaded. Reports contain local file names; keep private.</footer></main></body></html>"""
+<th>Reason</th></tr></thead><tbody>__SKIPPED__</tbody></table></section>
+</div><footer>Files were not modified or uploaded. Reports contain local paths.</footer></main></body></html>"""
+    replacements = {
+        "__ICON__": icon,
+        "__ROOT__": esc(manifest["root"]),
+        "__COUNT__": str(len(files)),
+        "__PARTIAL__": esc(manifest["partial"]),
+        "__CREATED__": esc(manifest["created_utc"]),
+        "__DUPCOUNT__": str(len(doubles)),
+        "__DUPS__": duphtml or "<li>No duplicate-content groups found.</li>",
+        "__COMPARE__": comparehtml,
+        "__NOTES__": notes,
+        "__ROWS__": rows,
+        "__SKIPPED__": skipped,
+    }
+    for token, content in replacements.items():
+        template = template.replace(token, content)
+    return template
 
 
 def write_report(report, directory, art=None):
