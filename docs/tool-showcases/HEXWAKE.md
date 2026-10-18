@@ -23,7 +23,7 @@ The HTML report displays a responsive gallery of swatches. The CSS exports selec
 
 Paste the complete block. Only a first Git clone requires Internet; the tool's color generation is 100% offline and Python standard-library only.
 
-`bash
+```bash
 # HEXWAKE // FIRST-RUN RECIPE
 set -e
 
@@ -75,15 +75,15 @@ assert list(folder.glob("hexwake_404_*.html"))
 print("PASS: real JSON/CSS/HTML outputs with 4 palettes")
 PY
 echo "Open an HTML file above using xdg-open on a graphical Linux desktop."
-`
+```
 
 ## Create a completely different color direction
 
-`bash
+```bash
 python3 "$HOME/PhantomLabsBuilds/hexwake-foundry/glitchbyte-phantom-labs/tools/hexwake_palette_foundry.py" \
   --seed 7831 --count 6 --base '#B6FF00' \
   --out "$HOME/PhantomLabsBuilds/hexwake-foundry/lime-exports"
-`
+```
 
 ## Reports
 
