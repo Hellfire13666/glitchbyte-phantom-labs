@@ -14,6 +14,8 @@
 
 [🌹 Phase 23: Public HTTPS clone and source-preservation verification](PUBLIC_CLONE_VERIFICATION.md). Ubuntu CI confirms real public download, offline Python tests and Go build.
 
+[🛡️ Phase 24 security and release-readiness review](RELEASE_READINESS_REVIEW.md). Corrected an obsolete TLS warning while keeping live security checks and report/artwork issues open.
+
 ## 📋 The Phantom Build Recipe standard
 
 **Every tool gets copy-and-paste terminal instructions right on its own page.** Each recipe covers **Install → Build → Test → Run → Find Results → Troubleshoot**. The steps must match that tool's real flags, requirements and report formats, with honest test status and permission checks for network research.
