@@ -20,6 +20,10 @@
 
 [🌹 Final workshop handoff and remaining release gates](WORKSHOP_HANDOFF.md). The offline build foundation is verified, but live integrations are not certified.
 
+## 🌹⚡ ONE-PASTE OPEN COMMANDS // NO ATTACHMENTS
+
+[**Copy, Paste & Open: HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2 and GHOSTMARK**](COPY_PASTE_OPEN.md) · [Launcher source](../scripts/phantom_quickopen.py). One command per tool downloads the official launcher, caches the published script in a separate home folder, generates HTML, and opens Firefox when available. The default network-capable scanner preview performs no live lookups. Original tools' own recipe pages remain available below.
+
 ## 📋 The Phantom Build Recipe standard
 
 **Every tool gets copy-and-paste terminal instructions right on its own page.** Each recipe covers **Install → Build → Test → Run → Find Results → Troubleshoot**. The steps must match that tool's real flags, requirements and report formats, with honest test status and permission checks for network research.
