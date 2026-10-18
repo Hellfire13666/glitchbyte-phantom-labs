@@ -266,3 +266,17 @@ The repository is publicly accessible, but the legacy tool collection is a **pre
 ## ✦ SCREAMFRAME: Pixel Autopsy Studio
 
 An independent offline screenshot intelligence workstation. Find exact copies (SHA-256), visual lookalikes (dHash), image-format mismatches and limited EXIF timestamps, then open a radioactive-lime-and-signal-orange local HTML gallery. The tool is read-only and never uploads images; metadata is not proof of image forgery. [Ubuntu recipe](docs/tool-showcases/SCREAMFRAME.md) · [Python source](tools/screamframe-pixel-autopsy/screamframe_pixel_autopsy.py) · [8 local tests](tools/screamframe-pixel-autopsy/tests/test_screamframe_pixel_autopsy.py).
+
+<!-- GLITCHBYTE LAB NAV START -->
+## 🧭 GLITCHBYTE LAB DOORS
+
+| Destination | Go to page | Upload files |
+| --- | --- | --- |
+| 👻 **Phantom Labs HQ** | [Main headquarters](https://github.com/Hellfire13666/glitchbyte-phantom-labs) | [📤 HQ upload door](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) |
+| 🌱 **Cultivation Room** | [Building lab](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/CULTIVATION_ROOM.md) | [📤 Build lab upload door](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) |
+| ⚡ **RosieRiot Overdrive** | [Tool repository](https://github.com/Hellfire13666/rosieriot-overdrive-2026) · [Lab page](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/ROSIERIOT_OVERDRIVE_LAB.md) | [📤 Overdrive upload door](https://github.com/Hellfire13666/rosieriot-overdrive-2026/upload/main) |
+| 🔐 **Phantom Vault** | [Release archive](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases) · [Tool index](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/TOOL_VAULT.md) | [📤 Vault upload door](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/upload/main) |
+
+> The Cultivation Room currently shares the headquarters repository upload door. Keep dated offline backups; never upload credentials or private reports into public GitHub repositories.
+
+<!-- GLITCHBYTE LAB NAV END -->
