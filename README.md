@@ -53,6 +53,10 @@ Our creation standard: **each new project is original and independent**. We only
 
 Explore public DNS, HTTPS certificate, security-header observations, RDAP/WHOIS and opt-in crt.sh/Findomain discovery in a Rosie-branded Firefox dashboard. [Open the full Ubuntu recipe](docs/tool-showcases/ROSIE_PHANTOM_SCAN_V2.md) · [View original Python 3 source](tools/rosie_phantom_scan_v2.py). Includes safe offline preview. Public-data observations are not proof of identity or vulnerabilities.
 
+## 🌹 NEW: GHOSTMARK Integrity Atlas
+
+**Your files, mapped in neon.** Make a read-only SHA-256 snapshot of a local folder, find identical-content duplicates, compare it with a saved baseline, and open a Rosie-styled Firefox dashboard. No uploads, network scanning, deletions, or external dependencies. [Open the Ubuntu recipe](docs/tool-showcases/GHOSTMARK.md) · [Python 3 source](tools/ghostmark_integrity_atlas.py). 
+
 ## ⚡ Featured tools
 
 | Name | Language | Use | Go to source |
