@@ -1,5 +1,8 @@
 # 🗝️ PHANTOM CIPHERBOX // OFFLINE PUZZLE STUDIO
 
+**⚡ NO-DOWNLOAD-ATTACHMENT QUICK START:** [Copy one terminal command, generate HTML and open Firefox](../COPY_PASTE_OPEN.md). No Git pull, merge or rebase. The command is hosted in our GitHub lab and uses its own safe home folder.
+
+
 **Standalone Python 3 · Real reversible coding puzzles · Markdown, HTML and JSON · Private answer key · Zero external services**
 
 [Original source](../../tools/phantom_cipherbox.py) · [Offline regression tests](../../tests/test_phantom_cipherbox.py) · [Tool Vault](../TOOL_VAULT.md)

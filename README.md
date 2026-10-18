@@ -57,6 +57,12 @@ Explore public DNS, HTTPS certificate, security-header observations, RDAP/WHOIS 
 
 **Your files, mapped in neon.** Make a read-only SHA-256 snapshot of a local folder, find identical-content duplicates, compare it with a saved baseline, and open a Rosie-styled Firefox dashboard. No uploads, network scanning, deletions, or external dependencies. [Open the Ubuntu recipe](docs/tool-showcases/GHOSTMARK.md) · [Python 3 source](tools/ghostmark_integrity_atlas.py). 
 
+## 🌹⚡ Copy, Paste & Open in Firefox
+
+**Don't want to download chat attachments or fight Git merge errors?** [Open our Quick Launch page](docs/COPY_PASTE_OPEN.md) for single-paste terminal commands that fetch only our published lab scripts and automatically open generated HTML in Firefox. Launchers are available for **HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2 and GHOSTMARK**, with safe local demo defaults. They install into a separate home folder, never modify your existing checkout, and print saved report paths if Firefox isn't available.
+
+[**📋 COPY & PASTE OPEN: FOUR WORKING COMMANDS**](docs/COPY_PASTE_OPEN.md) · [**🐍 Launcher source**](scripts/phantom_quickopen.py)
+
 ## ⚡ Featured tools
 
 | Name | Language | Use | Go to source |
