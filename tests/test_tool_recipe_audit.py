@@ -64,7 +64,7 @@ class ToolRecipeAudit(unittest.TestCase):
                 self.assertIn("troubleshoot", text.lower())
                 self.assertIn("test", text.lower())
                 self.assertIn("run", text.lower())
-                self.assertIn("report", text.lower() if "report" in text.lower() else text.lower().replace("output", "report"))
+                self.assertTrue("report" in text.lower() or "output" in text.lower())
                 self.assertIn("tool-showcases/" + page.name, vault)
 
     def test_all_local_markdown_links_resolve(self):
