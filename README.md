@@ -67,6 +67,14 @@ Explore public DNS, HTTPS certificate, security-header observations, RDAP/WHOIS 
 
 [**📋 COPY & PASTE OPEN: FOUR WORKING COMMANDS**](docs/COPY_PASTE_OPEN.md) · [**🐍 Launcher source**](scripts/phantom_quickopen.py)
 
+## 🌹👻 SUBDOMINATRIX: Subdomain Intelligence Riot
+
+**New RosieGlitchbyte subdomain recon workstation, built as real Python 3 code instead of relying on mock artwork.** Gather passive records from crt.sh, AlienVault OTX, HackerTarget and urlscan.io; optionally call installed Subfinder and Findomain; perform **opt-in** bounded DNS and HTTPS header observations; and save a search-ready neon HTML dashboard, CSV, JSON and TXT. Offline synthetic previews work without any internet lookup.
+
+[**🐍 Subdominatrix source**](tools/subdominatrix.py) · [**📋 Actual Ubuntu recipe and honest feature checklist**](docs/tool-showcases/SUBDOMINATRIX.md) · [**⚡ Single-paste Firefox launcher**](docs/COPY_PASTE_OPEN.md#-subdominatrix--real-subdomain-intelligence-feedback)
+
+**The SUBDOMINATRIX promo image is a concept**: its illustrated global maps, screenshots, numbers and imagined commands are not real output from this tool. Live data sources may be unavailable or rate-limited. The chosen artwork will need its image asset committed separately to display that exact poster here.
+
 ## ⚡ Featured tools
 
 | Name | Language | Use | Go to source |
