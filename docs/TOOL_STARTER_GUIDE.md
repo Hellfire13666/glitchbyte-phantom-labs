@@ -97,6 +97,7 @@ Before proposing any new tool or publishing an upgrade:
 4. Default to free/public sources when relevant, honor authorization, privacy, robots policies and service limits; never claim uncertain results are verified identities.
 5. For network tools, prefer live progress as each site completes, distinct `FOUND/POSSIBLE/NOT_FOUND/UNKNOWN/ERROR` outcomes, adjustable timeout/rate/concurrency settings, and resumable reports where practical.
 6. Put the change on a **new branch and pull request**. Review checks before merging into `main`.
+7. Add the project's **unique source door and setup-guide door** to the prominent [All Tool Doors index](TOOL_VAULT.md#-all-tool-doors-find-any-project-in-two-clicks) in the Tool Vault. The `test_tool_vault_doors.py` CI guard checks that every top-level or one-directory-deep Python entry point and every `tools/go/*/go.mod` project has exactly one door. The new project's guide must exist before merge.
 
 ### Required Python baseline
 
