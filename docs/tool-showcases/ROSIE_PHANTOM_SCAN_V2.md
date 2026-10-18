@@ -4,6 +4,26 @@
 
 # 🌹👻 ROSIE PHANTOM SCAN V2 | PUBLIC DOMAIN INTEL STUDIO
 
+<!-- PHANTOM-SCAN-V2-ART:START -->
+## 🌹 Official Rosie Phantom Scan V2 artwork
+
+*Read the signals. Respect the boundary.*
+
+Two approved RosieGlitchbyte visual concepts for this public-domain intelligence dashboard. These are **illustrative artwork**, not live scan results; the statistics and screens depicted are fictional examples.
+
+**Repository banner (final visual)**
+
+![Rosie Phantom Scan V2 official repository banner](../../artwork/rosie_phantom_scan_v2_banner.png)
+
+**Original design concept**
+
+![Rosie Phantom Scan V2 concept artwork](../../artwork/rosie_phantom_scan_v2_concept.png)
+
+[📤 Upload artwork through the pink Phantom Labs file door](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) · [🔐 Open Phantom Vault](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases)
+
+<!-- PHANTOM-SCAN-V2-ART:END -->
+
+
 **⚡ NO-DOWNLOAD-ATTACHMENT QUICK START:** [Copy one terminal command, generate HTML and open Firefox](../COPY_PASTE_OPEN.md). No Git pull, merge or rebase. The command is hosted in our GitHub lab and uses its own safe home folder.
 
 **⚡ HOW TO TRIGGER THIS TOOL:** Clicking GitHub's source link only displays code. To **run the program and open Firefox**, [open the one-paste launcher instructions](../COPY_PASTE_OPEN.md#-how-visitors-actually-trigger-a-tool), copy the complete Bash command for this tool, paste it into an **Ubuntu/Linux Terminal**, and press **Enter**. Wait for the local `[REPORT]` HTML path. Firefox opens automatically if installed; otherwise open that saved HTML path manually. These are not one-click GitHub apps, and typing a tool name alone is not a shell command.
