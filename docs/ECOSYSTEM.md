@@ -51,6 +51,14 @@ This document is the live navigation hub for the repository. All linked tools be
 
 The original 17-tool collection remains preserved; HEXWAKE is an additional standalone creation.
 
+## 🗝️ New offline codebreaking workstation
+
+| Tool | Source and recipe |
+|---|---|
+| PHANTOM CIPHERBOX | [Independent Python source](../tools/phantom_cipherbox.py) · [Offline puzzle-maker and decoder recipe](tool-showcases/PHANTOM_CIPHERBOX.md) |
+
+Separate from the original creative games, CIPHERBOX creates customizable real, reversible puzzles. Its answer keys intentionally contain the original plaintext and must not be shared.
+
 ## 🚀 Sample commands
 
 ### Python
