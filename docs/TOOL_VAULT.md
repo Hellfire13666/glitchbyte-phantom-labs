@@ -76,6 +76,14 @@ Start safely with mode 7, which constructs a public RDAP research link without c
 
 The first run classifies a reserved documentation IP entirely offline. Additional public networking modes are documented separately, with authorization required for connectivity checks.
 
+## 🌘 Python Spotlight: IP Shadow Scraper
+
+**Nine modes · Offline-first IP classification · Optional public research · JSON archives**
+
+[🌘 IP Shadow Scraper showcase and build recipe](tool-showcases/IP_SHADOW_SCRAPER.md) · [🐍 Original Python source](../tools/rosie_ip_shadow_scraper.py)
+
+Start with mode 1, which classifies a reserved documentation address without contacting a target. The showcase documents permissions for network options, certificate verification, and a known companion-art placement mismatch.
+
 ## 🔎 Research and analysis
 
 | Tool | Language | Source |
@@ -85,7 +93,7 @@ The first run classifies a reserved documentation IP entirely offline. Additiona
 | GlitchByteRosie X Intel | Python | [glitchbyterosie_x_intel.py](../tools/glitchbyterosie_x_intel.py) |
 | GlitchByteRosie X No API | Python | [glitchbyterosie_x_no_api.py](../tools/glitchbyterosie_x_no_api.py) |
 | Rose Crawler | Python | [Source](../tools/rose_crawler.py) · [Build recipe](tool-showcases/ROSE_CRAWLER.md) |
-| Rosie IP Shadow Scraper | Python | [rosie_ip_shadow_scraper.py](../tools/rosie_ip_shadow_scraper.py) |
+| Rosie IP Shadow Scraper | Python | [Source](../tools/rosie_ip_shadow_scraper.py) · [Build recipe](tool-showcases/IP_SHADOW_SCRAPER.md) |
 | Rosie Signal Garden | Python | [Source](../tools/rosie_signal_garden.py) · [Build recipe](tool-showcases/SIGNAL_GARDEN.md) |
 | Rosie Username Intel | Python | [Source](../tools/rosie_username_intel.py) · [Build recipe](tool-showcases/USERNAME_INTEL.md) |
 | RosieGlitchbyte Domain Phantom | Python | [Source](../tools/rosieglitchbyte_domain_phantom.py) · [Build recipe](tool-showcases/DOMAIN_PHANTOM.md) |
