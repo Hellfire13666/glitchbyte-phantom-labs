@@ -4,7 +4,7 @@
 
 ![Official RosieGlitchbyte Phantom Labs](../artwork/labface2.png)
 
-> **Vault inventory:** 16 preserved original Python scripts, four additional standalone Python tools (HEXWAKE, PHANTOM CIPHERBOX, ROSIE PHANTOM SCAN V2 and GHOSTMARK), and the preserved VOIDLANTERN Go project. New tools merge only after their review PRs; linked sources are present on this branch.
+> **Vault inventory:** 16 preserved original Python scripts, five additional standalone Python tools (HEXWAKE, PHANTOM CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK and SUBDOMINATRIX), and the preserved VOIDLANTERN Go project. New tools merge only after their review PRs; linked sources are present on this branch.
 
 [🧪 Phase 20 documentation audit and verification guide](RECIPE_AUDIT.md). The automated test checks all 17 source-linked showcases, recipe coverage, and local Markdown links on PRs after the audit merges.
 
@@ -22,7 +22,7 @@
 
 ## 🌹⚡ ONE-PASTE OPEN COMMANDS // NO ATTACHMENTS
 
-[**Copy, Paste & Open: HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2 and GHOSTMARK**](COPY_PASTE_OPEN.md) · [Launcher source](../scripts/phantom_quickopen.py). One command per tool downloads the official launcher, caches the published script in a separate home folder, generates HTML, and opens Firefox when available. The default network-capable scanner preview performs no live lookups. Original tools' own recipe pages remain available below.
+[**Copy, Paste & Open: HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK and SUBDOMINATRIX**](COPY_PASTE_OPEN.md) · [Launcher source](../scripts/phantom_quickopen.py). One command per tool downloads the official launcher, caches the published script in a separate home folder, generates HTML, and opens Firefox when available. The default network-capable scanner preview performs no live lookups. Original tools' own recipe pages remain available below.
 
 ## 📋 The Phantom Build Recipe standard
 
@@ -180,6 +180,7 @@ The first-run recipe performs the real game logic in memory, checks the three ga
 | PHANTOM CIPHERBOX | Python | [Source](../tools/phantom_cipherbox.py) · [Build recipe](tool-showcases/PHANTOM_CIPHERBOX.md) |
 | ROSIE PHANTOM SCAN V2 | Python | [Source](../tools/rosie_phantom_scan_v2.py) · [Build recipe](tool-showcases/ROSIE_PHANTOM_SCAN_V2.md) |
 | GHOSTMARK Integrity Atlas | Python | [Source](../tools/ghostmark_integrity_atlas.py) · [Build recipe](tool-showcases/GHOSTMARK.md) |
+| SUBDOMINATRIX | Python | [Source](../tools/subdominatrix.py) · [Build recipe](tool-showcases/SUBDOMINATRIX.md) |
 
 ## ⚡ NEW WORKSTATION: HEXWAKE Palette Foundry
 

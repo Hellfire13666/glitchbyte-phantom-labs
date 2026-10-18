@@ -25,6 +25,7 @@ Artwork: `artwork/rosie_ip_shadow_art.png`
 - `phantom_cipherbox.py` · [PHANTOM CIPHERBOX build recipe](tool-showcases/PHANTOM_CIPHERBOX.md), an independent offline puzzle and answer-checking studio.
 - `rosie_phantom_scan_v2.py` · [ROSIE PHANTOM SCAN V2 build recipe](tool-showcases/ROSIE_PHANTOM_SCAN_V2.md), an independent bounded public-domain intelligence dashboard.
 - `ghostmark_integrity_atlas.py` · [GHOSTMARK build recipe](tool-showcases/GHOSTMARK.md), an independent offline SHA-256 file integrity and duplicate atlas.
+- `subdominatrix.py` · [SUBDOMINATRIX build recipe](tool-showcases/SUBDOMINATRIX.md), a Rosie-branded multi-source passive subdomain atlas with optional limited DNS and HTTPS observations and HTML/JSON/CSV/TXT reports.
 
 
 Other previously discussed tools not present in this archive should be recovered separately rather than assumed included.
