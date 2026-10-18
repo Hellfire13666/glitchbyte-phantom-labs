@@ -24,6 +24,7 @@ Artwork: `artwork/rosie_ip_shadow_art.png`
 - `hexwake_palette_foundry.py` · [HEXWAKE build recipe](tool-showcases/HEXWAKE.md), an independent offline palette creation workstation.
 - `phantom_cipherbox.py` · [PHANTOM CIPHERBOX build recipe](tool-showcases/PHANTOM_CIPHERBOX.md), an independent offline puzzle and answer-checking studio.
 - `rosie_phantom_scan_v2.py` · [ROSIE PHANTOM SCAN V2 build recipe](tool-showcases/ROSIE_PHANTOM_SCAN_V2.md), an independent bounded public-domain intelligence dashboard.
+- `ghostmark_integrity_atlas.py` · [GHOSTMARK build recipe](tool-showcases/GHOSTMARK.md), an independent offline SHA-256 file integrity and duplicate atlas.
 
 
 Other previously discussed tools not present in this archive should be recovered separately rather than assumed included.
