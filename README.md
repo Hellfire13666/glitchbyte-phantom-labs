@@ -90,6 +90,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 **GlitchbyteRosie X Shadow Intel:** [Copy-and-paste offline Python setup, sample post analysis, JSON/CSV output and troubleshooting](docs/tool-showcases/X_SHADOW_NO_API.md).
 
+## 💌 Ghost In My Heart build recipe
+
+**Ghost In My Heart:** [Copy-and-paste installation, automated game smoke test, saved transcript and troubleshooting](docs/tool-showcases/GHOST_IN_MY_HEART.md).
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
