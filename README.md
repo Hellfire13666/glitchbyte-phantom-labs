@@ -130,6 +130,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 [Read the successful real HTTPS clone, offline Python and Go release verification](docs/PUBLIC_CLONE_VERIFICATION.md). This complements the 17 clean-home recipes with an actual public GitHub download. Live API integrations are not included.
 
+## 🛡️ Phase 24: Security and release readiness
+
+[Read the security findings, corrected TLS verification policy, and remaining release gates](docs/RELEASE_READINESS_REVIEW.md). Offline validation is verified; authorized live integration and a full security review remain outstanding.
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
