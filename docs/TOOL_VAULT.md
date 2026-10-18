@@ -7,7 +7,7 @@
 <!-- PHANTOM-DOOR-INDEX:START -->
 ## 🚪 All tool doors: find any project in two clicks
 
-**23 independent tools**. Pick **Open source** for the real Python file or Go project, or **Setup guide** for exact Ubuntu commands, tests and output locations. GitHub shows code; it does not run programs in your browser.
+**24 independent tools**. Pick **Open source** for the real Python file or Go project, or **Setup guide** for exact Ubuntu commands, tests and output locations. GitHub shows code; it does not run programs in your browser.
 
 **For every new tool:** create its unique source and setup guide, add one row here, and run `python3 -m unittest discover -s tests -v`. The `test_tool_vault_doors.py` guard checks that every published top-level/nested Python entry point and Go module is indexed.
 
@@ -24,6 +24,7 @@
 | IP Shadow Scraper | IP signals and local reports | [Open source](../tools/rosie_ip_shadow_scraper.py) | [Setup guide](tool-showcases/IP_SHADOW_SCRAPER.md) |
 | VOIDLANTERN (Go) | Authorized HTTP/TLS diagnostics | [Open project](../tools/go/voidlantern-go/) | [Setup guide](tool-showcases/VOIDLANTERN.md) |
 | Rosie Username Intel | Public username research links | [Open source](../tools/rosie_username_intel.py) | [Setup guide](tool-showcases/USERNAME_INTEL.md) |
+| VELVETECHO Persona Observatory | Colorful public username intelligence and offline masked phone-format scanning | [Open source](../tools/velvetecho-persona-observatory/velvetecho_persona_observatory.py) | [Setup guide](tool-showcases/VELVETECHO.md) |
 | Rose Crawler | Public-profile links and metadata | [Open source](../tools/rose_crawler.py) | [Setup guide](tool-showcases/ROSE_CRAWLER.md) |
 | X Intel Phantom | Official X API research | [Open source](../tools/glitchbyterosie_x_intel.py) | [Setup guide](tool-showcases/X_INTEL_PHANTOM.md) |
 | X Shadow Intel | Local X post analysis | [Open source](../tools/glitchbyterosie_x_no_api.py) | [Setup guide](tool-showcases/X_SHADOW_NO_API.md) |
@@ -51,7 +52,7 @@
 
 <!-- PHANTOM-DOOR-INDEX:END -->
 
-> **Vault inventory:** 16 preserved original Python scripts, six additional standalone Python tools (HEXWAKE, PHANTOM CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK, SUBDOMINATRIX and SCREAMFRAME), and the preserved VOIDLANTERN Go project. New tools merge only after their review PRs; linked sources are present on this branch.
+> **Vault inventory:** 16 preserved original Python scripts, seven additional standalone Python tools (HEXWAKE, PHANTOM CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK, SUBDOMINATRIX, SCREAMFRAME and VELVETECHO), and the preserved VOIDLANTERN Go project. New tools merge only after their review PRs; linked sources are present on this branch.
 
 [🧪 Phase 20 documentation audit and verification guide](RECIPE_AUDIT.md). The automated test checks all 17 source-linked showcases, recipe coverage, and local Markdown links on PRs after the audit merges.
 
@@ -70,6 +71,10 @@
 ## 🌹⚡ ONE-PASTE OPEN COMMANDS // NO ATTACHMENTS
 
 [**Copy, Paste & Open: HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK and SUBDOMINATRIX**](COPY_PASTE_OPEN.md) · [Launcher source](../scripts/phantom_quickopen.py). One command per tool downloads the official launcher, caches the published script in a separate home folder, generates HTML, and opens Firefox when available. The default network-capable scanner preview performs no live lookups. Original tools' own recipe pages remain available below.
+
+## 🌹 New: VELVETECHO Persona Observatory
+
+**Color-coded outcomes · public username candidates · opt-in authorized checks · offline phone-format inspector · private HTML/JSON/CSV exports.** [Open the real Python source](../tools/velvetecho-persona-observatory/velvetecho_persona_observatory.py) · [Full Ubuntu recipe](tool-showcases/VELVETECHO.md). Phone input is masked by default and does not enumerate accounts, carriers, or owners.
 
 ## 📋 The Phantom Build Recipe standard
 
