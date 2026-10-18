@@ -122,6 +122,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 [See the successful Ubuntu GitHub Actions run and verification matrix](docs/OFFLINE_VERIFICATION.md). The suite executes real offline examples and checks report files and puzzle endings. Live API and authorized network testing remain separate; all full clone-and-build recipes are not yet individually fresh-machine certified.
 
+## 🌹 Phase 22: All 17 copy-and-paste recipes verified on Ubuntu
+
+[Read the clean-workspace recipe verification and successful CI run](docs/CLEAN_BUILD_VERIFICATION.md). Every published first-run Bash block completed in an isolated Ubuntu CI workspace. Git clone commands used a local checkout instead of public internet downloads; authorized live endpoints and API credentials were not used.
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
