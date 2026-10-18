@@ -8,6 +8,8 @@
 
 [🧪 Phase 20 documentation audit and verification guide](RECIPE_AUDIT.md). The automated test checks all 17 source-linked showcases, recipe coverage, and local Markdown links on PRs after the audit merges.
 
+[💙 Phase 21: Actual offline Ubuntu execution report](OFFLINE_VERIFICATION.md). This verifies local Python runs and artifact creation, not every live network integration or full new-machine build.
+
 ## 📋 The Phantom Build Recipe standard
 
 **Every tool gets copy-and-paste terminal instructions right on its own page.** Each recipe covers **Install → Build → Test → Run → Find Results → Troubleshoot**. The steps must match that tool's real flags, requirements and report formats, with honest test status and permission checks for network research.
