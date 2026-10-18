@@ -1,3 +1,7 @@
+<!-- GLITCHBYTE-UPLOAD-DOOR:START -->
+<div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF8B1F?style=flat-square&logo=github&logoColor=white"></a></div>
+<!-- GLITCHBYTE-UPLOAD-DOOR:END -->
+
 # 🕷️ PHANTOM TOOL SHOWCASE TEMPLATE
 
 > **Template only. Not a published tool.** Create a *new uniquely named* Markdown file for each existing tool and link it from the Tool Vault. Never overwrite tool source or reuse another tool's identity.
