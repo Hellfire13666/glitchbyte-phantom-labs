@@ -124,11 +124,19 @@ The first run analyzes fictional sample CSV posts entirely offline; keyword-only
 
 Its recipe checks the source and runs all three real puzzle gates in a controlled offline smoke test without modifying the game.
 
+## ⚡ Creative Spotlight: Catch Me in the Chaos
+
+**Three-lock offline terminal love puzzle · Hex-decoded letter · Unique transcript**
+
+[⚡ Catch Me in the Chaos showcase and Bash build recipe](tool-showcases/CATCH_ME_IN_THE_CHAOS.md) · [🐍 Original Python source](../tools/rosie_catch_me_chaos.py)
+
+The first-run recipe performs the real game logic in memory, checks the three gates and finale, and saves a unique transcript without altering the source.
+
 ## 💗 Creative code and experiments
 
 | Tool | Language | Source |
 | --- | --- | --- |
-| Rosie Catch Me Chaos | Python | [rosie_catch_me_chaos.py](../tools/rosie_catch_me_chaos.py) |
+| Rosie Catch Me Chaos | Python | [Source](../tools/rosie_catch_me_chaos.py) · [Build recipe](tool-showcases/CATCH_ME_IN_THE_CHAOS.md) |
 | Rosie Dark Desire | Python | [Source](../tools/rosie_dark_desire.py) · [Build recipe](tool-showcases/DARK_DESIRE.md) |
 | Rosie Ghost Heart | Python | [Source](../tools/rosie_ghost_heart.py) · [Build recipe](tool-showcases/GHOST_IN_MY_HEART.md) |
 | Rosie Hide Seek | Python | [Source](../tools/rosie_hide_seek.py) · [Build recipe](tool-showcases/FIND_ME_IF_YOU_LOVE_ME.md) |
