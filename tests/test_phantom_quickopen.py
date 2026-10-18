@@ -19,10 +19,10 @@ def load():
 
 
 class QuickOpenTests(unittest.TestCase):
-    def test_all_four_real_tools_save_html_in_isolated_home(self):
+    def test_all_five_real_tools_save_html_in_isolated_home(self):
         with tempfile.TemporaryDirectory() as tmp:
             folder = Path(tmp)
-            for tool in ("hexwake", "cipherbox", "rosie-scan", "ghostmark"):
+            for tool in ("hexwake", "cipherbox", "rosie-scan", "ghostmark", "subdominatrix"):
                 with self.subTest(tool=tool):
                     args = [sys.executable, str(SCRIPT), tool,
                             "--source-dir", str(ROOT),
@@ -40,6 +40,10 @@ class QuickOpenTests(unittest.TestCase):
             self.assertEqual("offline", json.loads(domains[0].read_text())["mode"])
             ghost = list((folder / "reports" / "ghostmark").glob("*.json"))
             self.assertEqual(1, len(json.loads(ghost[0].read_text())["duplicates"]))
+            subfiles = list((folder / "reports" / "subdominatrix").glob("*.json"))
+            data = json.loads(subfiles[0].read_text())
+            self.assertEqual("SYNTHETIC OFFLINE DEMO", data["mode"])
+            self.assertGreaterEqual(data["stats"]["names"], 10)
 
     def test_separate_runs_preserve_old_html(self):
         with tempfile.TemporaryDirectory() as tmp:
