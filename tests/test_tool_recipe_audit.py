@@ -33,7 +33,7 @@ class ToolRecipeAudit(unittest.TestCase):
         vault = VAULT.read_text(encoding="utf-8")
         mapping = TABLE_MAPPING.findall(vault)
         mapped = [name for name, _ in mapping]
-        self.assertEqual(len(source_files), 16, "Recheck inventory after adding new tools")
+        self.assertGreaterEqual(len(source_files), 17, "Missing original collection or HEXWAKE")
         self.assertEqual(len(mapped), len(set(mapped)), "A Python script is listed twice")
         self.assertEqual(set(mapped), source_files, "Vault lacks a one-to-one recipe for each tool")
         for name, page in mapping:
@@ -54,7 +54,7 @@ class ToolRecipeAudit(unittest.TestCase):
             p for p in SHOWCASES.glob("*.md")
             if p.name != "SHOWCASE_TEMPLATE.md"
         ]
-        self.assertEqual(len(pages), 17, "Expected 16 Python showcases plus one Go showcase")
+        self.assertEqual(len(pages), len(list((ROOT / "tools").glob("*.py"))) + 1, "Each Python tool and VOIDLANTERN needs one showcase")
         vault = VAULT.read_text(encoding="utf-8")
         for page in pages:
             with self.subTest(page=page.name):

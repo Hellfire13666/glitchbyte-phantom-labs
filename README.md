@@ -142,6 +142,12 @@ These links point to **files present in this repository**, not merely concepts o
 
 [Read the completed workshop handoff and remaining release gates](docs/WORKSHOP_HANDOFF.md). The original 17 tools have independent recipes and passing offline Ubuntu checks; credentials, live integration, artwork redistribution rights, and a full security audit are still separate approvals.
 
+## ⚡ New independent workstation: HEXWAKE Palette Foundry
+
+**Create fresh Glitch HEX palettes with reproducible color seeds, RGB-shift parameters and a beautiful offline HTML gallery.** [Explore HEXWAKE and copy its complete Ubuntu build recipe](docs/tool-showcases/HEXWAKE.md). [See the standalone Python code](tools/hexwake_palette_foundry.py).
+
+This is a brand-new creative tool, independent of the 17 preserved original projects. No API keys, website requests or login credentials.
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:

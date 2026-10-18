@@ -172,6 +172,15 @@ The first-run recipe performs the real game logic in memory, checks the three ga
 | Rosie Hide Seek | Python | [Source](../tools/rosie_hide_seek.py) · [Build recipe](tool-showcases/FIND_ME_IF_YOU_LOVE_ME.md) |
 | RosieGlitchbyte Hackgirl | Python | [Source](../tools/rosieglitchbyte_hackgirl.py) · [Build recipe](tool-showcases/HACKGIRL_INTEL.md) |
 | RosieGlitchbyte Neon Rose Phantom 3 | Python | [Source](../tools/rosieglitchbyte_neon_rose_phantom_3.py) · [Build recipe](tool-showcases/NEON_ROSE_PHANTOM_3.md) |
+| HEXWAKE Palette Foundry | Python | [Source](../tools/hexwake_palette_foundry.py) · [Build recipe](tool-showcases/HEXWAKE.md) |
+
+## ⚡ NEW WORKSTATION: HEXWAKE Palette Foundry
+
+**Original offline Glitch HEX generator · Reproducible color families · JSON, CSS and HTML gallery**
+
+[⚡ HEXWAKE showcase and complete Bash recipe](tool-showcases/HEXWAKE.md) · [🐍 Actual new Python source](../tools/hexwake_palette_foundry.py) · [🧪 Offline tests](../tests/test_hexwake_palette_foundry.py)
+
+Unlike the preserved research tools, HEXWAKE is a new design tool. It uses rotating neon palettes and glitch-effect parameters, writes three real offline report formats, and does not contact external services.
 
 ## 🧭 Start here
 
