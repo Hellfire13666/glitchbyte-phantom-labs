@@ -98,7 +98,7 @@ Use `--list` for the exact platform spellings. The `--delay` minimum is **2 seco
 
 ## 📊 Find and open results
 
-The source constructs the filename as `rose_<username>_<YYYYMMDD_HHMMSS>` and saves matching `.html`, `.json`, and `.csv` files under the directory supplied by `--output` (default: `~/RoseCrawlerReports`).
+The source constructs the filename as `rose_<username>_<YYYYMMDD_HHMMSS_microseconds>_<random-suffix>` and saves matching `.html`, `.json`, and `.csv` files under the directory supplied by `--output` (default: `~/RoseCrawlerReports`).
 
 ```bash
 find "$HOME/PhantomLabsBuilds/rose-crawler-station/reports" -type f \
@@ -115,7 +115,7 @@ head -n 10 "/actual/path/to/rose_report.csv"
 
 The filename strings above are examples, not files known to exist on your machine. The HTML dashboard includes a text filter. Reports may contain publicly visible descriptions and URLs, which still deserve careful handling.
 
-**Source-code caveat:** The current reporter uses Python's `Path.with_suffix()` on its timestamped filename base. Handles containing periods may yield unintuitive output filenames, so use `find` to locate the real files rather than assuming a name. This observation is documented here without altering the original script.
+**Phase 25 reliability fix:** Filenames preserve periods in usernames and use microsecond timestamps plus a randomized suffix to avoid overwriting earlier reports. Use `find` to locate actual filenames; the CLI and generated HTML/JSON/CSV contents remain unchanged.
 
 ## 🛠️ Troubleshoot
 
@@ -135,6 +135,6 @@ The filename strings above are examples, not files known to exist on your machin
 
 The flags, platform list, report formats and behavior above were inspected in [the current source](../../tools/rose_crawler.py). The full Bash recipe has **not been run end-to-end in your Ubuntu environment**, and no social website was queried as part of this documentation update. A syntax check is recommended; it is not proof that a live profile fetch will work.
 
-The source is preserved unchanged. Respect platforms, privacy and the repository's [SECURITY.md](../../SECURITY.md) and [LICENSE-NOTICE.md](../../LICENSE-NOTICE.md). Do not commit sensitive reports or use a matching username to make identity accusations.
+Phase 25 changes only the report filename construction in the original source; platform research logic is unchanged. Respect platforms, privacy and the repository's [SECURITY.md](../../SECURITY.md) and [LICENSE-NOTICE.md](../../LICENSE-NOTICE.md). Do not commit sensitive reports or use a matching username to make identity accusations.
 
 [← Phantom Tool Vault](../TOOL_VAULT.md) · [← Official homepage](../../README.md)
