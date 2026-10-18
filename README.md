@@ -102,6 +102,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 **Rosie Hide Seek:** [Complete Python setup, actual three-gate game test, saved text transcript and troubleshooting](docs/tool-showcases/FIND_ME_IF_YOU_LOVE_ME.md).
 
+## ⚡ Catch Me in the Chaos build recipe
+
+**Catch Me in the Chaos:** [Copy-and-paste Python setup, three-lock game smoke test, saved transcript and troubleshooting](docs/tool-showcases/CATCH_ME_IN_THE_CHAOS.md).
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
