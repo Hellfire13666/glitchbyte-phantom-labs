@@ -138,6 +138,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 [Read the Phase 25 fixes and regression-test details](docs/PHASE25_RELIABILITY.md). Rosie IP Shadow Scraper now locates approved art; it and Rose Crawler avoid overwriting rapid reports and preserve dotted handles.
 
+## 🌹 Final workshop handoff: Offline foundation verified
+
+[Read the completed workshop handoff and remaining release gates](docs/WORKSHOP_HANDOFF.md). The original 17 tools have independent recipes and passing offline Ubuntu checks; credentials, live integration, artwork redistribution rights, and a full security audit are still separate approvals.
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
