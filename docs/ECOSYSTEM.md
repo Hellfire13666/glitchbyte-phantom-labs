@@ -20,6 +20,10 @@ This document is the live navigation hub for the repository. All linked tools be
 | 💗 Creative Coding | Games, love-coded ideas, interactive experiments | [Creative directory](#creative-code-and-experiments) |
 | 📁 Output Reports | HTML, JSON, CSV discovery and reading | [Result guide](TOOL_STARTER_GUIDE.md#2-find-reports-and-clickable-links) |
 
+## 🌹 New research workstation: SUBDOMINATRIX
+
+[Real Python source](../tools/subdominatrix.py) · [Tool page and tested Ubuntu recipe](tool-showcases/SUBDOMINATRIX.md) · [Quick Open command](COPY_PASTE_OPEN.md). Multi-source public subdomain sightings with optional local Subfinder/Findomain, opt-in public-host DNS/HTTPS validation and HTML/CSV/JSON/TXT reporting. Decorative poster metrics are not scan results.
+
 ## 🔎 Research and analysis
 
 | Tool | Source |
