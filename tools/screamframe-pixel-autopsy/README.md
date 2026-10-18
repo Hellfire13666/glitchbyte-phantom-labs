@@ -1,3 +1,7 @@
+<!-- GLITCHBYTE-UPLOAD-DOOR:START -->
+<div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF8B1F?style=flat-square&logo=github&logoColor=white"></a></div>
+<!-- GLITCHBYTE-UPLOAD-DOOR:END -->
+
 # ✦ SCREAMFRAME // Pixel Autopsy Studio
 
 **An original GlitchByte Phantom Labs tool** · Python 3.10+ · Ubuntu/Linux · offline screenshot triage.
