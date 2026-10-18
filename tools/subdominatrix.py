@@ -36,6 +36,11 @@ VALID_LABEL = re.compile(r"[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\Z")
 def valid_domain(value):
     if not isinstance(value, str) or len(value) > 253 or "." not in value:
         return False
+    try:
+        ipaddress.ip_address(value)
+        return False
+    except ValueError:
+        pass
     labels = value.split(".")
     return all(VALID_LABEL.fullmatch(part) for part in labels)
 
