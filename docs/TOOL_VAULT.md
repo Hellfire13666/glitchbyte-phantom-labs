@@ -10,6 +10,8 @@
 
 [💙 Phase 21: Actual offline Ubuntu execution report](OFFLINE_VERIFICATION.md). This verifies local Python runs and artifact creation, not every live network integration or full new-machine build.
 
+[🌹 Phase 22: All 17 first-run recipes passed in clean Ubuntu CI workspaces](CLEAN_BUILD_VERIFICATION.md). Network cloning was mapped to a local Git checkout, and optional live target checks are excluded.
+
 ## 📋 The Phantom Build Recipe standard
 
 **Every tool gets copy-and-paste terminal instructions right on its own page.** Each recipe covers **Install → Build → Test → Run → Find Results → Troubleshoot**. The steps must match that tool's real flags, requirements and report formats, with honest test status and permission checks for network research.
