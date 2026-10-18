@@ -6,6 +6,10 @@ This document is the live navigation hub for the repository. All linked tools be
 
 **Phase 2 is ready for review:** enter the [Phantom Tool Vault](TOOL_VAULT.md) for a categorized navigator, the dedicated [VOIDLANTERN showcase](tool-showcases/VOIDLANTERN.md) and a template for future spotlights.
 
+## ⚡ One-paste launches
+
+[Copy and paste commands that generate and open Firefox galleries](COPY_PASTE_OPEN.md) are now published for HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2 and GHOSTMARK. [Launcher Python source](../scripts/phantom_quickopen.py). No Git pull, merge, or manual ChatGPT downloads required.
+
 ## 🧭 Five stations
 
 | Station | What's here | Jump |
