@@ -148,7 +148,7 @@ class OfflineTerminalVerification(unittest.TestCase):
                     input=answers, text=True, capture_output=True,
                     cwd=self.home, timeout=30, check=True
                 )
-                plain = re.sub(r"\\x1b\\[[0-9;]*m", "", done.stdout)
+                plain = re.sub(r"\x1b\[[0-9;]*m", "", done.stdout)
                 self.assertIn(ending, plain)
                 self.assertIn("RosieGlitchbyte <3", plain)
 
