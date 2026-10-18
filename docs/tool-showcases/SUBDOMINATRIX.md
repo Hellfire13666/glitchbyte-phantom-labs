@@ -2,7 +2,9 @@
 
 **Same domains. Different perspective.** Multi-source public subdomain reconnaissance and reporting by GlitchByte Phantom Labs.
 
-![Official RosieGlitchbyte, lab mascot](../../artwork/labface2.png)
+![SUBDOMINATRIX Main Artwork](../../artwork/subdom.png)
+
+![SUBDOMINATRIX Second Artwork](../../artwork/Screenshot_2026-10-17_23-22-21.png)
 
 **Note on promotional artwork:** The neon SUBDOMINATRIX poster is a visual concept, not a screenshot of collected intelligence, a working website, or validated installation instructions. Any numbers, sample hostnames, screenshot thumbnails, world maps and claims shown there are illustrative. The actual report contains only observed records or conspicuously labeled synthetic demo content. Rosie is the official mascot. The chosen promotional image can be added to this page after its actual binary artwork is uploaded to GitHub.
 
