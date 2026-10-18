@@ -49,6 +49,10 @@ Our creation standard: **each new project is original and independent**. We only
 | 🌹 **ART & IDENTITY** | [Approved Rosie reference rules and official hero upload](docs/ROSIE_VISUAL_STANDARD.md) |
 | 🔐 **SAFETY** | [Security guidance](SECURITY.md) and [release checklist](docs/RELEASE_CHECKLIST.md) |
 
+## 🌹 New: ROSIE PHANTOM SCAN V2
+
+Explore public DNS, HTTPS certificate, security-header observations, RDAP/WHOIS and opt-in crt.sh/Findomain discovery in a Rosie-branded Firefox dashboard. [Open the full Ubuntu recipe](docs/tool-showcases/ROSIE_PHANTOM_SCAN_V2.md) · [View original Python 3 source](tools/rosie_phantom_scan_v2.py). Includes safe offline preview. Public-data observations are not proof of identity or vulnerabilities.
+
 ## ⚡ Featured tools
 
 | Name | Language | Use | Go to source |
