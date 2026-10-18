@@ -126,6 +126,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 [Read the clean-workspace recipe verification and successful CI run](docs/CLEAN_BUILD_VERIFICATION.md). Every published first-run Bash block completed in an isolated Ubuntu CI workspace. Git clone commands used a local checkout instead of public internet downloads; authorized live endpoints and API credentials were not used.
 
+## 🌹 Phase 23: Public GitHub clone verified
+
+[Read the successful real HTTPS clone, offline Python and Go release verification](docs/PUBLIC_CLONE_VERIFICATION.md). This complements the 17 clean-home recipes with an actual public GitHub download. Live API integrations are not included.
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
