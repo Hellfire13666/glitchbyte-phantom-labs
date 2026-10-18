@@ -6,6 +6,7 @@ Each exercise runs the real program from tools/ under an isolated HOME.
 import csv
 import json
 import os
+import re
 from pathlib import Path
 import subprocess
 import sys
@@ -147,8 +148,9 @@ class OfflineTerminalVerification(unittest.TestCase):
                     input=answers, text=True, capture_output=True,
                     cwd=self.home, timeout=30, check=True
                 )
-                self.assertIn(ending, done.stdout)
-                self.assertIn("RosieGlitchbyte <3", done.stdout)
+                plain = re.sub(r"\\x1b\\[[0-9;]*m", "", done.stdout)
+                self.assertIn(ending, plain)
+                self.assertIn("RosieGlitchbyte <3", plain)
 
         # The fourth creative tool is not a puzzle, just a hex-encoded letter.
         decoder = (
