@@ -18,6 +18,8 @@
 
 [🌹 Phase 25 artwork and filename reliability fixes](PHASE25_RELIABILITY.md). Targeted source adjustments and offline regression tests preserve the original artwork and report contents.
 
+[🌹 Final workshop handoff and remaining release gates](WORKSHOP_HANDOFF.md). The offline build foundation is verified, but live integrations are not certified.
+
 ## 📋 The Phantom Build Recipe standard
 
 **Every tool gets copy-and-paste terminal instructions right on its own page.** Each recipe covers **Install → Build → Test → Run → Find Results → Troubleshoot**. The steps must match that tool's real flags, requirements and report formats, with honest test status and permission checks for network research.
