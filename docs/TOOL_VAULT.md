@@ -100,6 +100,14 @@ Start with offline syntax/help checks. Live API operations require your own perm
 
 The first run analyzes fictional sample CSV posts entirely offline; keyword-only research URLs do not contact X. Profile metadata checks are optional and distinct from the official X API tool.
 
+## 🦋 Python Spotlight: HackGirl Intel Workstation
+
+**No X API token · Local CSV/JSON analysis · HTML dashboard · Public research links**
+
+[🦋 HackGirl Intel showcase and complete Bash recipe](tool-showcases/HACKGIRL_INTEL.md) · [🐍 Original Python source](../tools/rosieglitchbyte_hackgirl.py)
+
+The first-run recipe generates a uniquely named fictional CSV and analyzes it offline with a JSON report and HTML dashboard. Optional public profile metadata checks require a network request.
+
 ## 🔎 Research and analysis
 
 | Tool | Language | Source |
@@ -140,7 +148,7 @@ The first-run recipe performs the real game logic in memory, checks the three ga
 | Rosie Dark Desire | Python | [Source](../tools/rosie_dark_desire.py) · [Build recipe](tool-showcases/DARK_DESIRE.md) |
 | Rosie Ghost Heart | Python | [Source](../tools/rosie_ghost_heart.py) · [Build recipe](tool-showcases/GHOST_IN_MY_HEART.md) |
 | Rosie Hide Seek | Python | [Source](../tools/rosie_hide_seek.py) · [Build recipe](tool-showcases/FIND_ME_IF_YOU_LOVE_ME.md) |
-| RosieGlitchbyte Hackgirl | Python | [rosieglitchbyte_hackgirl.py](../tools/rosieglitchbyte_hackgirl.py) |
+| RosieGlitchbyte Hackgirl | Python | [Source](../tools/rosieglitchbyte_hackgirl.py) · [Build recipe](tool-showcases/HACKGIRL_INTEL.md) |
 | RosieGlitchbyte Neon Rose Phantom 3 | Python | [rosieglitchbyte_neon_rose_phantom_3.py](../tools/rosieglitchbyte_neon_rose_phantom_3.py) |
 
 ## 🧭 Start here

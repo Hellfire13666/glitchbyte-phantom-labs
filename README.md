@@ -106,6 +106,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 **Catch Me in the Chaos:** [Copy-and-paste Python setup, three-lock game smoke test, saved transcript and troubleshooting](docs/tool-showcases/CATCH_ME_IN_THE_CHAOS.md).
 
+## 🦋 HackGirl Intel build recipe
+
+**RosieGlitchbyte HackGirl Intel:** [Copy-and-paste Python setup, offline sample CSV, JSON/HTML reporting and troubleshooting](docs/tool-showcases/HACKGIRL_INTEL.md).
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
