@@ -2,7 +2,7 @@
 
 **The official GlitchByte Phantom Labs tool navigator.** Choose a project, read its documentation, test and run it locally. This page links to source code that exists in the repository, not hypothetical tools from design mockups.
 
-![Rosie Phantom Tool Vault](../artwork/neon_phantom_tool_vault.png)
+![Rosie Phantom Tool Vault](../artwork/vaultlab.png)
 
 <!-- PHANTOM-DOOR-INDEX:START -->
 ## 🚪 All tool doors: find any project in two clicks
