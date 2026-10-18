@@ -6,7 +6,11 @@ This is a collection of educational, public-information and local research tools
 
 ## Known release-review item
 
-`tools/rosie_ip_shadow_scraper.py` obtains a remote TLS certificate fingerprint while deliberately disabling certificate and hostname verification. **Its TLS result is not authenticated**, is vulnerable to interception, and must not be treated as proof of server identity. This feature requires design review before a public security-sensitive release.
+`tools/rosie_ip_shadow_scraper.py` currently creates a default verifying TLS context and explicitly sets `check_hostname=True` and `verify_mode=ssl.CERT_REQUIRED`. It connects by **IP address** and passes that address as `server_hostname`, so certificate validation requires a trusted certificate valid for that IP. A typical certificate issued for a DNS hostname may fail this check. Failed handshakes are recorded as errors, not as verified fingerprints.
+
+**Verification scope:** the Phase 24 offline regression test uses mocked TLS connections to confirm these settings and the certificate-failure behavior. It does **not** test a live HTTPS server, guarantee system trust-store configuration, or establish that all networking paths are secure. Authorized live integration review is still required before claiming security-sensitive production readiness.
+
+**Known release limitations:** The optional artwork action expects `rosie_ip_shadow_art.png` beside the Python script, while the current preserved file lives in `artwork/`. Report names can collide on repeated same-second runs. These are tracked for separate, reviewed fixes; neither issue implies a certificate-verification bypass.
 
 Other tools may require further testing of networking behavior, rate limits, terms-of-service compliance and error handling. No external penetration testing or live integration testing has been performed as part of this release candidate.
 
