@@ -17,14 +17,14 @@ The new GitHub Actions workflow:
 5. Runs the actual **offline Python terminal tests** inside the downloaded repository.
 6. Runs `go test ./...`, `go vet ./...`, and `go build` inside the downloaded VOIDLANTERN project.
 
-The successful Ubuntu run is linked above. This workflow is set to run on repository pushes and pull requests after merging Phase 23.
+The successful Phase 23 Ubuntu run is linked above. This workflow runs on repository pushes and pull requests. **Phase 25 update:** because subsequent pull requests can legitimately change Python tools, the workflow now reports source-file differences from public `main` rather than failing solely due to differing hashes. Proposed-branch code is tested by the separate Python PR workflow; public-clone tests verify the downloaded `main` copy. See [Phase 25 reliability fixes](PHASE25_RELIABILITY.md).
 
 ## Verification matrix
 
 | Concern | Evidence |
 | --- | --- |
 | Public network clone | HTTPS Git clone passed in Ubuntu Actions |
-| Original source preservation | Source SHA-256 comparison passed |
+| Original source preservation in Phase 23 | Source SHA-256 comparison passed at that time; later PRs report intentional changes rather than requiring identical files |
 | Python execution | Offline terminal verification passed on downloaded main |
 | Go | VOIDLANTERN tests, static checks and build passed on downloaded main |
 | Existing individual build recipes | Phase 22 verified 17/17 first-run Bash blocks in isolated Ubuntu workspaces |
