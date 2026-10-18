@@ -43,6 +43,14 @@ This document is the live navigation hub for the repository. All linked tools be
 | RosieGlitchbyte Hackgirl | [rosieglitchbyte_hackgirl.py](../tools/rosieglitchbyte_hackgirl.py) |
 | RosieGlitchbyte Neon Rose Phantom 3 | [rosieglitchbyte_neon_rose_phantom_3.py](../tools/rosieglitchbyte_neon_rose_phantom_3.py) |
 
+## ⚡ New creative design workstation
+
+| Tool | Source and recipe |
+|---|---|
+| HEXWAKE Palette Foundry | [Independent Python source](../tools/hexwake_palette_foundry.py) · [HTML, CSS and JSON recipe](tool-showcases/HEXWAKE.md) |
+
+The original 17-tool collection remains preserved; HEXWAKE is an additional standalone creation.
+
 ## 🚀 Sample commands
 
 ### Python
