@@ -19,4 +19,9 @@
 
 Artwork: `artwork/rosie_ip_shadow_art.png`
 
+## New tools (after original workshop handoff)
+
+- `hexwake_palette_foundry.py` · [HEXWAKE build recipe](tool-showcases/HEXWAKE.md), an independent offline palette creation workstation.
+
+
 Other previously discussed tools not present in this archive should be recovered separately rather than assumed included.
