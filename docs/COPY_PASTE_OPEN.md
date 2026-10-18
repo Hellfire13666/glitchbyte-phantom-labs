@@ -66,6 +66,20 @@ The default uses **three temporary synthetic files** so no personal documents ar
 
 [Source](../tools/ghostmark_integrity_atlas.py) · [Full integrity guide](tool-showcases/GHOSTMARK.md)
 
+## 🌹👻 SUBDOMINATRIX // real subdomain intelligence feedback
+
+**Default: fully offline demo, no target lookups.** This makes a real themed HTML, JSON, CSV and TXT report, with synthetic subdomain entries that are explicitly labeled. To launch, copy the entire terminal command and press **Enter**.
+
+```bash
+mkdir -p "$HOME/PhantomLabsLaunchers" && curl -fL --retry 2 "https://raw.githubusercontent.com/Hellfire13666/glitchbyte-phantom-labs/main/scripts/phantom_quickopen.py" -o "$HOME/PhantomLabsLaunchers/phantom_quickopen.py" && python3 "$HOME/PhantomLabsLaunchers/phantom_quickopen.py" subdominatrix
+```
+
+To collect actual public passive information for a domain you own or are permitted to assess, add `--domain example.com --live`. To also use any separately installed enumeration executables, add `--subfinder --findomain`. For bounded live validation add `--dns-check --http-check --max-verify 40`, only for authorized targets. Neither Subfinder nor Findomain is installed automatically.
+
+**What this genuinely implements:** four public passive sources, optional local CLI integrations, opt-in public-host DNS and HTTPS HEAD checks, header-based tech hints, feedback for unavailable/rate-limited sources, and four report formats. **Not in the current program:** vulnerability testing, global geolocation, screenshots or broad crawls. Decorative numbers in the promotional artwork are not real scan results.
+
+[Python 3 source](../tools/subdominatrix.py) · [Complete Subdominatrix guide](tool-showcases/SUBDOMINATRIX.md)
+
 ## 🛠️ Troubleshooting
 
 - **No Python 3 or curl:** Install `python3` and `curl` before running these commands.
@@ -79,8 +93,8 @@ The default uses **three temporary synthetic files** so no personal documents ar
 
 ### Files and validation
 
-Every tool caches its code in `~/PhantomLabsLaunchers/code/` and stores a fresh unique HTML/JSON report under `~/PhantomLabsLaunchers/reports/<tool>/`. The underlying original tools retain their own report formats and individual [build recipes](TOOL_VAULT.md). The shared [Python Quick Open launcher](../scripts/phantom_quickopen.py) is tested in Ubuntu CI against all four real programs without network, validating the HTML/JSON outputs, folder scan, file preservation and failure paths.
+Every tool caches its code in `~/PhantomLabsLaunchers/code/` and stores a fresh unique HTML/JSON report under `~/PhantomLabsLaunchers/reports/<tool>/`. The underlying original tools retain their own report formats and individual [build recipes](TOOL_VAULT.md). The shared [Python Quick Open launcher](../scripts/phantom_quickopen.py) is tested in Ubuntu CI against all five real programs without network, validating the HTML/JSON outputs, folder scan, file preservation and failure paths.
 
-**This page covers our four newer tools with verified local HTML exports.** Other original tools have their own [full individual recipes](TOOL_VAULT.md) and will receive a Quick Open command when their browser-launch path can be tested. Do not assume a CLI-only tool opens Firefox.
+**This page covers our five newer tools with verified local HTML exports.** Other original tools have their own [full individual recipes](TOOL_VAULT.md) and will receive a Quick Open command when their browser-launch path can be tested. Do not assume a CLI-only tool opens Firefox.
 
 [← Homepage](../README.md) · [Tool Vault](TOOL_VAULT.md) · [Source-available license](../LICENSE-NOTICE.md)

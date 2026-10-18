@@ -63,9 +63,17 @@ Explore public DNS, HTTPS certificate, security-header observations, RDAP/WHOIS 
 
 ## 🌹⚡ Copy, Paste & Open in Firefox
 
-**Don't want to download chat attachments or fight Git merge errors?** [Open our Quick Launch page](docs/COPY_PASTE_OPEN.md) for single-paste terminal commands that fetch only our published lab scripts and automatically open generated HTML in Firefox. Launchers are available for **HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2 and GHOSTMARK**, with safe local demo defaults. They install into a separate home folder, never modify your existing checkout, and print saved report paths if Firefox isn't available.
+**Don't want to download chat attachments or fight Git merge errors?** [Open our Quick Launch page](docs/COPY_PASTE_OPEN.md) for single-paste terminal commands that fetch only our published lab scripts and automatically open generated HTML in Firefox. Launchers are available for **HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK and SUBDOMINATRIX**, with safe local demo defaults. They install into a separate home folder, never modify your existing checkout, and print saved report paths if Firefox isn't available.
 
 [**📋 COPY & PASTE OPEN: FOUR WORKING COMMANDS**](docs/COPY_PASTE_OPEN.md) · [**🐍 Launcher source**](scripts/phantom_quickopen.py)
+
+## 🌹👻 SUBDOMINATRIX: Subdomain Intelligence Riot
+
+**New RosieGlitchbyte subdomain recon workstation, built as real Python 3 code instead of relying on mock artwork.** Gather passive records from crt.sh, AlienVault OTX, HackerTarget and urlscan.io; optionally call installed Subfinder and Findomain; perform **opt-in** bounded DNS and HTTPS header observations; and save a search-ready neon HTML dashboard, CSV, JSON and TXT. Offline synthetic previews work without any internet lookup.
+
+[**🐍 Subdominatrix source**](tools/subdominatrix.py) · [**📋 Actual Ubuntu recipe and honest feature checklist**](docs/tool-showcases/SUBDOMINATRIX.md) · [**⚡ Single-paste Firefox launcher**](docs/COPY_PASTE_OPEN.md#-subdominatrix--real-subdomain-intelligence-feedback)
+
+**The SUBDOMINATRIX promo image is a concept**: its illustrated global maps, screenshots, numbers and imagined commands are not real output from this tool. Live data sources may be unavailable or rate-limited. The chosen artwork will need its image asset committed separately to display that exact poster here.
 
 ## ⚡ Featured tools
 
