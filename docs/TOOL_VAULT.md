@@ -173,6 +173,7 @@ The first-run recipe performs the real game logic in memory, checks the three ga
 | RosieGlitchbyte Hackgirl | Python | [Source](../tools/rosieglitchbyte_hackgirl.py) · [Build recipe](tool-showcases/HACKGIRL_INTEL.md) |
 | RosieGlitchbyte Neon Rose Phantom 3 | Python | [Source](../tools/rosieglitchbyte_neon_rose_phantom_3.py) · [Build recipe](tool-showcases/NEON_ROSE_PHANTOM_3.md) |
 | HEXWAKE Palette Foundry | Python | [Source](../tools/hexwake_palette_foundry.py) · [Build recipe](tool-showcases/HEXWAKE.md) |
+| PHANTOM CIPHERBOX | Python | [Source](../tools/phantom_cipherbox.py) · [Build recipe](tool-showcases/PHANTOM_CIPHERBOX.md) |
 
 ## ⚡ NEW WORKSTATION: HEXWAKE Palette Foundry
 
