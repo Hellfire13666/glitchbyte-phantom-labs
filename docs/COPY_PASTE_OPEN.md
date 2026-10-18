@@ -6,6 +6,26 @@ Open a terminal on Ubuntu/Linux, copy **one complete block** below, and your cho
 
 Each block downloads just the [first-party launcher source](../scripts/phantom_quickopen.py) from the official repository, then the launcher downloads the selected, [published Python tool](../tools/) from GitHub if it is not already cached. Internet is needed to download uncached code. HEXWAKE, CIPHERBOX and GHOSTMARK processing is offline after download; ROSIE SCAN has an explicitly opted-in network mode. **Review downloaded source before execution** if you do not trust it.
 
+## 🖥️ How visitors actually trigger a tool
+
+**GitHub shows source code and instructions; clicking a filename, image or documentation link does not execute Python on your computer.** These are **Ubuntu/Linux terminal launchers**, not buttons that run inside GitHub or the browser. They also do not create a terminal command named `hexwake` or `cipherbox`.
+
+1. On an Ubuntu/Linux desktop, open **Terminal** (often **Ctrl+Alt+T**).
+2. On this page, choose the tool below. **Copy the entire Bash code block** under that heading (not the raw Python source URL).
+3. **Paste** it into Terminal, then press **Enter**. Wait for `[REPORT]` and, when Firefox is available, `[OPEN] Firefox launched with the new gallery.`
+4. The launcher downloads the official Python files if needed, runs a sample, and creates a real local `.html` report. Firefox opens it on a graphical desktop. **This does not launch a live website or a program inside GitHub.**
+5. If Firefox doesn't open, find the terminal line **`[REPORT] Open this HTML file: /home/.../report.html`**. Paste that full path into Firefox's address bar, or open it with `firefox '/full/path/from/report/line.html'`.
+
+**Check Firefox itself first** if necessary (this only opens a public test webpage):
+
+```bash
+firefox https://example.com
+```
+
+If you see `curl: (22) ... 404`, check that this launcher file exists on the repository's **main** branch: [scripts/phantom_quickopen.py](../scripts/phantom_quickopen.py). A branch-only file cannot be downloaded using a `/main/` URL until its pull request is merged. If `curl` fails, the `&&` chain stops so Python won't run. **No `exit`, `git reset`, `git merge`, or `git pull` is required.**
+
+If Terminal says `cipherbox: command not found`, that is expected: the correct trigger is the complete **CIPHERBOX Bash code block below**, not the word `cipherbox` alone. Running Python source without the launcher also won't automatically launch Firefox unless that particular tool implements browser opening.
+
 ## ⚡ HEXWAKE // real Firefox color palettes
 
 ```bash
