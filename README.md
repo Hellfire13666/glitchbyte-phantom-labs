@@ -110,6 +110,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 **RosieGlitchbyte HackGirl Intel:** [Copy-and-paste Python setup, offline sample CSV, JSON/HTML reporting and troubleshooting](docs/tool-showcases/HACKGIRL_INTEL.md).
 
+## 🌺 Neon Rose Phantom 3.0 build recipe
+
+**RosieGlitchByte Neon Rose Phantom 3.0:** [Copy-and-paste Python setup, eight real modes, safe offline sample, JSON report validation and troubleshooting](docs/tool-showcases/NEON_ROSE_PHANTOM_3.md).
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
