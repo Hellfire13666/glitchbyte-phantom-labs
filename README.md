@@ -86,6 +86,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 **GlitchbyteRosie X Intel Phantom:** [Copy-and-paste Python setup, optional credential-aware X API run, JSON/CSV reports and troubleshooting](docs/tool-showcases/X_INTEL_PHANTOM.md).
 
+## 🪞 X Shadow Intel No-API build recipe
+
+**GlitchbyteRosie X Shadow Intel:** [Copy-and-paste offline Python setup, sample post analysis, JSON/CSV output and troubleshooting](docs/tool-showcases/X_SHADOW_NO_API.md).
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
