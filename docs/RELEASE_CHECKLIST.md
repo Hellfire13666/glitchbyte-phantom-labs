@@ -17,9 +17,10 @@
 
 ## Additional unresolved release gates
 
-- [ ] Resolve the optional IP Shadow Scraper artwork path discrepancy without overwriting approved artwork
-- [ ] Review report filename collision / overwrite behavior under repeated same-second runs
-- [ ] Review dotted-handle filename handling in Rose Crawler before calling every output name stable
+- [x] Fix IP Shadow Scraper artwork lookup to use the existing repository `artwork/` file (Phase 25; no artwork bytes changed)
+- [x] Prevent same-second filename reuse in Rose Crawler and IP Shadow Scraper with microsecond timestamps and randomized filename suffixes (Phase 25)
+- [ ] Audit remaining tools for fixed-name outputs and timestamp collisions
+- [x] Verify dotted-handle report names in Rose Crawler with regression tests (Phase 25)
 - [ ] Review dependencies, automation permissions, network redirects and output privacy for production deployment
 
 Offline tests do not establish live platform compliance, full security auditing, credential safety across Git history, or permission to scan a third-party target. See [Phase 24 readiness findings](RELEASE_READINESS_REVIEW.md).
