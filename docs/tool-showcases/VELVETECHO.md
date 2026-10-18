@@ -1,3 +1,7 @@
+<!-- GLITCHBYTE-UPLOAD-DOOR:START -->
+<div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF8B1F?style=flat-square&logo=github&logoColor=white"></a></div>
+<!-- GLITCHBYTE-UPLOAD-DOOR:END -->
+
 # 🌹 VELVETECHO // PERSONA OBSERVATORY
 
 **GlitchByte Phantom Labs, Velvet Signal Division.** New original Python 3 offline-first public username and phone-format observatory. Distinct from cupidcr4wl and the existing Rosie Username Intel link generator: VELVETECHO adds user-defined public site catalogs, conservative opt-in username HTTP observation with robots policy, 5-handle batching, bounded pacing, optional phone-format checks, color-coded terminal outcomes, and a searchable noir-rose dashboard.
