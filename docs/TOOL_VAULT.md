@@ -108,6 +108,14 @@ The first run analyzes fictional sample CSV posts entirely offline; keyword-only
 
 The first-run recipe generates a uniquely named fictional CSV and analyzes it offline with a JSON report and HTML dashboard. Optional public profile metadata checks require a network request.
 
+## 🌺 Python Spotlight: Neon Rose Phantom 3.0
+
+**Eight domain modes · Safe offline RDAP-link first run · JSON archives**
+
+[🌺 Neon Rose Phantom 3.0 showcase and complete Bash recipe](tool-showcases/NEON_ROSE_PHANTOM_3.md) · [🐍 Original source](../tools/rosieglitchbyte_neon_rose_phantom_3.py)
+
+Its standalone recipe checks source syntax, produces a safe offline example report, validates the JSON, and explains optional authorized public-site checks.
+
 ## 🔎 Research and analysis
 
 | Tool | Language | Source |
@@ -149,7 +157,7 @@ The first-run recipe performs the real game logic in memory, checks the three ga
 | Rosie Ghost Heart | Python | [Source](../tools/rosie_ghost_heart.py) · [Build recipe](tool-showcases/GHOST_IN_MY_HEART.md) |
 | Rosie Hide Seek | Python | [Source](../tools/rosie_hide_seek.py) · [Build recipe](tool-showcases/FIND_ME_IF_YOU_LOVE_ME.md) |
 | RosieGlitchbyte Hackgirl | Python | [Source](../tools/rosieglitchbyte_hackgirl.py) · [Build recipe](tool-showcases/HACKGIRL_INTEL.md) |
-| RosieGlitchbyte Neon Rose Phantom 3 | Python | [rosieglitchbyte_neon_rose_phantom_3.py](../tools/rosieglitchbyte_neon_rose_phantom_3.py) |
+| RosieGlitchbyte Neon Rose Phantom 3 | Python | [Source](../tools/rosieglitchbyte_neon_rose_phantom_3.py) · [Build recipe](tool-showcases/NEON_ROSE_PHANTOM_3.md) |
 
 ## 🧭 Start here
 
