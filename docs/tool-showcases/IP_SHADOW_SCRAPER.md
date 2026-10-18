@@ -22,7 +22,7 @@
 
 Mode `9` is labeled “passive” in the existing interface but **includes a TLS connection**, so it is not entirely offline or passive. HTTP HEAD modes do not collect response cookies. The script's TLS function uses a default verifying SSL context and passes the IP as the certificate verification identity; many sites have certificates for hostnames rather than IPs and can fail validation. Errors are recorded rather than disabling certificate validation.
 
-The [repository security policy](../../SECURITY.md) contains an older warning about TLS verification in this tool. Its current source appears different; the discrepancy needs a separate security review. Do **not** regard this documentation review as a formal security audit.
+The [repository security policy](../../SECURITY.md) was corrected in Phase 24 to reflect the verifying TLS context. Offline mocked regression tests cover the configuration, but authorized live certificate verification and a full security review remain outstanding. Do **not** regard this documentation review as a formal security audit.
 
 ## 📋 COPY & PASTE BUILD RECIPE // Ubuntu/Linux Bash
 
@@ -63,7 +63,7 @@ find "$REPORT_DIR" -maxdepth 1 -type f -name 'rosie_ip_192.0.2.1_*.json' -print
 echo "Open the actual saved file with: python3 -m json.tool /actual/path.json"
 ```
 
-The source saves a JSON report after each completed mode under `~/RosieGlitchByte_IP_Shadow_Reports/`. Names follow `rosie_ip_<IP>_<UTC YYYYMMDD_HHMMSS>.json` (IPv6 colons become underscores). A repeat for the same IP within the same second may overwrite the previous report. The tool does **not** offer `--output`, CSV or HTML exports.
+The source saves a JSON report after each completed mode under `~/RosieGlitchByte_IP_Shadow_Reports/`. Names follow `rosie_ip_<IP>_<UTC YYYYMMDD_HHMMSS_microseconds>_<random-suffix>.json` (IPv6 colons become underscores). The microsecond clock plus random suffix protects earlier reports from rapid reruns. The tool does **not** offer `--output`, CSV or HTML exports.
 
 ### Run other modes only when appropriate
 
@@ -75,7 +75,7 @@ python3 glitchbyte-phantom-labs/tools/rosie_ip_shadow_scraper.py \
   YOUR_AUTHORIZED_IP --mode 2
 ```
 
-Other flags include `--mode 1` through `--mode 9` and `--art`. The latter attempts to open an optional file named `rosie_ip_shadow_art.png` **beside the script**; the repository's image currently resides in the top-level `artwork/` folder, so the optional art command may report it missing. This is a known placement mismatch, not a reason to move the artwork or overwrite files.
+Other flags include `--mode 1` through `--mode 9` and `--art`. The optional art command now resolves the original `artwork/rosie_ip_shadow_art.png` from the repository root. The approved image was not moved or edited. On a headless Linux system, `xdg-open` may still be unavailable.
 
 HTTP/HTTPS HEAD modes `6` and `7` prompt for explicit confirmation. Only proceed when you have permission. Never assume that the presence of a public IP, a reputation link or an RDAP registration proves an allegation about an individual.
 
@@ -95,7 +95,7 @@ The output contains `brand`, `timestamp_utc` and a `results` object keyed by the
 | `python3` or `git` missing | Install using your Linux distribution's package manager |
 | Invalid input | Provide one IPv4/IPv6 address, not a hostname or URL |
 | No JSON report | Use a valid mode, inspect terminal `Saved report:` and the home directory path |
-| Missing artwork | The source looks for the PNG next to the script, but the current image is in `artwork/` |
+| Missing artwork | Ensure the checkout contains the existing `artwork/rosie_ip_shadow_art.png`; no image duplication is required |
 | Reverse DNS returns no hostname | Normal for many addresses; not proof of wrongdoing |
 | TLS certificate mismatch | A hostname certificate may not validate against an IP; don't disable verification |
 | RDAP unavailable | Network/service errors or private addresses may prevent a result |
