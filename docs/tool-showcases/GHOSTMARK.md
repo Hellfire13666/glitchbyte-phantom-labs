@@ -1,5 +1,8 @@
 # 🌹 GHOSTMARK INTEGRITY ATLAS // LOCAL FILE CONSTELLATION
 
+**⚡ NO-DOWNLOAD-ATTACHMENT QUICK START:** [Copy one terminal command, generate HTML and open Firefox](../COPY_PASTE_OPEN.md). No Git pull, merge or rebase. The command is hosted in our GitHub lab and uses its own safe home folder.
+
+
 **Independent Python 3 • Offline SHA-256 hashing • Duplicate detection • Baseline change reports • Rosie Firefox dashboard**
 
 [Source](../../tools/ghostmark_integrity_atlas.py) · [Tests](../../tests/test_ghostmark_integrity_atlas.py) · [Tool Vault](../TOOL_VAULT.md)
