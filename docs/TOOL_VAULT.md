@@ -4,7 +4,7 @@
 
 ![Official RosieGlitchbyte Phantom Labs](../artwork/labface2.png)
 
-> **Vault inventory:** 16 preserved original Python scripts, two additional standalone Python tools (HEXWAKE and PHANTOM CIPHERBOX), and the preserved VOIDLANTERN Go project. New tools merge only after their review PRs; linked sources are present on this branch.
+> **Vault inventory:** 16 preserved original Python scripts, three additional standalone Python tools (HEXWAKE, PHANTOM CIPHERBOX and ROSIE PHANTOM SCAN V2), and the preserved VOIDLANTERN Go project. New tools merge only after their review PRs; linked sources are present on this branch.
 
 [🧪 Phase 20 documentation audit and verification guide](RECIPE_AUDIT.md). The automated test checks all 17 source-linked showcases, recipe coverage, and local Markdown links on PRs after the audit merges.
 
@@ -174,6 +174,7 @@ The first-run recipe performs the real game logic in memory, checks the three ga
 | RosieGlitchbyte Neon Rose Phantom 3 | Python | [Source](../tools/rosieglitchbyte_neon_rose_phantom_3.py) · [Build recipe](tool-showcases/NEON_ROSE_PHANTOM_3.md) |
 | HEXWAKE Palette Foundry | Python | [Source](../tools/hexwake_palette_foundry.py) · [Build recipe](tool-showcases/HEXWAKE.md) |
 | PHANTOM CIPHERBOX | Python | [Source](../tools/phantom_cipherbox.py) · [Build recipe](tool-showcases/PHANTOM_CIPHERBOX.md) |
+| ROSIE PHANTOM SCAN V2 | Python | [Source](../tools/rosie_phantom_scan_v2.py) · [Build recipe](tool-showcases/ROSIE_PHANTOM_SCAN_V2.md) |
 
 ## ⚡ NEW WORKSTATION: HEXWAKE Palette Foundry
 
