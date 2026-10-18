@@ -122,7 +122,7 @@ The first run analyzes fictional sample CSV posts entirely offline; keyword-only
 | --- | --- | --- |
 | Rosie Catch Me Chaos | Python | [rosie_catch_me_chaos.py](../tools/rosie_catch_me_chaos.py) |
 | Rosie Dark Desire | Python | [rosie_dark_desire.py](../tools/rosie_dark_desire.py) |
-| Rosie Ghost Heart | Python | [rosie_ghost_heart.py](../tools/rosie_ghost_heart.py) |
+| Rosie Ghost Heart | Python | [Source](../tools/rosie_ghost_heart.py) · [Build recipe](tool-showcases/GHOST_IN_MY_HEART.md) |
 | Rosie Hide Seek | Python | [rosie_hide_seek.py](../tools/rosie_hide_seek.py) |
 | RosieGlitchbyte Hackgirl | Python | [rosieglitchbyte_hackgirl.py](../tools/rosieglitchbyte_hackgirl.py) |
 | RosieGlitchbyte Neon Rose Phantom 3 | Python | [rosieglitchbyte_neon_rose_phantom_3.py](../tools/rosieglitchbyte_neon_rose_phantom_3.py) |
