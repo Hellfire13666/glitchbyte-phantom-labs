@@ -1,3 +1,9 @@
+<!-- QUICK-UPLOAD-DOOR:START -->
+<div align="right">
+<a href="https://github.com/Hellfire13666/rosieriot-overdrive-2026/upload/main" title="Open GitHub Upload Files door"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/📤_UPLOAD-FILES-00d9ff?style=flat-square&logo=github&logoColor=white" /></a>
+</div>
+<!-- QUICK-UPLOAD-DOOR:END -->
+
 # ⚡ RosieRiot Overdrive | Recon & Expansion Lab
 
 **GlitchByte Phantom Labs** · Recon · Intel · Visualize · Archive
