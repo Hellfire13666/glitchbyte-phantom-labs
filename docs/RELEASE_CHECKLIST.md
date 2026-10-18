@@ -15,6 +15,8 @@
 - [x] Upload release candidate to private GitHub repository and verify GitHub Actions
 - [x] Create and verify an independent local release backup
 
+[🌹 Final workshop handoff and verification evidence](WORKSHOP_HANDOFF.md). The original workshop's offline setup milestone is complete, while live release and privacy gates remain open.
+
 ## Additional unresolved release gates
 
 - [x] Fix IP Shadow Scraper artwork lookup to use the existing repository `artwork/` file (Phase 25; no artwork bytes changed)
