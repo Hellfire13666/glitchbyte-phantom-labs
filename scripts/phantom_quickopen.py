@@ -21,6 +21,7 @@ TOOLS = {
     "cipherbox": "phantom_cipherbox.py",
     "rosie-scan": "rosie_phantom_scan_v2.py",
     "ghostmark": "ghostmark_integrity_atlas.py",
+    "subdominatrix": "subdominatrix.py",
 }
 MAX_DOWNLOAD = 300_000
 
@@ -77,6 +78,11 @@ def main(argv=None):
     parser.add_argument("--passive-subdomains", action="store_true")
     parser.add_argument("--findomain", action="store_true")
     parser.add_argument("--whois-cli", action="store_true")
+    parser.add_argument("--subfinder", action="store_true", help="Subdominatrix installed Subfinder")
+    parser.add_argument("--dns-check", action="store_true", help="Subdominatrix public DNS validation")
+    parser.add_argument("--http-check", action="store_true", help="Subdominatrix bounded HTTPS HEAD")
+    parser.add_argument("--max-results", type=int, default=1500)
+    parser.add_argument("--max-verify", type=int, default=80)
     parser.add_argument("--folder", help="Local folder to hash with Ghostmark; otherwise demo only")
     parser.add_argument("--baseline", help="GHOSTMARK previous report JSON")
     parser.add_argument("--refresh", action="store_true", help="Refresh cached source from GitHub")
@@ -84,8 +90,8 @@ def main(argv=None):
     parser.add_argument("--workspace", default=str(Path.home() / "PhantomLabsLaunchers"))
     parser.add_argument("--no-browser", action="store_true", help="Useful for headless/offline tests")
     args = parser.parse_args(argv)
-    if args.live and args.tool != "rosie-scan":
-        parser.error("--live only applies to rosie-scan")
+    if args.live and args.tool not in ("rosie-scan", "subdominatrix"):
+        parser.error("--live only applies to rosie-scan and subdominatrix")
     if args.baseline and (args.tool != "ghostmark" or not args.folder):
         parser.error("--baseline requires ghostmark --folder")
     if args.message_file and args.tool != "cipherbox":
@@ -101,7 +107,7 @@ def main(argv=None):
         source = install_source("tools/" + filename, workspace / "code" / filename,
                                 args.source_dir, args.refresh)
         artwork = workspace / "artwork" / "rosie_header.png"
-        if args.tool in ("rosie-scan", "ghostmark") and not artwork.exists():
+        if args.tool in ("rosie-scan", "ghostmark", "subdominatrix") and not artwork.exists():
             try:
                 install_source("artwork/labface2.png", artwork, args.source_dir)
             except (OSError, ValueError, urllib.error.URLError) as exc:
@@ -128,6 +134,23 @@ def main(argv=None):
                     arguments += ["--findomain"]
                 if args.whois_cli:
                     arguments += ["--whois-cli"]
+            if artwork.exists():
+                arguments += ["--artwork", str(artwork)]
+        elif args.tool == "subdominatrix":
+            arguments += [args.domain, "--out", str(output), "--no-open",
+                          "--max-results", str(args.max_results),
+                          "--max-verify", str(args.max_verify)]
+            if not args.live:
+                arguments += ["--offline-demo"]
+            else:
+                if args.subfinder:
+                    arguments += ["--subfinder"]
+                if args.findomain:
+                    arguments += ["--findomain"]
+                if args.dns_check:
+                    arguments += ["--dns-check"]
+                if args.http_check:
+                    arguments += ["--http-check"]
             if artwork.exists():
                 arguments += ["--artwork", str(artwork)]
         else:
