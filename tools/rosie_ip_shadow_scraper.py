@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """RosieGlitchByte IP Shadow Scraper: public IP research, no API key."""
-import argparse, datetime, ipaddress, json, os, pathlib, re, socket, ssl, subprocess, sys, time, urllib.error, urllib.parse, urllib.request
+import argparse, datetime, ipaddress, json, os, pathlib, re, socket, ssl, subprocess, sys, time, urllib.error, urllib.parse, urllib.request, uuid
 
 PINK='\033[95m'; CYAN='\033[96m'; BLUE='\033[94m'; GREEN='\033[92m'; RED='\033[91m'; GOLD='\033[93m'; RESET='\033[0m'
 OUT=pathlib.Path.home()/'RosieGlitchByte_IP_Shadow_Reports'
-ART=pathlib.Path(__file__).with_name('rosie_ip_shadow_art.png')
+ART=pathlib.Path(__file__).resolve().parent.parent/'artwork'/'rosie_ip_shadow_art.png'
 TIMEOUT=5
 
 def line(s='', color=CYAN): print(color+str(s)+RESET)
@@ -77,8 +77,8 @@ def local_network(ip):
 
 def save(ip, data):
     OUT.mkdir(parents=True,exist_ok=True)
-    stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d_%H%M%S')
-    name=f"rosie_ip_{str(ip).replace(':','_')}_{stamp}.json"
+    stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d_%H%M%S_%f')
+    name=f"rosie_ip_{str(ip).replace(':','_')}_{stamp}_{uuid.uuid4().hex[:12]}.json"
     path=OUT/name
     path.write_text(json.dumps({'brand':'RosieGlitchByte IP Shadow Scraper','timestamp_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':data},indent=2,ensure_ascii=False),encoding='utf-8')
     line('Saved report: '+str(path),GREEN)
@@ -126,7 +126,7 @@ def menu():
     line(' [0] Exit',RED)
 
 def open_art():
-    if not ART.exists(): line('Optional artwork not found next to script.',GOLD); return
+    if not ART.exists(): line('Optional artwork not found in repository artwork/ folder.',GOLD); return
     try: subprocess.Popen(['xdg-open',str(ART)],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL); line('Opening Rosie artwork...',GREEN)
     except OSError: line('Open image manually: '+str(ART),GOLD)
 
