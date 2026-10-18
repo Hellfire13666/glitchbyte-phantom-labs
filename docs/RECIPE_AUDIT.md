@@ -48,6 +48,8 @@ No source changes to the Python tools or Go module are included in this audit ph
 
 ## Future-tool rule
 
-Every new `tools/*.py` source must have a corresponding `docs/tool-showcases/*.md` recipe, a Tool Vault table link, actual working terminal commands, clearly stated permissions, real report paths, troubleshooting, and honest execution status. The audit tests will help catch omissions in future PRs.
+Every new `tools/*.py` source or standalone `tools/<project>/*.py` entry point must have a corresponding `docs/tool-showcases/*.md` guide, a Tool Vault table link, actual working terminal commands, clearly stated permissions, real report paths, troubleshooting, and honest execution status. Go projects under `tools/go/<project>/go.mod` need the same Vault door and dedicated setup guide.
+
+**Easy-find door guard:** The prominent **All Tool Doors** index near the top of `TOOL_VAULT.md` includes each tool's source/project link and setup guide. Run `python3 -m unittest discover -s tests -p 'test_tool_vault_doors.py' -v` before proposing a new tool. GitHub Actions also runs this check as part of `unittest discover -s tests`, failing when a new standalone tool is absent, a door is duplicated, or its source/guide link is broken. Tests check documentation completeness, not live external-network behavior.
 
 [← Phantom Tool Vault](TOOL_VAULT.md) · [← Official homepage](../README.md) · [← Source-level starter guide](TOOL_STARTER_GUIDE.md)
