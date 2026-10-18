@@ -78,6 +78,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 **RosieGlitchByte IP Specter:** [Copy-and-paste offline-first setup, JSON results, authorized modules and troubleshooting](docs/tool-showcases/IP_SPECTER.md).
 
+## 🌘 IP Shadow Scraper build recipe
+
+**RosieGlitchByte IP Shadow Scraper:** [Copy-and-paste Ubuntu setup, nine modes, JSON output and troubleshooting](docs/tool-showcases/IP_SHADOW_SCRAPER.md).
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
