@@ -148,6 +148,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 This is a brand-new creative tool, independent of the 17 preserved original projects. No API keys, website requests or login credentials.
 
+## 🗝️ PHANTOM CIPHERBOX: Independent codebreaking workshop
+
+[Create your own genuine reversible Python puzzles, with a printable HTML transmission, ordered clues, a local-only answer key and answer validation](docs/tool-showcases/PHANTOM_CIPHERBOX.md). [View Python source](tools/phantom_cipherbox.py). This is creative encoding, **not secure encryption**; no API, third-party account or network access is involved after a checkout.
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
