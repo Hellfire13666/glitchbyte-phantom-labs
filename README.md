@@ -82,6 +82,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 **RosieGlitchByte IP Shadow Scraper:** [Copy-and-paste Ubuntu setup, nine modes, JSON output and troubleshooting](docs/tool-showcases/IP_SHADOW_SCRAPER.md).
 
+## 🛰️ X Intel Phantom build recipe
+
+**GlitchbyteRosie X Intel Phantom:** [Copy-and-paste Python setup, optional credential-aware X API run, JSON/CSV reports and troubleshooting](docs/tool-showcases/X_INTEL_PHANTOM.md).
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:

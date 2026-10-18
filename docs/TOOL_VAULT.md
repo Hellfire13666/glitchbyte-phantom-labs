@@ -84,13 +84,21 @@ The first run classifies a reserved documentation IP entirely offline. Additiona
 
 Start with mode 1, which classifies a reserved documentation address without contacting a target. The showcase documents permissions for network options, certificate verification, and a known companion-art placement mismatch.
 
+## 🛰️ Python Spotlight: X Intel Phantom (Official API)
+
+**Python 3.9+ · X API v2 · Credential-aware public research · JSON + CSV**
+
+[🛰️ Official X Intel Phantom showcase and build recipe](tool-showcases/X_INTEL_PHANTOM.md) · [🐍 Python source](../tools/glitchbyterosie_x_intel.py)
+
+Start with offline syntax/help checks. Live API operations require your own permitted developer bearer token and endpoint access, with private input instructions on the showcase page.
+
 ## 🔎 Research and analysis
 
 | Tool | Language | Source |
 | --- | --- | --- |
 | GlitchByte Domain Intel | Python | [Source](../tools/glitchbyte_domain_intel.py) · [Build recipe](tool-showcases/DOMAIN_INTEL.md) |
 | GlitchByte Log Constellation | Python | [Source](../tools/glitchbyte_log_constellation.py) · [Build recipe](tool-showcases/LOG_CONSTELLATION.md) |
-| GlitchByteRosie X Intel | Python | [glitchbyterosie_x_intel.py](../tools/glitchbyterosie_x_intel.py) |
+| GlitchByteRosie X Intel | Python | [Source](../tools/glitchbyterosie_x_intel.py) · [Build recipe](tool-showcases/X_INTEL_PHANTOM.md) |
 | GlitchByteRosie X No API | Python | [glitchbyterosie_x_no_api.py](../tools/glitchbyterosie_x_no_api.py) |
 | Rose Crawler | Python | [Source](../tools/rose_crawler.py) · [Build recipe](tool-showcases/ROSE_CRAWLER.md) |
 | Rosie IP Shadow Scraper | Python | [Source](../tools/rosie_ip_shadow_scraper.py) · [Build recipe](tool-showcases/IP_SHADOW_SCRAPER.md) |
