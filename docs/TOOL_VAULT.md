@@ -1,5 +1,9 @@
 # 🕷️ PHANTOM TOOL VAULT // PHASE 02
 
+> **QUICK LAB DOORS:** [👻 Headquarters](../README.md) · [🌱 Cultivation Room](CULTIVATION_ROOM.md) · [⚡ RosieRiot Overdrive](https://github.com/Hellfire13666/rosieriot-overdrive-2026) · [🔐 Backup Vault](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases)  
+> **UPLOAD DOORS:** [📤 HQ / Cultivation](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) · [📤 Overdrive](https://github.com/Hellfire13666/rosieriot-overdrive-2026/upload/main) · [📤 Vault](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/upload/main)
+
+
 **The official GlitchByte Phantom Labs tool navigator.** Choose a project, read its documentation, test and run it locally. This page links to source code that exists in the repository, not hypothetical tools from design mockups.
 
 ![Rosie Phantom Tool Vault](../artwork/vaultlab.png)
