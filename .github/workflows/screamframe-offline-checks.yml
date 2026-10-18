@@ -1,0 +1,46 @@
+name: SCREAMFRAME offline image triage
+
+on:
+  pull_request:
+    paths:
+      - 'tools/screamframe-pixel-autopsy/**'
+      - '.github/workflows/screamframe-offline-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'tools/screamframe-pixel-autopsy/**'
+      - '.github/workflows/screamframe-offline-checks.yml'
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow for SCREAMFRAME
+        run: python3 -m pip install -r tools/screamframe-pixel-autopsy/requirements.txt
+      - name: Compile the real source
+        run: python3 -m py_compile tools/screamframe-pixel-autopsy/screamframe_pixel_autopsy.py
+      - name: Run eight offline tests
+        run: python3 -m unittest discover -s tools/screamframe-pixel-autopsy/tests -v
+      - name: Run demo and verify HTML + JSON outputs
+        run: |
+          python3 tools/screamframe-pixel-autopsy/screamframe_pixel_autopsy.py --demo --out /tmp/screamframe-ci-out
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          out = Path('/tmp/screamframe-ci-out')
+          reports = list(out.glob('screamframe_echo_*.json'))
+          assert len(reports) == 1, reports
+          obj = json.loads(reports[0].read_text())
+          assert obj['counts'] == {
+              'inspected': 4, 'exact_groups': 1, 'visual_pairs': 2,
+              'format_mismatches': 1, 'skipped': 0
+          }, obj['counts']
+          assert reports[0].with_suffix('.html').exists()
+          print('PASS: synthetic images inspected, real hashes checked, reports saved')
+          PY
