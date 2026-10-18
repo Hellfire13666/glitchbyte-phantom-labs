@@ -1,5 +1,8 @@
 # ⚡ HEXWAKE // GLITCH HEX PALETTE FOUNDRY
 
+**⚡ NO-DOWNLOAD-ATTACHMENT QUICK START:** [Copy one terminal command, generate HTML and open Firefox](../COPY_PASTE_OPEN.md). No Git pull, merge or rebase. The command is hosted in our GitHub lab and uses its own safe home folder.
+
+
 **Original offline Python 3 design tool · Reproducible Glitch HEX palettes · JSON, CSS and HTML**
 
 [Actual source](../../tools/hexwake_palette_foundry.py) · [Offline tests](../../tests/test_hexwake_palette_foundry.py) · [Phantom Tool Vault](../TOOL_VAULT.md)
