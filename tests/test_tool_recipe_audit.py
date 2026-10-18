@@ -54,7 +54,9 @@ class ToolRecipeAudit(unittest.TestCase):
             p for p in SHOWCASES.glob("*.md")
             if p.name != "SHOWCASE_TEMPLATE.md"
         ]
-        self.assertEqual(len(pages), len(list((ROOT / "tools").glob("*.py"))) + 1, "Each Python tool and VOIDLANTERN needs one showcase")
+        nested_tools = [p for p in (ROOT / "tools").glob("*/*.py") if p.name != "__init__.py"]
+        expected = len(list((ROOT / "tools").glob("*.py"))) + len(nested_tools) + 1
+        self.assertEqual(len(pages), expected, "Each root or nested Python tool and VOIDLANTERN needs one showcase")
         vault = VAULT.read_text(encoding="utf-8")
         for page in pages:
             with self.subTest(page=page.name):

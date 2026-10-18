@@ -257,3 +257,8 @@ The repository is publicly accessible, but the legacy tool collection is a **pre
 *Built in the shadows. Preserved in the code.*
 
 </div>
+
+
+## ✦ SCREAMFRAME: Pixel Autopsy Studio
+
+An independent offline screenshot intelligence workstation. Find exact copies (SHA-256), visual lookalikes (dHash), image-format mismatches and limited EXIF timestamps, then open a radioactive-lime-and-signal-orange local HTML gallery. The tool is read-only and never uploads images; metadata is not proof of image forgery. [Ubuntu recipe](docs/tool-showcases/SCREAMFRAME.md) · [Python source](tools/screamframe-pixel-autopsy/screamframe_pixel_autopsy.py) · [8 local tests](tools/screamframe-pixel-autopsy/tests/test_screamframe_pixel_autopsy.py).
