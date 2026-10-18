@@ -1,3 +1,7 @@
+<!-- GLITCHBYTE-UPLOAD-DOOR:START -->
+<div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF1493?style=flat-square&logo=github&logoColor=white"></a></div>
+<!-- GLITCHBYTE-UPLOAD-DOOR:END -->
+
 # 🌹 Phantom Labs: Find, Build, Run & Read Tools
 
 GlitchByte Phantom Labs is a collection of **independent** Python and Go projects. Each creation keeps its own name, folder and reports. A remake or upgrade happens **only when explicitly requested**.
