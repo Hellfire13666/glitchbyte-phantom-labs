@@ -1,0 +1,70 @@
+name: Public GitHub clone and offline release check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  public-clone:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout proposed revision for source comparison
+        uses: actions/checkout@v4
+
+      - name: Configure Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Configure Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Clone the public repository over HTTPS
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Public HTTPS clone: no Git URL rewrite and no stored token."
+          git -c credential.helper= clone --depth 1 \
+            https://github.com/Hellfire13666/glitchbyte-phantom-labs.git \
+            "$RUNNER_TEMP/phantom-public-clone"
+          test -f "$RUNNER_TEMP/phantom-public-clone/README.md"
+          test -f "$RUNNER_TEMP/phantom-public-clone/LICENSE-NOTICE.md"
+          test -f "$RUNNER_TEMP/phantom-public-clone/SECURITY.md"
+          git -C "$RUNNER_TEMP/phantom-public-clone" remote -v
+          echo "PASS: public repository cloned from GitHub HTTPS"
+
+      - name: Compare all preserved Python and Go sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE="$GITHUB_WORKSPACE"
+          CLONE="$RUNNER_TEMP/phantom-public-clone"
+          # The phase changes only docs/workflows; every original tool must be identical.
+          diff -u \
+            <(cd "$SOURCE" && find tools -type f \( -name '*.py' -o -name '*.go' -o -name 'go.mod' \) -print0 | sort -z | xargs -0 sha256sum) \
+            <(cd "$CLONE" && find tools -type f \( -name '*.py' -o -name '*.go' -o -name 'go.mod' \) -print0 | sort -z | xargs -0 sha256sum)
+          echo "PASS: Python and Go source SHA-256 manifests match"
+
+      - name: Run offline Python smoke tests from the public clone
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/phantom-public-clone"
+          python3 -m unittest discover -s tests -p 'test_offline_terminal_verification.py' -v
+
+      - name: Run Go test and build from the public clone
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/phantom-public-clone/tools/go/voidlantern-go"
+          go test ./...
+          go vet ./...
+          go build -o "$RUNNER_TEMP/voidlantern" .
+          test -x "$RUNNER_TEMP/voidlantern"
+          echo "PASS: VOIDLANTERN built from HTTPS-cloned repository"
