@@ -118,6 +118,10 @@ These links point to **files present in this repository**, not merely concepts o
 
 [Read the Tool Recipe Audit](docs/RECIPE_AUDIT.md). Our Python CI now checks that every existing tool has its own recipe page and that local Markdown links resolve. Documentation coverage is **not** the same as a completed Ubuntu end-to-end test.
 
+## 💙 Phase 21: Real offline terminal verification
+
+[See the successful Ubuntu GitHub Actions run and verification matrix](docs/OFFLINE_VERIFICATION.md). The suite executes real offline examples and checks report files and puzzle endings. Live API and authorized network testing remain separate; all full clone-and-build recipes are not yet individually fresh-machine certified.
+
 ## 🚀 Quick-start terminal
 
 Clone the public repository:
