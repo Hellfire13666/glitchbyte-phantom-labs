@@ -116,6 +116,14 @@ The first run analyzes fictional sample CSV posts entirely offline; keyword-only
 | RosieGlitchbyte IP Specter | Python | [Source](../tools/rosieglitchbyte_ip_specter.py) · [Build recipe](tool-showcases/IP_SPECTER.md) |
 | VOIDLANTERN | Go | [Project directory](../tools/go/voidlantern-go/) · [Showcase](tool-showcases/VOIDLANTERN.md) |
 
+## 💗 Creative Spotlight: Find Me If You Love Me
+
+**Three-clue offline terminal romance puzzle · Real hex-encoded final letter · Unique transcript**
+
+[💗 Find Me If You Love Me showcase and Bash build recipe](tool-showcases/FIND_ME_IF_YOU_LOVE_ME.md) · [🐍 Original Python source](../tools/rosie_hide_seek.py)
+
+Its recipe checks the source and runs all three real puzzle gates in a controlled offline smoke test without modifying the game.
+
 ## 💗 Creative code and experiments
 
 | Tool | Language | Source |
@@ -123,7 +131,7 @@ The first run analyzes fictional sample CSV posts entirely offline; keyword-only
 | Rosie Catch Me Chaos | Python | [rosie_catch_me_chaos.py](../tools/rosie_catch_me_chaos.py) |
 | Rosie Dark Desire | Python | [Source](../tools/rosie_dark_desire.py) · [Build recipe](tool-showcases/DARK_DESIRE.md) |
 | Rosie Ghost Heart | Python | [Source](../tools/rosie_ghost_heart.py) · [Build recipe](tool-showcases/GHOST_IN_MY_HEART.md) |
-| Rosie Hide Seek | Python | [rosie_hide_seek.py](../tools/rosie_hide_seek.py) |
+| Rosie Hide Seek | Python | [Source](../tools/rosie_hide_seek.py) · [Build recipe](tool-showcases/FIND_ME_IF_YOU_LOVE_ME.md) |
 | RosieGlitchbyte Hackgirl | Python | [rosieglitchbyte_hackgirl.py](../tools/rosieglitchbyte_hackgirl.py) |
 | RosieGlitchbyte Neon Rose Phantom 3 | Python | [rosieglitchbyte_neon_rose_phantom_3.py](../tools/rosieglitchbyte_neon_rose_phantom_3.py) |
 
