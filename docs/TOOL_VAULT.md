@@ -12,6 +12,8 @@
 
 [🌹 Phase 22: All 17 first-run recipes passed in clean Ubuntu CI workspaces](CLEAN_BUILD_VERIFICATION.md). Network cloning was mapped to a local Git checkout, and optional live target checks are excluded.
 
+[🌹 Phase 23: Public HTTPS clone and source-preservation verification](PUBLIC_CLONE_VERIFICATION.md). Ubuntu CI confirms real public download, offline Python tests and Go build.
+
 ## 📋 The Phantom Build Recipe standard
 
 **Every tool gets copy-and-paste terminal instructions right on its own page.** Each recipe covers **Install → Build → Test → Run → Find Results → Troubleshoot**. The steps must match that tool's real flags, requirements and report formats, with honest test status and permission checks for network research.
