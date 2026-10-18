@@ -75,6 +75,10 @@ Explore public DNS, HTTPS certificate, security-header observations, RDAP/WHOIS 
 
 **The SUBDOMINATRIX promo image is a concept**: its illustrated global maps, screenshots, numbers and imagined commands are not real output from this tool. Live data sources may be unavailable or rate-limited. The chosen artwork will need its image asset committed separately to display that exact poster here.
 
+## 🌹 NEW: VELVETECHO Persona Observatory
+
+**GlitchByte colorful signal workstation.** Offline public username candidate links, optional authorized live site checks, and a local masked phone-number format scanner. Vibrant neon outcome readouts and local HTML/CSV/JSON reports. [Open the dedicated Ubuntu guide](docs/tool-showcases/VELVETECHO.md) · [Python source](tools/velvetecho-persona-observatory/velvetecho_persona_observatory.py) · [Tool Vault](docs/TOOL_VAULT.md).
+
 ## ⚡ Featured tools
 
 | Name | Language | Use | Go to source |
