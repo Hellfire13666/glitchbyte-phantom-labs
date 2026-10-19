@@ -8,6 +8,10 @@ This is a collection of educational, public-information and local research tools
 
 **Never commit** API tokens, passwords, browser cookies, session files, private research data, or identifying information about third parties. Keep output reports outside the repository.
 
+## Owner-only report files
+
+Live Ubuntu checks on October 19, 2026 found a Findomain transcript mode `0600` and a Triad Signal report mode `0664`. Use `chmod 600 path/to/report.txt` to restrict previously saved output to its owner if appropriate. Parent directories and ACLs still affect effective access. The updated [Triad Signal companion](docs/integrations/TRIAD_SIGNAL_2026.md) now creates opt-in TXT reports with explicit `0600` permissions and `O_EXCL` to avoid overwriting existing files. The change applies to new files after the local companion is refreshed; it does not retroactively fix old reports or audit all historic tools. For new tools that write potentially sensitive report content, adopt private creation semantics and test against permissive shell umasks.
+
 ## Known release-review item
 
 `tools/rosie_ip_shadow_scraper.py` currently creates a default verifying TLS context and explicitly sets `check_hostname=True` and `verify_mode=ssl.CERT_REQUIRED`. It connects by **IP address** and passes that address as `server_hostname`, so certificate validation requires a trusted certificate valid for that IP. A typical certificate issued for a DNS hostname may fail this check. Failed handshakes are recorded as errors, not as verified fingerprints.
