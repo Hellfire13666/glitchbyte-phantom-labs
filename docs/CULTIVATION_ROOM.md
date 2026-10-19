@@ -40,6 +40,10 @@ The [CI-reviewed terminal-only live signal upgrade](tool-showcases/SUBDOMINATRIX
 
 **Findomain (external tool) passed its live public-source check** in 23 seconds. Its [diagnostic and Simple / Medium / Extra run recipes](integrations/FINDOMAIN_LIVE_CHECK.md) are published as a workshop integration guide. The user-local executable works; an older `/usr/bin/findomain` placeholder remains optional cleanup. No tool source or release archive was modified by that check.
 
+## 💾 Universal easy-save implementation
+
+[Easy Save for Every Tool](EASY_SAVE_ALL_TOOLS.md) is the source of truth for the native `-o name.txt` / `--o name.txt` future-build standard and the shared wrapper for existing command-line utilities. Every one of our 24 tool pages now explains how to use the save runner or the native option. This preserves existing source, built-in reports and Firefox workflows; interactive tools need their own exporter rather than assuming a pipe can capture state.
+
 ## 💾 New workshop save option
 
 **Every future tool build or explicitly requested upgrade should offer simple output saving where practical:** `-o name.txt` writes human-readable results only if requested. Live terminal results should still appear. Document exact filename/path, TXT contents, non-overwrite behavior and exceptions. SUBDOMINATRIX has a tested implementation under review; older tools are not silently rewritten. [Publishing standard](BUILD_PUBLICATION_STANDARD.md) · [Subdominatrix](tool-showcases/SUBDOMINATRIX.md).
