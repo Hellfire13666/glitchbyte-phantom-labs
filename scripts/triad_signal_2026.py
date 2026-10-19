@@ -79,7 +79,7 @@ def terminate_group(proc):
         proc.wait()
 
 
-def probe(module, target, seconds, max_show, emit):
+def probe(module, target, seconds, max_show, emit, active=None, active_lock=None):
     binary = shutil.which(module)
     started = time.monotonic()
     if binary is None:
@@ -99,6 +99,9 @@ def probe(module, target, seconds, max_show, emit):
         return {"module": module, "status": "failed", "count": 0,
                 "seconds": round(time.monotonic() - started, 2), "results": []}
 
+    if active is not None:
+        with active_lock:
+            active[module] = proc
     found = set()
     notices = set()
 
@@ -126,6 +129,9 @@ def probe(module, target, seconds, max_show, emit):
         timed_out = True
         terminate_group(proc)
     worker.join(timeout=3)
+    if active is not None:
+        with active_lock:
+            active.pop(module, None)
     elapsed = round(time.monotonic() - started, 2)
 
     if timed_out:
@@ -191,10 +197,13 @@ def run(argv=None):
     emit("[START] Save: " + str(output) if output else "[START] Save OFF: no companion output file")
 
     completed = {}
+    active = {}
+    active_lock = threading.Lock()
     finish = threading.Event()
 
     def execute(module):
-        completed[module] = probe(module, target, limits[module], args.max_show, emit)
+        completed[module] = probe(module, target, limits[module], args.max_show,
+                                  emit, active, active_lock)
 
     workers = [threading.Thread(target=execute, args=(module,), daemon=True)
                for module in chosen]
@@ -209,9 +218,13 @@ def run(argv=None):
         for thread in workers:
             thread.join()
     except KeyboardInterrupt:
-        emit("[INTERRUPTED] Ctrl+C received. Child processes should be stopped.")
-        # Workers are daemon threads. New run handles its per-command timeout;
-        # do not claim interruption produced a complete report.
+        emit("[INTERRUPTED] Ctrl+C received; terminating launched tools.")
+        with active_lock:
+            running_processes = list(active.values())
+        for proc in running_processes:
+            terminate_group(proc)
+        for worker in workers:
+            worker.join(timeout=3)
         return 130
 
     all_results = sorted({entry for result in completed.values()
