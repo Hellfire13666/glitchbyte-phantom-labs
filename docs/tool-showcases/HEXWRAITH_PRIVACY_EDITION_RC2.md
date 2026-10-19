@@ -48,6 +48,21 @@ GitHub reports that [`Hellfire13666/hexwraith-domain-atlas-privacy-2026`](https:
 
 **Privacy boundary:** the existing `Hellfire13666/glitchbyte-phantom-labs-releases` Phantom Backup Vault is **public**, as is Headquarters. Do not add the private HEXWRAITH Git bundle, release ZIP, source files, or private reports to those public repositories without the owner's explicit decision to publish. A local private `git bundle` verified against the clean-cloned repository is the recommended next backup artifact. For independent cloud redundancy, create a *separate private* backup repo before uploading. A private repository may have had a prior public window; changing GitHub visibility does not revoke copies someone downloaded earlier.
 
+## ✅ Private GitHub clean-clone and local Git bundle restore verified (October 19, 2026)
+
+The authenticated GitHub connection verified commit `4225c48bcfb4175f58b4781cb00054cd40dc71e3` in the **private** [HEXWRAITH source repository](https://github.com/Hellfire13666/hexwraith-domain-atlas-privacy-2026). Commit title: `Release HEXWRAITH Privacy Edition v1.1.1 RC2`; the commit contains the nine expected tracked filenames.
+
+The user's Ubuntu clean-clone/private-backup command reported:
+
+- Clean clone and source-match gate completed before test execution.
+- **14/14 tests passing** (`Ran 14 tests in 0.076s; OK`).
+- `git bundle verify` reported **complete history**, including `main` and remote refs at commit `4225c48...`, and **bundle okay**.
+- An independent `git clone` of the local bundle succeeded, and its restored HEAD matched the original source HEAD.
+- `sha256sum -c` for the newly generated bundle returned **OK**.
+- The private local backup artifact is `~/HexwraithPrivateVault.P1kzcM/hexwraith_private_git_backup.bundle`, with an adjacent `.sha256` file. The **actual bundle SHA-256 value was not pasted**, so do not invent it. The restore was performed locally and is not evidence of an encrypted or off-device backup.
+
+**Status:** GitHub source verified and a recoverable **local** private Git bundle exists. An independent off-device/encrypted backup remains recommended. The existing Phantom Backup Vault is **public** and MUST NOT receive this private bundle/source unless the owner expressly decides to publish it. Git bundle files are not encrypted by default; private filesystem permissions are not a substitute for encryption. No further public-release decision has been made.
+
 ## Suggested safe staging checks before creating a public repository
 
 ```bash
