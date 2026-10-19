@@ -69,6 +69,8 @@ A new build or release is only *documented as distributed* after its pages and l
 
 **Distribution means linked navigation and accurate per-tool instructions, not copying all code and reports onto every page.** Not every hub requires an individual spotlight, but every new published tool should be discoverable from the HQ/Tool Vault/recovery paths appropriate to its release.
 
+**Integration test distinction:** locating external tools and confirming executable binaries is an installation check, not proof of live integration. For Go/Python wrappers with multiple providers, disclose provider-specific status and partial findings (e.g., Amass/GAU timeout versus Waybackurls success), provide bounded timeouts for slow connections, and avoid describing a tool as fully tested until live/real output has been observed. The [Triad Signal example](integrations/TRIAD_SIGNAL_2026.md) documents an honest partial first run and a separate runtime companion.
+
 ## 6. Verify before calling it complete
 
 - [ ] Source, independent folder, commands and dependencies exist; no collisions.
