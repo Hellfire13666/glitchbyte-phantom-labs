@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "scope": "GlitchByte Phantom Labs official tool cover paths",
-  "notes": "User approved artwork for 06, 10, 15, and 16 from four uploaded screenshots. Exact PNG files must exist in the repository before tool covers are linked. Do not use images from unrelated tools. The auto-linker inserts only real images; 02 and 07 retain original published covers.",
+  "notes": "All 21 canonical tool cover PNGs are published and linked. Three earlier tools use original artwork in the parent artwork/ folder, completing 24/24 showcase covers. Upload only user-selected exact tool covers, never unrelated images. The linker checks actual PNG bytes and keeps existing upload doors.",
   "covers": [
     {
       "tool_number": "03",
@@ -82,9 +82,9 @@
       "title": "HackGirl Intel",
       "showcase": "docs/tool-showcases/HACKGIRL_INTEL.md",
       "image": "artwork/tool-covers/14_hackgirl_intel.png",
-      "status": "selected-awaiting-image-upload",
+      "status": "published",
       "selected_source_artwork": "neon_hackgirl_offline_data_lab.png",
-      "artwork_note": "Offline CSV/JSON social-post analysis"
+      "artwork_note": "Offline CSV/JSON social-post analysis; verified official PNG linked in tool showcase"
     },
     {
       "tool_number": "15",
@@ -116,9 +116,9 @@
       "title": "Rosie Signal Garden",
       "showcase": "docs/tool-showcases/SIGNAL_GARDEN.md",
       "image": "artwork/tool-covers/18_signal_garden.png",
-      "status": "selected-awaiting-image-upload",
+      "status": "published",
       "selected_source_artwork": "rosie_s_neon_signal_garden.png",
-      "artwork_note": "Research notes, links and timeline organizer"
+      "artwork_note": "Research notes, links and timeline organizer; verified official PNG linked in tool showcase"
     },
     {
       "tool_number": "19",
