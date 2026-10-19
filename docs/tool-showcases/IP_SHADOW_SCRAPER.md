@@ -4,6 +4,8 @@
 
 # 🌘 ROSIEGLITCHBYTE IP SHADOW SCRAPER // TOOL SHOWCASE
 
+![IP Shadow Scraper | GlitchByte Phantom Labs artwork](../../artwork/rosie_ip_shadow_art.png)
+
 **Python 3 · IP intelligence & local classification · JSON reports · Standard library**
 
 [Source](../../tools/rosie_ip_shadow_scraper.py) · [Tool Vault](../TOOL_VAULT.md) · [Starter guide](../TOOL_STARTER_GUIDE.md)
