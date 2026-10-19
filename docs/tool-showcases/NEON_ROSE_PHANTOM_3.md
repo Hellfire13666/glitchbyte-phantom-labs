@@ -137,3 +137,15 @@ The flags, eight modules, JSON structure and report path were verified by inspec
 Respect the repository's [security policy](../../SECURITY.md), [custom source-available license](../../LICENSE-NOTICE.md), network permissions and privacy expectations. Do not upload sensitive report output or infer individual identities from shared infrastructure.
 
 [← Phantom Tool Vault](../TOOL_VAULT.md) · [← Homepage](../../README.md)
+
+## 💾 Easy-save output (`-o` / `--o`)
+
+For this existing tool, use the tested shared [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md) to capture its **printed terminal output** in a new plain TXT without changing the tool's own CLI. First install the runner using that linked guide, then **from the HQ repository root** try the harmless help-only test:
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+python3 "$SAVER" --o neon_rose_phantom_3_terminal.txt -- python3 -u tools/rosieglitchbyte_neon_rose_phantom_3.py --help
+```
+
+That saves **help text only**, not live results. For real output, replace the `--help` after the `--` separator with the **actual run options documented earlier on this page**; e.g. `python3 "$SAVER" -o neon_rose_phantom_3_results.txt -- python3 -u tools/rosieglitchbyte_neon_rose_phantom_3.py ACTUAL_TOOL_ARGS`. The runner saves terminal text, not a structured CSV/JSON export. Any files this legacy tool already writes are **still written**; this runner does not suppress its built-in save behavior or create a Firefox dashboard. Existing output names are never overwritten. Newly built tools will offer native `-o` and `--o` when meaningful.
+

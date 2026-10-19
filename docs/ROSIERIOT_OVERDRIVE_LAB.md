@@ -38,6 +38,8 @@ The [Findomain live-check and beginner recipe](integrations/FINDOMAIN_LIVE_CHECK
 
 **💾 Optional easy TXT output across future builds:** our [publishing standard](BUILD_PUBLICATION_STANDARD.md) now prefers `-o names.txt` when a project implements simple text export. [SUBDOMINATRIX already supports it](tool-showcases/SUBDOMINATRIX.md). The original RosieRiot engine still has its own documented report flags; this is not a universal option yet.
 
+**💾 Save across lab tools:** [Easy Save for Every Tool](EASY_SAVE_ALL_TOOLS.md) defines `-o name.txt` and `--o name.txt` for future native tools and a [shared terminal transcript runner](../scripts/phantom_easy_save.py) for existing noninteractive CLI commands. The original RosieRiot engine's own saved-report behavior stays unchanged; do not assume it natively accepts those two flags.
+
 ## Quick links
 
 - [⚡ Open the Overdrive tool repository](https://github.com/Hellfire13666/rosieriot-overdrive-2026)

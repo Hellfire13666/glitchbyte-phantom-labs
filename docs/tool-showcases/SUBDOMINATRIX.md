@@ -252,3 +252,14 @@ Or simply `python3 -u "$SCRIPT" example.com -o names.txt`: **`-o` automatically 
 [Tests](../../tests/test_subdominatrix.py) cover input scope, source parsers using mocked public services, demo rendering, saved formats, HTML injection escaping, limited DNS/HTTPS options, and rejecting reserved IPs. CI checks the full terminal recipe without hitting real third-party websites. **Live provider availability, data accuracy, and optional Subfinder/Findomain versions are not certified by offline tests.**
 
 [Source-available license](../../LICENSE-NOTICE.md) · [Security guidelines](../../SECURITY.md)
+
+## 💾 Easy-save options (`-o` and `--o`)
+
+SUBDOMINATRIX **natively** accepts both spellings and saves **only deduplicated candidate hostnames** in the file you choose while keeping live, colorful findings on screen:
+
+```bash
+python3 -u tools/subdominatrix.py example.com --terminal-only --color always --o subdomains.txt
+```
+
+`-o subdomains.txt` is equivalent to `--o subdomains.txt`. With `--terminal-only` and no output flag, no file is saved. Existing TXT files are never replaced. The original HTML/JSON/CSV/Firefox mode is unchanged. From a local clone of the HQ repository, run the example above in its root directory. [Easy Save for Every Tool](../EASY_SAVE_ALL_TOOLS.md) explains the shared transcript-saving runner too.
+

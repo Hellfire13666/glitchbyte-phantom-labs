@@ -30,15 +30,19 @@ Use the [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDAR
 
 ## 🧪 SUBDOMINATRIX current build stage
 
-**Integration fix published:** independent 60-second Findomain timeout, partial hostname preservation, direct feedback for CLI failures and heartbeat output were added after the 51-name partial run. GitHub tests passed; re-test on Ubuntu is next. [Full recipe](tool-showcases/SUBDOMINATRIX.md).
+**Integration fix published:** independent 60-second Findomain timeout, partial hostname preservation, direct feedback for CLI failures and heartbeat output were added after the 51-name partial run. GitHub tests and the real Ubuntu run passed: 151 unique candidates, including 102 from Findomain in 40.45 seconds. [Full recipe](tool-showcases/SUBDOMINATRIX.md).
 
 
 
-The [CI-reviewed terminal-only live signal upgrade](tool-showcases/SUBDOMINATRIX.md) has merged to HQ main. Its new `--terminal-only --color always` option prints public-source findings and skips report files/Firefox. Existing saved HTML/Firefox mode remains supported. Offline tests passed; the next station is the real Ubuntu public-source smoke test and optional verification of persistent report mode. Do not mark live field testing complete until results are observed.
+The [CI-reviewed terminal-only live signal upgrade](tool-showcases/SUBDOMINATRIX.md) has merged to HQ main. Its new `--terminal-only --color always` option prints public-source findings and skips report files/Firefox. Existing saved HTML/Firefox mode remains supported. Offline tests passed; the user's real Ubuntu public-source smoke test then succeeded with 151 unique hostname candidates, 102 Findomain records, and one explicitly saved TXT. The original legacy Firefox mode remains separately tested offline. Do not mark live field testing complete until results are observed.
 
 ## ⚡ Current workstation verification
 
 **Findomain (external tool) passed its live public-source check** in 23 seconds. Its [diagnostic and Simple / Medium / Extra run recipes](integrations/FINDOMAIN_LIVE_CHECK.md) are published as a workshop integration guide. The user-local executable works; an older `/usr/bin/findomain` placeholder remains optional cleanup. No tool source or release archive was modified by that check.
+
+## 💾 Universal easy-save implementation
+
+[Easy Save for Every Tool](EASY_SAVE_ALL_TOOLS.md) is the source of truth for the native `-o name.txt` / `--o name.txt` future-build standard and the shared wrapper for existing command-line utilities. Every one of our 24 tool pages now explains how to use the save runner or the native option. This preserves existing source, built-in reports and Firefox workflows; interactive tools need their own exporter rather than assuming a pipe can capture state.
 
 ## 💾 New workshop save option
 

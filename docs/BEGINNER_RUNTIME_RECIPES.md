@@ -6,6 +6,10 @@
 
 **Publishing this everywhere:** Our [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md) explains how every new tool gets unique artwork/source, these three verified recipes, colorful live results, accurate save/Firefox notes, and links through HQ, Cultivation, Tool Vault, and verified Backup HQ.
 
+## 💾 Universal `-o` / `--o` saver instructions
+
+**[Open Easy Save for Every Tool](EASY_SAVE_ALL_TOOLS.md).** New builds should natively support both spellings for opt-in plain-text results. Existing tools without native support can use [the shared Python save runner](../scripts/phantom_easy_save.py): `python3 "$SAVER" --o results.txt -- python3 -u <real tool and arguments>`. This runner saves the **printed terminal transcript**, not native JSON/CSV/HTML, and does not prevent legacy tools from saving their own files. SUBDOMINATRIX natively exports deduplicated hostname candidates via either `-o` or `--o`.
+
 ## 💾 Easy save convention for updated tools
 
 Where implemented, use **`-o name.txt`** to keep plain-text results while still displaying real-time intelligence in the terminal. If omitted from terminal-only tools, nothing is saved. For SUBDOMINATRIX's updated source, `-o` creates only the requested hostname TXT and never overwrites an existing file:
@@ -43,7 +47,7 @@ For **each individual tool's** `README.md` or build recipe, include:
 
 ## 🌹 SUBDOMINATRIX Live Signal recipes (published)
 
-**Updated SUBDOMINATRIX Findomain recipe:** use `--terminal-only --findomain --timeout 8 --cli-timeout 60` to separate source and CLI limits, show live findings, and avoid saved report files. See [the complete revised tool guide](tool-showcases/SUBDOMINATRIX.md) for tested syntax, provider errors, and the offline/Firefox distinction. CI passed; user-machine retest pending.
+**Updated SUBDOMINATRIX Findomain recipe:** use `--terminal-only --findomain --timeout 8 --cli-timeout 60` to separate source and CLI limits, show live findings, and avoid saved report files. See [the complete revised tool guide](tool-showcases/SUBDOMINATRIX.md) for tested syntax, provider errors, and the offline/Firefox distinction. CI and the user's Ubuntu live retest passed: 151 unique candidate hostnames, with only the user-requested TXT saved.
 
 
 
