@@ -79,6 +79,12 @@ The user's read-only Python `zipfile.testzip()` and byte-for-byte installed-file
 
 **Separate vault freshness gate remains open:** [Phantom Backup HQ's latest index](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/snapshots/latest.json) currently references HQ commit `d6e4dc1fa836`; later merged Triad Signal, permission fixes, and documentation changes are not in that indexed archive. The [Vault workflow](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/actions/workflows/vault-backup.yml) supports `workflow_dispatch` and rebuilds/checks hashes; verify a **new** indexed source commit, ZIP and `SHA256SUMS.txt` before marking latest HQ source as backed up. Historical local ZIP and public HQ source snapshots are different assets; the workflow only protects tracked, committed GitHub files.
 
+## ✅ HEXWRAITH Privacy Edition v1.1.1 RC1: locally verified (October 19, 2026)
+
+The user confirmed a separate locally packaged RC ZIP `~/Downloads/hexwraith_privacy_edition_v1_1_1_rc1.zip`, SHA-256 `c07edb3d12899b41b80052e82a3a7af70d3190ecbd6320bd1df51b91fe924782`. The `sha256sum -c` command returned **OK** and `unzip -tq` returned **No errors detected**. The local patched-source packaging process reported passing tests, valid ZIP, included manifest, no reports and unchanged working source. In prior Ubuntu tests, seven new report files were mode **0600** under permissive `umask 022`, all generated directories were private, and the complete local suite passed **14/14** tests. The RC packaging process additionally tested isolated copies of the patched implementation.
+
+**Status:** locally verified release candidate; **not published to a HEXWRAITH GitHub repository or Phantom Backup HQ**. Preserve privacy of reports and do not mix local artifacts with public source archives. Full publication instructions, known limits and artifact fingerprint: [HEXWRAITH Privacy Edition RC1 release record](tool-showcases/HEXWRAITH_PRIVACY_EDITION_RC1.md). The previous Vault HQ backup predates this new documentation, and the local-only HEXWRAITH RC is not part of it.
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.
