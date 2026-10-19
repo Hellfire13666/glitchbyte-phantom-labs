@@ -62,6 +62,10 @@ Our three official destinations are **Phantom Labs HQ** (the original workshop a
 | 🌹 **ART & IDENTITY** | [Approved Rosie reference rules and official hero upload](docs/ROSIE_VISUAL_STANDARD.md) |
 | 🔐 **SAFETY** | [Security guidance](SECURITY.md) and [release checklist](docs/RELEASE_CHECKLIST.md) |
 
+## 🌹⚡ SUBDOMINATRIX: Live Signal upgrade
+
+**New terminal-first mode, published and CI-tested:** `--terminal-only --color always` displays real public-source candidates as each provider finishes, visible timeouts and HTTP 429 cooldown feedback, and **does not write reports or open Firefox**. The familiar local Firefox dashboard/report mode remains available by omitting `--terminal-only`. [Source](tools/subdominatrix.py) · [Simple / Medium / Extra launch recipes](docs/tool-showcases/SUBDOMINATRIX.md). Live performance on the user's Ubuntu machine still requires its own check.
+
 ## 🌐 Findomain: successful live discovery
 
 **Checklist #2 passed:** our installed Findomain showed real public-source hostname candidates in a 23-second Ubuntu run. Read the [Findomain Simple / Medium / Extra recipes, path diagnosis, and optional save notes](docs/integrations/FINDOMAIN_LIVE_CHECK.md). Findomain is a third-party executable, not another GlitchByte-owned tool.
