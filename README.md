@@ -66,6 +66,8 @@ Our three official destinations are **Phantom Labs HQ** (the original workshop a
 
 **✅ Real Ubuntu Easy Save check:** using `--o findomain_results.txt -- findomain -t facebook.com`, the shared launcher displayed live findings and reported a saved TXT transcript after the third-party Findomain command finished in **21 seconds**. The crt.sh provider needed an API fallback, but the overall run finished. [Exact setup and output caveats](docs/EASY_SAVE_ALL_TOOLS.md).
 
+**Triad field result:** The separate companion ran in Ubuntu and correctly reported Amass timeout (65s/0 accepted names), GAU timeout (50s/0 URLs), Waybackurls exit 0 with no results (0.87s), and a requested empty `triad_check2.txt`. This verifies the orchestration, status reporting, and optional saving, **not** successful data retrieval from every external source. An earlier direct Waybackurls test produced 20 URL lines. [Details and exact boundaries](docs/integrations/TRIAD_SIGNAL_2026.md).
+
 ## 🌹⚡ TRIAD SIGNAL: Bounded Triad Forge companion
 
 Your Ubuntu inspection confirmed an existing local Triad Forge archive and all three installed tools. In the first live test, Waybackurls completed with **20 URL lines**, while passive Amass and GAU each reached the **45-second time limit**. [**Triad Signal runtime companion**](scripts/triad_signal_2026.py) offers independent parallel time budgets, truthful partial/timeout reporting, colored live candidates and opt-in `-o`/`--o` TXT results. [Beginner Simple/Medium/Extra commands and observed status](docs/integrations/TRIAD_SIGNAL_2026.md). It does not replace or modify the local Forge ZIP. Field testing of the companion itself is still pending.
