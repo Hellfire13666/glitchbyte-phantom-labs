@@ -12,6 +12,8 @@ GlitchByte Phantom Labs is a collection of **independent** Python and Go project
 
 See the [beginner runtime recipes and verified commands](BEGINNER_RUNTIME_RECIPES.md). Every new build should document three real, copy-paste examples: **SIMPLE** first run, **MEDIUM** expanded real results, and **EXTRA** bounded additional modules where available. Each example must state whether it saves reports and how Firefox works, if applicable. Options differ between tools; always check `--help`.
 
+**For all future build releases:** The [Build → Run → Publish → Vault policy](BUILD_PUBLICATION_STANDARD.md) is the complete cross-repository distribution checklist. Individual tool pages must link back to the [runtime recipe standard](BEGINNER_RUNTIME_RECIPES.md). Existing tools retain their actual flags and reporting behavior until upgraded.
+
 ## 1. Find a tool
 
 Clone the repository or open its `tools/` directory on GitHub:
