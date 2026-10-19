@@ -6,6 +6,18 @@
 
 **Publishing this everywhere:** Our [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md) explains how every new tool gets unique artwork/source, these three verified recipes, colorful live results, accurate save/Firefox notes, and links through HQ, Cultivation, Tool Vault, and verified Backup HQ.
 
+## 💾 Easy save convention for updated tools
+
+Where implemented, use **`-o name.txt`** to keep plain-text results while still displaying real-time intelligence in the terminal. If omitted from terminal-only tools, nothing is saved. For SUBDOMINATRIX's updated source, `-o` creates only the requested hostname TXT and never overwrites an existing file:
+
+```bash
+SCRIPT="$HOME/PhantomLabsLaunchers/subdominatrix_live_signal_2026/subdominatrix_live_signal_2026.py"
+python3 -u "$SCRIPT" example.com --terminal-only --color always -o names.txt
+```
+
+The legacy `--out DIRECTORY` option is **not** the same as `-o filename.txt`. Each future tool needs its own tested CLI support; this is not a universal preexisting flag. See [SUBDOMINATRIX's guide](tool-showcases/SUBDOMINATRIX.md).
+
+
 ## What each recipe must show
 
 | Level | Who it is for | How it should behave |
