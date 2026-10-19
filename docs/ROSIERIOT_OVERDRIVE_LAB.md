@@ -36,6 +36,8 @@ Every RosieRiot component or companion upgrade follows the [Build → Run → Pu
 
 The [Findomain live-check and beginner recipe](integrations/FINDOMAIN_LIVE_CHECK.md) documents a successful 23-second public-source test on Ubuntu and the correct user-local installation path. Findomain remains an independently installed third-party option, not a claimed bundled module of the original RosieRiot engine.
 
+**💾 Optional easy TXT output across future builds:** our [publishing standard](BUILD_PUBLICATION_STANDARD.md) now prefers `-o names.txt` when a project implements simple text export. [SUBDOMINATRIX already supports it](tool-showcases/SUBDOMINATRIX.md). The original RosieRiot engine still has its own documented report flags; this is not a universal option yet.
+
 ## Quick links
 
 - [⚡ Open the Overdrive tool repository](https://github.com/Hellfire13666/rosieriot-overdrive-2026)
