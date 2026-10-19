@@ -4,6 +4,12 @@
 
 # 🌱 ROSIE SIGNAL GARDEN // PHANTOM TOOL SPOTLIGHT
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![Rosie Signal Garden | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/18_signal_garden.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · Entirely offline research organizer · HTML, JSON and CSV reports · Standard library only**
 
 [🐍 Verified source](../../tools/rosie_signal_garden.py) · [🕷️ Tool Vault](../TOOL_VAULT.md) · [📚 Starter Guide](../TOOL_STARTER_GUIDE.md)

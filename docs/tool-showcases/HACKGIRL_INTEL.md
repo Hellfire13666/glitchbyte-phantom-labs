@@ -4,6 +4,12 @@
 
 # 🦋 ROSIEGLITCHBYTE HACKGIRL INTEL // TOOL SHOWCASE
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![HackGirl Intel | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/14_hackgirl_intel.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · No X API key · Offline CSV/JSON post analysis · HTML and JSON reports**
 
 [🐍 Actual source](../../tools/rosieglitchbyte_hackgirl.py) · [🕷️ Phantom Tool Vault](../TOOL_VAULT.md) · [📚 Starter Guide](../TOOL_STARTER_GUIDE.md)
