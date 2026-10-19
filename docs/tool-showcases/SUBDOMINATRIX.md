@@ -28,6 +28,68 @@
 
 **Not in this release:** global asset geolocation, screenshots, automatic technology fingerprints beyond selected headers, vulnerability scoring, login automation, unlimited crawling, brute-force enumeration, or automatic ownership attribution. These appear only as design directions in the concept picture, not as implemented features.
 
+## 🧪 COPY & PASTE BUILD RECIPE // Ubuntu/Linux first run
+
+**Install → Build → Test → Run → Find results → Troubleshoot.** The first Bash block is independently exercised in Linux CI under a disposable home folder. It generates an **offline synthetic preview**, not a live scan. It uses a dedicated checkout and does not alter a user's original Git clone.
+
+```bash
+# 🌹 SUBDOMINATRIX • GUARANTEED NO-LIVE-LOOKUP DEMO
+command -v python3 >/dev/null 2>&1 && echo "Python 3 found"
+command -v git >/dev/null 2>&1 && echo "Git found"
+
+STATION="$HOME/PhantomLabsBuilds/subdominatrix"
+mkdir -p "$STATION"
+cd "$STATION"
+
+# Install source in an independent folder, without git pull, merge, reset or exit.
+if [ ! -d glitchbyte-phantom-labs ]; then
+    git clone https://github.com/Hellfire13666/glitchbyte-phantom-labs.git
+fi
+
+SCRIPT="$STATION/glitchbyte-phantom-labs/tools/subdominatrix.py"
+OUTPUT="$STATION/reports"
+
+# Verify Python source syntax before running anything.
+python3 - "$SCRIPT" <<'PY'
+from pathlib import Path
+import sys
+path = Path(sys.argv[1])
+compile(path.read_bytes(), str(path), "exec")
+print("PASS: SUBDOMINATRIX Python 3 source syntax")
+PY
+
+# Verify documented flags.
+python3 "$SCRIPT" --help
+
+# Create real JSON, CSV, TXT, and HTML from synthetic demonstration names.
+python3 "$SCRIPT" example.com --offline-demo --no-open \
+  --artwork "$STATION/glitchbyte-phantom-labs/artwork/labface2.png" \
+  --out "$OUTPUT"
+
+# Confirm all four output types really exist and demo state is explicit.
+python3 - "$OUTPUT" <<'PY'
+from pathlib import Path
+import json
+import sys
+folder=Path(sys.argv[1])
+files=list(folder.glob("subdominatrix_*.json"))
+assert files, "No JSON report generated"
+data=json.loads(files[-1].read_text(encoding="utf-8"))
+assert data["mode"]=="SYNTHETIC OFFLINE DEMO"
+assert data["stats"]["names"]>=10
+for extension in (".html", ".csv", ".txt"):
+    assert files[-1].with_suffix(extension).is_file(), "Missing " + extension
+print("PASS: SUBDOMINATRIX offline intelligence preview")
+print("HTML:",files[-1].with_suffix(".html"))
+PY
+
+# Open the newly generated HTML in Firefox if installed.
+if command -v firefox >/dev/null 2>&1; then
+    LATEST=$(find "$OUTPUT" -maxdepth 1 -name 'subdominatrix_*.html' -type f -printf '%T@ %p\n' | sort -nr | head -n 1 | cut -d' ' -f2-)
+    if [ -n "$LATEST" ]; then firefox "$LATEST" >/dev/null 2>&1 & fi
+fi
+```
+
 ## ⚡ New: colorful terminal-only live signal (upgrade under review)
 
 **Want real intelligence scrolling by without saved files?** The upgraded source provides `--terminal-only` and `--color always` while keeping the original Firefox/HTML/JSON/CSV/TXT workflow unchanged. When the upgrade is merged, these commands will work with the newly downloaded source; local older scripts must be updated explicitly.
@@ -106,68 +168,6 @@ python3 "$SCRIPT" YOUR-AUTHORIZED-DOMAIN.example \
 **Saving note:** This existing version always produces HTML/JSON/CSV/TXT; `--no-open` only stops Firefox from opening. A future terminal-first upgrade may add no-save as the default, but these instructions describe the actual published code. Names are candidate observations, not proof of service reachability or ownership. Limits and run times vary with network conditions.
 
 ---
-
-## 🧪 COPY & PASTE BUILD RECIPE // Ubuntu/Linux first run
-
-**Install → Build → Test → Run → Find results → Troubleshoot.** The first Bash block is independently exercised in Linux CI under a disposable home folder. It generates an **offline synthetic preview**, not a live scan. It uses a dedicated checkout and does not alter a user's original Git clone.
-
-```bash
-# 🌹 SUBDOMINATRIX • GUARANTEED NO-LIVE-LOOKUP DEMO
-command -v python3 >/dev/null 2>&1 && echo "Python 3 found"
-command -v git >/dev/null 2>&1 && echo "Git found"
-
-STATION="$HOME/PhantomLabsBuilds/subdominatrix"
-mkdir -p "$STATION"
-cd "$STATION"
-
-# Install source in an independent folder, without git pull, merge, reset or exit.
-if [ ! -d glitchbyte-phantom-labs ]; then
-    git clone https://github.com/Hellfire13666/glitchbyte-phantom-labs.git
-fi
-
-SCRIPT="$STATION/glitchbyte-phantom-labs/tools/subdominatrix.py"
-OUTPUT="$STATION/reports"
-
-# Verify Python source syntax before running anything.
-python3 - "$SCRIPT" <<'PY'
-from pathlib import Path
-import sys
-path = Path(sys.argv[1])
-compile(path.read_bytes(), str(path), "exec")
-print("PASS: SUBDOMINATRIX Python 3 source syntax")
-PY
-
-# Verify documented flags.
-python3 "$SCRIPT" --help
-
-# Create real JSON, CSV, TXT, and HTML from synthetic demonstration names.
-python3 "$SCRIPT" example.com --offline-demo --no-open \
-  --artwork "$STATION/glitchbyte-phantom-labs/artwork/labface2.png" \
-  --out "$OUTPUT"
-
-# Confirm all four output types really exist and demo state is explicit.
-python3 - "$OUTPUT" <<'PY'
-from pathlib import Path
-import json
-import sys
-folder=Path(sys.argv[1])
-files=list(folder.glob("subdominatrix_*.json"))
-assert files, "No JSON report generated"
-data=json.loads(files[-1].read_text(encoding="utf-8"))
-assert data["mode"]=="SYNTHETIC OFFLINE DEMO"
-assert data["stats"]["names"]>=10
-for extension in (".html", ".csv", ".txt"):
-    assert files[-1].with_suffix(extension).is_file(), "Missing " + extension
-print("PASS: SUBDOMINATRIX offline intelligence preview")
-print("HTML:",files[-1].with_suffix(".html"))
-PY
-
-# Open the newly generated HTML in Firefox if installed.
-if command -v firefox >/dev/null 2>&1; then
-    LATEST=$(find "$OUTPUT" -maxdepth 1 -name 'subdominatrix_*.html' -type f -printf '%T@ %p\n' | sort -nr | head -n 1 | cut -d' ' -f2-)
-    if [ -n "$LATEST" ]; then firefox "$LATEST" >/dev/null 2>&1 & fi
-fi
-```
 
 ### 🕷️ One-paste launcher, once the PR is merged
 
