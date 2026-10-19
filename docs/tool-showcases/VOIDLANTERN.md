@@ -176,3 +176,16 @@ The [repository's custom source-available license](../../LICENSE-NOTICE.md) gove
 Review [SECURITY.md](../../SECURITY.md) before operating network-related tools. Avoid committing private research output, secrets, cookies or session data.
 
 [← Phantom Tool Vault](../TOOL_VAULT.md) · [← Main homepage](../../README.md)
+
+## 💾 Easy Save: `-o name.txt` or `--o name.txt`
+
+Install the shared [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md) first. It captures **actual printed terminal output** without rewriting this legacy tool. Both `-o` and `--o` work **on the runner**, before the `--` separator:
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+# Build VOIDLANTERN using the steps earlier on this page, then from its build folder:
+python3 "$SAVER" --o voidlantern_help.txt -- ./voidlantern -h
+```
+
+This safe first example saves **help text**, not real Intel; replace `--help` / `-h` after the separator with the genuine run command and documented arguments from this page to save its printed findings. Choose a fresh filename for each run; existing TXT files are not overwritten. The runner does **not** disable this tool's own report exports or save native JSON/CSV/HTML; use the native export commands listed above for those. Interactive programs or browser-only interfaces may need native export instead. New tools are expected to support `-o` and `--o` natively after tests pass.
+
