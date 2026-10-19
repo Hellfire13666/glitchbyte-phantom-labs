@@ -100,7 +100,7 @@ python3 -u path/to/your_tool.py --help
 Before proposing any new tool or publishing an upgrade:
 
 1. Choose unique **project name**, source filename, folder, executable, report directory and report filenames. Do not replace an existing tool by accident.
-2. Provide `README.md` with prerequisites, exact installation steps, `--help` usage, example commands, supported sources, known limits, sample **clearly labeled** output, and report locations.
+2. Provide `README.md` with prerequisites, exact installation steps, `--help` usage, supported sources, known limits and sample **clearly labeled** output. Add three verified, copy-paste **SIMPLE / MEDIUM / EXTRA** runtime recipes (see [beginner recipe standard](BEGINNER_RUNTIME_RECIPES.md)), actual progress and findings, and explicit report/Firefox behavior. Do not claim unsupported flags or that legacy tools save only on request.
 3. Include useful offline tests, validate syntax/build, and report which live checks were and were not performed.
 4. Default to free/public sources when relevant, honor authorization, privacy, robots policies and service limits; never claim uncertain results are verified identities.
 5. For network tools, prefer live progress as each site completes, distinct `FOUND/POSSIBLE/NOT_FOUND/UNKNOWN/ERROR` outcomes, adjustable timeout/rate/concurrency settings, and resumable reports where practical.
