@@ -29,6 +29,10 @@ For **each individual tool's** `README.md` or build recipe, include:
 
 ---
 
+## 🌹 SUBDOMINATRIX Live Signal recipes (published)
+
+The updated [SUBDOMINATRIX build page](tool-showcases/SUBDOMINATRIX.md) now supports `--terminal-only --color always` for real public-source discoveries with **no saved report files**, while keeping the original automatic Firefox/HTML export behavior when that flag is omitted. The three updated runnable examples are in its guide. Remember: this flag belongs to SUBDOMINATRIX and is not available in all tools.
+
 ## 🌐 Verified external Findomain recipes
 
 For **Findomain**, an already-installed third-party tool, use our [Simple / Medium / Extra copy-and-paste terminal guide](integrations/FINDOMAIN_LIVE_CHECK.md). The user's `findomain -t facebook.com` public-source run completed in 23 seconds. No file export was requested. The guide also explains optional `tee` saving, the broken lower-priority `/usr/bin/findomain` text placeholder, and safe boundaries for direct network checks.
