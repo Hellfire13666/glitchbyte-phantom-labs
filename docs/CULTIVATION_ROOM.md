@@ -91,6 +91,10 @@ The user built a second ZIP while preserving RC1 and the working original HEXWRA
 
 **RC2 is local only.** A standalone public HEXWRAITH repository has not yet been created and the RC2 ZIP has not been uploaded to Backup HQ. Next: stage reviewed source in a private directory, confirm publication rights/metadata, decide repository visibility, publish only approved files, validate clean clone and back up the newly published release. [RC2 release record](tool-showcases/HEXWRAITH_PRIVACY_EDITION_RC2.md).
 
+## ✅ HEXWRAITH private RC2 tag verified (October 19, 2026)
+
+The user published annotated Git tag `v1.1.1-rc2` on commit `4225c48bcfb4175f58b4781cb00054cd40dc71e3`. GitHub returned **private** visibility and confirmed `MANIFEST.json` and `README.md` accessible at that tag. The private repository clone already passed **14/14 tests**, its eight release files matched the verified RC2 ZIP, and the user successfully created/restored a local Git bundle with a passing checksum. This completes the private *tagged source* milestone, not a public release or independent encrypted backup. See [HEXWRAITH RC2 status](tool-showcases/HEXWRAITH_PRIVACY_EDITION_RC2.md). Next practical protection: encrypt and store a separate off-device copy without adding private source to the public Vault.
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.
