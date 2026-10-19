@@ -30,6 +30,10 @@ Use the [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDAR
 
 ## 🧪 SUBDOMINATRIX current build stage
 
+**Integration fix published:** independent 60-second Findomain timeout, partial hostname preservation, direct feedback for CLI failures and heartbeat output were added after the 51-name partial run. GitHub tests passed; re-test on Ubuntu is next. [Full recipe](tool-showcases/SUBDOMINATRIX.md).
+
+
+
 The [CI-reviewed terminal-only live signal upgrade](tool-showcases/SUBDOMINATRIX.md) has merged to HQ main. Its new `--terminal-only --color always` option prints public-source findings and skips report files/Firefox. Existing saved HTML/Firefox mode remains supported. Offline tests passed; the next station is the real Ubuntu public-source smoke test and optional verification of persistent report mode. Do not mark live field testing complete until results are observed.
 
 ## ⚡ Current workstation verification
