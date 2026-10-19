@@ -4,6 +4,12 @@
 
 # 🌹 GHOSTMARK INTEGRITY ATLAS // LOCAL FILE CONSTELLATION
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![GHOSTMARK Integrity Atlas | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/16_ghostmark.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **⚡ NO-DOWNLOAD-ATTACHMENT QUICK START:** [Copy one terminal command, generate HTML and open Firefox](../COPY_PASTE_OPEN.md). No Git pull, merge or rebase. The command is hosted in our GitHub lab and uses its own safe home folder.
 
 **⚡ HOW TO TRIGGER THIS TOOL:** Clicking GitHub's source link only displays code. To **run the program and open Firefox**, [open the one-paste launcher instructions](../COPY_PASTE_OPEN.md#-how-visitors-actually-trigger-a-tool), copy the complete Bash command for this tool, paste it into an **Ubuntu/Linux Terminal**, and press **Enter**. Wait for the local `[REPORT]` HTML path. Firefox opens automatically if installed; otherwise open that saved HTML path manually. These are not one-click GitHub apps, and typing a tool name alone is not a shell command.
