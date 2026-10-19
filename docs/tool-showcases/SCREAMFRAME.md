@@ -4,6 +4,12 @@
 
 # ✦ SCREAMFRAME // PIXEL AUTOPSY STUDIO
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![SCREAMFRAME | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/15_screamframe.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **New, independent GlitchByte Phantom Labs offline image-investigation workstation.**
 
 [Python 3 source](../../tools/screamframe-pixel-autopsy/screamframe_pixel_autopsy.py) · [Project README and tested Ubuntu recipe](../../tools/screamframe-pixel-autopsy/README.md) · [Offline tests](../../tools/screamframe-pixel-autopsy/tests/test_screamframe_pixel_autopsy.py) · [Synthetic sample](../../tools/screamframe-pixel-autopsy/examples/screamframe_synthetic_fixture.json)

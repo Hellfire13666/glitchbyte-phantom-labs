@@ -4,6 +4,12 @@
 
 # 📡 ROSIEGLITCHBYTE IP SPECTER // TOOL SHOWCASE
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![IP Specter | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/06_ip_specter.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · IP classification and public network data · JSON archive · Standard library only**
 
 [🐍 Verified source](../../tools/rosieglitchbyte_ip_specter.py) · [🕷️ Tool Vault](../TOOL_VAULT.md) · [📚 Starter guide](../TOOL_STARTER_GUIDE.md)
