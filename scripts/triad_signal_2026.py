@@ -202,8 +202,11 @@ def run(argv=None):
     finish = threading.Event()
 
     def execute(module):
-        completed[module] = probe(module, target, limits[module], args.max_show,
-                                  emit, active, active_lock)
+        try:
+            completed[module] = probe(module, target, limits[module], args.max_show,
+                                      emit, active, active_lock)
+        finally:
+            finish.set()
 
     workers = [threading.Thread(target=execute, args=(module,), daemon=True)
                for module in chosen]
@@ -212,6 +215,7 @@ def run(argv=None):
             thread.start()
         while any(thread.is_alive() for thread in workers):
             finish.wait(timeout=5)
+            finish.clear()
             running = [chosen[i] for i, thread in enumerate(workers) if thread.is_alive()]
             if running:
                 emit("[WAIT] Still checking: " + ", ".join(running))
