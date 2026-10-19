@@ -1,0 +1,12 @@
+LAST TWO PHANTOM LABS COVERS
+
+These two PNGs match the images created for your two remaining tool showcases.
+
+1. Open https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main/artwork/tool-covers
+2. Select ONLY the 2 PNG files, not the ZIP or a surrounding folder.
+3. Commit. The GitHub artwork linker should automatically connect each image to the corresponding tool page.
+
+14_hackgirl_intel.png  ->  docs/tool-showcases/HACKGIRL_INTEL.md
+18_signal_garden.png  ->  docs/tool-showcases/SIGNAL_GARDEN.md
+
+Do not rename these PNGs. If GitHub creates a nested folder, the linker has a repair mode for uniquely named chosen covers.
