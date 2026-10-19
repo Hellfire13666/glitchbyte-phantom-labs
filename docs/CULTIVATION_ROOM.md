@@ -4,11 +4,11 @@
 
 # 🌱 Cultivation Room | Foundation & Building Lab
 
-**GlitchByte Phantom Labs** · Tool blueprints · Python 3 / Go · Ubuntu/Linux · Testing · Patches
+**Phantom Labs HQ** · Tool blueprints · Python 3 / Go · Ubuntu/Linux · Testing · Patches
 
 > *Plant the concept. Build the engine. Test the roots.*
 
-The Cultivation Room is **one of the three established laboratories**, not a fourth repository or a replacement for individual tool pages. Prototypes, installers, test recipes, docs and unique artwork begin here. Publish each finished tool to its own repository, then archive a checksum-verified version in the Phantom Vault.
+The Cultivation Room is **one of the three established laboratories**, not a fourth repository or a replacement for individual tool pages. Prototypes, installers, test recipes, docs and unique artwork begin here. Publish each finished tool to its own repository, then archive a checksum-verified version in Phantom Backup HQ.
 
 <!-- GLITCHBYTE LAB NAV START -->
 ## 🧭 GLITCHBYTE LAB DOORS
@@ -18,7 +18,7 @@ The Cultivation Room is **one of the three established laboratories**, not a fou
 | 👻 **Phantom Labs HQ** | [Main headquarters](https://github.com/Hellfire13666/glitchbyte-phantom-labs) | [📤 HQ file door](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) |
 | 🌱 **Cultivation Room** | [Build and cultivation room](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/CULTIVATION_ROOM.md) | [📤 Build lab file door](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) |
 | ⚡ **RosieRiot Overdrive** | [Overdrive tool repository](https://github.com/Hellfire13666/rosieriot-overdrive-2026) · [Lab room](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/ROSIERIOT_OVERDRIVE_LAB.md) | [📤 Overdrive file door](https://github.com/Hellfire13666/rosieriot-overdrive-2026/upload/main) |
-| 🔐 **Phantom Vault** | [Release and backup archive](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases) · [Tool Vault index](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/TOOL_VAULT.md) | [📤 Vault file door](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/upload/main) |
+| 🔐 **Phantom Backup HQ** | [Release and backup archive](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases) · [Tool Vault index](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/TOOL_VAULT.md) | [📤 Vault file door](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/upload/main) |
 
 > **Vault rule:** Keep versioned archives and SHA-256 manifests. GitHub files are not a substitute for an independent offline backup. Never upload credentials or private reconnaissance reports to public repositories.
 
