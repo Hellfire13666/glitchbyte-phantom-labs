@@ -40,6 +40,11 @@ The [CI-reviewed terminal-only live signal upgrade](tool-showcases/SUBDOMINATRIX
 
 **Findomain (external tool) passed its live public-source check** in 23 seconds. Its [diagnostic and Simple / Medium / Extra run recipes](integrations/FINDOMAIN_LIVE_CHECK.md) are published as a workshop integration guide. The user-local executable works; an older `/usr/bin/findomain` placeholder remains optional cleanup. No tool source or release archive was modified by that check.
 
+## 💾 New workshop save option
+
+**Every future tool build or explicitly requested upgrade should offer simple output saving where practical:** `-o name.txt` writes human-readable results only if requested. Live terminal results should still appear. Document exact filename/path, TXT contents, non-overwrite behavior and exceptions. SUBDOMINATRIX has a tested implementation under review; older tools are not silently rewritten. [Publishing standard](BUILD_PUBLICATION_STANDARD.md) · [Subdominatrix](tool-showcases/SUBDOMINATRIX.md).
+
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.

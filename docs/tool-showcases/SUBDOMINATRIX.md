@@ -216,6 +216,26 @@ python3 "$SCRIPT" example.com --subfinder --findomain \
 
 The `subfinder` and `findomain` binaries are optional; they must already be installed. The tool does **not** install them. Try `python3 "$SCRIPT" --help` for all verified flags.
 
+### 💾 EASY SAVE: `-o name.txt` (new and opt-in)
+
+New **`-o` / `--output-txt`** saves only the deduplicated discovered hostnames, one per line, while keeping the colorful real-time terminal findings. **Without `-o` in terminal-only mode, nothing is saved.**
+
+```bash
+SCRIPT="$HOME/PhantomLabsLaunchers/subdominatrix_live_signal_2026/subdominatrix_live_signal_2026.py"
+python3 -u "$SCRIPT" facebook.com --terminal-only --color always \
+  --findomain --timeout 8 --cli-timeout 60 -o facebook_hosts.txt
+```
+
+Or simply `python3 -u "$SCRIPT" example.com -o names.txt`: **`-o` automatically uses terminal-first mode** without saving the legacy HTML/JSON/CSV reports or opening Firefox. The named TXT is written in the current directory unless a full path is supplied, and `[SAVED] TXT` prints its location.
+
+- `-o names.txt`: save just a new hostname list.
+- No `-o` + `--terminal-only`: real live lines with **SAVE OFF**.
+- No `-o` and no `--terminal-only`: original Firefox + four report exports still work, as before.
+- `--out DIRECTORY` remains the **legacy report directory** option, distinct from `-o filename.txt`.
+- Existing TXT files are **never overwritten**. Choose another filename for the next run, e.g. `-o names2.txt`. The filename must end in `.txt` and its parent directory must exist.
+- Public-source hostname candidates are not proof of live sites; direct active checks must be authorized. TXT contains only names, not status, provenance or color codes.
+
+
 ### 🛠️ Troubleshooting
 
 - **404 from curl:** The launcher PR has not merged to main, the link is wrong, or GitHub is unreachable. Don't delete or reset your existing checkout.

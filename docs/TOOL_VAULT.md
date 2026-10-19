@@ -31,6 +31,9 @@ The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md
 
  the [individual tool guide](tool-showcases/SUBDOMINATRIX.md) documents `--terminal-only`, no-save streaming, rate-limited source feedback, and Simple/Medium/Extra examples. CI passed; the real Ubuntu live smoke test remains outstanding.
 
+**💾 Easy save for updated terminal tools:** prefer `-o name.txt` to explicitly save real results while preserving screen feedback. This is implemented in [SUBDOMINATRIX's updated source and instructions](tool-showcases/SUBDOMINATRIX.md), not every historical tool. Original `--out DIRECTORY` remains a separate legacy option; review each tool's supported flags.
+
+
 ### 🔧 Verified external tool integrations (not counted as original GlitchByte tools)
 
 | External tool | Verified use | Live test + beginner recipes |
