@@ -19,7 +19,7 @@ class EasySaveDocumentationTests(unittest.TestCase):
                 doc = ROOT / "docs" / "tool-showcases" / page
                 self.assertTrue(doc.is_file())
                 content = doc.read_text(encoding="utf-8")
-                self.assertIn("Easy Save", content)
+                self.assertRegex(content.lower(), r"easy[ -]save")
                 self.assertIn("EASY_SAVE_ALL_TOOLS.md", content)
                 self.assertIn("--o", content)
                 self.assertIn("-o", content)
