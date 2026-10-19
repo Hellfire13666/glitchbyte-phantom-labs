@@ -25,7 +25,11 @@ The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md
 
 **For every new tool:** create its unique source and setup guide, add one row here, and run `python3 -m unittest discover -s tests -v`. The `test_tool_vault_doors.py` guard checks that every published top-level/nested Python entry point and Go module is indexed.
 
-**🌹 SUBDOMINATRIX live-feedback upgrade:** the [individual tool guide](tool-showcases/SUBDOMINATRIX.md) documents `--terminal-only`, no-save streaming, rate-limited source feedback, and Simple/Medium/Extra examples. CI passed; the real Ubuntu live smoke test remains outstanding.
+**🌹 SUBDOMINATRIX live-feedback upgrade:**
+
+**October 19 correction:** [SUBDOMINATRIX guide](tool-showcases/SUBDOMINATRIX.md) now includes `--cli-timeout 60` independent of provider deadlines, immediate optional-tool findings, retained partial results, and detailed error messages. CI passed; local Ubuntu validation remains outstanding.
+
+ the [individual tool guide](tool-showcases/SUBDOMINATRIX.md) documents `--terminal-only`, no-save streaming, rate-limited source feedback, and Simple/Medium/Extra examples. CI passed; the real Ubuntu live smoke test remains outstanding.
 
 ### 🔧 Verified external tool integrations (not counted as original GlitchByte tools)
 
