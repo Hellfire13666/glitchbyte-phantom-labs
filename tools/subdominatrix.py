@@ -17,6 +17,7 @@ import shutil
 import socket
 import ssl
 import subprocess
+import threading
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed, wait, FIRST_COMPLETED
@@ -122,7 +123,12 @@ def fetch_source(source, domain, timeout=10):
     return sorted(names)[:RECORD_LIMIT]
 
 
-def optional_cli(program, domain, timeout=30):
+def optional_cli(program, domain, timeout=60, progress=None):
+    """Stream candidate hostnames from installed public-source tools without writing files.
+
+    Keep partial candidates if the child times out or exits with an error. A child
+    may still buffer its own output internally; progress feedback remains visible.
+    """
     binary = shutil.which(program)
     if not binary:
         return None, {"source": program, "status": "missing (optional)", "count": 0,
@@ -130,20 +136,53 @@ def optional_cli(program, domain, timeout=30):
     command = [binary, "-d", domain, "-silent"] if program == "subfinder" else [
         binary, "-t", domain, "-q"]
     started = time.monotonic()
+    names, notices = set(), []
     try:
-        proc = subprocess.run(command, capture_output=True, text=True, timeout=timeout,
-                              errors="replace", check=False)
-        output = proc.stdout[:MAX_RESPONSE]
-        names = {n for line in output.splitlines()[:RECORD_LIMIT]
-                 if (n := normalize(line, domain))}
-        status = "ok" if proc.returncode == 0 else "failed"
-        info = (proc.stderr or "").strip()[:180] if proc.returncode else "Installed local executable"
-        return sorted(names), {"source": program, "status": status, "count": len(names),
-                               "seconds": round(time.monotonic()-started, 2),
-                               "detail": info}
-    except (OSError, subprocess.TimeoutExpired) as exc:
+        proc = subprocess.Popen(command, stdout=subprocess.PIPE,
+                                stderr=subprocess.STDOUT, text=True,
+                                errors="replace", bufsize=1)
+    except OSError as exc:
         return [], {"source": program, "status": "failed", "count": 0,
-                    "seconds": round(time.monotonic()-started, 2), "detail": str(exc)[:180]}
+                    "seconds": round(time.monotonic()-started, 2),
+                    "detail": str(exc)[:180]}
+    def read_lines():
+        try:
+            for line in proc.stdout:
+                line = line.strip()
+                name = normalize(line, domain)
+                if name and len(names) < RECORD_LIMIT:
+                    if name not in names:
+                        names.add(name)
+                        if progress:
+                            progress(f"[FOUND] {name}  ({program})")
+                elif line and len(notices) < 8:
+                    # Strip terminal control sequences from failure explanations.
+                    notices.append(re.sub(r"\x1b\[[0-9;]*m", "", line)[:160])
+        finally:
+            proc.stdout.close()
+    reader = threading.Thread(target=read_lines, daemon=True)
+    reader.start()
+    expired = False
+    try:
+        code = proc.wait(timeout=timeout)
+    except subprocess.TimeoutExpired:
+        expired = True
+        proc.kill()
+        code = proc.wait(timeout=5)
+    reader.join(timeout=5)
+    if expired:
+        state = "partial" if names else "timeout"
+        detail = f"Reached {timeout}s CLI limit; {len(names)} candidates retained"
+    elif code == 0:
+        state, detail = "ok", "Local executable completed"
+    else:
+        state = "partial" if names else "failed"
+        detail = f"Exit {code}: " + ("; ".join(notices) or "No diagnostic returned")
+    return sorted(names), {"source": program, "status": state,
+                           "count": len(names),
+                           "seconds": round(time.monotonic()-started, 2),
+                           "detail": detail[:180]}
+
 
 
 def public_ip(value):
@@ -225,7 +264,7 @@ def head_https(host, ips, timeout=4):
 
 
 def collect(domain, *, demo=False, max_results=1500, max_verify=80,
-            dns=False, http=False, subfinder=False, findomain=False, timeout=10,
+            dns=False, http=False, subfinder=False, findomain=False, timeout=10, cli_timeout=60,
             progress=None):
     if not valid_domain(domain):
         raise ValueError("Provide only a DNS domain, e.g. example.com")
@@ -235,6 +274,8 @@ def collect(domain, *, demo=False, max_results=1500, max_verify=80,
         raise ValueError("timeout must be 2..30 seconds")
     if http and not dns:
         raise ValueError("--http-check requires --dns-check")
+    if not 10 <= cli_timeout <= 120:
+        raise ValueError("--cli-timeout must be 10..120 seconds")
     started = datetime.now(timezone.utc).isoformat()
     findings, feedback = {}, []
 
@@ -322,26 +363,22 @@ def collect(domain, *, demo=False, max_results=1500, max_verify=80,
             if not enabled:
                 continue
             if progress:
-                progress(f"[START] {program} public discovery (max {min(30,timeout*3)}s)")
+                progress(f"[START] {program} public discovery (max {cli_timeout}s)")
                 with ThreadPoolExecutor(max_workers=1) as pool:
-                    future = pool.submit(optional_cli, program, domain, min(30, timeout*3))
+                    future = pool.submit(optional_cli, program, domain, cli_timeout, progress)
                     while not future.done():
                         done, _ = wait([future], timeout=4)
                         if not done:
                             progress(f"[WAIT] {program} still processing...")
                     names, info = future.result()
             else:
-                names, info = optional_cli(program, domain, timeout=min(30, timeout*3))
+                names, info = optional_cli(program, domain, timeout=cli_timeout)
             merge(program, names or [])
             feedback.append(info)
-            line = f"[OPTIONAL] {program}: {info['status']} | {info['count']} records"
+            line = (f"[OPTIONAL] {program}: {info['status']} | {info['count']} records"
+                    f" | {info['detail']} | {info['seconds']}s")
             if progress:
                 progress(line)
-                for name in names or []:
-                    if name not in announced:
-                        announced.add(name)
-                        if len(announced) <= max_results:
-                            progress(f"[FOUND] {name}  ({program})")
             else:
                 print(line, flush=True)
 
@@ -511,6 +548,8 @@ def main(argv=None):
     parser.add_argument("--max-results", type=int, default=1500)
     parser.add_argument("--max-verify", type=int, default=80)
     parser.add_argument("--timeout", type=int, default=10)
+    parser.add_argument("--cli-timeout", type=int, default=60,
+                        help="Seconds per optional local tool (10..120); independent of source timeout")
     parser.add_argument("--out", default=str(Path.home() / "SUBDOMINATRIX_REPORTS"))
     parser.add_argument("--artwork", help="Optional Rosie PNG/JPEG for dashboard header")
     parser.add_argument("--no-open", action="store_true", help="Do not launch Firefox")
@@ -536,7 +575,7 @@ def main(argv=None):
         report = collect(domain, demo=args.offline_demo, max_results=args.max_results,
                          max_verify=args.max_verify, dns=args.dns_check,
                          http=args.http_check, subfinder=args.subfinder, findomain=args.findomain,
-                         timeout=args.timeout,
+                         timeout=args.timeout, cli_timeout=args.cli_timeout,
                          progress=emit if args.terminal_only else None)
         if args.terminal_only:
             paths = {}

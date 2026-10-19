@@ -179,5 +179,52 @@ class SubdominatrixTests(unittest.TestCase):
         self.assertEqual(1, len([e for e in events if e.startswith("[FOUND]")]))
 
 
+    def test_findomain_cli_streams_candidates_and_reports_nonzero_exit(self):
+        m = load_tool()
+        with tempfile.TemporaryDirectory() as td:
+            fake = Path(td) / "fake-findomain"
+            fake.write_text(
+                "#!" + sys.executable + "\n"
+                "print('api.example.com', flush=True)\n"
+                "print('www.example.com', flush=True)\n"
+                "print('Provider failed later', flush=True)\n"
+                "raise SystemExit(3)\n", encoding="utf-8")
+            fake.chmod(0o755)
+            events = []
+            with patch.object(m.shutil, "which", return_value=str(fake)):
+                names, info = m.optional_cli(
+                    "findomain", "example.com", timeout=5, progress=events.append)
+        self.assertEqual(["api.example.com", "www.example.com"], names)
+        self.assertEqual("partial", info["status"])
+        self.assertIn("Exit 3", info["detail"])
+        self.assertIn("Provider failed later", info["detail"])
+        self.assertTrue(any("[FOUND] api.example.com" in x for x in events))
+        self.assertTrue(any("[FOUND] www.example.com" in x for x in events))
+
+    def test_findomain_cli_timeout_keeps_partial_results(self):
+        m = load_tool()
+        with tempfile.TemporaryDirectory() as td:
+            fake = Path(td) / "fake-findomain"
+            fake.write_text(
+                "#!" + sys.executable + "\n"
+                "import time\n"
+                "print('api.example.com', flush=True)\n"
+                "time.sleep(5)\n", encoding="utf-8")
+            fake.chmod(0o755)
+            events = []
+            with patch.object(m.shutil, "which", return_value=str(fake)):
+                names, info = m.optional_cli(
+                    "findomain", "example.com", timeout=0.5, progress=events.append)
+        self.assertEqual(["api.example.com"], names)
+        self.assertEqual("partial", info["status"])
+        self.assertIn("0.5s CLI limit", info["detail"])
+        self.assertTrue(any("[FOUND] api.example.com" in x for x in events))
+
+    def test_reject_unbounded_optional_cli_timeout(self):
+        m = load_tool()
+        with self.assertRaisesRegex(ValueError, "cli-timeout"):
+            m.collect("example.com", demo=True, cli_timeout=121)
+
+
 if __name__ == "__main__":
     unittest.main()
