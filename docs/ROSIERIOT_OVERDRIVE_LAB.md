@@ -32,6 +32,10 @@ Our [Simple · Medium · Extra how-to examples](BEGINNER_RUNTIME_RECIPES.md#-exa
 
 Every RosieRiot component or companion upgrade follows the [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md): unique source and artwork, visible real findings/partial statuses, honest optional report behavior, tested [Simple/Medium/Extra instructions](BEGINNER_RUNTIME_RECIPES.md), and matching links from HQ, Cultivation, Tool Vault, the dedicated repository, and a verified backup. This is documentation policy, not a claim that every original module has already been rewritten.
 
+## 🔧 Findomain workstation status
+
+The [Findomain live-check and beginner recipe](tool-showcases/FINDOMAIN_LIVE_CHECK.md) documents a successful 23-second public-source test on Ubuntu and the correct user-local installation path. Findomain remains an independently installed third-party option, not a claimed bundled module of the original RosieRiot engine.
+
 ## Quick links
 
 - [⚡ Open the Overdrive tool repository](https://github.com/Hellfire13666/rosieriot-overdrive-2026)
