@@ -57,6 +57,12 @@ The original local archive/install scripts for Amass, GAU and Waybackurls were i
 
 The [published Triad Signal companion](integrations/TRIAD_SIGNAL_2026.md) has now been run on Ubuntu: Amass reached its 65-second cap with zero accepted candidates (nameserver graph relationship notices were observed), GAU reached its 50-second cap with zero URLs and a nonfatal config warning, and Waybackurls exited successfully in 0.87 seconds with zero results. It displayed per-module feedback and saved the **explicitly requested but empty** `~/triad_check2.txt`. Its standalone source passed the GitHub Python and public-clone checks; the original local Triad Forge ZIP remains untouched. **Checklist #4 status: installed/execution/output flow checked, external-provider retrieval partially verified only.** Advance to link/document consistency (checklist #5) without claiming these missing candidate sets passed.
 
+## 🛡️ Checklist #6: Ubuntu safety-flag inspection (October 19, 2026)
+
+The user verified the installed SUBDOMINATRIX `--help` exposes `--offline-demo`, `--terminal-only`, opt-in `--dns-check` / `--http-check` (HTTP requires DNS), `--max-verify`, `--timeout`, `--cli-timeout`, and local `-o` / `--output-txt` saving. The installed Triad Signal `--help` exposes `--only`, separately bounded Amass/GAU/Waybackurls seconds, `--max-show`, and `-o` / `--o` saving. A cross-check of HQ main found the current SUBDOMINATRIX source additionally supports `--o`, so the user's locally installed earlier copy should be refreshed to a **separate filename** instead of overwritten. 
+
+**Verified:** presence of documented CLI controls, not a complete security audit. Remaining gates: review actual active-check authorization, privacy and credential handling, redirects/limits, dependencies, and safe file output across older tools. No active scans were performed by this help-only inspection. See [security policy](../SECURITY.md) and [release checklist](RELEASE_CHECKLIST.md).
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.
