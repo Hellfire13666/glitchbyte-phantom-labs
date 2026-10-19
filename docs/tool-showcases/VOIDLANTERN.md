@@ -4,6 +4,12 @@
 
 # 👻 VOIDLANTERN // THE FIRST PHANTOM TOOL SPOTLIGHT
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![VOIDLANTERN | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/08_voidlantern.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Go 1.21+ · HTTP(S) website diagnostics · local JSON output · v1.0.0**
 
 > **One lantern. One authorized destination. Clear diagnostic signals.**

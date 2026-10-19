@@ -4,6 +4,12 @@
 
 # 💗 FIND ME IF YOU LOVE ME // PHANTOM TOOL SHOWCASE
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![Find Me If You Love Me | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/24_find_me_if_you_love_me.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · Offline terminal love puzzle · Three clues · UTF-8 hexadecimal letter**
 
 [🐍 Original Python source](../../tools/rosie_hide_seek.py) · [🕷️ Phantom Tool Vault](../TOOL_VAULT.md) · [📚 Tool Starter Guide](../TOOL_STARTER_GUIDE.md)
