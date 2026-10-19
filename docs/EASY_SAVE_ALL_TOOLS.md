@@ -4,6 +4,10 @@
 
 **Our workshop's easy-save spellings:** `-o name.txt` and `--o name.txt`.
 
+## ✅ Verified Ubuntu live test (October 19, 2026)
+
+The shared easy-save runner was tested by the workshop user on Ubuntu with `python3 "$SAVER" --o findomain_results.txt -- findomain -t facebook.com`. Findomain printed real public-source candidate hostnames, encountered a crt.sh connection-limit error and tried its API fallback, then finished in **21 seconds**. The wrapper reported `[SAVED] Plain-text terminal output: findomain_results.txt`. This verifies that the common runner can display this Findomain output and save a requested TXT transcript in a real terminal. It does **not** establish accuracy or current reachability for every hostname, and it does not certify interactive or browser-only tools.
+
 ## Choose the right kind of save
 
 ### A. Native result export, where implemented
