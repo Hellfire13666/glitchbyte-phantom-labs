@@ -24,6 +24,18 @@ The user then confirmed all three installed executables. An independent
 
 Two timeouts are not evidence of broken binaries. The script that limited output to 15 visible lines hid useful counts on timeout; these must not be mistaken for zero. Archive URLs may be historic, incomplete or stale and **do not** prove current service availability.
 
+## ✅ Companion's actual Ubuntu run (October 19, 2026)
+
+The standalone, CI-tested `triad_signal_2026.py` companion was run by the user against `example.com` with `--amass-seconds 65 --gau-seconds 50 --wayback-seconds 25 --color always -o "$HOME/triad_check2.txt"`:
+
+| Module | Reported result | Notes |
+|---|---|---|
+| Amass | `timeout / 0 candidates` at 65.03s | Printed out-of-target NS relationship notices involving Cloudflare, not normalized `example.com` subdomain candidates |
+| GAU | `timeout / 0 candidates` at 50.01s | Warned of missing optional `~/.gau.toml`, used defaults |
+| Waybackurls | `complete-no-results / 0 candidates` at 0.87s | Exit 0 but zero URLs in this run, in contrast to the earlier independent 20-line run |
+
+**`[SAVED] TXT /home/example/triad_check2.txt | 0 candidate lines`** verifies explicit save-file creation, not populated results. The script produced accurate module-level status, returned to the shell, and did not modify the original local Triad Forge installer ZIP. **Installed commands, launcher feedback, timeout handling and optional save are verified on Ubuntu.** Complete live collection from Amass/GAU and consistent archive results are **not** verified. Provider availability and this demonstration domain can affect results; do not treat zero candidates as proof that a domain lacks hosts or archived URLs.
+
 ## What this companion does
 
 [**Open the real Triad Signal Python source**](../../scripts/triad_signal_2026.py).
