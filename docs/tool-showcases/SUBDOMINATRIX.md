@@ -28,6 +28,44 @@
 
 **Not in this release:** global asset geolocation, screenshots, automatic technology fingerprints beyond selected headers, vulnerability scoring, login automation, unlimited crawling, brute-force enumeration, or automatic ownership attribution. These appear only as design directions in the concept picture, not as implemented features.
 
+## 🌈 Three beginner run levels (after installing)
+
+See also our [SIMPLE · MEDIUM · EXTRA runtime cookbook](../BEGINNER_RUNTIME_RECIPES.md) for the full explanation. These examples use **existing** documented options, not new `--simple`/`--medium`/`--extra` flags.
+
+Set the script location once after completing the build instructions below:
+
+```bash
+SCRIPT="$HOME/PhantomLabsBuilds/subdominatrix/glitchbyte-phantom-labs/tools/subdominatrix.py"
+```
+
+**🌱 SIMPLE | Safe first-run preview, no network lookups**
+
+```bash
+python3 "$SCRIPT" example.com --offline-demo --no-open
+```
+
+Synthetic preview only, not live intelligence.
+
+**⚡ MEDIUM | Real public passive sources**
+
+```bash
+python3 "$SCRIPT" example.com --no-open --max-results 300
+```
+
+Shows per-source public-data feedback and returns matching hostname candidates, subject to provider availability.
+
+**🔥 EXTRA | Opt-in bounded DNS/HTTPS verification for authorized domains**
+
+```bash
+python3 "$SCRIPT" YOUR-AUTHORIZED-DOMAIN.example \
+  --subfinder --dns-check --http-check \
+  --max-verify 20 --max-results 300 --no-open
+```
+
+**Saving note:** This existing version always produces HTML/JSON/CSV/TXT; `--no-open` only stops Firefox from opening. A future terminal-first upgrade may add no-save as the default, but these instructions describe the actual published code. Names are candidate observations, not proof of service reachability or ownership. Limits and run times vary with network conditions.
+
+---
+
 ## 🧪 COPY & PASTE BUILD RECIPE // Ubuntu/Linux first run
 
 **Install → Build → Test → Run → Find results → Troubleshoot.** The first Bash block is independently exercised in Linux CI under a disposable home folder. It generates an **offline synthetic preview**, not a live scan. It uses a dedicated checkout and does not alter a user's original Git clone.
