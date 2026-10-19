@@ -90,9 +90,9 @@ if command -v firefox >/dev/null 2>&1; then
 fi
 ```
 
-## ⚡ New: colorful terminal-only live signal (upgrade under review)
+## ⚡ Colorful terminal-only live signal (available on main)
 
-**Want real intelligence scrolling by without saved files?** The upgraded source provides `--terminal-only` and `--color always` while keeping the original Firefox/HTML/JSON/CSV/TXT workflow unchanged. When the upgrade is merged, these commands will work with the newly downloaded source; local older scripts must be updated explicitly.
+**Want real intelligence scrolling by without saved files?** The upgraded source provides `--terminal-only` and `--color always` while keeping the original Firefox/HTML/JSON/CSV/TXT workflow unchanged. These options are now published on the `main` branch. Local older copies must be refreshed explicitly; the original Firefox/export mode continues working.
 
 ### Terminal-only, public-source research, no report files
 
