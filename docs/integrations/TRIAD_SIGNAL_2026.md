@@ -40,6 +40,10 @@ The standalone, CI-tested `triad_signal_2026.py` companion was run by the user a
 
 A live Ubuntu privacy check found `600 ~/findomain_results.txt` (owner-only) but `664 ~/triad_check2.txt` (group-readable and world-readable where directories permit). The original Triad Signal companion inherited the shell's permissive file-creation mask. New `-o` / `--o` TXT results now use **exclusive file creation with explicit 0600 permissions** regardless of the shell umask; neither the user's original ZIP nor existing saved files are silently changed. An offline test simulates `umask 000` and verifies new output permissions. Existing reports still need a one-time `chmod 600 ~/triad_check2.txt` if the user wants owner-only access. To receive the patch locally, download the updated companion **to a separate filename** in the same folder, then use that filename on subsequent runs. No network scans are required to verify permissions.
 
+## ✅ Local follow-up: old report secured, patched companion downloaded
+
+The user confirmed `chmod 600 ~/triad_check2.txt` worked: the old report's mode changed from **0664** to **0600**. They successfully downloaded the fixed [main-branch companion](../../scripts/triad_signal_2026.py) under the separate local filename `triad_signal_private_2026.py` and its `--help` displayed `-o, --o`. The published source and offline test verify new file creation at mode `0600`, including a permissive umask. **A new real opted-in report from the patched local companion has not been created yet**, so distinguish local help check from a local real-file-permission retest. The original installer ZIP and earlier scripts were left intact.
+
 ## What this companion does
 
 [**Open the real Triad Signal Python source**](../../scripts/triad_signal_2026.py).
