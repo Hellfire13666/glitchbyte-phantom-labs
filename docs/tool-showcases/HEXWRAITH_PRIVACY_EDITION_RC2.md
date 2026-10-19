@@ -42,6 +42,12 @@ RC2 now contains the existing [GlitchByte Phantom Labs license notice](../../LIC
 
 The earlier RC1 pattern scan found no matches for four common credential-pattern categories; that screen is not a complete confidentiality review, and copying a notice into RC2 does not provide an exhaustive audit.
 
+## 🔒 GitHub private repository confirmed (October 19, 2026)
+
+GitHub reports that [`Hellfire13666/hexwraith-domain-atlas-privacy-2026`](https://github.com/Hellfire13666/hexwraith-domain-atlas-privacy-2026) now exists with visibility **private** and default branch `main`. The nine expected tracked file paths were found through the authenticated GitHub connection: `.gitignore`, `LICENSE-NOTICE.md`, `MANIFEST.json`, `README.md`, both Python entry points, and three test files. The user's Ubuntu-side clean-clone comparison/testing results have **not yet been supplied**, so do not mark the clean-clone verification as passed.
+
+**Privacy boundary:** the existing `Hellfire13666/glitchbyte-phantom-labs-releases` Phantom Backup Vault is **public**, as is Headquarters. Do not add the private HEXWRAITH Git bundle, release ZIP, source files, or private reports to those public repositories without the owner's explicit decision to publish. A local private `git bundle` verified against the clean-cloned repository is the recommended next backup artifact. For independent cloud redundancy, create a *separate private* backup repo before uploading. A private repository may have had a prior public window; changing GitHub visibility does not revoke copies someone downloaded earlier.
+
 ## Suggested safe staging checks before creating a public repository
 
 ```bash
