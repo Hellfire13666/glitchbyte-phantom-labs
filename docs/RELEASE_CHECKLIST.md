@@ -53,6 +53,16 @@ Local Ubuntu results show the source-only `hexwraith_privacy_edition_v1_1_1_rc1.
 - [ ] Publish a distinct HEXWRAITH source repository/release and verify a clean clone.
 - [ ] Archive the new published source/release in Backup HQ and verify SHA-256.
 
+## ✅ HEXWRAITH RC2: locally validated; publication outstanding
+
+October 19, 2026 Ubuntu evidence: **14 patched-source tests passed**, RC2 ZIP checksum `b1728a0b480eae045ad289e59a69b3d20fd79e787d81bf4561c9f9428bb800a7` returned **OK** under `sha256sum -c`; ZIP test and per-file manifest hash verification also passed. The user listed **eight expected members** including `LICENSE-NOTICE.md`, two launchers, three tests, README and manifest. The previously verified RC1 and original working launcher were preserved. [Full RC2 record](tool-showcases/HEXWRAITH_PRIVACY_EDITION_RC2.md).
+
+- [x] Package RC2 with the existing Headquarters source-available licensing notice as a candidate.
+- [x] Retest patched-source behavior and verify local ZIP checksum + manifest.
+- [ ] Review third-party rights, full packaged source, README/metadata, and intended reuse/license restrictions before publishing.
+- [ ] Create or select the final standalone HEXWRAITH GitHub repository with explicit owner-approved visibility.
+- [ ] Upload vetted release bytes, verify clone and test, then create a checksum-verified Vault backup.
+
 ## Additional unresolved release gates
 
 - [x] Fix IP Shadow Scraper artwork lookup to use the existing repository `artwork/` file (Phase 25; no artwork bytes changed)
