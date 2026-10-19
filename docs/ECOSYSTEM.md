@@ -6,6 +6,8 @@
 
 **RosieGlitchbyte's original GlitchByte Phantom Labs headquarters**, containing the Linux, Python, Go, public-intelligence and creative-code workshop. [Return to Phantom Labs HQ](../README.md) · [Phantom Tool Vault](TOOL_VAULT.md) · [Phantom Backup HQ](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases).
 
+**🌈 Every future build:** Follow our [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md) and [three beginner runtime recipes](BEGINNER_RUNTIME_RECIPES.md). New releases are added here, in the Tool Vault and on the dedicated guide; Backup HQ is updated after a verified snapshot exists.
+
 This document is the live navigation hub for the repository. All linked tools below were checked against the paths that actually exist on the `main` branch on 17 October 2026. Prototypes discussed in chat are not treated as published until their source is committed here.
 
 **Phase 2 is ready for review:** enter the [Phantom Tool Vault](TOOL_VAULT.md) for a categorized navigator, the dedicated [VOIDLANTERN showcase](tool-showcases/VOIDLANTERN.md) and a template for future spotlights.
