@@ -4,6 +4,12 @@
 
 # 🌐 GLITCHBYTE DOMAIN INTEL // PHANTOM TOOL SPOTLIGHT
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![GlitchByte Domain Intel | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/03_domain_intel.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · Public domain research · Six modes · Timestamped JSON results**
 
 [🔗 Source code](../../tools/glitchbyte_domain_intel.py) · [🕷️ Phantom Tool Vault](../TOOL_VAULT.md) · [📚 Starter guide](../TOOL_STARTER_GUIDE.md)
