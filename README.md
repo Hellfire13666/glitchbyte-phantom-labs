@@ -64,6 +64,10 @@ Our three official destinations are **Phantom Labs HQ** (the original workshop a
 
 ## 🌹⚡ SUBDOMINATRIX: Live Signal upgrade
 
+**October 19 Findomain integration fix:** the live terminal upgrade now has an independent `--cli-timeout` (default 60s), streams optional CLI findings, preserves partial results and explains errors instead of hiding them. Python CI and public-clone checks passed. [Updated instructions](docs/tool-showcases/SUBDOMINATRIX.md). Real Ubuntu confirmation of this specific fix is still pending.
+
+
+
 **New terminal-first mode, published and CI-tested:** `--terminal-only --color always` displays real public-source candidates as each provider finishes, visible timeouts and HTTP 429 cooldown feedback, and **does not write reports or open Firefox**. The familiar local Firefox dashboard/report mode remains available by omitting `--terminal-only`. [Source](tools/subdominatrix.py) · [Simple / Medium / Extra launch recipes](docs/tool-showcases/SUBDOMINATRIX.md). Live performance on the user's Ubuntu machine still requires its own check.
 
 ## 🌐 Findomain: successful live discovery
