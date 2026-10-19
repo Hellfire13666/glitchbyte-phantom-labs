@@ -4,6 +4,12 @@
 
 # 👻 ROSIEGLITCHBYTE DOMAIN PHANTOM // TOOL SPOTLIGHT
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![Domain Phantom | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/04_domain_phantom.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · Single-domain public research · Eight modules · JSON reports · Standard library**
 
 [🐍 Actual Python source](../../tools/rosieglitchbyte_domain_phantom.py) · [🕷️ Tool Vault](../TOOL_VAULT.md) · [📚 Starter guide](../TOOL_STARTER_GUIDE.md)

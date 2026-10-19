@@ -4,6 +4,12 @@
 
 # 🌹 ROSE CRAWLER // PHANTOM TOOL SHOWCASE
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![Rose Crawler | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/11_rose_crawler.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · Public social-profile link catalog · HTML, JSON and CSV reports · Standard library**
 
 [Actual Python source](../../tools/rose_crawler.py) · [Phantom Tool Vault](../TOOL_VAULT.md) · [Starter guide](../TOOL_STARTER_GUIDE.md)
