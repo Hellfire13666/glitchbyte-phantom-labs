@@ -1,6 +1,6 @@
 # 🌹 HEXWRAITH Domain Atlas | Privacy Edition v1.1.1 RC2
 
-**Status: locally verified, NOT yet published as a standalone HEXWRAITH repository or uploaded to Phantom Backup HQ.**
+**Status: verified source committed and tagged in a PRIVATE standalone HEXWRAITH GitHub repository; local RC2 ZIP and private Git bundle are validated. No public GitHub Release or off-device private backup yet.**
 
 This record preserves the user's verified Ubuntu test results from October 19, 2026. It does not claim possession of the local ZIP, which exists only on the user's Ubuntu system until intentionally uploaded.
 
@@ -44,9 +44,9 @@ The earlier RC1 pattern scan found no matches for four common credential-pattern
 
 ## 🔒 GitHub private repository confirmed (October 19, 2026)
 
-GitHub reports that [`Hellfire13666/hexwraith-domain-atlas-privacy-2026`](https://github.com/Hellfire13666/hexwraith-domain-atlas-privacy-2026) now exists with visibility **private** and default branch `main`. The nine expected tracked file paths were found through the authenticated GitHub connection: `.gitignore`, `LICENSE-NOTICE.md`, `MANIFEST.json`, `README.md`, both Python entry points, and three test files. The user's Ubuntu-side clean-clone comparison/testing results have **not yet been supplied**, so do not mark the clean-clone verification as passed.
+GitHub reports that [`Hellfire13666/hexwraith-domain-atlas-privacy-2026`](https://github.com/Hellfire13666/hexwraith-domain-atlas-privacy-2026) now exists with visibility **private** and default branch `main`. The nine expected tracked file paths were found through the authenticated GitHub connection: `.gitignore`, `LICENSE-NOTICE.md`, `MANIFEST.json`, `README.md`, both Python entry points, and three test files. The user subsequently supplied clean-clone verification and restore results: **14/14 tests passed**, eight release members matched and a Git bundle restored successfully (see below).
 
-**Privacy boundary:** the existing `Hellfire13666/glitchbyte-phantom-labs-releases` Phantom Backup Vault is **public**, as is Headquarters. Do not add the private HEXWRAITH Git bundle, release ZIP, source files, or private reports to those public repositories without the owner's explicit decision to publish. A local private `git bundle` verified against the clean-cloned repository is the recommended next backup artifact. For independent cloud redundancy, create a *separate private* backup repo before uploading. A private repository may have had a prior public window; changing GitHub visibility does not revoke copies someone downloaded earlier.
+**Privacy boundary:** the existing `Hellfire13666/glitchbyte-phantom-labs-releases` Phantom Backup Vault is **public**, as is Headquarters. Do not add the private HEXWRAITH Git bundle, release ZIP, source files, or private reports to those public repositories without the owner's explicit decision to publish. A local private `git bundle` has now been created and restore-tested. For independent cloud redundancy, create a *separate private* backup repo before uploading. A private repository may have had a prior public window; changing GitHub visibility does not revoke copies someone downloaded earlier.
 
 ## ✅ Private GitHub clean-clone and local Git bundle restore verified (October 19, 2026)
 
@@ -63,7 +63,11 @@ The user's Ubuntu clean-clone/private-backup command reported:
 
 **Status:** GitHub source verified and a recoverable **local** private Git bundle exists. An independent off-device/encrypted backup remains recommended. The existing Phantom Backup Vault is **public** and MUST NOT receive this private bundle/source unless the owner expressly decides to publish it. Git bundle files are not encrypted by default; private filesystem permissions are not a substitute for encryption. No further public-release decision has been made.
 
-## Suggested safe staging checks before creating a public repository
+## ✅ Verified private RC2 Git tag (October 19, 2026)
+
+The user ran `git push origin v1.1.1-rc2` and Ubuntu reported `[new tag] v1.1.1-rc2 -> v1.1.1-rc2`, `[PASS] Private release tag published`, and commit `4225c48bcfb4175f58b4781cb00054cd40dc71e3`. Using the authenticated GitHub connection, the repository visibility was rechecked as **private** and files `MANIFEST.json` and `README.md` were successfully fetched from ref `v1.1.1-rc2`, confirming GitHub resolves this tag to the expected RC2 source. The tag labels the existing nine-file Git commit. It is **not** a separate GitHub Release or an uploaded RC2 ZIP asset. [Private release tag](https://github.com/Hellfire13666/hexwraith-domain-atlas-privacy-2026/tree/v1.1.1-rc2) (accessible to authorized users only).
+
+## Suggested RC2 local release checks
 
 ```bash
 cd "$HOME/Downloads"
@@ -74,4 +78,4 @@ unzip -Z -1 hexwraith_privacy_edition_v1_1_1_rc2.zip
 
 Use a new, distinct, private staging directory rather than extracting over `~/PhantomLabsLaunchers/hexwraith_domain_atlas`. Audit source content and metadata for credentials/private information, confirm license ownership and terms, then test the staged package.
 
-**Outstanding milestones:** explicit user choice of separate repository/visibility, repository publication of reviewed bytes, clean clone with passing offline tests, appropriate version/release tag, and a new checksum-verified Vault snapshot. The previous dated HQ snapshot contains source committed at that historical time, **not** the local-only RC2.
+**Outstanding milestones:** review license terms/rights and full security implications before any public release, retain an encrypted off-device copy or separate private backup, and optionally create a formal private GitHub Release (a Git tag by itself is not a GitHub Release). Do **not** place private HEXWRAITH source/bundles in the existing public Vault. The local RC2 ZIP is not a GitHub Release asset.
