@@ -528,7 +528,9 @@ def main(argv=None):
         color = next((value for key, value in palette.items() if msg.startswith(key)), "")
         print((color + msg + "\x1b[0m") if enabled and color else msg, flush=True)
     if args.terminal_only:
-        emit(f"[START] SUBDOMINATRIX LIVE SIGNAL :: {domain}")
+        emit(f"[START] SUBDOMINATRIX SIGNAL CORE :: {domain}")
+        emit("[MODE] SYNTHETIC OFFLINE DEMO" if args.offline_demo
+             else "[MODE] LIVE PUBLIC-SOURCE COLLECTION")
         emit("[START] Files OFF | Firefox OFF | bounded public-source requests")
     try:
         report = collect(domain, demo=args.offline_demo, max_results=args.max_results,
