@@ -1,21 +1,23 @@
 # 🌹 Phantom Labs | Official Tool Covers
 
-**This is the upload folder for approved, specifically named tool artwork.** Keep one selected PNG per tool using the exact filename in [the official cover map](../../docs/TOOL_COVER_MAP.json).
+**19 canonical PNGs published in this folder**, plus the original images for Subdominatrix, Rosie Phantom Scan V2, and IP Shadow Scraper in the parent `artwork/` folder. That's 22 of 24 tool showcase covers.
 
 <div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main/artwork/tool-covers"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF8B1F?style=flat-square&logo=github&logoColor=white"></a></div>
 
-## Upload flow
+## Final two covers to upload
 
-1. Open the [Artwork Upload Door](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main/artwork/tool-covers).
-2. Upload only your **chosen** art. Never upload multiple variants as the official cover for one tool without choosing first.
-3. **Keep the exact filename** from `docs/TOOL_COVER_MAP.json` and commit the file.
-4. The [automatic tool-cover linker](../../.github/workflows/tool-cover-linker.yml) updates the appropriate Markdown showcase page when that exact PNG exists.
-5. Open the [Phantom Tool Vault](../../docs/TOOL_VAULT.md) to view the updated tool page.
+| Tool | Exact filename | Matching tool page |
+| --- | --- | --- |
+| **14 HackGirl Intel** | `14_hackgirl_intel.png` | [Tool page](../../docs/tool-showcases/HACKGIRL_INTEL.md) |
+| **18 Rosie Signal Garden** | `18_signal_garden.png` | [Tool page](../../docs/tool-showcases/SIGNAL_GARDEN.md) |
 
-No cover is linked until its real PNG exists. This folder is only for public-approved tool art, not credentials, private research reports, or investigation screenshots.
+1. Open the [official Artwork Upload Door](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main/artwork/tool-covers).
+2. Select the **two PNG files themselves**. Do **not** upload their containing folder or ZIP archive.
+3. Keep the filenames exact and commit the upload.
+4. The [tool cover linker](../../.github/workflows/tool-cover-linker.yml) will connect them to the correct pages automatically. The linker can repair a single uniquely named file that was accidentally nested inside an extra folder.
 
-**Already completed outside this folder:** Rosie Phantom Scan V2 (existing `artwork/labs4.png`) and IP Shadow Scraper (existing `artwork/rosie_ip_shadow_art.png`). These remain unchanged.
+Use the [official cover map](../../docs/TOOL_COVER_MAP.json) to verify names. See [the cleanup record](../../docs/ARTWORK_UPLOAD_CLEANUP.md) for the nested duplicate folders safely removed after verifying exact Git object hashes.
 
-**Artwork needing your choice:** GlitchByte Domain Intel (03), Domain Phantom (04), Rose Crawler (11), and Dark Desire (22). Tool covers that misstate software features will be corrected before publication.
+**No secrets, private account data, or unpublished investigation reports belong in this public artwork folder.**
 
 [Phantom Labs HQ](../../README.md) · [Phantom Tool Vault](../../docs/TOOL_VAULT.md) · [Phantom Backup HQ](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases)
