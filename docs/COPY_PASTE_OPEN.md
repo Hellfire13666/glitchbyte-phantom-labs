@@ -4,6 +4,8 @@
 
 # 🌹⚡ COPY, PASTE & OPEN // PHANTOM LABS QUICK LAUNCHERS
 
+**💾 Optional TXT from a terminal run:** [Easy Save for Every Tool](EASY_SAVE_ALL_TOOLS.md) supports both `-o name.txt` and `--o name.txt` using the shared transcript saver. That tool saves the terminal's printed output, not a Firefox dashboard's underlying evidence, and Quick Open's original HTML/JSON files are still created as before. Only new/upgraded tools with native flags (currently SUBDOMINATRIX) can claim to save clean result-only TXT themselves.
+
 **No ChatGPT file attachments. No Git pull. No merge or rebase. No code typed in nano. No shell exit.**
 
 Open a terminal on Ubuntu/Linux, copy **one complete block** below, and your chosen tool generates a real local HTML gallery. Firefox opens automatically when installed on your desktop. Scripts and reports are saved only under `~/PhantomLabsLaunchers/`, so an existing `~/glitchbyte-phantom-labs` checkout is never touched.

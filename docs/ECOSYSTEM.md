@@ -12,6 +12,8 @@ This document is the live navigation hub for the repository. All linked tools be
 
 **Phase 2 is ready for review:** enter the [Phantom Tool Vault](TOOL_VAULT.md) for a categorized navigator, the dedicated [VOIDLANTERN showcase](tool-showcases/VOIDLANTERN.md) and a template for future spotlights.
 
+**💾 Easy Save:** [Universal guide for `-o name.txt` and `--o name.txt`](EASY_SAVE_ALL_TOOLS.md) · [Shared easy-save terminal launcher](../scripts/phantom_easy_save.py) · [Tool-by-tool usage and caveats](TOOL_VAULT.md). All 24 guides explain the optional terminal-transcript method; only upgraded tools claim native result export.
+
 ## ⚡ One-paste launches
 
 [Copy and paste commands that generate and open Firefox galleries](COPY_PASTE_OPEN.md) are now published for HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2 and GHOSTMARK. [Launcher Python source](../scripts/phantom_quickopen.py). No Git pull, merge, or manual ChatGPT downloads required.

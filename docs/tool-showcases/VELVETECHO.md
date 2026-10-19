@@ -85,3 +85,16 @@ Phone format statuses are `FORMAT_OK`, `INVALID`, and `UNKNOWN`. These make no c
 **Verification:** Synthetic demo and 21 local offline unit tests exercise core functionality. Public network service responses and production authorization have **not** been tested or certified. No older GlitchByte tool is overwritten.
 
 [Tool Vault](../TOOL_VAULT.md) · [Release policy](../../SECURITY.md) · [License](../../LICENSE-NOTICE.md)
+
+## 💾 Easy Save: `-o name.txt` or `--o name.txt`
+
+Install the shared [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md) first. It captures **actual printed terminal output** without rewriting this legacy tool. Both `-o` and `--o` work **on the runner**, before the `--` separator:
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+# From your HQ repository checkout root:
+python3 "$SAVER" --o velvetecho_help.txt -- python3 -u tools/velvetecho-persona-observatory/velvetecho_persona_observatory.py --help
+```
+
+This safe first example saves **help text**, not real Intel; replace `--help` / `-h` after the separator with the genuine run command and documented arguments from this page to save its printed findings. Choose a fresh filename for each run; existing TXT files are not overwritten. The runner does **not** disable this tool's own report exports or save native JSON/CSV/HTML; use the native export commands listed above for those. Interactive programs or browser-only interfaces may need native export instead. New tools are expected to support `-o` and `--o` natively after tests pass.
+

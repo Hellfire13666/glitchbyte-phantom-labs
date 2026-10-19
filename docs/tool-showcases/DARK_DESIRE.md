@@ -123,3 +123,16 @@ All behavior described here was verified by inspecting [the original Python sour
 The text is creative fiction. Hexadecimal text is readable by anyone with a decoder, so don't use it to conceal sensitive messages. Follow [SECURITY.md](../../SECURITY.md) and the repository's [custom source-available license](../../LICENSE-NOTICE.md).
 
 [← Phantom Tool Vault](../TOOL_VAULT.md) · [← Official homepage](../../README.md)
+
+## 💾 Easy Save: `-o name.txt` or `--o name.txt`
+
+First install the common [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md). It saves **printed terminal output** while leaving the original interactive program and its own exports untouched. The runner understands both `-o` and `--o` before the `--` separator.
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+# From the main HQ repository checkout root:
+python3 "$SAVER" --o dark_desire_help.txt -- python3 -u tools/rosie_dark_desire.py --help
+```
+
+This example saves **help output only**, not the game's results. To save an actual run, replace the `--help` after the separator with the documented command/arguments. **Note:** interactive prompts, games and full-screen terminal UI may not work the same through a pipe, so for these projects a native export or copy-from-terminal approach is safer. The shared wrapper never pretends to save game state or browser-only results. Existing filenames aren't overwritten; other reports produced by the legacy game may still be created. Our new-build standard calls for native `-o` / `--o` export where it makes sense.
+

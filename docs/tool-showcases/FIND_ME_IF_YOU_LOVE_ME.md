@@ -131,3 +131,16 @@ The source, its three gates, answer matching, timing and decoded finale were ins
 This is a fictional romance game, not malware or a secure method of storing secrets. Review the repository [security policy](../../SECURITY.md) and [custom source-available license](../../LICENSE-NOTICE.md).
 
 [← PHANTOM TOOL VAULT](../TOOL_VAULT.md) · [← Homepage](../../README.md)
+
+## 💾 Easy Save: `-o name.txt` or `--o name.txt`
+
+First install the common [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md). It saves **printed terminal output** while leaving the original interactive program and its own exports untouched. The runner understands both `-o` and `--o` before the `--` separator.
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+# From the main HQ repository checkout root:
+python3 "$SAVER" --o find_me_if_you_love_me_help.txt -- python3 -u tools/rosie_hide_seek.py --help
+```
+
+This example saves **help output only**, not the game's results. To save an actual run, replace the `--help` after the separator with the documented command/arguments. **Note:** interactive prompts, games and full-screen terminal UI may not work the same through a pipe, so for these projects a native export or copy-from-terminal approach is safer. The shared wrapper never pretends to save game state or browser-only results. Existing filenames aren't overwritten; other reports produced by the legacy game may still be created. Our new-build standard calls for native `-o` / `--o` export where it makes sense.
+

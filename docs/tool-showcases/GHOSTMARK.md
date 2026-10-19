@@ -130,3 +130,16 @@ python3 "$SCRIPT" --folder "$HOME/Documents" \
 [Offline tests](../../tests/test_ghostmark_integrity_atlas.py) check actual SHA-256 scans, duplicate detection, baseline adds/removals/changes, symlink handling, file-size boundaries, report escaping, unique exports and CLI errors. CI also runs the published Bash block in a disposable clean HOME. This does not provide antivirus or forensic chain-of-custody guarantees.
 
 [License notice](../../LICENSE-NOTICE.md) · [Security policy](../../SECURITY.md)
+
+## 💾 Easy Save: `-o name.txt` or `--o name.txt`
+
+Get the [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md) first. The runner can save this tool's **printed terminal output** in a new plain-text file without changing its own CLI; `-o` and `--o` work **on the runner before the `--` separator**.
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+# From the HQ repository root, safe help-only preview:
+python3 "$SAVER" -o ghostmark_help.txt -- python3 -u tools/ghostmark_integrity_atlas.py --help
+```
+
+This example saves **help text**, not working results. For actual output, substitute this tool's real run command and tested arguments from the setup recipe above for everything after the separator, and choose a new `.txt` filename. The runner saves terminal text only, not its native HTML/JSON/CSV; this tool's pre-existing report/export behavior is unchanged, so it may still write its original files. Terminal-interactive or Firefox-only behavior may require a native exporter. New projects get `-o`/`--o` implemented in their own CLI when practical.
+
