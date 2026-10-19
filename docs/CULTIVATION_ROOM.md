@@ -49,6 +49,10 @@ The [CI-reviewed terminal-only live signal upgrade](tool-showcases/SUBDOMINATRIX
 **Every future tool build or explicitly requested upgrade should offer simple output saving where practical:** `-o name.txt` writes human-readable results only if requested. Live terminal results should still appear. Document exact filename/path, TXT contents, non-overwrite behavior and exceptions. SUBDOMINATRIX has a tested implementation under review; older tools are not silently rewritten. [Publishing standard](BUILD_PUBLICATION_STANDARD.md) · [Subdominatrix](tool-showcases/SUBDOMINATRIX.md).
 
 
+## 🔧 Checklist #4: Triad Forge integration
+
+The original local archive/install scripts for Amass, GAU and Waybackurls were inspected and all three executables were reported installed. In the first live pass, Waybackurls completed and returned 20 URL lines while Amass and GAU timed out at 45 seconds. A separate [Triad Signal companion with independent bounded timeouts, parallel feedback and `-o`/`--o` TXT](integrations/TRIAD_SIGNAL_2026.md) is under CI review. The existing local Forge folder and ZIP are not changed; mark full live module verification **pending** until the new companion is tested in Ubuntu.
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.
