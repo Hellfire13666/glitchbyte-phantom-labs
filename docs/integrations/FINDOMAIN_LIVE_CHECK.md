@@ -57,6 +57,17 @@ printf '\033[92m◆ CHECKS COMPLETE\033[0m\n'
 
 These commands perform only limited checks on the root domain and its `www` hostname; **they do not validate every discovered subdomain**. Advanced Findomain flags, such as upstream `-r` (resolvable names), should be used only after checking your version's `--help` and applicable authorization.
 
+## 💾 Easy Save with both `-o` and `--o`
+
+For a plain-text copy of Findomain's actual terminal output, use our [universal Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md). Findomain itself is an independently installed tool; **the `-o`/`--o` flags in this example belong to the runner**, not a new Findomain option. Install the runner using the linked guide, then run:
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+python3 "$SAVER" --o findomain_names.txt -- findomain -t example.com
+```
+
+`-o` is an equivalent shorter spelling. The TXT is a **transcript**, which may contain provider messages or banners alongside hostname candidates; it is not a normalized clean-hostname export. It saves no file without the flag, but Findomain has its own behavior. Choose a fresh filename for subsequent runs; existing files are not overwritten.
+
 ## 💾 Save only when deliberately requested
 
 Default examples above do **not** request file export. To explicitly save a text transcript of the screen output:
