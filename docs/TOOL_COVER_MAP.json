@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "scope": "GlitchByte Phantom Labs official tool cover paths",
-  "notes": "The auto-linker inserts images only when the named image actually exists in the repository. Art choices require the user's selection before uploading a canonical filename. Image filename paths are case sensitive. 02 and 07 retain already-published covers.",
+  "notes": "User approved artwork for 06, 10, 15, and 16 from four uploaded screenshots. Exact PNG files must exist in the repository before tool covers are linked. Do not use images from unrelated tools. The auto-linker inserts only real images; 02 and 07 retain original published covers.",
   "covers": [
     {
       "tool_number": "03",
@@ -29,7 +29,9 @@
       "title": "IP Specter",
       "showcase": "docs/tool-showcases/IP_SPECTER.md",
       "image": "artwork/tool-covers/06_ip_specter.png",
-      "status": "review-before-upload"
+      "status": "user-approved-awaiting-image-upload",
+      "selected_source_artwork": "Screenshot_2026-10-18_21-50-56.png",
+      "approved_on": "2026-10-18"
     },
     {
       "tool_number": "08",
@@ -50,7 +52,9 @@
       "title": "VELVETECHO",
       "showcase": "docs/tool-showcases/VELVETECHO.md",
       "image": "artwork/tool-covers/10_velvetecho.png",
-      "status": "review-before-upload"
+      "status": "user-approved-awaiting-image-upload",
+      "selected_source_artwork": "Screenshot_2026-10-18_21-50-39.png",
+      "approved_on": "2026-10-18"
     },
     {
       "tool_number": "11",
@@ -85,14 +89,18 @@
       "title": "SCREAMFRAME",
       "showcase": "docs/tool-showcases/SCREAMFRAME.md",
       "image": "artwork/tool-covers/15_screamframe.png",
-      "status": "review-before-upload"
+      "status": "user-approved-awaiting-image-upload",
+      "selected_source_artwork": "Screenshot_2026-10-18_21-49-51.png",
+      "approved_on": "2026-10-18"
     },
     {
       "tool_number": "16",
       "title": "GHOSTMARK Integrity Atlas",
       "showcase": "docs/tool-showcases/GHOSTMARK.md",
       "image": "artwork/tool-covers/16_ghostmark.png",
-      "status": "review-before-upload"
+      "status": "user-approved-awaiting-image-upload",
+      "selected_source_artwork": "Screenshot_2026-10-18_21-50-09.png",
+      "approved_on": "2026-10-18"
     },
     {
       "tool_number": "17",
