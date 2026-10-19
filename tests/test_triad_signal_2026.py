@@ -1,6 +1,7 @@
 """Offline regression tests for GlitchByte Phantom Labs' Triad Signal companion."""
 import importlib.util
 import os
+import stat
 from pathlib import Path
 import subprocess
 import sys
@@ -80,6 +81,24 @@ class TriadSignalTests(unittest.TestCase):
                 "https://example.com/a?x=1",
             ], file.read_text().splitlines())
             self.assertNotIn("NOTICE", file.read_text())
+
+    def test_saved_txt_private_under_permissive_umask(self):
+        # Reproduce the real Ubuntu 664 discovery even when umask permits 666.
+        # Subprocess adjusts its own umask; it never changes the test runner.
+        with tempfile.TemporaryDirectory() as tmp:
+            create_fakes(tmp)
+            file = Path(tmp) / "private.txt"
+            env = dict(os.environ, PATH=tmp + os.pathsep + os.environ.get("PATH", ""))
+            driver = "import os,sys;os.umask(0);os.execv(sys.executable,[sys.executable,*sys.argv[1:]])"
+            cmd = [sys.executable, "-B", "-c", driver,
+                   "-B", str(SCRIPT), "example.com", "--only", "waybackurls",
+                   "--o", str(file), "--wayback-seconds", "5"]
+            result = subprocess.run(cmd, capture_output=True, text=True,
+                                    timeout=15, env=env)
+            self.assertEqual(0, result.returncode, result.stderr)
+            self.assertIn("[SAVED] TXT", result.stdout)
+            self.assertEqual(0o600, stat.S_IMODE(file.stat().st_mode))
+            self.assertTrue(file.read_text().startswith("http://example.com"))
 
     def test_long_o_no_overwrite(self):
         with tempfile.TemporaryDirectory() as tmp:
