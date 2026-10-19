@@ -73,6 +73,12 @@ User-side Ubuntu evidence after the Triad Signal [0600 private-TXT patch](integr
 
 **Verified milestone:** identified existing report permissions fixed; updated launchers available; offline demonstration and no-save feedback ran in real Ubuntu. The lab-wide security review (credentials, Git history, all legacy tools, external policy compliance) remains an open release gate. For checklist #8, verify the old local Triad ZIP and compare [Vault latest backup index](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/snapshots/latest.json) against the current HQ commit; the most recently indexed snapshot predates these privacy/report updates, so do **not** claim the newest source is already archived.
 
+## ✅ Checklist #8: Original Triad Forge ZIP verified on Ubuntu (October 19, 2026)
+
+The user's read-only Python `zipfile.testzip()` and byte-for-byte installed-file comparison on `~/Downloads/glitchbyte_triad_forge_2026.zip` returned **`[PASS] ZIP integrity`**, **8/8 matching files**, and **0 differences** versus `~/PhantomLabsLaunchers/glitchbyte_triad_forge_2026/`. Local archive SHA-256: `c464d1809903749869a12fdde06af48bf76cc584c010fa9da415a63ab611b043`. This is a recorded fingerprint, not a signed third-party authenticity guarantee. The read-only test did not create a fresh backup or copy files elsewhere.
+
+**Separate vault freshness gate remains open:** [Phantom Backup HQ's latest index](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/snapshots/latest.json) currently references HQ commit `d6e4dc1fa836`; later merged Triad Signal, permission fixes, and documentation changes are not in that indexed archive. The [Vault workflow](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/actions/workflows/vault-backup.yml) supports `workflow_dispatch` and rebuilds/checks hashes; verify a **new** indexed source commit, ZIP and `SHA256SUMS.txt` before marking latest HQ source as backed up. Historical local ZIP and public HQ source snapshots are different assets; the workflow only protects tracked, committed GitHub files.
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.
