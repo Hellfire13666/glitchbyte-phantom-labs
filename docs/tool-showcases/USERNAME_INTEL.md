@@ -4,6 +4,12 @@
 
 # 🕵️ ROSIE USERNAME INTEL // PHANTOM TOOL SPOTLIGHT
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![Rosie Username Intel | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/09_username_intel.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · Public username link navigator · JSON report · No third-party libraries**
 
 [🔗 Actual source](../../tools/rosie_username_intel.py) · [🕷️ Tool Vault](../TOOL_VAULT.md) · [📚 Starter guide](../TOOL_STARTER_GUIDE.md)

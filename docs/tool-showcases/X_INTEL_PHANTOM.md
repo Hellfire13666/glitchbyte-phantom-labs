@@ -4,6 +4,12 @@
 
 # 🛰️ GLITCHBYTEROSIE X INTEL PHANTOM // TOOL SHOWCASE
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![X Intel Phantom | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/12_x_intel_phantom.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3.9+ · Official X API v2 · Public account/post research · JSON + CSV exports**
 
 [🐍 Original Python source](../../tools/glitchbyterosie_x_intel.py) · [🕷️ Phantom Tool Vault](../TOOL_VAULT.md) · [📚 Tool Starter Guide](../TOOL_STARTER_GUIDE.md)

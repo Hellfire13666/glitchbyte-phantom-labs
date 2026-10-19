@@ -4,6 +4,12 @@
 
 # 💌 GHOST IN MY HEART // PHANTOM TOOL SHOWCASE
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![Ghost in My Heart | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/23_ghost_in_my_heart.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · Five-chapter offline romance riddle · Hex-decoded love letter · No external dependencies**
 
 [🐍 Actual Python source](../../tools/rosie_ghost_heart.py) · [🕷️ Phantom Tool Vault](../TOOL_VAULT.md) · [📚 Tool Starter Guide](../TOOL_STARTER_GUIDE.md)
