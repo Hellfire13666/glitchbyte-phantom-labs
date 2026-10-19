@@ -8,28 +8,28 @@
       "title": "GlitchByte Domain Intel",
       "showcase": "docs/tool-showcases/DOMAIN_INTEL.md",
       "image": "artwork/tool-covers/03_domain_intel.png",
-      "status": "choice-required"
+      "status": "published"
     },
     {
       "tool_number": "04",
       "title": "Domain Phantom",
       "showcase": "docs/tool-showcases/DOMAIN_PHANTOM.md",
       "image": "artwork/tool-covers/04_domain_phantom.png",
-      "status": "choice-required"
+      "status": "published"
     },
     {
       "tool_number": "05",
       "title": "Neon Rose Phantom 3.0",
       "showcase": "docs/tool-showcases/NEON_ROSE_PHANTOM_3.md",
       "image": "artwork/tool-covers/05_neon_rose_phantom_3.png",
-      "status": "named-match"
+      "status": "published"
     },
     {
       "tool_number": "06",
       "title": "IP Specter",
       "showcase": "docs/tool-showcases/IP_SPECTER.md",
       "image": "artwork/tool-covers/06_ip_specter.png",
-      "status": "user-approved-awaiting-image-upload",
+      "status": "published",
       "selected_source_artwork": "Screenshot_2026-10-18_21-50-56.png",
       "approved_on": "2026-10-18"
     },
@@ -38,21 +38,21 @@
       "title": "VOIDLANTERN",
       "showcase": "docs/tool-showcases/VOIDLANTERN.md",
       "image": "artwork/tool-covers/08_voidlantern.png",
-      "status": "named-match"
+      "status": "published"
     },
     {
       "tool_number": "09",
       "title": "Rosie Username Intel",
       "showcase": "docs/tool-showcases/USERNAME_INTEL.md",
       "image": "artwork/tool-covers/09_username_intel.png",
-      "status": "named-match"
+      "status": "published"
     },
     {
       "tool_number": "10",
       "title": "VELVETECHO",
       "showcase": "docs/tool-showcases/VELVETECHO.md",
       "image": "artwork/tool-covers/10_velvetecho.png",
-      "status": "user-approved-awaiting-image-upload",
+      "status": "published",
       "selected_source_artwork": "Screenshot_2026-10-18_21-50-39.png",
       "approved_on": "2026-10-18"
     },
@@ -61,21 +61,21 @@
       "title": "Rose Crawler",
       "showcase": "docs/tool-showcases/ROSE_CRAWLER.md",
       "image": "artwork/tool-covers/11_rose_crawler.png",
-      "status": "choice-required"
+      "status": "published"
     },
     {
       "tool_number": "12",
       "title": "X Intel Phantom",
       "showcase": "docs/tool-showcases/X_INTEL_PHANTOM.md",
       "image": "artwork/tool-covers/12_x_intel_phantom.png",
-      "status": "named-match"
+      "status": "published"
     },
     {
       "tool_number": "13",
       "title": "X Shadow No-API",
       "showcase": "docs/tool-showcases/X_SHADOW_NO_API.md",
       "image": "artwork/tool-covers/13_x_shadow_no_api.png",
-      "status": "named-match"
+      "status": "published"
     },
     {
       "tool_number": "14",
@@ -91,7 +91,7 @@
       "title": "SCREAMFRAME",
       "showcase": "docs/tool-showcases/SCREAMFRAME.md",
       "image": "artwork/tool-covers/15_screamframe.png",
-      "status": "user-approved-awaiting-image-upload",
+      "status": "published",
       "selected_source_artwork": "Screenshot_2026-10-18_21-49-51.png",
       "approved_on": "2026-10-18"
     },
@@ -100,7 +100,7 @@
       "title": "GHOSTMARK Integrity Atlas",
       "showcase": "docs/tool-showcases/GHOSTMARK.md",
       "image": "artwork/tool-covers/16_ghostmark.png",
-      "status": "user-approved-awaiting-image-upload",
+      "status": "published",
       "selected_source_artwork": "Screenshot_2026-10-18_21-50-09.png",
       "approved_on": "2026-10-18"
     },
@@ -109,7 +109,7 @@
       "title": "Log Constellation",
       "showcase": "docs/tool-showcases/LOG_CONSTELLATION.md",
       "image": "artwork/tool-covers/17_log_constellation.png",
-      "status": "named-match"
+      "status": "published"
     },
     {
       "tool_number": "18",
@@ -125,42 +125,42 @@
       "title": "HEXWAKE",
       "showcase": "docs/tool-showcases/HEXWAKE.md",
       "image": "artwork/tool-covers/19_hexwake.png",
-      "status": "named-match"
+      "status": "published"
     },
     {
       "tool_number": "20",
       "title": "Phantom Cipherbox",
       "showcase": "docs/tool-showcases/PHANTOM_CIPHERBOX.md",
       "image": "artwork/tool-covers/20_phantom_cipherbox.png",
-      "status": "named-match"
+      "status": "published"
     },
     {
       "tool_number": "21",
       "title": "Catch Me in the Chaos",
       "showcase": "docs/tool-showcases/CATCH_ME_IN_THE_CHAOS.md",
       "image": "artwork/tool-covers/21_catch_me_in_the_chaos.png",
-      "status": "named-match"
+      "status": "published"
     },
     {
       "tool_number": "22",
       "title": "Dark Desire",
       "showcase": "docs/tool-showcases/DARK_DESIRE.md",
       "image": "artwork/tool-covers/22_dark_desire.png",
-      "status": "choice-required"
+      "status": "published"
     },
     {
       "tool_number": "23",
       "title": "Ghost in My Heart",
       "showcase": "docs/tool-showcases/GHOST_IN_MY_HEART.md",
       "image": "artwork/tool-covers/23_ghost_in_my_heart.png",
-      "status": "named-match"
+      "status": "published"
     },
     {
       "tool_number": "24",
       "title": "Find Me If You Love Me",
       "showcase": "docs/tool-showcases/FIND_ME_IF_YOU_LOVE_ME.md",
       "image": "artwork/tool-covers/24_find_me_if_you_love_me.png",
-      "status": "named-match"
+      "status": "published"
     }
   ]
 }
