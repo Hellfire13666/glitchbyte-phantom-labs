@@ -26,7 +26,7 @@ def build():
         image_path = ROOT / item["image"]
         if not page_path.is_file():
             raise RuntimeError("Missing actual tool page: " + item["showcase"])
-        if not image_path.is_file() and item.get("status") == "user-approved-awaiting-image-upload":
+        if not image_path.is_file() and item.get("status") in ("user-approved-awaiting-image-upload", "selected-awaiting-image-upload"):
             # If a browser upload preserved a folder, promote only the selected cover.
             base = ROOT / "artwork" / "tool-covers"
             matches = sorted(p for p in base.rglob(image_path.name)
