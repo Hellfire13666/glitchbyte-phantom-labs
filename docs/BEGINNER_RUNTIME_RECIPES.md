@@ -4,6 +4,8 @@
 
 **This is a documentation standard, not a new flag implemented by every tool.** A recipe must use the *actual command-line options* from its linked source/README. `--simple`, `--medium`, `--extra`, `--save`, and `--live` are not universal flags. Do not invent them.
 
+**Publishing this everywhere:** Our [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md) explains how every new tool gets unique artwork/source, these three verified recipes, colorful live results, accurate save/Firefox notes, and links through HQ, Cultivation, Tool Vault, and verified Backup HQ.
+
 ## What each recipe must show
 
 | Level | Who it is for | How it should behave |
