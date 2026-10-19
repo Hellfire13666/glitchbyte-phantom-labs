@@ -33,7 +33,7 @@ The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md
 
 **October 19 correction:** [SUBDOMINATRIX guide](tool-showcases/SUBDOMINATRIX.md) now includes `--cli-timeout 60` independent of provider deadlines, immediate optional-tool findings, retained partial results, and detailed error messages. CI and the user's live Ubuntu retest passed: 151 unique hostname candidates; Findomain returned 102 records and completed in 40.45 seconds.
 
- the [individual tool guide](tool-showcases/SUBDOMINATRIX.md) documents `--terminal-only`, no-save streaming, rate-limited source feedback, and Simple/Medium/Extra examples. CI passed; the real Ubuntu live smoke test remains outstanding.
+ the [individual tool guide](tool-showcases/SUBDOMINATRIX.md) documents `--terminal-only`, no-save streaming, rate-limited source feedback, and Simple/Medium/Extra examples. CI and the real Ubuntu live test passed; 151 candidates were observed and only the requested TXT was saved.
 
 **💾 Easy save for updated terminal tools:** prefer `-o name.txt` to explicitly save real results while preserving screen feedback. This is implemented in [SUBDOMINATRIX's updated source and instructions](tool-showcases/SUBDOMINATRIX.md), not every historical tool. Original `--out DIRECTORY` remains a separate legacy option; review each tool's supported flags.
 
