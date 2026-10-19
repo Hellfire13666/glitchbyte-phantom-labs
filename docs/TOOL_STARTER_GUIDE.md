@@ -14,6 +14,9 @@ See the [beginner runtime recipes and verified commands](BEGINNER_RUNTIME_RECIPE
 
 **For all future build releases:** The [Build → Run → Publish → Vault policy](BUILD_PUBLICATION_STANDARD.md) is the complete cross-repository distribution checklist. Individual tool pages must link back to the [runtime recipe standard](BEGINNER_RUNTIME_RECIPES.md). Existing tools retain their actual flags and reporting behavior until upgraded.
 
+**Easy-save recipe convention:** For newly built or explicitly upgraded tools that implement it, `-o name.txt` should save human-readable results without hiding colorful terminal progress. The option is **not universal**: always check the individual tool's `--help`. The original `--out` report-directory flag in legacy tools may behave differently. [See the full policy](BUILD_PUBLICATION_STANDARD.md) and [SUBDOMINATRIX examples](tool-showcases/SUBDOMINATRIX.md).
+
+
 ## 1. Find a tool
 
 Clone the repository or open its `tools/` directory on GitHub:
