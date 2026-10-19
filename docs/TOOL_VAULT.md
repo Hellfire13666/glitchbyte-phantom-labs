@@ -4,7 +4,7 @@
 
 # 🕷️ PHANTOM TOOL VAULT
 
-> **QUICK LAB DOORS:** [👻 Headquarters](../README.md) · [🌱 Cultivation Room](CULTIVATION_ROOM.md) · [⚡ RosieRiot Overdrive](https://github.com/Hellfire13666/rosieriot-overdrive-2026) · [🔐 Phantom Backup HQ](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases)  
+> **QUICK LAB DOORS:** [👻 Phantom Labs HQ](../README.md) · [🌱 Cultivation Room](CULTIVATION_ROOM.md) · [⚡ RosieRiot Overdrive](https://github.com/Hellfire13666/rosieriot-overdrive-2026) · [🔐 Phantom Backup HQ](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases)  
 > **UPLOAD DOORS:** [📤 HQ / Cultivation](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) · [📤 Overdrive](https://github.com/Hellfire13666/rosieriot-overdrive-2026/upload/main) · [📤 Vault](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/upload/main)
 
 
