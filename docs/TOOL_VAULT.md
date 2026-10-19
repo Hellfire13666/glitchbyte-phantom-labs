@@ -14,6 +14,10 @@
 
 ![Rosie Phantom Tool Vault](../artwork/vaultlab.png)
 
+## 📦 Every future tool is indexed across the labs
+
+The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md) requires each published tool to have real source, one dedicated how-to/setup door, tested Simple/Medium/Extra recipes, actual progress/results when applicable, no-save or documented legacy file behavior, Firefox instructions if real, and a correctly linked release/verified backup. The main HQ, Cultivation, tool guide, individual README, and recovery index must point to the right release. Publication links are verified; no imaginary tools or backup status claims.
+
 <!-- PHANTOM-DOOR-INDEX:START -->
 ## 🚪 All tool doors: find any project in two clicks
 
