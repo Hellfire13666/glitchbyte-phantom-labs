@@ -28,6 +28,10 @@ RosieRiot Overdrive is one of the three permanent labs. Its dedicated tool repos
 
 Our [Simple · Medium · Extra how-to examples](BEGINNER_RUNTIME_RECIPES.md#-example-a-rosieriot-overdrive-installed-ubuntu-tools) explain public-source Subfinder, the workshop's locally installed passive launcher, and the published engine's optional authorized modules. **Local v3 is separate from the original committed ZIP.** Documentation distinguishes no-save local behavior from automatic report writing in the original engine.
 
+## 🌈 New-build documentation + distribution
+
+Every RosieRiot component or companion upgrade follows the [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md): unique source and artwork, visible real findings/partial statuses, honest optional report behavior, tested [Simple/Medium/Extra instructions](BEGINNER_RUNTIME_RECIPES.md), and matching links from HQ, Cultivation, Tool Vault, the dedicated repository, and a verified backup. This is documentation policy, not a claim that every original module has already been rewritten.
+
 ## Quick links
 
 - [⚡ Open the Overdrive tool repository](https://github.com/Hellfire13666/rosieriot-overdrive-2026)
