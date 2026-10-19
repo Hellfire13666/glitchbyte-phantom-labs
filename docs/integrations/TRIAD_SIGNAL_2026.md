@@ -36,6 +36,10 @@ The standalone, CI-tested `triad_signal_2026.py` companion was run by the user a
 
 **`[SAVED] TXT /home/example/triad_check2.txt | 0 candidate lines`** verifies explicit save-file creation, not populated results. The script produced accurate module-level status, returned to the shell, and did not modify the original local Triad Forge installer ZIP. **Installed commands, launcher feedback, timeout handling and optional save are verified on Ubuntu.** Complete live collection from Amass/GAU and consistent archive results are **not** verified. Provider availability and this demonstration domain can affect results; do not treat zero candidates as proof that a domain lacks hosts or archived URLs.
 
+## 🔐 Saved-TXT privacy patch (October 19, 2026)
+
+A live Ubuntu privacy check found `600 ~/findomain_results.txt` (owner-only) but `664 ~/triad_check2.txt` (group-readable and world-readable where directories permit). The original Triad Signal companion inherited the shell's permissive file-creation mask. New `-o` / `--o` TXT results now use **exclusive file creation with explicit 0600 permissions** regardless of the shell umask; neither the user's original ZIP nor existing saved files are silently changed. An offline test simulates `umask 000` and verifies new output permissions. Existing reports still need a one-time `chmod 600 ~/triad_check2.txt` if the user wants owner-only access. To receive the patch locally, download the updated companion **to a separate filename** in the same folder, then use that filename on subsequent runs. No network scans are required to verify permissions.
+
 ## What this companion does
 
 [**Open the real Triad Signal Python source**](../../scripts/triad_signal_2026.py).
