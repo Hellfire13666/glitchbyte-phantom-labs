@@ -38,6 +38,8 @@ For network research, passive public-source lookups are distinct from direct DNS
 For future terminal-first tools, prefer a short, beginner-friendly **`-o name.txt`** option to save human-readable output **only when requested**. Continue to print results live and preserve colorful status on screen. Clearly document what TXT contains (e.g., one deduplicated candidate hostname per line) and avoid overwriting older reports. If a tool supports structured export, document its actual `--json`, `--csv`, or other flags separately. Do **not** assume all existing tools already recognize `-o`: update the actual program, test it, and then add an example to that project's Simple/Medium/Extra recipe. Distinguish any older `--out` output-folder option from the new `-o filename.txt` convention.
 
 
+**New easy-save rule:** every *future* noninteractive terminal tool must implement both native `-o name.txt` and `--o name.txt` when a plaintext result makes sense, create no TXT file unless requested, never overwrite previous results, and continue to print live feedback. The output must contain meaningful tool results, not merely a log transcript. Where special UI or file exports are needed, document those instead. [Universal easy-save instructions for existing tools](EASY_SAVE_ALL_TOOLS.md) provide a shared runner; the runner does not automatically add native flags or turn off legacy exports.
+
 ## 4. Every tool gets beginner **SIMPLE · MEDIUM · EXTRA** recipes
 
 Each project README / build page must include **three real, tested copy/paste Ubuntu/Linux examples**:
