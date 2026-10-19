@@ -15,7 +15,7 @@ SCRIPT="$HOME/PhantomLabsLaunchers/subdominatrix_live_signal_2026/subdominatrix_
 python3 -u "$SCRIPT" example.com --terminal-only --color always -o names.txt
 ```
 
-The legacy `--out DIRECTORY` option is **not** the same as `-o filename.txt`. Each future tool needs its own tested CLI support; this is not a universal preexisting flag. See [SUBDOMINATRIX's guide](tool-showcases/SUBDOMINATRIX.md#-easy-save--o-nametxt-new-and-opt-in).
+The legacy `--out DIRECTORY` option is **not** the same as `-o filename.txt`. Each future tool needs its own tested CLI support; this is not a universal preexisting flag. See [SUBDOMINATRIX's guide](tool-showcases/SUBDOMINATRIX.md).
 
 
 ## What each recipe must show
