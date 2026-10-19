@@ -60,6 +60,8 @@ def parse_args(argv=None):
                 "phantom_easy_save.py -o findings.txt -- python3 -u tools/your_tool.py --help"))
     parser.add_argument("-o", "--o", "--output", dest="output", metavar="NAME.txt",
                         help="Optional NEW TXT file for the terminal transcript (no overwrites)")
+    if argv == ["-h"] or argv == ["--help"]:
+        parser.parse_args(argv)  # argparse prints genuine help and exits 0
     if "--" not in argv:
         parser.error("Missing '--' separator before the command to run")
     marker = argv.index("--")
