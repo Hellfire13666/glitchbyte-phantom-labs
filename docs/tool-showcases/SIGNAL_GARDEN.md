@@ -128,3 +128,16 @@ The flags, file filters, four output filenames and demo behavior were checked by
 The generated report may reproduce local notes, dates, URLs, and file hashes. Do not publish it without review. Read the repository's [security policy](../../SECURITY.md) and [custom source-available license](../../LICENSE-NOTICE.md).
 
 [← PHANTOM TOOL VAULT](../TOOL_VAULT.md) · [← GitHub homepage](../../README.md)
+
+## 💾 Easy Save: `-o name.txt` or `--o name.txt`
+
+Get the [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md) first. The runner can save this tool's **printed terminal output** in a new plain-text file without changing its own CLI; `-o` and `--o` work **on the runner before the `--` separator**.
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+# From the HQ repository root, safe help-only preview:
+python3 "$SAVER" -o signal_garden_help.txt -- python3 -u tools/rosie_signal_garden.py --help
+```
+
+This example saves **help text**, not working results. For actual output, substitute this tool's real run command and tested arguments from the setup recipe above for everything after the separator, and choose a new `.txt` filename. The runner saves terminal text only, not its native HTML/JSON/CSV; this tool's pre-existing report/export behavior is unchanged, so it may still write its original files. Terminal-interactive or Firefox-only behavior may require a native exporter. New projects get `-o`/`--o` implemented in their own CLI when practical.
+
