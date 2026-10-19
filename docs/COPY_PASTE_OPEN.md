@@ -10,6 +10,8 @@ Open a terminal on Ubuntu/Linux, copy **one complete block** below, and your cho
 
 Each block downloads just the [first-party launcher source](../scripts/phantom_quickopen.py) from the official repository, then the launcher downloads the selected, [published Python tool](../tools/) from GitHub if it is not already cached. Internet is needed to download uncached code. HEXWAKE, CIPHERBOX and GHOSTMARK processing is offline after download; ROSIE SCAN has an explicitly opted-in network mode. **Review downloaded source before execution** if you do not trust it.
 
+**Future tool release standard:** [Build → Run → Publish → Vault](BUILD_PUBLICATION_STANDARD.md) and [Simple/Medium/Extra beginner recipes](BEGINNER_RUNTIME_RECIPES.md). Existing one-paste Firefox launchers here **currently create local HTML reports automatically**; new terminal-first tools should save only when requested. Each individual guide must disclose its real behavior rather than invent flags.
+
 ## 🖥️ How visitors actually trigger a tool
 
 **GitHub shows source code and instructions; clicking a filename, image or documentation link does not execute Python on your computer.** These are **Ubuntu/Linux terminal launchers**, not buttons that run inside GitHub or the browser. They also do not create a terminal command named `hexwake` or `cipherbox`.
