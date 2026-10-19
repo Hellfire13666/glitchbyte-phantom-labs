@@ -64,6 +64,10 @@ Our three official destinations are **Phantom Labs HQ** (the original workshop a
 
 **💾 NEW EASY SAVE:** SUBDOMINATRIX now supports `-o names.txt` to save only the discovered hostname candidates, one per line, while colorful live terminal output continues. Omit `-o` in `--terminal-only` mode for no saved reports. Full Firefox/HTML reports remain available in legacy mode. [Copy-and-paste instructions](docs/tool-showcases/SUBDOMINATRIX.md).
 
+## 💾 Easy-save commands throughout Phantom Labs
+
+Every published tool guide now links to [Easy Save for Every Tool](docs/EASY_SAVE_ALL_TOOLS.md). Our standard is `-o name.txt` or `--o name.txt`: native result TXT on updated tools such as SUBDOMINATRIX, or the [shared transcript saver](scripts/phantom_easy_save.py) for legacy CLI tools. The runner keeps colorful output on screen, strips terminal color codes from its TXT file, and never overwrites an existing one. It does **not** suppress reports a legacy program already creates. Interactive tools and browser interfaces may need their own export. [Tool Vault](docs/TOOL_VAULT.md) · [Publishing standard](docs/BUILD_PUBLICATION_STANDARD.md).
+
 ## 🌹⚡ SUBDOMINATRIX: Live Signal upgrade
 
 **October 19 Findomain integration fix:** the live terminal upgrade now has an independent `--cli-timeout` (default 60s), streams optional CLI findings, preserves partial results and explains errors instead of hiding them. Python CI and public-clone checks passed. [Updated instructions](docs/tool-showcases/SUBDOMINATRIX.md). Real Ubuntu confirmation of this specific fix is still pending.
