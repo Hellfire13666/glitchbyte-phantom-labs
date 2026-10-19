@@ -30,7 +30,7 @@ Use the [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDAR
 
 ## 🧪 SUBDOMINATRIX current build stage
 
-**Integration fix published:** independent 60-second Findomain timeout, partial hostname preservation, direct feedback for CLI failures and heartbeat output were added after the 51-name partial run. GitHub tests passed; re-test on Ubuntu is next. [Full recipe](tool-showcases/SUBDOMINATRIX.md).
+**Integration fix published:** independent 60-second Findomain timeout, partial hostname preservation, direct feedback for CLI failures and heartbeat output were added after the 51-name partial run. GitHub tests and the real Ubuntu run passed: 151 unique candidates, including 102 from Findomain in 40.45 seconds. [Full recipe](tool-showcases/SUBDOMINATRIX.md).
 
 
 
