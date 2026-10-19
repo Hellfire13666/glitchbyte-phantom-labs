@@ -17,6 +17,8 @@ See the [beginner runtime recipes and verified commands](BEGINNER_RUNTIME_RECIPE
 **Easy-save recipe convention:** For newly built or explicitly upgraded tools that implement it, `-o name.txt` should save human-readable results without hiding colorful terminal progress. The option is **not universal**: always check the individual tool's `--help`. The original `--out` report-directory flag in legacy tools may behave differently. [See the full policy](BUILD_PUBLICATION_STANDARD.md) and [SUBDOMINATRIX examples](tool-showcases/SUBDOMINATRIX.md).
 
 
+**Easy Save across the 24 tool guides:** use [Easy Save for Every Tool](EASY_SAVE_ALL_TOOLS.md) for `-o name.txt` and `--o name.txt`. SUBDOMINATRIX supports native result TXT; others can use the shared terminal transcript wrapper (where ordinary CLI output is capturable). The wrapper does not change those tools' own saved files. Every tool guide now has a relevant usage example and exceptions. For future new builds, both native spellings are part of the publication checklist.
+
 ## 1. Find a tool
 
 Clone the repository or open its `tools/` directory on GitHub:
