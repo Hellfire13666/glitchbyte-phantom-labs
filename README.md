@@ -4,9 +4,9 @@
 
 <div align="center">
 
-# 🌹 GLITCHBYTE PHANTOM LABS
+# 🌹 GLITCHBYTE PHANTOM LABS HQ
 
-### 👻 ROSIEGLITCHBYTE // OFFICIAL COMMAND ECOSYSTEM
+### 👻 ROSIEGLITCHBYTE // ORIGINAL HEADQUARTERS
 
 ![Official RosieGlitchbyte Phantom Labs hero artwork](artwork/labface2.png)
 
@@ -18,7 +18,7 @@
 
 **One tool. One identity. Infinite creative directions.**
 
-[**🕷️ PHANTOM TOOL VAULT**](docs/TOOL_VAULT.md) · [**🔍 ECOSYSTEM**](docs/ECOSYSTEM.md) · [**📚 START HERE**](docs/TOOL_STARTER_GUIDE.md) · [**🌹 ROSIE ARTWORK**](docs/ROSIE_VISUAL_STANDARD.md) · [**🛡️ SECURITY**](SECURITY.md)
+[**👻 PHANTOM LABS HQ**](https://github.com/Hellfire13666/glitchbyte-phantom-labs) · [**🕷️ PHANTOM TOOL VAULT**](docs/TOOL_VAULT.md) · [**🔐 PHANTOM BACKUP HQ**](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases) · [**🔍 ECOSYSTEM**](docs/ECOSYSTEM.md) · [**📚 START HERE**](docs/TOOL_STARTER_GUIDE.md) · [**🌹 ROSIE ARTWORK**](docs/ROSIE_VISUAL_STANDARD.md) · [**🛡️ SECURITY**](SECURITY.md)
 
 </div>
 
@@ -35,16 +35,20 @@
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 ```
 
-## 💗 Welcome to the official ecosystem
+## 💗 Welcome to Phantom Labs HQ
 
-This is **RosieGlitchbyte's GlitchByte Phantom Labs**, the next evolution of our original workshop. The existing repository, its full Git history, Python tools, Go projects, security rules and source-available license are retained.
+This is **RosieGlitchbyte's original Phantom Labs HQ**, the home base of GlitchByte Phantom Labs and the next evolution of our original workshop. The existing repository, its full Git history, Python tools, Go projects, security rules and source-available license are retained.
 
 Our creation standard: **each new project is original and independent**. We only remake or upgrade an existing creation when explicitly requested.
+
+Our three official destinations are **Phantom Labs HQ** (the original workshop and project home), **[Phantom Tool Vault](docs/TOOL_VAULT.md)** (the tool index), and **[Phantom Backup HQ](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases)** (versioned backup and recovery archives). The **Cultivation Room** and **RosieRiot Overdrive** remain our specialized laboratories. Repository names, source files, and upload doors stay unchanged.
 
 ### 🕷️ Explore the workshop
 
 | Station | Enter |
 | --- | --- |
+| 👻 **PHANTOM LABS HQ** | You are at our original main headquarters, with all workshop directions below |
+| 🔐 **PHANTOM BACKUP HQ** | [Recovery archives, SHA-256 manifests and restore guide](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases) |
 | 🧭 **START HERE** | [Setup, first run, and troubleshooting](docs/TOOL_STARTER_GUIDE.md) |
 | 🕸️ **PHANTOM TOOL VAULT** | [Browse verified source links and tool spotlights](docs/TOOL_VAULT.md) |
 | 🔍 **TOOL ECOSYSTEM** | [Browse every verified Python and Go project](docs/ECOSYSTEM.md) |
@@ -260,7 +264,7 @@ The repository is publicly accessible, but the legacy tool collection is a **pre
 
 <div align="center">
 
-**🌹 GLITCHBYTE PHANTOM LABS**
+**🌹 GLITCHBYTE PHANTOM LABS HQ**
 
 *Built in the shadows. Preserved in the code.*
 
@@ -279,7 +283,7 @@ An independent offline screenshot intelligence workstation. Find exact copies (S
 | 👻 **Phantom Labs HQ** | [Main headquarters](https://github.com/Hellfire13666/glitchbyte-phantom-labs) | [📤 HQ upload door](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) |
 | 🌱 **Cultivation Room** | [Building lab](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/CULTIVATION_ROOM.md) | [📤 Build lab upload door](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) |
 | ⚡ **RosieRiot Overdrive** | [Tool repository](https://github.com/Hellfire13666/rosieriot-overdrive-2026) · [Lab page](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/ROSIERIOT_OVERDRIVE_LAB.md) | [📤 Overdrive upload door](https://github.com/Hellfire13666/rosieriot-overdrive-2026/upload/main) |
-| 🔐 **Phantom Backup HQ** | [Release archive](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases) · [Tool index](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/TOOL_VAULT.md) | [📤 Vault upload door](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/upload/main) |
+| 🔐 **Phantom Backup HQ** | [Verified recovery archives](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases) | [📤 Vault upload door](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/upload/main) |
 
 > The Cultivation Room currently shares the headquarters repository upload door. Keep dated offline backups; never upload credentials or private reports into public GitHub repositories.
 
