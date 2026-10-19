@@ -34,7 +34,7 @@ Use the [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDAR
 
 
 
-The [CI-reviewed terminal-only live signal upgrade](tool-showcases/SUBDOMINATRIX.md) has merged to HQ main. Its new `--terminal-only --color always` option prints public-source findings and skips report files/Firefox. Existing saved HTML/Firefox mode remains supported. Offline tests passed; the next station is the real Ubuntu public-source smoke test and optional verification of persistent report mode. Do not mark live field testing complete until results are observed.
+The [CI-reviewed terminal-only live signal upgrade](tool-showcases/SUBDOMINATRIX.md) has merged to HQ main. Its new `--terminal-only --color always` option prints public-source findings and skips report files/Firefox. Existing saved HTML/Firefox mode remains supported. Offline tests passed; the user's real Ubuntu public-source smoke test then succeeded with 151 unique hostname candidates, 102 Findomain records, and one explicitly saved TXT. The original legacy Firefox mode remains separately tested offline. Do not mark live field testing complete until results are observed.
 
 ## ⚡ Current workstation verification
 
