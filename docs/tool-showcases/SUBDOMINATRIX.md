@@ -125,7 +125,7 @@ python3 -u "$SCRIPT" example.com --terminal-only --color always --timeout 8
 
 ```bash
 export PATH="$HOME/.local/bin:$HOME/go/bin:$PATH"
-python3 -u "$SCRIPT" example.com --terminal-only --color always \\
+python3 -u "$SCRIPT" example.com --terminal-only --color always \
   --findomain --subfinder --timeout 10 --max-results 1200
 ```
 
