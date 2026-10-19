@@ -92,5 +92,40 @@ class PhantomEasySaveTests(unittest.TestCase):
             self.assertFalse(path.exists())
 
 
+    def test_txt_drops_control_bytes_and_preserves_unicode(self):
+        with tempfile.TemporaryDirectory() as root:
+            saved = Path(root) / "clean.txt"
+            child = (
+                "import sys;"
+                "sys.stdout.buffer.write("
+                "b'first\\x00\\x07\\x08\\x0b\\x0c\\x7f\\rsecond\\r\\nthird\\n'"
+                "+'💀 🔍\\n'.encode('utf-8'));"
+                "sys.stdout.buffer.flush()"
+            )
+            proc = invoke("-o", saved, "--", sys.executable, "-u", "-c", child)
+            self.assertEqual(0, proc.returncode, proc.stderr)
+            content = saved.read_bytes()
+            self.assertEqual("first\nsecond\nthird\n💀 🔍\n",
+                             content.decode("utf-8"))
+            self.assertFalse(any(byte < 32 and byte not in (9, 10)
+                                 or byte == 127 for byte in content))
+
+    def test_incremental_line_and_escape_cleaning(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("phantom_easy_save", WRAPPER)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        clean = mod.StripAnsi()
+        parts = [
+            b"hello\r",
+            b"\nESC:\x1b[3",
+            b"1mgreen\x1b[0m\x00\r",
+            b"next\r",
+        ]
+        result = b"".join(clean.clean(part) for part in parts) + clean.finish()
+        self.assertEqual(b"hello\nESC:green\nnext\n", result)
+
+
+
 if __name__ == "__main__":
     unittest.main()

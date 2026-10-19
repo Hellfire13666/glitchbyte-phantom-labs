@@ -20,14 +20,27 @@ class StripAnsi:
 
     def __init__(self):
         self.state = 0  # 0=normal, 1=ESC, 2=CSI, 3=OSC, 4=OSC_ESC
+        self.pending_cr = False
 
     def clean(self, data):
         out = bytearray()
         for byte in data:
             if self.state == 0:
+                # CR and CRLF are terminal line controls, not useful in a TXT.
+                # Keep this state across chunks to avoid duplicate newlines.
+                if self.pending_cr:
+                    out.append(10)
+                    self.pending_cr = False
+                    if byte == 10:
+                        continue
                 if byte == 27:
                     self.state = 1
-                else:
+                elif byte == 13:
+                    self.pending_cr = True
+                elif byte in (9, 10) or byte >= 32 and byte != 127:
+                    # Strip NUL, BEL, BS, other C0 and DEL, which can cause
+                    # 'less' to label a transcript as binary.
+                    # Bytes >= 128 are retained to preserve UTF-8/emoji.
                     out.append(byte)
             elif self.state == 1:
                 if byte == ord("["):
@@ -50,6 +63,13 @@ class StripAnsi:
                 else:
                     self.state = 3
         return bytes(out)
+
+    def finish(self):
+        """Flush an unfinished carriage return at end of the stream."""
+        if self.pending_cr:
+            self.pending_cr = False
+            return b"\n"
+        return b""
 
 
 def parse_args(argv=None):
@@ -122,6 +142,8 @@ def execute(argv=None):
             if saved is not None:
                 saved.write(filter_ansi.clean(chunk))
         code = proc.wait()
+        if saved is not None:
+            saved.write(filter_ansi.finish())
     except KeyboardInterrupt:
         proc.terminate()
         try:
