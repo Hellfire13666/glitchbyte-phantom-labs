@@ -8,6 +8,10 @@ GlitchByte Phantom Labs is a collection of **independent** Python and Go project
 
 > **Build & verify before publishing.** This is the workshop's mandatory *release checklist*, not a command magically enforced on every historical script. Some Python projects are standalone scripts and need syntax checking rather than compilation.
 
+## 🌈 NEW: Simple, Medium & Extra run recipes
+
+See the [beginner runtime recipes and verified commands](BEGINNER_RUNTIME_RECIPES.md). Every new build should document three real, copy-paste examples: **SIMPLE** first run, **MEDIUM** expanded real results, and **EXTRA** bounded additional modules where available. Each example must state whether it saves reports and how Firefox works, if applicable. Options differ between tools; always check `--help`.
+
 ## 1. Find a tool
 
 Clone the repository or open its `tools/` directory on GitHub:
