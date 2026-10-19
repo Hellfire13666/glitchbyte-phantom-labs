@@ -4,6 +4,12 @@
 
 # 🖤 ROSIEGLITCHBYTE DARK DESIRE // TOOL SHOWCASE
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![Dark Desire | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/22_dark_desire.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · Offline romantic terminal experience · Genuine UTF-8 hex decoding · No dependencies**
 
 [🐍 Original source](../../tools/rosie_dark_desire.py) · [🕷️ Tool Vault](../TOOL_VAULT.md) · [📚 Starter guide](../TOOL_STARTER_GUIDE.md)
