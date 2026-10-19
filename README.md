@@ -64,7 +64,7 @@ Our three official destinations are **Phantom Labs HQ** (the original workshop a
 
 ## 🌐 Findomain: successful live discovery
 
-**Checklist #2 passed:** our installed Findomain showed real public-source hostname candidates in a 23-second Ubuntu run. Read the [Findomain Simple / Medium / Extra recipes, path diagnosis, and optional save notes](docs/tool-showcases/FINDOMAIN_LIVE_CHECK.md). Findomain is a third-party executable, not another GlitchByte-owned tool.
+**Checklist #2 passed:** our installed Findomain showed real public-source hostname candidates in a 23-second Ubuntu run. Read the [Findomain Simple / Medium / Extra recipes, path diagnosis, and optional save notes](docs/integrations/FINDOMAIN_LIVE_CHECK.md). Findomain is a third-party executable, not another GlitchByte-owned tool.
 
 ## 🌹 New: ROSIE PHANTOM SCAN V2
 

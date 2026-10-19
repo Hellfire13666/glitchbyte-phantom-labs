@@ -28,44 +28,6 @@
 
 **Not in this release:** global asset geolocation, screenshots, automatic technology fingerprints beyond selected headers, vulnerability scoring, login automation, unlimited crawling, brute-force enumeration, or automatic ownership attribution. These appear only as design directions in the concept picture, not as implemented features.
 
-## 🌈 Three beginner run levels (after installing)
-
-See also our [SIMPLE · MEDIUM · EXTRA runtime cookbook](../BEGINNER_RUNTIME_RECIPES.md) for the full explanation. These examples use **existing** documented options, not new `--simple`/`--medium`/`--extra` flags.
-
-Set the script location once after completing the build instructions below:
-
-```bash
-SCRIPT="$HOME/PhantomLabsBuilds/subdominatrix/glitchbyte-phantom-labs/tools/subdominatrix.py"
-```
-
-**🌱 SIMPLE | Safe first-run preview, no network lookups**
-
-```bash
-python3 "$SCRIPT" example.com --offline-demo --no-open
-```
-
-Synthetic preview only, not live intelligence.
-
-**⚡ MEDIUM | Real public passive sources**
-
-```bash
-python3 "$SCRIPT" example.com --no-open --max-results 300
-```
-
-Shows per-source public-data feedback and returns matching hostname candidates, subject to provider availability.
-
-**🔥 EXTRA | Opt-in bounded DNS/HTTPS verification for authorized domains**
-
-```bash
-python3 "$SCRIPT" YOUR-AUTHORIZED-DOMAIN.example \
-  --subfinder --dns-check --http-check \
-  --max-verify 20 --max-results 300 --no-open
-```
-
-**Saving note:** This existing version always produces HTML/JSON/CSV/TXT; `--no-open` only stops Firefox from opening. A future terminal-first upgrade may add no-save as the default, but these instructions describe the actual published code. Names are candidate observations, not proof of service reachability or ownership. Limits and run times vary with network conditions.
-
----
-
 ## 🧪 COPY & PASTE BUILD RECIPE // Ubuntu/Linux first run
 
 **Install → Build → Test → Run → Find results → Troubleshoot.** The first Bash block is independently exercised in Linux CI under a disposable home folder. It generates an **offline synthetic preview**, not a live scan. It uses a dedicated checkout and does not alter a user's original Git clone.
@@ -127,6 +89,85 @@ if command -v firefox >/dev/null 2>&1; then
     if [ -n "$LATEST" ]; then firefox "$LATEST" >/dev/null 2>&1 & fi
 fi
 ```
+
+## ⚡ New: colorful terminal-only live signal (upgrade under review)
+
+**Want real intelligence scrolling by without saved files?** The upgraded source provides `--terminal-only` and `--color always` while keeping the original Firefox/HTML/JSON/CSV/TXT workflow unchanged. When the upgrade is merged, these commands will work with the newly downloaded source; local older scripts must be updated explicitly.
+
+### Terminal-only, public-source research, no report files
+
+```bash
+SCRIPT="$HOME/PhantomLabsBuilds/subdominatrix/glitchbyte-phantom-labs/tools/subdominatrix.py"
+python3 -u "$SCRIPT" example.com --terminal-only --color always --timeout 8
+```
+
+To add the separately installed passive Findomain and Subfinder, run `python3 -u "$SCRIPT" example.com --terminal-only --color always --timeout 10 --findomain --subfinder`.
+
+**What appears:** `[MODE] LIVE PUBLIC-SOURCE COLLECTION`, `[START]`, `[SOURCE]`, `[FOUND]`, periodic `[WAIT]`, optional `[OPTIONAL]`, and a truthful `[SUMMARY]`. HTTP 429 errors are labeled `rate-limited` with any reported Retry-After hint, without immediately retrying a throttled provider. Each provider's findings appear when **that provider completes**; installed CLI tools still deliver their buffered findings after each tool finishes. Counts are candidate names, not verified live web services.
+
+**Files OFF:** `--terminal-only` skips exporting reports and opening Firefox. **Firefox ON:** omit `--terminal-only` to keep the existing automatic HTML/JSON/CSV/TXT export and local Firefox launch. `--no-open` stops only browser launch, not export. This upgrade preserves the original default for legacy launchers and tests.
+
+### 🌱 SIMPLE | Offline preview of terminal signal (no network)
+
+```bash
+python3 -u "$SCRIPT" example.com --offline-demo --terminal-only --color always
+```
+
+This displays a labeled **synthetic offline demo**, saves nothing, and does not contact the internet.
+
+### ⚡ MEDIUM | Real passive hostname findings
+
+```bash
+python3 -u "$SCRIPT" example.com --terminal-only --color always --timeout 8
+```
+
+### 🔥 EXTRA | More passive sources, still no active probes
+
+```bash
+export PATH="$HOME/.local/bin:$HOME/go/bin:$PATH"
+python3 -u "$SCRIPT" example.com --terminal-only --color always \\
+  --findomain --subfinder --timeout 10 --max-results 1200
+```
+
+The Extra command only queries public-domain sources and the installed public discovery tools, not direct DNS or HTTP verification. For explicitly authorized direct checks, add `--dns-check --http-check --max-verify 10`; this contacts listed hosts and should only be used on targets you own or are authorized to assess. Long-running/limited public sources may return partial results.
+
+## 🌈 Three beginner run levels (after installing)
+
+See also our [SIMPLE · MEDIUM · EXTRA runtime cookbook](../BEGINNER_RUNTIME_RECIPES.md) for the full explanation. These examples use **existing** documented options, not new `--simple`/`--medium`/`--extra` flags.
+
+Set the script location once after completing the build instructions below:
+
+```bash
+SCRIPT="$HOME/PhantomLabsBuilds/subdominatrix/glitchbyte-phantom-labs/tools/subdominatrix.py"
+```
+
+**🌱 SIMPLE | Safe first-run preview, no network lookups**
+
+```bash
+python3 "$SCRIPT" example.com --offline-demo --no-open
+```
+
+Synthetic preview only, not live intelligence.
+
+**⚡ MEDIUM | Real public passive sources**
+
+```bash
+python3 "$SCRIPT" example.com --no-open --max-results 300
+```
+
+Shows per-source public-data feedback and returns matching hostname candidates, subject to provider availability.
+
+**🔥 EXTRA | Opt-in bounded DNS/HTTPS verification for authorized domains**
+
+```bash
+python3 "$SCRIPT" YOUR-AUTHORIZED-DOMAIN.example \
+  --subfinder --dns-check --http-check \
+  --max-verify 20 --max-results 300 --no-open
+```
+
+**Saving note:** This existing version always produces HTML/JSON/CSV/TXT; `--no-open` only stops Firefox from opening. A future terminal-first upgrade may add no-save as the default, but these instructions describe the actual published code. Names are candidate observations, not proof of service reachability or ownership. Limits and run times vary with network conditions.
+
+---
 
 ### 🕷️ One-paste launcher, once the PR is merged
 
