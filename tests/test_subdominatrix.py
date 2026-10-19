@@ -226,5 +226,67 @@ class SubdominatrixTests(unittest.TestCase):
             m.collect("example.com", demo=True, cli_timeout=121)
 
 
+    def test_easy_o_txt_saves_exact_requested_name_and_only_txt(self):
+        with tempfile.TemporaryDirectory() as temp:
+            requested = Path(temp) / "names.txt"
+            result = subprocess.run([
+                sys.executable, str(SCRIPT), "example.com", "--offline-demo",
+                "-o", str(requested), "--color", "never"
+            ], text=True, capture_output=True, timeout=15)
+            self.assertEqual(0, result.returncode, result.stderr)
+            self.assertTrue(requested.is_file())
+            names = requested.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(len(names), len(set(names)))
+            self.assertGreater(len(names), 0)
+            self.assertTrue(all(name.endswith(".example.com") for name in names))
+            self.assertEqual([requested], list(Path(temp).iterdir()))
+            self.assertIn("[SAVED] TXT", result.stdout)
+            self.assertNotIn("[OPEN]", result.stdout)
+            self.assertNotIn("[SAVED] HTML", result.stdout)
+
+    def test_easy_o_can_combine_with_terminal_only(self):
+        with tempfile.TemporaryDirectory() as temp:
+            requested = Path(temp) / "intel.txt"
+            result = subprocess.run([
+                sys.executable, str(SCRIPT), "example.com", "--offline-demo",
+                "--terminal-only", "-o", str(requested)
+            ], text=True, capture_output=True, timeout=15)
+            self.assertEqual(0, result.returncode, result.stderr)
+            self.assertTrue(requested.is_file())
+            self.assertEqual(1, len(list(Path(temp).iterdir())))
+
+    def test_easy_o_never_replaces_preexisting_output(self):
+        with tempfile.TemporaryDirectory() as temp:
+            requested = Path(temp) / "keep.txt"
+            requested.write_text("IMPORTANT ORIGINAL\n", encoding="utf-8")
+            result = subprocess.run([
+                sys.executable, str(SCRIPT), "example.com", "--offline-demo",
+                "-o", str(requested)
+            ], text=True, capture_output=True, timeout=15)
+            self.assertNotEqual(0, result.returncode)
+            self.assertIn("already exists", result.stderr)
+            self.assertEqual("IMPORTANT ORIGINAL\n", requested.read_text())
+            self.assertEqual(1, len(list(Path(temp).iterdir())))
+
+    def test_easy_o_rejects_nontxt_filename(self):
+        with tempfile.TemporaryDirectory() as temp:
+            result = subprocess.run([
+                sys.executable, str(SCRIPT), "example.com", "--offline-demo",
+                "-o", str(Path(temp) / "report.json")
+            ], text=True, capture_output=True, timeout=15)
+            self.assertNotEqual(0, result.returncode)
+            self.assertIn(".txt", result.stderr)
+            self.assertFalse((Path(temp) / "report.json").exists())
+
+    def test_easy_o_is_genuine_hostnames_without_metadata(self):
+        m = load_tool()
+        report = m.collect("example.com", demo=True)
+        with tempfile.TemporaryDirectory() as temp:
+            path = m.save_hostnames_txt(report, Path(temp) / "names.txt")
+            lines = path.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(sorted(record["name"] for record in report["hosts"]), lines)
+            self.assertNotIn("SYNTHETIC OFFLINE DEMO", path.read_text())
+
+
 if __name__ == "__main__":
     unittest.main()
