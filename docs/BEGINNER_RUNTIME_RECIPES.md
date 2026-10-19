@@ -6,6 +6,10 @@
 
 **Publishing this everywhere:** Our [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md) explains how every new tool gets unique artwork/source, these three verified recipes, colorful live results, accurate save/Firefox notes, and links through HQ, Cultivation, Tool Vault, and verified Backup HQ.
 
+## 💾 Universal `-o` / `--o` saver instructions
+
+**[Open Easy Save for Every Tool](EASY_SAVE_ALL_TOOLS.md).** New builds should natively support both spellings for opt-in plain-text results. Existing tools without native support can use [the shared Python save runner](../scripts/phantom_easy_save.py): `python3 "$SAVER" --o results.txt -- python3 -u <real tool and arguments>`. This runner saves the **printed terminal transcript**, not native JSON/CSV/HTML, and does not prevent legacy tools from saving their own files. SUBDOMINATRIX natively exports deduplicated hostname candidates via either `-o` or `--o`.
+
 ## 💾 Easy save convention for updated tools
 
 Where implemented, use **`-o name.txt`** to keep plain-text results while still displaying real-time intelligence in the terminal. If omitted from terminal-only tools, nothing is saved. For SUBDOMINATRIX's updated source, `-o` creates only the requested hostname TXT and never overwrites an existing file:
