@@ -25,6 +25,12 @@ The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md
 
 **For every new tool:** create its unique source and setup guide, add one row here, and run `python3 -m unittest discover -s tests -v`. The `test_tool_vault_doors.py` guard checks that every published top-level/nested Python entry point and Go module is indexed.
 
+### 🔧 Verified external tool integrations (not counted as original GlitchByte tools)
+
+| External tool | Verified use | Live test + beginner recipes |
+| --- | --- | --- |
+| **Findomain** | Public-source subdomain candidates; successful Ubuntu test in 23 seconds | [Simple / Medium / Extra and troubleshooting](tool-showcases/FINDOMAIN_LIVE_CHECK.md) |
+
 ### 🔎 Domain, network and public-intelligence doors
 
 | Tool | Purpose | GitHub door | Start here |
