@@ -29,7 +29,7 @@
       "title": "IP Specter",
       "showcase": "docs/tool-showcases/IP_SPECTER.md",
       "image": "artwork/tool-covers/06_ip_specter.png",
-      "status": "named-match"
+      "status": "review-before-upload"
     },
     {
       "tool_number": "08",
