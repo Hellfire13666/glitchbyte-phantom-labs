@@ -70,7 +70,7 @@ Every published tool guide now links to [Easy Save for Every Tool](docs/EASY_SAV
 
 ## 🌹⚡ SUBDOMINATRIX: Live Signal upgrade
 
-**October 19 Findomain integration fix:** the live terminal upgrade now has an independent `--cli-timeout` (default 60s), streams optional CLI findings, preserves partial results and explains errors instead of hiding them. Python CI and public-clone checks passed. [Updated instructions](docs/tool-showcases/SUBDOMINATRIX.md). Real Ubuntu confirmation of this specific fix is still pending.
+**October 19 Findomain integration fix:** the live terminal upgrade now has an independent `--cli-timeout` (default 60s), streams optional CLI findings, preserves partial results and explains errors instead of hiding them. Python CI and public-clone checks passed. [Updated instructions](docs/tool-showcases/SUBDOMINATRIX.md). The live Ubuntu retest passed: 151 unique candidate hostnames, 102 Findomain records in 40.45 seconds, and exactly one explicitly requested TXT report.
 
 
 
