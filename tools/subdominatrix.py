@@ -19,7 +19,7 @@ import ssl
 import subprocess
 import sys
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed, wait, FIRST_COMPLETED
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -225,7 +225,8 @@ def head_https(host, ips, timeout=4):
 
 
 def collect(domain, *, demo=False, max_results=1500, max_verify=80,
-            dns=False, http=False, subfinder=False, findomain=False, timeout=10):
+            dns=False, http=False, subfinder=False, findomain=False, timeout=10,
+            progress=None):
     if not valid_domain(domain):
         raise ValueError("Provide only a DNS domain, e.g. example.com")
     if not 1 <= max_results <= 3000 or not 0 <= max_verify <= 250:
@@ -269,6 +270,15 @@ def collect(domain, *, demo=False, max_results=1500, max_verify=80,
                 return source, names, {"source": source, "status": "ok",
                                       "count": len(names), "seconds": round(time.monotonic()-tick, 2),
                                       "detail": "Public data; can be historical or incomplete"}
+            except urllib.error.HTTPError as exc:
+                status = "rate-limited" if exc.code == 429 else "unavailable"
+                retry_after = exc.headers.get("Retry-After", "") if exc.headers else ""
+                detail = f"HTTP {exc.code}; no automatic retry"
+                if status == "rate-limited":
+                    detail += f"; provider cooldown {retry_after or 'unspecified'}"
+                return source, [], {"source": source, "status": status,
+                                    "count": 0, "seconds": round(time.monotonic()-tick, 2),
+                                    "detail": detail[:180]}
             except (OSError, urllib.error.URLError, ValueError, TypeError, KeyError,
                     json.JSONDecodeError) as exc:
                 return source, [], {"source": source, "status": "unavailable",
@@ -277,11 +287,33 @@ def collect(domain, *, demo=False, max_results=1500, max_verify=80,
 
         with ThreadPoolExecutor(max_workers=4) as pool:
             futures = {pool.submit(run_one, name): name for name in SOURCES}
+            pending = set(futures)
             completed = {}
-            for future in as_completed(futures):
-                source, names, info = future.result()
-                completed[source] = (names, info)
-                print(f"[SOURCE] {source}: {info['status']} | {len(names)} records", flush=True)
+            announced = set()
+            tick = time.monotonic()
+            if progress:
+                progress(f"[START] Querying {len(pending)} public providers concurrently")
+            while pending:
+                done, pending = wait(pending, timeout=4, return_when=FIRST_COMPLETED)
+                if not done:
+                    if progress:
+                        progress(f"[WAIT] {len(pending)} sources still pending; "
+                                 f"{time.monotonic()-tick:.0f}s elapsed")
+                    continue
+                for future in done:
+                    source, names, info = future.result()
+                    completed[source] = (names, info)
+                    message = (f"[SOURCE] {source}: {info['status']} | "
+                               f"{len(names)} records | {info['seconds']}s | {info['detail']}")
+                    if progress:
+                        progress(message)
+                        for name in names:
+                            if name not in announced:
+                                announced.add(name)
+                                if len(announced) <= max_results:
+                                    progress(f"[FOUND] {name}  ({source})")
+                    else:
+                        print(message, flush=True)
         for source in SOURCES:
             names, info = completed[source]
             merge(source, names)
@@ -289,10 +321,29 @@ def collect(domain, *, demo=False, max_results=1500, max_verify=80,
         for program, enabled in (("subfinder", subfinder), ("findomain", findomain)):
             if not enabled:
                 continue
-            names, info = optional_cli(program, domain, timeout=min(30, timeout*3))
+            if progress:
+                progress(f"[START] {program} public discovery (max {min(30,timeout*3)}s)")
+                with ThreadPoolExecutor(max_workers=1) as pool:
+                    future = pool.submit(optional_cli, program, domain, min(30, timeout*3))
+                    while not future.done():
+                        done, _ = wait([future], timeout=4)
+                        if not done:
+                            progress(f"[WAIT] {program} still processing...")
+                    names, info = future.result()
+            else:
+                names, info = optional_cli(program, domain, timeout=min(30, timeout*3))
             merge(program, names or [])
             feedback.append(info)
-            print(f"[OPTIONAL] {program}: {info['status']} | {info['count']} records", flush=True)
+            line = f"[OPTIONAL] {program}: {info['status']} | {info['count']} records"
+            if progress:
+                progress(line)
+                for name in names or []:
+                    if name not in announced:
+                        announced.add(name)
+                        if len(announced) <= max_results:
+                            progress(f"[FOUND] {name}  ({program})")
+            else:
+                print(line, flush=True)
 
     names = sorted(findings)[:max_results]
     records = [{"name": name, "sources": sorted(findings[name]), "dns": "not checked",
@@ -306,6 +357,9 @@ def collect(domain, *, demo=False, max_results=1500, max_verify=80,
             for future in as_completed(tasks):
                 row = tasks[future]
                 row.update(future.result())
+                if progress:
+                    progress(f"[DNS] {row['name']}: {row['dns']} | "
+                             f"{', '.join(row.get('ips', [])) or 'no public IP'}")
         if http:
             permitted = [row for row in selected if row["dns"] == "public"]
             print(f"[VERIFY] HTTPS HEAD on {len(permitted)} public DNS hosts", flush=True)
@@ -313,7 +367,11 @@ def collect(domain, *, demo=False, max_results=1500, max_verify=80,
                 tasks = {pool.submit(head_https, row["name"], row["ips"], min(timeout, 6)):
                          row for row in permitted}
                 for future in as_completed(tasks):
-                    tasks[future].update(future.result())
+                    row = tasks[future]
+                    row.update(future.result())
+                    if progress:
+                        progress(f"[HTTPS] {row['name']}: {row['http']} | "
+                                 f"{row.get('status') or '-'}")
     elif demo and (dns or http):
         feedback.append({"source": "DNS / HTTP", "status": "skipped in demo",
                          "count": 0, "seconds": 0, "detail": "Synthetic data; no active checks"})
@@ -456,15 +514,33 @@ def main(argv=None):
     parser.add_argument("--out", default=str(Path.home() / "SUBDOMINATRIX_REPORTS"))
     parser.add_argument("--artwork", help="Optional Rosie PNG/JPEG for dashboard header")
     parser.add_argument("--no-open", action="store_true", help="Do not launch Firefox")
+    parser.add_argument("--terminal-only", action="store_true",
+                        help="Live findings to terminal, no saved reports or Firefox")
+    parser.add_argument("--color", choices=("auto", "always", "never"), default="auto",
+                        help="Colorized feedback for --terminal-only")
     args = parser.parse_args(argv)
     domain = args.domain.strip().lower().strip(".")
+    enabled = args.color == "always" or (args.color == "auto" and sys.stdout.isatty())
+    palette = {"[FOUND]": "\x1b[92m", "[SOURCE]": "\x1b[96m", "[START]": "\x1b[95m",
+               "[WAIT]": "\x1b[93m", "[OPTIONAL]": "\x1b[96m", "[DNS]": "\x1b[96m",
+               "[HTTPS]": "\x1b[92m"}
+    def emit(msg):
+        color = next((value for key, value in palette.items() if msg.startswith(key)), "")
+        print((color + msg + "\x1b[0m") if enabled and color else msg, flush=True)
+    if args.terminal_only:
+        emit(f"[START] SUBDOMINATRIX LIVE SIGNAL :: {domain}")
+        emit("[START] Files OFF | Firefox OFF | bounded public-source requests")
     try:
         report = collect(domain, demo=args.offline_demo, max_results=args.max_results,
                          max_verify=args.max_verify, dns=args.dns_check,
                          http=args.http_check, subfinder=args.subfinder, findomain=args.findomain,
-                         timeout=args.timeout)
-        image = args.artwork or str(Path(__file__).with_name("rosie_header.png"))
-        paths = export(report, args.out, image)
+                         timeout=args.timeout,
+                         progress=emit if args.terminal_only else None)
+        if args.terminal_only:
+            paths = {}
+        else:
+            image = args.artwork or str(Path(__file__).with_name("rosie_header.png"))
+            paths = export(report, args.out, image)
     except (OSError, ValueError) as exc:
         print("[ERROR]", exc, file=sys.stderr)
         return 1
@@ -474,6 +550,9 @@ def main(argv=None):
           report["stats"]["multi_source"], "seen in 2+ sources;",
           report["stats"]["dns_public"], "public DNS;",
           report["stats"]["http_observed"], "observed HTTPS responses.")
+    if args.terminal_only:
+        emit("[DONE] SAVE OFF: no report files created; Firefox not opened")
+        return 0
     if not args.no_open:
         browser = shutil.which("firefox")
         if browser:
