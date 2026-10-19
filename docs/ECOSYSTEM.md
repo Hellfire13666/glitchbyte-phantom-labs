@@ -14,6 +14,8 @@ This document is the live navigation hub for the repository. All linked tools be
 
 **💾 Easy Save:** [Universal guide for `-o name.txt` and `--o name.txt`](EASY_SAVE_ALL_TOOLS.md) · [Shared easy-save terminal launcher](../scripts/phantom_easy_save.py) · [Tool-by-tool usage and caveats](TOOL_VAULT.md). All 24 guides explain the optional terminal-transcript method; only upgraded tools claim native result export.
 
+**Triad Forge workstation stage:** the [Triad Signal companion](integrations/TRIAD_SIGNAL_2026.md) uses already installed Amass, GAU and Waybackurls with bounded concurrent passive public-source checks and optional TXT. It is a separate runtime helper and does not change the original local Forge ZIP, release status or existing 24-tool count.
+
 ## ⚡ One-paste launches
 
 [Copy and paste commands that generate and open Firefox galleries](COPY_PASTE_OPEN.md) are now published for HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2 and GHOSTMARK. [Launcher Python source](../scripts/phantom_quickopen.py). No Git pull, merge, or manual ChatGPT downloads required.
