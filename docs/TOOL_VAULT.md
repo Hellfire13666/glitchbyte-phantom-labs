@@ -18,6 +18,10 @@
 
 The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md) requires each published tool to have real source, one dedicated how-to/setup door, tested Simple/Medium/Extra recipes, actual progress/results when applicable, no-save or documented legacy file behavior, Firefox instructions if real, and a correctly linked release/verified backup. The main HQ, Cultivation, tool guide, individual README, and recovery index must point to the right release. Publication links are verified; no imaginary tools or backup status claims.
 
+## 💾 Save output from all 24 tool stations
+
+**[Easy Save for Every Tool](EASY_SAVE_ALL_TOOLS.md)** explains the two supported save methods: native `-o name.txt` / `--o name.txt` where implemented (currently SUBDOMINATRIX), or a shared terminal-transcript runner for existing ordinary CLI programs. Each of the 24 individual tool setup pages includes a save example and its limits. Existing programs' native HTML/JSON/CSV reports and Firefox behavior are preserved; terminal-interactive games need special care. [Read the shared Python runner](../scripts/phantom_easy_save.py).
+
 <!-- PHANTOM-DOOR-INDEX:START -->
 ## 🚪 All tool doors: find any project in two clicks
 
