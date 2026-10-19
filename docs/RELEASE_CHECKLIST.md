@@ -12,6 +12,7 @@
 - [ ] Validate IP-address TLS and certificate errors against an explicitly authorized live HTTPS endpoint
 - [x] Run all 17 first-run Bash recipes in isolated Ubuntu CI workspaces (Phase 22; local Git remapping)
 - [x] Confirm a real public HTTPS Git clone and offline Python/Go checks on Ubuntu (Phase 23)
+- [ ] Future CLI tools: implement and test **both** native `-o name.txt` and `--o name.txt` when plain-text result export applies; default no TXT, preserve live output, no overwrite, and accurate content. Document exceptions for interactive/GUI workflows. All existing tool guides should reference the [universal transcript runner](EASY_SAVE_ALL_TOOLS.md) instead of inventing native support.
 - [ ] Add a tested, beginner-friendly `-o name.txt` option on each **new or explicitly updated** terminal-first tool where meaningful; preserve screen output, avoid silent files/overwrites and document unsupported legacy flags. See [the standard](BUILD_PUBLICATION_STANDARD.md).
 - [ ] For future releases follow the [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md): unique names/art, visible real feedback, real three-level recipes, accurate save/Firefox behavior, checked hub links, and **verified** new backup snapshots (never merely assumed)
 - [ ] Perform tool-by-tool **live** functional, authorization, and platform compliance tests
