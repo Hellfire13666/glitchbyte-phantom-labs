@@ -136,5 +136,48 @@ class SubdominatrixTests(unittest.TestCase):
                                                   ["8.8.8.8", "10.0.0.1"])["http"])
 
 
+    def test_terminal_only_offline_mode_makes_no_files(self):
+        with tempfile.TemporaryDirectory() as temp:
+            run = subprocess.run(
+                [sys.executable, str(SCRIPT), "example.com", "--offline-demo",
+                 "--terminal-only", "--color", "always", "--out", temp],
+                capture_output=True, text=True, timeout=15)
+            self.assertEqual(0, run.returncode, run.stderr)
+            self.assertIn("[DONE] SAVE OFF", run.stdout)
+            self.assertIn("SYNTHETIC OFFLINE DEMO", run.stdout)
+            self.assertEqual([], list(Path(temp).iterdir()))
+            self.assertNotIn("[SAVED]", run.stdout)
+            self.assertNotIn("[OPEN]", run.stdout)
+
+    def test_public_source_progress_and_rate_limit_are_truthful(self):
+        import urllib.error
+        m = load_tool()
+        events = []
+        def fake_source(source, domain, timeout):
+            if source == "AlienVault OTX":
+                raise urllib.error.HTTPError(
+                    "https://otx.alienvault.com/", 429,
+                    "Too Many Requests", {"Retry-After": "6"}, None)
+            return ["api.example.com", "www.example.com"]
+        with patch.object(m, "fetch_source", side_effect=fake_source):
+            report = m.collect("example.com", max_results=10,
+                               timeout=3, progress=events.append)
+        self.assertEqual(2, report["stats"]["names"])
+        self.assertTrue(any("[FOUND] api.example.com" in x for x in events))
+        self.assertTrue(any("[SOURCE] AlienVault OTX: rate-limited" in x for x in events))
+        rate = next(x for x in report["sources"] if x["source"] == "AlienVault OTX")
+        self.assertEqual("rate-limited", rate["status"])
+        self.assertIn("provider cooldown 6", rate["detail"])
+
+    def test_terminal_only_respects_source_validation(self):
+        m = load_tool()
+        events = []
+        with patch.object(m, "fetch_source", return_value=["api.example.com"]):
+            report = m.collect("example.com", max_results=1,
+                               timeout=3, progress=events.append)
+        self.assertEqual(1, report["stats"]["names"])
+        self.assertEqual(1, len([e for e in events if e.startswith("[FOUND]")]))
+
+
 if __name__ == "__main__":
     unittest.main()
