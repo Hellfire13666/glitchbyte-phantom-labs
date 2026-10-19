@@ -29,6 +29,12 @@
 
 The user ran `unzip -Z -1 ~/Downloads/hexwraith_privacy_edition_v1_1_1_rc1.zip` and confirmed precisely seven members: `MANIFEST.json`, `README.md`, `hexwraith_domain_atlas.py`, `hexwraith_domain_atlas_private_2026.py`, `tests/test_429_guard.py`, `tests/test_hexwraith.py`, and `tests/test_hexwraith_private_reports_2026.py`, each under the expected `hexwraith_privacy_edition_v1_1_1_rc1/` directory. **No additional file names or report files appeared in the archive listing.** This verifies archive membership but does **not** confirm that embedded source/doc contents contain no credentials, private research, or unacceptable third-party data. Content privacy/license review remains pending. ZIP publication still not performed.
 
+## ✅ Internal hashes and basic credential-pattern scan (October 19, 2026)
+
+The user's read-only Ubuntu audit of the local seven-member RC1 ZIP returned **`[HASH CHECK] PASS`** for hashes listed in `MANIFEST.json` and **`[CREDENTIAL PATTERNS] NONE FOUND`** for four classes: PEM private key delimiters, GitHub token formats, AWS access key IDs and common literal credential assignments. No matched secret values were printed. The code output was partially shell-garbled in the pasted terminal input, but the displayed summary contained these exact pass results.
+
+**Limits:** This is only a pattern-based screening, not a human inspection of the packaged source or an exhaustive secrets scan. The seven-member archive currently **does not include a dedicated license file**. [Headquarters' existing license notice](../../LICENSE-NOTICE.md) is custom source-available (unmodified use allowed under conditions, redistribution/modifications need permission), *not* an OSI open-source license. Before public HEXWRAITH publication, choose the license for this separate tool, review its actual imports and metadata, and package the chosen notice; adding files changes the ZIP SHA-256, so do **not** silently change the pinned RC1 checksum.
+
 ## Verify the local candidate (Ubuntu)
 
 ```bash
