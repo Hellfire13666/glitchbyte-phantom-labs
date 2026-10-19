@@ -25,6 +25,10 @@
 - The RC1 packaging step **separately tested temporary copies of the patched source** and reported `[PASS] Patched-source tests`, `[PASS] ZIP integrity`, `[PASS] Manifest created`, `[PASS] Reports excluded` and `[PASS] Existing programs preserved`.
 - **Offline/demo data are synthetic.** Passing tests do not establish provider reliability, permission for third-party scans or a complete production security audit.
 
+## ✅ RC1 ZIP member-list check (October 19, 2026)
+
+The user ran `unzip -Z -1 ~/Downloads/hexwraith_privacy_edition_v1_1_1_rc1.zip` and confirmed precisely seven members: `MANIFEST.json`, `README.md`, `hexwraith_domain_atlas.py`, `hexwraith_domain_atlas_private_2026.py`, `tests/test_429_guard.py`, `tests/test_hexwraith.py`, and `tests/test_hexwraith_private_reports_2026.py`, each under the expected `hexwraith_privacy_edition_v1_1_1_rc1/` directory. **No additional file names or report files appeared in the archive listing.** This verifies archive membership but does **not** confirm that embedded source/doc contents contain no credentials, private research, or unacceptable third-party data. Content privacy/license review remains pending. ZIP publication still not performed.
+
 ## Verify the local candidate (Ubuntu)
 
 ```bash
