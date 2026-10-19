@@ -39,6 +39,10 @@ On October 19, 2026, the user ran `chmod 600 ~/triad_check2.txt` and confirmed t
 
 **Checklist #8 freshness note:** as inspected, Backup HQ's `snapshots/latest.json` points to the dated HQ `d6e4dc1fa836` archive and Overdrive `e26afde620b5` archive, which predate these later HQ source/documentation changes. A fresh, checksum-verified snapshot must exist before describing the latest privacy patch as backed up. [Latest index](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/snapshots/latest.json) · [Restore/verify guide](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/docs/RESTORE_GUIDE.md).
 
+## ✅ Checklist #8: Original local ZIP passed, updated HQ vault pending
+
+User's Ubuntu read-only local backup test confirmed **Triad Forge original ZIP integrity PASS**, **8 of 8 installed files identical**, **0 differences**. Recorded local ZIP SHA-256: `c464d1809903749869a12fdde06af48bf76cc584c010fa9da415a63ab611b043`. This is a local identity fingerprint and comparison, not a separately retained offline backup. The GitHub Vault's `snapshots/latest.json` was separately checked and still identifies HQ backup source commit `d6e4dc1fa836`, earlier than the October 19 Triad Signal/security changes. **Do not check the current-source freshness gate until [Phantom Vault Versioned Backups](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/actions/workflows/vault-backup.yml) has run and the newly indexed ZIP and SHA-256 sums have passed verification.**
+
 ## Additional unresolved release gates
 
 - [x] Fix IP Shadow Scraper artwork lookup to use the existing repository `artwork/` file (Phase 25; no artwork bytes changed)
