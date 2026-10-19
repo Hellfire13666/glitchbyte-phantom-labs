@@ -90,6 +90,31 @@ if command -v firefox >/dev/null 2>&1; then
 fi
 ```
 
+## 🔧 Findomain slow-internet correction (Checklist #3)
+
+The October 19, 2026 Ubuntu test returned **51 unique public-source hostname candidates** but reported `[OPTIONAL] findomain: failed | 0 records`. A separate direct `findomain -t facebook.com` run had previously completed successfully in 23 seconds. The tool was limiting Findomain to **24 seconds** because the public-provider `--timeout 8` was also used to derive a CLI deadline. The optional failure message hid the reason, and `subprocess.run` discarded partial output on timeout. A crt.sh HTTP 502 was a separate provider problem, not a failure of the overall collection.
+
+**New behavior:**
+
+- `--timeout 8` limits each public HTTP provider; `--cli-timeout 60` separately limits each installed Subfinder/Findomain command. Values for `--cli-timeout` are **10 to 120 seconds**.
+- Candidate hostnames from an optional executable are printed as lines arrive. A timed-out or nonzero-exit process retains any candidates already collected and labels itself `partial`, `timeout` or `failed` accurately.
+- `[OPTIONAL]` now prints **the reason and elapsed seconds**, not only `failed`. A `[WAIT]` heartbeat keeps the terminal alive during slow requests.
+- The program runs no automatic provider retry on HTTP 429, respects the provider's rate limit, and continues other sources.
+- `--terminal-only` still creates **no report files**; without it, the original four report formats and Firefox opening work as before.
+
+**Recommended live public-source test (new source on main):**
+
+```bash
+export PATH="$HOME/.local/bin:$HOME/go/bin:$PATH"
+SCRIPT="$HOME/PhantomLabsLaunchers/subdominatrix_live_signal_2026/subdominatrix_live_signal_2026.py"
+python3 -u "$SCRIPT" facebook.com --terminal-only --color always \
+  --findomain --timeout 8 --cli-timeout 60 --max-results 1000
+```
+
+The path shown above is the workshop's separately downloaded upgrade. If not installed there, use the build recipe below and substitute your actual source path. Download a fresh copy after the fix is merged. A successful public-source run can be **partial** when a remote provider returns HTTP 502 or 429; hostname candidates do not establish current active services.
+
+---
+
 ## ⚡ Colorful terminal-only live signal (available on main)
 
 **Want real intelligence scrolling by without saved files?** The upgraded source provides `--terminal-only` and `--color always` while keeping the original Firefox/HTML/JSON/CSV/TXT workflow unchanged. These options are now published on the `main` branch. Local older copies must be refreshed explicitly; the original Firefox/export mode continues working.
