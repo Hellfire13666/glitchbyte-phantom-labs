@@ -67,6 +67,12 @@ The user verified the installed SUBDOMINATRIX `--help` exposes `--offline-demo`,
 
 User-side `stat` showed `findomain_results.txt` mode **0600** and Triad Signal's `triad_check2.txt` mode **0664**. That is an actionable local-report privacy gap, although actual readability by other users also depends on parent-directory permissions. Recommend `chmod 600 ~/triad_check2.txt` for the existing report. [Triad Signal](integrations/TRIAD_SIGNAL_2026.md) has an explicit 0600 / exclusive-create source fix with an automated permissive-`umask` regression check, covering future opted-in outputs after the local script is refreshed. Scope is **one output path**, not a claim that all old tools, reports, Git history, token handling or third-party APIs are security-audited.
 
+## ✅ Checklist #7: Confirmed Ubuntu privacy fix and offline validation (October 19, 2026)
+
+User-side Ubuntu evidence after the Triad Signal [0600 private-TXT patch](integrations/TRIAD_SIGNAL_2026.md): `findomain_results.txt` was already mode **0600**, and the earlier `triad_check2.txt` was mode **0664** until the user ran `chmod 600 ~/triad_check2.txt`; a follow-up `stat` confirmed **0600**. The new Triad Signal source was downloaded to a **separate local filename** `triad_signal_private_2026.py` and its `--help` displayed `-o, --o`. The updated SUBDOMINATRIX source was separately downloaded to `subdominatrix_updated_2026.py` and its help likewise displayed `-o, --o, --output-txt`. Its `example.com --offline-demo --terminal-only --color always` run completed with **13 synthetic names, 5 multi-source**, **zero** public DNS/HTTPS observations, and printed `[DONE] SAVE OFF: no report files created; Firefox not opened`. No live scan or extra report was requested in that demo.
+
+**Verified milestone:** identified existing report permissions fixed; updated launchers available; offline demonstration and no-save feedback ran in real Ubuntu. The lab-wide security review (credentials, Git history, all legacy tools, external policy compliance) remains an open release gate. For checklist #8, verify the old local Triad ZIP and compare [Vault latest backup index](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/snapshots/latest.json) against the current HQ commit; the most recently indexed snapshot predates these privacy/report updates, so do **not** claim the newest source is already archived.
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.
