@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 import re
+import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 MAP = ROOT / "docs" / "TOOL_COVER_MAP.json"
@@ -25,6 +26,20 @@ def build():
         image_path = ROOT / item["image"]
         if not page_path.is_file():
             raise RuntimeError("Missing actual tool page: " + item["showcase"])
+        if not image_path.is_file() and item.get("status") == "user-approved-awaiting-image-upload":
+            # If a browser upload preserved a folder, promote only the selected cover.
+            base = ROOT / "artwork" / "tool-covers"
+            matches = sorted(p for p in base.rglob(image_path.name)
+                             if p.is_file() and p != image_path)
+            if len(matches) == 1:
+                with matches[0].open("rb") as stream:
+                    if stream.read(8) != b"\x89PNG\r\n\x1a\n":
+                        raise RuntimeError("Invalid approved PNG upload: " + str(matches[0]))
+                image_path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(matches[0], image_path)
+                print("Promoted selected cover:", item["title"], "from", matches[0].relative_to(ROOT))
+            elif len(matches) > 1:
+                print("Multiple uploaded cover copies; please select one:", item["title"])
         if not image_path.is_file():
             skipped.append(item["title"])
             continue
