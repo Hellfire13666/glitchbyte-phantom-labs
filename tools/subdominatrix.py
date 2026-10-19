@@ -535,6 +535,17 @@ def export(report, folder, artwork=None):
     return paths
 
 
+def save_hostnames_txt(report, filename):
+    """Write only deduplicated hostname candidates; never replace an existing file."""
+    path = Path(filename).expanduser()
+    if path.suffix.lower() != ".txt":
+        raise ValueError("-o expects a .txt filename, such as names.txt")
+    with path.open("x", encoding="utf-8") as handle:
+        for record in report["hosts"]:
+            handle.write(record["name"] + "\n")
+    return path
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=APP + " • Multi-source passive domain intel")
     parser.add_argument("domain", nargs="?", default="example.com",
@@ -550,14 +561,26 @@ def main(argv=None):
     parser.add_argument("--timeout", type=int, default=10)
     parser.add_argument("--cli-timeout", type=int, default=60,
                         help="Seconds per optional local tool (10..120); independent of source timeout")
-    parser.add_argument("--out", default=str(Path.home() / "SUBDOMINATRIX_REPORTS"))
+    parser.add_argument("--out", default=str(Path.home() / "SUBDOMINATRIX_REPORTS"),
+                        help="Legacy full-report directory when -o/--terminal-only is not used")
+    parser.add_argument("-o", "--output-txt", metavar="NAME.txt",
+                        help="Save only deduplicated hostnames to this new text file (no HTML/Firefox)")
     parser.add_argument("--artwork", help="Optional Rosie PNG/JPEG for dashboard header")
     parser.add_argument("--no-open", action="store_true", help="Do not launch Firefox")
     parser.add_argument("--terminal-only", action="store_true",
-                        help="Live findings to terminal, no saved reports or Firefox")
+                        help="Live findings to terminal, no saved reports or Firefox unless -o is set")
     parser.add_argument("--color", choices=("auto", "always", "never"), default="auto",
                         help="Colorized feedback for --terminal-only")
     args = parser.parse_args(argv)
+    if args.output_txt:
+        requested = Path(args.output_txt).expanduser()
+        if requested.suffix.lower() != ".txt":
+            parser.error("-o needs a .txt filename, such as -o names.txt")
+        if requested.exists():
+            parser.error(f"-o destination already exists; choose a new name: {requested}")
+        if not requested.parent.is_dir():
+            parser.error(f"-o parent directory does not exist: {requested.parent}")
+    terminal_mode = args.terminal_only or bool(args.output_txt)
     domain = args.domain.strip().lower().strip(".")
     enabled = args.color == "always" or (args.color == "auto" and sys.stdout.isatty())
     palette = {"[FOUND]": "\x1b[92m", "[SOURCE]": "\x1b[96m", "[START]": "\x1b[95m",
@@ -566,19 +589,20 @@ def main(argv=None):
     def emit(msg):
         color = next((value for key, value in palette.items() if msg.startswith(key)), "")
         print((color + msg + "\x1b[0m") if enabled and color else msg, flush=True)
-    if args.terminal_only:
+    if terminal_mode:
         emit(f"[START] SUBDOMINATRIX SIGNAL CORE :: {domain}")
         emit("[MODE] SYNTHETIC OFFLINE DEMO" if args.offline_demo
              else "[MODE] LIVE PUBLIC-SOURCE COLLECTION")
-        emit("[START] Files OFF | Firefox OFF | bounded public-source requests")
+        emit("[START] TXT output only: " + args.output_txt if args.output_txt
+             else "[START] Files OFF | Firefox OFF | bounded public-source requests")
     try:
         report = collect(domain, demo=args.offline_demo, max_results=args.max_results,
                          max_verify=args.max_verify, dns=args.dns_check,
                          http=args.http_check, subfinder=args.subfinder, findomain=args.findomain,
                          timeout=args.timeout, cli_timeout=args.cli_timeout,
-                         progress=emit if args.terminal_only else None)
-        if args.terminal_only:
-            paths = {}
+                         progress=emit if terminal_mode else None)
+        if terminal_mode:
+            paths = {"txt": save_hostnames_txt(report, args.output_txt)} if args.output_txt else {}
         else:
             image = args.artwork or str(Path(__file__).with_name("rosie_header.png"))
             paths = export(report, args.out, image)
@@ -591,8 +615,11 @@ def main(argv=None):
           report["stats"]["multi_source"], "seen in 2+ sources;",
           report["stats"]["dns_public"], "public DNS;",
           report["stats"]["http_observed"], "observed HTTPS responses.")
-    if args.terminal_only:
-        emit("[DONE] SAVE OFF: no report files created; Firefox not opened")
+    if terminal_mode:
+        if args.output_txt:
+            emit("[DONE] Only requested TXT saved; no HTML/JSON/CSV, Firefox not opened")
+        else:
+            emit("[DONE] SAVE OFF: no report files created; Firefox not opened")
         return 0
     if not args.no_open:
         browser = shutil.which("firefox")
