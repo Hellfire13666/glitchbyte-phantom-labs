@@ -2,9 +2,9 @@
 <div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF1493?style=flat-square&logo=github&logoColor=white"></a></div>
 <!-- GLITCHBYTE-UPLOAD-DOOR:END -->
 
-# 🕷️ GLITCHBYTE PHANTOM LABS // OFFICIAL ECOSYSTEM
+# 🕷️ PHANTOM LABS HQ // OFFICIAL ECOSYSTEM
 
-**RosieGlitchbyte's original Linux, Python, Go, public-intelligence and creative-code workshop.**
+**RosieGlitchbyte's original GlitchByte Phantom Labs headquarters**, containing the Linux, Python, Go, public-intelligence and creative-code workshop. [Return to Phantom Labs HQ](../README.md) · [Phantom Tool Vault](TOOL_VAULT.md) · [Phantom Backup HQ](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases).
 
 This document is the live navigation hub for the repository. All linked tools below were checked against the paths that actually exist on the `main` branch on 17 October 2026. Prototypes discussed in chat are not treated as published until their source is committed here.
 
