@@ -13,6 +13,7 @@
 - [x] Run all 17 first-run Bash recipes in isolated Ubuntu CI workspaces (Phase 22; local Git remapping)
 - [x] Confirm a real public HTTPS Git clone and offline Python/Go checks on Ubuntu (Phase 23)
 - [ ] Perform tool-by-tool **live** functional, authorization, and platform compliance tests
+- [ ] For each new or upgraded tool, include tested [SIMPLE / MEDIUM / EXTRA beginner recipes](BEGINNER_RUNTIME_RECIPES.md) with real commands, expected live feedback, runtime/timeout notes, optional save behavior, and Firefox instructions where supported (existing tools are not automatically retrofitted)
 - [ ] Review all file contents and Git history for secrets and private data
 - [x] Adopt a custom source-available license permitting unmodified use
 - [ ] Confirm redistribution rights for all assets
