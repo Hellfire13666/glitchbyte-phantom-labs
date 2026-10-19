@@ -63,6 +63,10 @@ The user verified the installed SUBDOMINATRIX `--help` exposes `--offline-demo`,
 
 **Verified:** presence of documented CLI controls, not a complete security audit. Remaining gates: review actual active-check authorization, privacy and credential handling, redirects/limits, dependencies, and safe file output across older tools. No active scans were performed by this help-only inspection. See [security policy](../SECURITY.md) and [release checklist](RELEASE_CHECKLIST.md).
 
+## 🔐 Checklist #7: Privacy finding and remediation
+
+User-side `stat` showed `findomain_results.txt` mode **0600** and Triad Signal's `triad_check2.txt` mode **0664**. That is an actionable local-report privacy gap, although actual readability by other users also depends on parent-directory permissions. Recommend `chmod 600 ~/triad_check2.txt` for the existing report. [Triad Signal](integrations/TRIAD_SIGNAL_2026.md) has an explicit 0600 / exclusive-create source fix with an automated permissive-`umask` regression check, covering future opted-in outputs after the local script is refreshed. Scope is **one output path**, not a claim that all old tools, reports, Git history, token handling or third-party APIs are security-audited.
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.

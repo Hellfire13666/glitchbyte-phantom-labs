@@ -239,7 +239,10 @@ def run(argv=None):
     emit(f"[SUMMARY] {len(all_results)} unique candidate hostnames/URLs across {len(chosen)} tools")
     if output:
         try:
-            with output.open("x", encoding="utf-8") as handle:
+            # Exclusive creation refuses collisions and symlinks; explicit
+            # 0600 prevents group/world access regardless of a permissive umask.
+            descriptor = os.open(output, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+            with os.fdopen(descriptor, "w", encoding="utf-8") as handle:
                 handle.write("\n".join(all_results) + ("\n" if all_results else ""))
             emit(f"[SAVED] TXT {output} | {len(all_results)} candidate lines")
         except OSError as exc:
