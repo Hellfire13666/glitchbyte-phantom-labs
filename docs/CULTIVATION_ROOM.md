@@ -51,7 +51,11 @@ The [CI-reviewed terminal-only live signal upgrade](tool-showcases/SUBDOMINATRIX
 
 ## 🔧 Checklist #4: Triad Forge integration
 
-The original local archive/install scripts for Amass, GAU and Waybackurls were inspected and all three executables were reported installed. In the first live pass, Waybackurls completed and returned 20 URL lines while Amass and GAU timed out at 45 seconds. A separate [Triad Signal companion with independent bounded timeouts, parallel feedback and `-o`/`--o` TXT](integrations/TRIAD_SIGNAL_2026.md) is under CI review. The existing local Forge folder and ZIP are not changed; mark full live module verification **pending** until the new companion is tested in Ubuntu.
+The original local archive/install scripts for Amass, GAU and Waybackurls were inspected and all three executables were reported installed. In the first live pass, Waybackurls completed and returned 20 URL lines while Amass and GAU timed out at 45 seconds. A separate [Triad Signal companion with independent bounded timeouts, parallel feedback and `-o`/`--o` TXT](integrations/TRIAD_SIGNAL_2026.md) is published and GitHub CI-tested. The existing local Forge folder and ZIP are not changed; the separate companion has now been tested on Ubuntu, with live module retrieval still limited as documented below.
+
+## ✅ Triad Signal Ubuntu field-result update
+
+The [published Triad Signal companion](integrations/TRIAD_SIGNAL_2026.md) has now been run on Ubuntu: Amass reached its 65-second cap with zero accepted candidates (nameserver graph relationship notices were observed), GAU reached its 50-second cap with zero URLs and a nonfatal config warning, and Waybackurls exited successfully in 0.87 seconds with zero results. It displayed per-module feedback and saved the **explicitly requested but empty** `~/triad_check2.txt`. Its standalone source passed the GitHub Python and public-clone checks; the original local Triad Forge ZIP remains untouched. **Checklist #4 status: installed/execution/output flow checked, external-provider retrieval partially verified only.** Advance to link/document consistency (checklist #5) without claiming these missing candidate sets passed.
 
 ## Build path
 
