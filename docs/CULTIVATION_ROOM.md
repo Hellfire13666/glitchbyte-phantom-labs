@@ -85,6 +85,12 @@ The user confirmed a separate locally packaged RC ZIP `~/Downloads/hexwraith_pri
 
 **Status:** locally verified release candidate; **not published to a HEXWRAITH GitHub repository or Phantom Backup HQ**. Preserve privacy of reports and do not mix local artifacts with public source archives. Full publication instructions, known limits and artifact fingerprint: [HEXWRAITH Privacy Edition RC1 release record](tool-showcases/HEXWRAITH_PRIVACY_EDITION_RC1.md). The previous Vault HQ backup predates this new documentation, and the local-only HEXWRAITH RC is not part of it.
 
+## ✅ HEXWRAITH Privacy Edition v1.1.1 RC2: verified locally (October 19, 2026)
+
+The user built a second ZIP while preserving RC1 and the working original HEXWRAITH installation. The RC2 local release archive `~/Downloads/hexwraith_privacy_edition_v1_1_1_rc2.zip` has SHA-256 `b1728a0b480eae045ad289e59a69b3d20fd79e787d81bf4561c9f9428bb800a7`. Ubuntu reported **14/14 patched-source tests passing**, **ZIP integrity PASS**, **per-file manifest hash PASS**, and `sha256sum -c` **OK**. The eight verified archive members are the license notice, README, manifest, two patched entry points, and three tests. No research report files appear in the ZIP listing. The custom Headquarters source-available license was included for copyright-holder review, not adopted as an OSI open-source license.
+
+**RC2 is local only.** A standalone public HEXWRAITH repository has not yet been created and the RC2 ZIP has not been uploaded to Backup HQ. Next: stage reviewed source in a private directory, confirm publication rights/metadata, decide repository visibility, publish only approved files, validate clean clone and back up the newly published release. [RC2 release record](tool-showcases/HEXWRAITH_PRIVACY_EDITION_RC2.md).
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.
