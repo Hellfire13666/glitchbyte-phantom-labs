@@ -66,6 +66,10 @@ Our three official destinations are **Phantom Labs HQ** (the original workshop a
 
 **✅ Real Ubuntu Easy Save check:** using `--o findomain_results.txt -- findomain -t facebook.com`, the shared launcher displayed live findings and reported a saved TXT transcript after the third-party Findomain command finished in **21 seconds**. The crt.sh provider needed an API fallback, but the overall run finished. [Exact setup and output caveats](docs/EASY_SAVE_ALL_TOOLS.md).
 
+## 🌹⚡ TRIAD SIGNAL: Bounded Triad Forge companion
+
+Your Ubuntu inspection confirmed an existing local Triad Forge archive and all three installed tools. In the first live test, Waybackurls completed with **20 URL lines**, while passive Amass and GAU each reached the **45-second time limit**. [**Triad Signal runtime companion**](scripts/triad_signal_2026.py) offers independent parallel time budgets, truthful partial/timeout reporting, colored live candidates and opt-in `-o`/`--o` TXT results. [Beginner Simple/Medium/Extra commands and observed status](docs/integrations/TRIAD_SIGNAL_2026.md). It does not replace or modify the local Forge ZIP. Field testing of the companion itself is still pending.
+
 ## 💾 Easy-save commands throughout Phantom Labs
 
 Every published tool guide now links to [Easy Save for Every Tool](docs/EASY_SAVE_ALL_TOOLS.md). Our standard is `-o name.txt` or `--o name.txt`: native result TXT on updated tools such as SUBDOMINATRIX, or the [shared transcript saver](scripts/phantom_easy_save.py) for legacy CLI tools. The runner keeps colorful output on screen, strips terminal color codes from its TXT file, and never overwrites an existing one. It does **not** suppress reports a legacy program already creates. Interactive tools and browser interfaces may need their own export. [Tool Vault](docs/TOOL_VAULT.md) · [Publishing standard](docs/BUILD_PUBLICATION_STANDARD.md).
