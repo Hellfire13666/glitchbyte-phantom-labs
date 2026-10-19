@@ -66,6 +66,38 @@ cat hello.txt
 
 Run in your intended output directory. If `hello.txt` already exists, use a different new filename.
 
+## 🧽 If less says a saved TXT "may be a binary file"
+
+Press **y** to view the existing file; **q** exits less. This message can mean some non-printing terminal control bytes were captured, not that every finding is unusable. The latest Easy Save runner removes standard ANSI formatting, NUL/bell/backspace/form-feed and other problematic C0/DEL control bytes from *future* TXT saves. It preserves UTF-8 emoji and normalizes terminal CR/CRLF to text line breaks.
+
+**To safely clean an existing saved file without changing the original**:
+
+```bash
+python3 - <<'PY'
+from pathlib import Path
+import re
+import unicodedata
+
+source = Path.home() / "findomain_results.txt"
+output = Path.home() / "findomain_results_clean.txt"
+
+s = source.read_bytes().decode("utf-8", errors="replace")
+s = re.sub(r"\x1b\][^\x07\x1b]*(?:\x07|\x1b\\)", "", s)
+s = re.sub(r"\x1b\[[0-?]*[ -/]*[@-~]", "", s)
+s = s.replace("\r\n", "\n").replace("\r", "\n")
+s = "".join(c for c in s if c in "\n\t" or unicodedata.category(c) not in ("Cc", "Cs"))
+
+with output.open("x", encoding="utf-8") as handle:
+    handle.write(s)
+print("CLEAN TXT:", output)
+PY
+less "$HOME/findomain_results_clean.txt"
+```
+
+The new filename must not already exist. **This sanitizes text; it does not remove headers and provider messages or turn a transcript into a clean hostname-only database.** To get *only hostnames*, use a tool's native export where supported.
+
+---
+
 ## Exact behavior and limitations
 
 | Feature | Shared runner behavior |
