@@ -62,6 +62,10 @@ Our three official destinations are **Phantom Labs HQ** (the original workshop a
 | 🌹 **ART & IDENTITY** | [Approved Rosie reference rules and official hero upload](docs/ROSIE_VISUAL_STANDARD.md) |
 | 🔐 **SAFETY** | [Security guidance](SECURITY.md) and [release checklist](docs/RELEASE_CHECKLIST.md) |
 
+## 🌐 Findomain: successful live discovery
+
+**Checklist #2 passed:** our installed Findomain showed real public-source hostname candidates in a 23-second Ubuntu run. Read the [Findomain Simple / Medium / Extra recipes, path diagnosis, and optional save notes](docs/tool-showcases/FINDOMAIN_LIVE_CHECK.md). Findomain is a third-party executable, not another GlitchByte-owned tool.
+
 ## 🌹 New: ROSIE PHANTOM SCAN V2
 
 Explore public DNS, HTTPS certificate, security-header observations, RDAP/WHOIS and opt-in crt.sh/Findomain discovery in a Rosie-branded Firefox dashboard. [Open the full Ubuntu recipe](docs/tool-showcases/ROSIE_PHANTOM_SCAN_V2.md) · [View original Python 3 source](tools/rosie_phantom_scan_v2.py). Includes safe offline preview. Public-data observations are not proof of identity or vulnerabilities.
