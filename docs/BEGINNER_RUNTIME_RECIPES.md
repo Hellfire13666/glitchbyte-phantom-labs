@@ -31,7 +31,7 @@ For **each individual tool's** `README.md` or build recipe, include:
 
 ## 🌐 Verified external Findomain recipes
 
-For **Findomain**, an already-installed third-party tool, use our [Simple / Medium / Extra copy-and-paste terminal guide](tool-showcases/FINDOMAIN_LIVE_CHECK.md). The user's `findomain -t facebook.com` public-source run completed in 23 seconds. No file export was requested. The guide also explains optional `tee` saving, the broken lower-priority `/usr/bin/findomain` text placeholder, and safe boundaries for direct network checks.
+For **Findomain**, an already-installed third-party tool, use our [Simple / Medium / Extra copy-and-paste terminal guide](integrations/FINDOMAIN_LIVE_CHECK.md). The user's `findomain -t facebook.com` public-source run completed in 23 seconds. No file export was requested. The guide also explains optional `tee` saving, the broken lower-priority `/usr/bin/findomain` text placeholder, and safe boundaries for direct network checks.
 
 ---
 
