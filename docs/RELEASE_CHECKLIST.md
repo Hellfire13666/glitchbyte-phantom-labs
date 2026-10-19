@@ -25,6 +25,10 @@
 
 [🌹 Final workshop handoff and verification evidence](WORKSHOP_HANDOFF.md). The original workshop's offline setup milestone is complete, while live release and privacy gates remain open.
 
+## 🛡️ Checklist #6: Runtime safety options confirmed, full audit still open
+
+Ubuntu help-only checks confirmed that installed SUBDOMINATRIX offers an offline demo, terminal-only output, independent provider/tool timeouts, explicit DNS/HTTPS-check flags with a documented dependency, and native `-o` TXT saving. Triad Signal offers individual CLI timeouts, `--only` scopes and native `-o` / `--o`. The published SUBDOMINATRIX source supports `--o`, but the tested local copy is older and lists only `-o` / `--output-txt`. Keep that known-good local copy and download the updated source under a new name for a no-network `--help` check. **CLI flags are confirmed, but authorization enforcement, output privacy and production security readiness remain unverified.**
+
 ## Additional unresolved release gates
 
 - [x] Fix IP Shadow Scraper artwork lookup to use the existing repository `artwork/` file (Phase 25; no artwork bytes changed)
