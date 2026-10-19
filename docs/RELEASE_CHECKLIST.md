@@ -33,6 +33,12 @@ Ubuntu help-only checks confirmed that installed SUBDOMINATRIX offers an offline
 
 Actual Ubuntu `stat` detected a private Findomain transcript (`600`) and a less-private Triad Signal TXT (`664`). The user was instructed to run `chmod 600 ~/triad_check2.txt`; completion is not yet confirmed. The updated [Triad Signal companion](integrations/TRIAD_SIGNAL_2026.md) uses explicit file mode `0600` on exclusively created `-o`/`--o` TXT output and includes an offline test under a permissive `umask 000`. Neither historical report permissions nor every other tool's saving logic have been retroactively changed. The overall audit remains open for token leaks, third-party data, dependency/source review, defaults, redirect handling and release archives.
 
+## ✅ Ubuntu privacy milestone and next archive freshness gate
+
+On October 19, 2026, the user ran `chmod 600 ~/triad_check2.txt` and confirmed the report became **0600**; `findomain_results.txt` was already **0600**. The separately downloaded patched `triad_signal_private_2026.py` exposed native `-o` / `--o`; the current HQ source passed its explicit-0600 permissive-umask regression tests. A separate updated SUBDOMINATRIX local file exposed `-o, --o, --output-txt`, and a real no-network, no-save synthetic terminal test reported **13 demo names, 5 overlapping**, no DNS/HTTP observations, no Firefox, no report files. This closes the *specific* output-permission finding, not the overall security audit. Full live authorization/security, old tool export audits, Git history and private-data gates remain open.
+
+**Checklist #8 freshness note:** as inspected, Backup HQ's `snapshots/latest.json` points to the dated HQ `d6e4dc1fa836` archive and Overdrive `e26afde620b5` archive, which predate these later HQ source/documentation changes. A fresh, checksum-verified snapshot must exist before describing the latest privacy patch as backed up. [Latest index](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/snapshots/latest.json) · [Restore/verify guide](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/docs/RESTORE_GUIDE.md).
+
 ## Additional unresolved release gates
 
 - [x] Fix IP Shadow Scraper artwork lookup to use the existing repository `artwork/` file (Phase 25; no artwork bytes changed)
