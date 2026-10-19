@@ -126,3 +126,16 @@ The five puzzle gates, `--fast` behavior, hex decoding, lack of export flags and
 The game is fictional and intended for consenting adult readers as a creative surprise, not a way to conceal private messages or collect credentials. Follow the repository's [security policy](../../SECURITY.md) and [custom source-available license](../../LICENSE-NOTICE.md).
 
 [← Phantom Tool Vault](../TOOL_VAULT.md) · [← GitHub homepage](../../README.md)
+
+## 💾 Easy Save: `-o name.txt` or `--o name.txt`
+
+First install the common [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md). It saves **printed terminal output** while leaving the original interactive program and its own exports untouched. The runner understands both `-o` and `--o` before the `--` separator.
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+# From the main HQ repository checkout root:
+python3 "$SAVER" --o ghost_in_my_heart_help.txt -- python3 -u tools/rosie_ghost_heart.py --help
+```
+
+This example saves **help output only**, not the game's results. To save an actual run, replace the `--help` after the separator with the documented command/arguments. **Note:** interactive prompts, games and full-screen terminal UI may not work the same through a pipe, so for these projects a native export or copy-from-terminal approach is safer. The shared wrapper never pretends to save game state or browser-only results. Existing filenames aren't overwritten; other reports produced by the legacy game may still be created. Our new-build standard calls for native `-o` / `--o` export where it makes sense.
+

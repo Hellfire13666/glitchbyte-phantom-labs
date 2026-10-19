@@ -122,3 +122,16 @@ The actual output folder contains `hexwake_<seed>_<random>.json`, a matching `.c
 [Tool-specific offline tests](../../tests/test_hexwake_palette_foundry.py) cover reproducibility, valid colors, unique output files, actual format generation and invalid inputs. Check GitHub CI before treating tests as executed successfully. No login, external API or web content is involved. Original workshop tools are not replaced.
 
 [License notice](../../LICENSE-NOTICE.md) · [Security](../../SECURITY.md) · [← Tool Vault](../TOOL_VAULT.md)
+
+## 💾 Easy Save: `-o name.txt` or `--o name.txt`
+
+Get the [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md) first. The runner can save this tool's **printed terminal output** in a new plain-text file without changing its own CLI; `-o` and `--o` work **on the runner before the `--` separator**.
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+# From the HQ repository root, safe help-only preview:
+python3 "$SAVER" -o hexwake_help.txt -- python3 -u tools/hexwake_palette_foundry.py --help
+```
+
+This example saves **help text**, not working results. For actual output, substitute this tool's real run command and tested arguments from the setup recipe above for everything after the separator, and choose a new `.txt` filename. The runner saves terminal text only, not its native HTML/JSON/CSV; this tool's pre-existing report/export behavior is unchanged, so it may still write its original files. Terminal-interactive or Firefox-only behavior may require a native exporter. New projects get `-o`/`--o` implemented in their own CLI when practical.
+

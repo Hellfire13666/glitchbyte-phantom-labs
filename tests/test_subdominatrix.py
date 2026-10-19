@@ -244,6 +244,18 @@ class SubdominatrixTests(unittest.TestCase):
             self.assertNotIn("[OPEN]", result.stdout)
             self.assertNotIn("[SAVED] HTML", result.stdout)
 
+    def test_easy_long_double_o_alias_saves_txt(self):
+        with tempfile.TemporaryDirectory() as folder:
+            destination = Path(folder) / "native.txt"
+            result = subprocess.run([
+                sys.executable, str(SCRIPT), "example.com", "--offline-demo",
+                "--o", str(destination), "--color", "never"
+            ], capture_output=True, text=True, timeout=15)
+            self.assertEqual(0, result.returncode, result.stderr)
+            self.assertTrue(destination.exists())
+            self.assertEqual(1, len(list(Path(folder).iterdir())))
+            self.assertIn("[SAVED] TXT", result.stdout)
+
     def test_easy_o_can_combine_with_terminal_only(self):
         with tempfile.TemporaryDirectory() as temp:
             requested = Path(temp) / "intel.txt"

@@ -153,3 +153,16 @@ Commands, mode distinctions, file formats and paths were checked against [the ac
 Respect privacy and platform policies. Avoid publishing imports containing private individuals' information. Follow the repository's [security policy](../../SECURITY.md) and [custom source-available license](../../LICENSE-NOTICE.md).
 
 [← Phantom Tool Vault](../TOOL_VAULT.md) · [← Homepage](../../README.md)
+
+## 💾 Easy Save: `-o name.txt` or `--o name.txt`
+
+First install the shared [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md). It saves what this existing tool **prints in the terminal**, not its hidden data or structured files. Both `-o` and `--o` work **on the runner** before the `--` separator:
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+# From your HQ repository checkout root:
+python3 "$SAVER" --o x_shadow_no_api_help.txt -- python3 -u tools/glitchbyterosie_x_no_api.py --help
+```
+
+This non-network first test saves **help text**, not research results. Replace the `--help` after the separator with the real run arguments documented elsewhere on this page to save actual printed outcomes. Choose a new output filename each time, because it won't overwrite an existing file. **Legacy exports are unchanged**: the wrapper doesn't disable this tool's own HTML/JSON/CSV/report saving, supply browser interfaces, or produce a clean structured export. For interactive tools or graphics prefer their native options. Future builds implement native `-o` / `--o` when appropriate.
+
