@@ -563,7 +563,7 @@ def main(argv=None):
                         help="Seconds per optional local tool (10..120); independent of source timeout")
     parser.add_argument("--out", default=str(Path.home() / "SUBDOMINATRIX_REPORTS"),
                         help="Legacy full-report directory when -o/--terminal-only is not used")
-    parser.add_argument("-o", "--output-txt", metavar="NAME.txt",
+    parser.add_argument("-o", "--o", "--output-txt", metavar="NAME.txt",
                         help="Save only deduplicated hostnames to this new text file (no HTML/Firefox)")
     parser.add_argument("--artwork", help="Optional Rosie PNG/JPEG for dashboard header")
     parser.add_argument("--no-open", action="store_true", help="Do not launch Firefox")
