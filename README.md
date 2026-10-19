@@ -18,6 +18,9 @@
 
 **One tool. One identity. Infinite creative directions.**
 
+
+**🌈 NEW FOR BEGINNERS:** [SIMPLE · MEDIUM · EXTRA runtime recipes](docs/BEGINNER_RUNTIME_RECIPES.md) show exactly how to run tools, read real terminal findings, understand timeouts, and choose optional file saving. These are documentation examples, not universal flags.
+
 [**👻 PHANTOM LABS HQ**](https://github.com/Hellfire13666/glitchbyte-phantom-labs) · [**🕷️ PHANTOM TOOL VAULT**](docs/TOOL_VAULT.md) · [**🔐 PHANTOM BACKUP HQ**](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases) · [**🔍 ECOSYSTEM**](docs/ECOSYSTEM.md) · [**📚 START HERE**](docs/TOOL_STARTER_GUIDE.md) · [**🌹 ROSIE ARTWORK**](docs/ROSIE_VISUAL_STANDARD.md) · [**🛡️ SECURITY**](SECURITY.md)
 
 </div>
