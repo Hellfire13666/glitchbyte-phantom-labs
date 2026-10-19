@@ -4,6 +4,12 @@
 
 # 🌺 NEON ROSE PHANTOM 3.0 // TOOL SHOWCASE
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![Neon Rose Phantom 3.0 | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/05_neon_rose_phantom_3.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · Single-domain public research · Eight modes · Timestamped JSON · Standard library**
 
 [🐍 Original source](../../tools/rosieglitchbyte_neon_rose_phantom_3.py) · [🕷️ Tool Vault](../TOOL_VAULT.md) · [📚 Starter guide](../TOOL_STARTER_GUIDE.md)

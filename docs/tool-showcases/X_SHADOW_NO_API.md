@@ -4,6 +4,12 @@
 
 # 🪞 GLITCHBYTEROSIE X SHADOW INTEL // NO-API TOOL SHOWCASE
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![X Shadow No-API | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/13_x_shadow_no_api.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · Public X research links + offline post analysis · No API token · JSON / CSV**
 
 [🐍 Actual source](../../tools/glitchbyterosie_x_no_api.py) · [🕷️ Phantom Tool Vault](../TOOL_VAULT.md) · [📚 Starter guide](../TOOL_STARTER_GUIDE.md)

@@ -4,6 +4,12 @@
 
 # ⚡ CATCH ME IN THE CHAOS // PHANTOM TOOL SHOWCASE
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![Catch Me in the Chaos | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/21_catch_me_in_the_chaos.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · Offline terminal love puzzle · Three locks · Real UTF-8 hex letter · No dependencies**
 
 [🐍 Original Python source](../../tools/rosie_catch_me_chaos.py) · [🕷️ Phantom Tool Vault](../TOOL_VAULT.md) · [📚 Starter guide](../TOOL_STARTER_GUIDE.md)

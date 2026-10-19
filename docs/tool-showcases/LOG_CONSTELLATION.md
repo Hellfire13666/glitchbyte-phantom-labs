@@ -4,6 +4,12 @@
 
 # ✨ GLITCHBYTE LOG CONSTELLATION // PHANTOM TOOL SPOTLIGHT
 
+<!-- GLITCHBYTE-ART-COVER:START -->
+
+![Log Constellation | GlitchByte Phantom Labs official artwork](../../artwork/tool-covers/17_log_constellation.png)
+
+<!-- GLITCHBYTE-ART-COVER:END -->
+
 **Python 3 · Offline log explorer · Searchable HTML dashboard + JSON · Standard library only**
 
 [🔗 Actual Python source](../../tools/glitchbyte_log_constellation.py) · [🕷️ Tool Vault](../TOOL_VAULT.md) · [📚 Starter guide](../TOOL_STARTER_GUIDE.md)
