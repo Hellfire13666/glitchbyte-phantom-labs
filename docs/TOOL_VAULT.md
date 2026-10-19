@@ -8,7 +8,9 @@
 > **UPLOAD DOORS:** [📤 HQ / Cultivation](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) · [📤 Overdrive](https://github.com/Hellfire13666/rosieriot-overdrive-2026/upload/main) · [📤 Vault](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/upload/main)
 
 
-**The official GlitchByte Phantom Labs tool navigator.** Choose a project, read its documentation, test and run it locally. This page links to source code that exists in the repository, not hypothetical tools from design mockups.
+**The official GlitchByte Phantom Labs tool navigator.**
+**🌈 [SIMPLE · MEDIUM · EXTRA beginner runtime recipes](BEGINNER_RUNTIME_RECIPES.md):** copy-and-paste examples, visible intelligence feedback, optional saving explained, and Firefox notes. Individual tool pages remain the source of truth for their supported options.
+ Choose a project, read its documentation, test and run it locally. This page links to source code that exists in the repository, not hypothetical tools from design mockups.
 
 ![Rosie Phantom Tool Vault](../artwork/vaultlab.png)
 
