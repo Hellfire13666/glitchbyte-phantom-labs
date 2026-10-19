@@ -82,7 +82,9 @@
       "title": "HackGirl Intel",
       "showcase": "docs/tool-showcases/HACKGIRL_INTEL.md",
       "image": "artwork/tool-covers/14_hackgirl_intel.png",
-      "status": "review-before-upload"
+      "status": "selected-awaiting-image-upload",
+      "selected_source_artwork": "neon_hackgirl_offline_data_lab.png",
+      "artwork_note": "Offline CSV/JSON social-post analysis"
     },
     {
       "tool_number": "15",
@@ -114,7 +116,9 @@
       "title": "Rosie Signal Garden",
       "showcase": "docs/tool-showcases/SIGNAL_GARDEN.md",
       "image": "artwork/tool-covers/18_signal_garden.png",
-      "status": "review-before-upload"
+      "status": "selected-awaiting-image-upload",
+      "selected_source_artwork": "rosie_s_neon_signal_garden.png",
+      "artwork_note": "Research notes, links and timeline organizer"
     },
     {
       "tool_number": "19",
