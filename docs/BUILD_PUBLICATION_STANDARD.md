@@ -33,6 +33,11 @@ For network research, passive public-source lookups are distinct from direct DNS
 - Some existing legacy scripts write HTML/JSON/CSV/TXT automatically, and some Firefox experiences require local generated files. Until those programs are explicitly updated and verified, their documentation must accurately say they save files. `--no-open` is **not** the same as `--no-save`.
 - Never claim that every tool accepts `--save`, `--live`, `--simple`, `--medium`, `--extra`, or Firefox flags. Always verify `--help` and the code.
 
+### 💾 Easy opt-in saving standard for new builds
+
+For future terminal-first tools, prefer a short, beginner-friendly **`-o name.txt`** option to save human-readable output **only when requested**. Continue to print results live and preserve colorful status on screen. Clearly document what TXT contains (e.g., one deduplicated candidate hostname per line) and avoid overwriting older reports. If a tool supports structured export, document its actual `--json`, `--csv`, or other flags separately. Do **not** assume all existing tools already recognize `-o`: update the actual program, test it, and then add an example to that project's Simple/Medium/Extra recipe. Distinguish any older `--out` output-folder option from the new `-o filename.txt` convention.
+
+
 ## 4. Every tool gets beginner **SIMPLE · MEDIUM · EXTRA** recipes
 
 Each project README / build page must include **three real, tested copy/paste Ubuntu/Linux examples**:
