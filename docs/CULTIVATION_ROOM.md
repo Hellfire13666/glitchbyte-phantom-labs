@@ -24,6 +24,10 @@ The Cultivation Room is **one of the three established laboratories**, not a fou
 
 <!-- GLITCHBYTE LAB NAV END -->
 
+## 🌈 Workshop-wide publishing rules
+
+Use the [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md) for **every new project or requested upgrade**, whether Python, Go, local creative code, public intelligence, or Firefox tooling. Each build gets its own three [beginner runtime recipes](BEGINNER_RUNTIME_RECIPES.md), honest real-time output, optional saving where supported, distinct artwork, an individual setup page, and cross-links to HQ, Tool Vault, and the *verified* Backup HQ snapshot. Old working tools and past backup archives stay intact.
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.
