@@ -121,3 +121,16 @@ The supported flags, six modes and report path were confirmed by inspecting [the
 Network metadata does not identify an individual; IP addresses may be shared or dynamically assigned. Review [SECURITY.md](../../SECURITY.md) and the repository's [custom source-available license](../../LICENSE-NOTICE.md). Never commit private scan output, credentials or personal information.
 
 [← PHANTOM TOOL VAULT](../TOOL_VAULT.md) · [← Official homepage](../../README.md)
+
+## 💾 Easy Save: `-o name.txt` or `--o name.txt`
+
+Install the shared [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md) first. It captures **actual printed terminal output** without rewriting this legacy tool. Both `-o` and `--o` work **on the runner**, before the `--` separator:
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+# From your HQ repository checkout root:
+python3 "$SAVER" --o ip_specter_help.txt -- python3 -u tools/rosieglitchbyte_ip_specter.py --help
+```
+
+This safe first example saves **help text**, not real Intel; replace `--help` / `-h` after the separator with the genuine run command and documented arguments from this page to save its printed findings. Choose a fresh filename for each run; existing TXT files are not overwritten. The runner does **not** disable this tool's own report exports or save native JSON/CSV/HTML; use the native export commands listed above for those. Interactive programs or browser-only interfaces may need native export instead. New tools are expected to support `-o` and `--o` natively after tests pass.
+
