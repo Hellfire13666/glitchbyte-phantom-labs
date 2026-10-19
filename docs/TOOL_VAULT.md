@@ -31,7 +31,7 @@ The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md
 
 **🌹 SUBDOMINATRIX live-feedback upgrade:**
 
-**October 19 correction:** [SUBDOMINATRIX guide](tool-showcases/SUBDOMINATRIX.md) now includes `--cli-timeout 60` independent of provider deadlines, immediate optional-tool findings, retained partial results, and detailed error messages. CI passed; local Ubuntu validation remains outstanding.
+**October 19 correction:** [SUBDOMINATRIX guide](tool-showcases/SUBDOMINATRIX.md) now includes `--cli-timeout 60` independent of provider deadlines, immediate optional-tool findings, retained partial results, and detailed error messages. CI and the user's live Ubuntu retest passed: 151 unique hostname candidates; Findomain returned 102 records and completed in 40.45 seconds.
 
  the [individual tool guide](tool-showcases/SUBDOMINATRIX.md) documents `--terminal-only`, no-save streaming, rate-limited source feedback, and Simple/Medium/Extra examples. CI passed; the real Ubuntu live smoke test remains outstanding.
 
