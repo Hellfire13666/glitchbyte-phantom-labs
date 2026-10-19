@@ -29,7 +29,7 @@ The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md
 
 | External tool | Verified use | Live test + beginner recipes |
 | --- | --- | --- |
-| **Findomain** | Public-source subdomain candidates; successful Ubuntu test in 23 seconds | [Simple / Medium / Extra and troubleshooting](tool-showcases/FINDOMAIN_LIVE_CHECK.md) |
+| **Findomain** | Public-source subdomain candidates; successful Ubuntu test in 23 seconds | [Simple / Medium / Extra and troubleshooting](integrations/FINDOMAIN_LIVE_CHECK.md) |
 
 ### 🔎 Domain, network and public-intelligence doors
 

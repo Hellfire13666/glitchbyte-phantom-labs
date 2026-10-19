@@ -34,7 +34,7 @@ Every RosieRiot component or companion upgrade follows the [Build → Run → Pu
 
 ## 🔧 Findomain workstation status
 
-The [Findomain live-check and beginner recipe](tool-showcases/FINDOMAIN_LIVE_CHECK.md) documents a successful 23-second public-source test on Ubuntu and the correct user-local installation path. Findomain remains an independently installed third-party option, not a claimed bundled module of the original RosieRiot engine.
+The [Findomain live-check and beginner recipe](integrations/FINDOMAIN_LIVE_CHECK.md) documents a successful 23-second public-source test on Ubuntu and the correct user-local installation path. Findomain remains an independently installed third-party option, not a claimed bundled module of the original RosieRiot engine.
 
 ## Quick links
 
