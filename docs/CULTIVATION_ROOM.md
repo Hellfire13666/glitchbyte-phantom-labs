@@ -28,6 +28,10 @@ The Cultivation Room is **one of the three established laboratories**, not a fou
 
 Use the [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md) for **every new project or requested upgrade**, whether Python, Go, local creative code, public intelligence, or Firefox tooling. Each build gets its own three [beginner runtime recipes](BEGINNER_RUNTIME_RECIPES.md), honest real-time output, optional saving where supported, distinct artwork, an individual setup page, and cross-links to HQ, Tool Vault, and the *verified* Backup HQ snapshot. Old working tools and past backup archives stay intact.
 
+## 🧪 SUBDOMINATRIX current build stage
+
+The [CI-reviewed terminal-only live signal upgrade](tool-showcases/SUBDOMINATRIX.md) has merged to HQ main. Its new `--terminal-only --color always` option prints public-source findings and skips report files/Firefox. Existing saved HTML/Firefox mode remains supported. Offline tests passed; the next station is the real Ubuntu public-source smoke test and optional verification of persistent report mode. Do not mark live field testing complete until results are observed.
+
 ## ⚡ Current workstation verification
 
 **Findomain (external tool) passed its live public-source check** in 23 seconds. Its [diagnostic and Simple / Medium / Extra run recipes](integrations/FINDOMAIN_LIVE_CHECK.md) are published as a workshop integration guide. The user-local executable works; an older `/usr/bin/findomain` placeholder remains optional cleanup. No tool source or release archive was modified by that check.
