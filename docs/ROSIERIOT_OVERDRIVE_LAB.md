@@ -24,6 +24,10 @@ RosieRiot Overdrive is one of the three permanent labs. Its dedicated tool repos
 
 <!-- GLITCHBYTE LAB NAV END -->
 
+## 🌈 Beginner runtime recipes
+
+Our [Simple · Medium · Extra how-to examples](BEGINNER_RUNTIME_RECIPES.md#-example-a-rosieriot-overdrive-installed-ubuntu-tools) explain public-source Subfinder, the workshop's locally installed passive launcher, and the published engine's optional authorized modules. **Local v3 is separate from the original committed ZIP.** Documentation distinguishes no-save local behavior from automatic report writing in the original engine.
+
 ## Quick links
 
 - [⚡ Open the Overdrive tool repository](https://github.com/Hellfire13666/rosieriot-overdrive-2026)
