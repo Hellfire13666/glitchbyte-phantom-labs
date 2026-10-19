@@ -1,0 +1,136 @@
+{
+  "publisher": "GlitchByte Phantom Labs",
+  "repo": "Hellfire13666/glitchbyte-phantom-labs",
+  "single_matches": [
+    {
+      "tool_number": "05",
+      "tool": "Neon Rose Phantom 3.0",
+      "source_image": "neon_rose_phantom_reconnaissance.png",
+      "repo_path": "artwork/tool-covers/05_neon_rose_phantom_3.png",
+      "tool_page": "docs/tool-showcases/NEON_ROSE_PHANTOM_3.md",
+      "status": "single matching artwork; awaiting upload"
+    },
+    {
+      "tool_number": "08",
+      "tool": "VOIDLANTERN",
+      "source_image": "glitchbyte_s_voidlantern_diagnostics_lab.png",
+      "repo_path": "artwork/tool-covers/08_voidlantern.png",
+      "tool_page": "docs/tool-showcases/VOIDLANTERN.md",
+      "status": "single matching artwork; awaiting upload"
+    },
+    {
+      "tool_number": "09",
+      "tool": "Rosie Username Intel",
+      "source_image": "rosie_username_intel_standalone.png",
+      "repo_path": "artwork/tool-covers/09_username_intel.png",
+      "tool_page": "docs/tool-showcases/USERNAME_INTEL.md",
+      "status": "single matching artwork; awaiting upload"
+    },
+    {
+      "tool_number": "12",
+      "tool": "X Intel Phantom",
+      "source_image": "neon_phantom_intelligence_lab.png",
+      "repo_path": "artwork/tool-covers/12_x_intel_phantom.png",
+      "tool_page": "docs/tool-showcases/X_INTEL_PHANTOM.md",
+      "status": "single matching artwork; awaiting upload"
+    },
+    {
+      "tool_number": "13",
+      "tool": "X Shadow No-API",
+      "source_image": "x_shadow_no_api_standalone.png",
+      "repo_path": "artwork/tool-covers/13_x_shadow_no_api.png",
+      "tool_page": "docs/tool-showcases/X_SHADOW_NO_API.md",
+      "status": "single matching artwork; awaiting upload"
+    },
+    {
+      "tool_number": "17",
+      "tool": "Log Constellation",
+      "source_image": "a_highly_detailed_cyberpunk_neon_sci_fi_digital_a.png",
+      "repo_path": "artwork/tool-covers/17_log_constellation.png",
+      "tool_page": "docs/tool-showcases/LOG_CONSTELLATION.md",
+      "status": "single matching artwork; awaiting upload"
+    },
+    {
+      "tool_number": "19",
+      "tool": "HEXWAKE",
+      "source_image": "hexwake_glitch_hex_palette_studio.png",
+      "repo_path": "artwork/tool-covers/19_hexwake.png",
+      "tool_page": "docs/tool-showcases/HEXWAKE.md",
+      "status": "single matching artwork; awaiting upload"
+    },
+    {
+      "tool_number": "20",
+      "tool": "Phantom Cipherbox",
+      "source_image": "phantom_cipherbox_official_banner.png",
+      "repo_path": "artwork/tool-covers/20_phantom_cipherbox.png",
+      "tool_page": "docs/tool-showcases/PHANTOM_CIPHERBOX.md",
+      "status": "single matching artwork; awaiting upload"
+    },
+    {
+      "tool_number": "21",
+      "tool": "Catch Me in the Chaos",
+      "source_image": "catch_me_in_the_chaos_official_banner.png",
+      "repo_path": "artwork/tool-covers/21_catch_me_in_the_chaos.png",
+      "tool_page": "docs/tool-showcases/CATCH_ME_IN_THE_CHAOS.md",
+      "status": "single matching artwork; awaiting upload"
+    },
+    {
+      "tool_number": "23",
+      "tool": "Ghost in My Heart",
+      "source_image": "ghost_in_my_heart_official_banner.png",
+      "repo_path": "artwork/tool-covers/23_ghost_in_my_heart.png",
+      "tool_page": "docs/tool-showcases/GHOST_IN_MY_HEART.md",
+      "status": "single matching artwork; awaiting upload"
+    },
+    {
+      "tool_number": "24",
+      "tool": "Find Me If You Love Me",
+      "source_image": "find_me_if_you_love_me.png",
+      "repo_path": "artwork/tool-covers/24_find_me_if_you_love_me.png",
+      "tool_page": "docs/tool-showcases/FIND_ME_IF_YOU_LOVE_ME.md",
+      "status": "single matching artwork; awaiting upload"
+    }
+  ],
+  "options_need_user_choice": [
+    {
+      "tool_number": "03",
+      "tool": "GlitchByte Domain Intel",
+      "options": [
+        "glitchbyte_domain_intel_command_center.png",
+        "a_dramatic_cyberpunk_hacker_themed_cinematic_illus.png"
+      ],
+      "tool_page": "docs/tool-showcases/DOMAIN_INTEL.md"
+    },
+    {
+      "tool_number": "04",
+      "tool": "Domain Phantom",
+      "options": [
+        "neon_phantom_domain_lab.png",
+        "a_highly_detailed_cyberpunk_hacker_themed_digital.png"
+      ],
+      "tool_page": "docs/tool-showcases/DOMAIN_PHANTOM.md"
+    },
+    {
+      "tool_number": "11",
+      "tool": "Rose Crawler",
+      "options": [
+        "rose_crawler_cyberpunk_infosec_lab.png",
+        "a_dramatic_cyberpunk_neon_hacker_themed_digital_a.png"
+      ],
+      "tool_page": "docs/tool-showcases/ROSE_CRAWLER.md"
+    },
+    {
+      "tool_number": "22",
+      "tool": "Dark Desire",
+      "options": [
+        "dark_desire_gothic_cyberpunk_romance.png",
+        "dark_desire_official_tool_banner.png"
+      ],
+      "tool_page": "docs/tool-showcases/DARK_DESIRE.md"
+    }
+  ],
+  "already_published": [
+    "02 Rosie Phantom Scan V2",
+    "07 IP Shadow Scraper"
+  ]
+}
