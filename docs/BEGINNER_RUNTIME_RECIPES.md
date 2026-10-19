@@ -47,7 +47,7 @@ For **each individual tool's** `README.md` or build recipe, include:
 
 ## 🌹 SUBDOMINATRIX Live Signal recipes (published)
 
-**Updated SUBDOMINATRIX Findomain recipe:** use `--terminal-only --findomain --timeout 8 --cli-timeout 60` to separate source and CLI limits, show live findings, and avoid saved report files. See [the complete revised tool guide](tool-showcases/SUBDOMINATRIX.md) for tested syntax, provider errors, and the offline/Firefox distinction. CI passed; user-machine retest pending.
+**Updated SUBDOMINATRIX Findomain recipe:** use `--terminal-only --findomain --timeout 8 --cli-timeout 60` to separate source and CLI limits, show live findings, and avoid saved report files. See [the complete revised tool guide](tool-showcases/SUBDOMINATRIX.md) for tested syntax, provider errors, and the offline/Firefox distinction. CI and the user's Ubuntu live retest passed: 151 unique candidate hostnames, with only the user-requested TXT saved.
 
 
 
