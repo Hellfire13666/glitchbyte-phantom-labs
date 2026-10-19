@@ -4,7 +4,7 @@
 
 # ⚡ RosieRiot Overdrive | Recon & Expansion Lab
 
-**GlitchByte Phantom Labs** · Recon · Intel · Visualize · Archive
+**Phantom Labs HQ** · Recon · Intel · Visualize · Archive
 
 > **Recon loud. Archive clean.**
 
@@ -18,7 +18,7 @@ RosieRiot Overdrive is one of the three permanent labs. Its dedicated tool repos
 | 👻 **Phantom Labs HQ** | [Main headquarters](https://github.com/Hellfire13666/glitchbyte-phantom-labs) | [📤 HQ file door](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) |
 | 🌱 **Cultivation Room** | [Build and cultivation room](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/CULTIVATION_ROOM.md) | [📤 Build lab file door](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) |
 | ⚡ **RosieRiot Overdrive** | [Overdrive tool repository](https://github.com/Hellfire13666/rosieriot-overdrive-2026) · [Lab room](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/ROSIERIOT_OVERDRIVE_LAB.md) | [📤 Overdrive file door](https://github.com/Hellfire13666/rosieriot-overdrive-2026/upload/main) |
-| 🔐 **Phantom Vault** | [Release and backup archive](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases) · [Tool Vault index](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/TOOL_VAULT.md) | [📤 Vault file door](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/upload/main) |
+| 🔐 **Phantom Backup HQ** | [Release and backup archive](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases) · [Tool Vault index](https://github.com/Hellfire13666/glitchbyte-phantom-labs/blob/main/docs/TOOL_VAULT.md) | [📤 Vault file door](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/upload/main) |
 
 > **Vault rule:** Keep versioned archives and SHA-256 manifests. GitHub files are not a substitute for an independent offline backup. Never upload credentials or private reconnaissance reports to public repositories.
 
