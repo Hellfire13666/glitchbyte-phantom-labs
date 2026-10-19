@@ -1,0 +1,16 @@
+[
+  {
+    "title": "14 HackGirl Intel",
+    "file": "14_hackgirl_intel.png",
+    "scope": "Offline CSV/JSON social-post analysis",
+    "sha256": "91725c906a453d014b4fe54e28aff1eee7449b7d5e3ca54cb031b416d15e1198",
+    "github_repo_path": "artwork/tool-covers/14_hackgirl_intel.png"
+  },
+  {
+    "title": "18 Rosie Signal Garden",
+    "file": "18_signal_garden.png",
+    "scope": "Offline research notes, links and timeline organizer",
+    "sha256": "e9adf402f4a122c2398ce0702bf03d65658ff87703bf222e0b3ffef3fe03550c",
+    "github_repo_path": "artwork/tool-covers/18_signal_garden.png"
+  }
+]
