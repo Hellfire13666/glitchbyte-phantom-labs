@@ -30,7 +30,7 @@ Use the [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDAR
 
 ## ⚡ Current workstation verification
 
-**Findomain (external tool) passed its live public-source check** in 23 seconds. Its [diagnostic and Simple / Medium / Extra run recipes](tool-showcases/FINDOMAIN_LIVE_CHECK.md) are published as a workshop integration guide. The user-local executable works; an older `/usr/bin/findomain` placeholder remains optional cleanup. No tool source or release archive was modified by that check.
+**Findomain (external tool) passed its live public-source check** in 23 seconds. Its [diagnostic and Simple / Medium / Extra run recipes](integrations/FINDOMAIN_LIVE_CHECK.md) are published as a workshop integration guide. The user-local executable works; an older `/usr/bin/findomain` placeholder remains optional cleanup. No tool source or release archive was modified by that check.
 
 ## Build path
 
