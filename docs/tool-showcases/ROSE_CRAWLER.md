@@ -148,3 +148,16 @@ The flags, platform list, report formats and behavior above were inspected in [t
 Phase 25 changes only the report filename construction in the original source; platform research logic is unchanged. Respect platforms, privacy and the repository's [SECURITY.md](../../SECURITY.md) and [LICENSE-NOTICE.md](../../LICENSE-NOTICE.md). Do not commit sensitive reports or use a matching username to make identity accusations.
 
 [← Phantom Tool Vault](../TOOL_VAULT.md) · [← Official homepage](../../README.md)
+
+## 💾 Easy Save: `-o name.txt` or `--o name.txt`
+
+First install the shared [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md). It saves what this existing tool **prints in the terminal**, not its hidden data or structured files. Both `-o` and `--o` work **on the runner** before the `--` separator:
+
+```bash
+SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+# From your HQ repository checkout root:
+python3 "$SAVER" --o rose_crawler_help.txt -- python3 -u tools/rose_crawler.py --help
+```
+
+This non-network first test saves **help text**, not research results. Replace the `--help` after the separator with the real run arguments documented elsewhere on this page to save actual printed outcomes. Choose a new output filename each time, because it won't overwrite an existing file. **Legacy exports are unchanged**: the wrapper doesn't disable this tool's own HTML/JSON/CSV/report saving, supply browser interfaces, or produce a clean structured export. For interactive tools or graphics prefer their native options. Future builds implement native `-o` / `--o` when appropriate.
+
