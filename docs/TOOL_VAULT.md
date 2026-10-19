@@ -40,6 +40,8 @@ The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md
 **💾 Easy save for updated terminal tools:** prefer `-o name.txt` to explicitly save real results while preserving screen feedback. This is implemented in [SUBDOMINATRIX's updated source and instructions](tool-showcases/SUBDOMINATRIX.md), not every historical tool. Original `--out DIRECTORY` remains a separate legacy option; review each tool's supported flags.
 
 
+**🌹 Triad Forge installed-tool companion:** [Triad Signal integration guide](integrations/TRIAD_SIGNAL_2026.md) and [real script](../scripts/triad_signal_2026.py) document the three installed Go utilities, the Waybackurls live pass (20 lines), two 45-second timeouts, and a new independent, capped, colored output runner with `-o` / `--o` optional TXT. This is a separate workshop companion and is **not** counted as a 25th original tool or as a new verified backup.
+
 ### 🔧 Verified external tool integrations (not counted as original GlitchByte tools)
 
 | External tool | Verified use | Live test + beginner recipes |
