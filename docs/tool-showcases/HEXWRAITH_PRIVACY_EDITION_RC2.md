@@ -71,13 +71,19 @@ The user ran `git push origin v1.1.1-rc2` and Ubuntu reported `[new tag] v1.1.1-
 
 The user ran an owner-only local GPG symmetric encryption command for the restore-tested HEXWRAITH Git bundle. Ubuntu showed `gpg: AES256.CFB encrypted data`, `gpg: encrypted with 1 passphrase`, and `[PASS] Encrypted backup created and decrypted successfully`. The resulting encrypted file is `~/HexwraithPrivateVault.P1kzcM/hexwraith_private_git_backup.bundle.gpg`. The original unencrypted bundle is preserved. The command created a separate adjacent SHA-256 checksum for the encrypted file.
 
-**Remaining verification:** the user has not yet reported the command that compares the decrypted encrypted bundle's SHA-256 to the original plain Git bundle. No independent off-device copy has been confirmed. Until then, distinguish successful GPG encryption/decryption from byte-for-byte recovery verification and disaster-recovery redundancy. Never put the encrypted bundle or recovery passphrase in the public Headquarters/Phantom Vault repositories. The user's GPG passphrase must never be entered into a chat or public source file.
+**Subsequent verification complete:** the user ran both checksum validations and confirmed the decrypted encrypted bundle's SHA-256 matches the original Git bundle. An independent off-device copy **has not** been made or verified; retain that work as pending, separate from successful local encryption and restoration. Never put the encrypted bundle or recovery passphrase in the public Headquarters/Phantom Vault repositories. The user's GPG passphrase must never be entered into a chat or public source file.
 
 ## ✅ Encrypted Git bundle integrity and byte-for-byte recovery verified (October 19, 2026)
 
 The user reran checks locally against `~/HexwraithPrivateVault.P1kzcM/hexwraith_private_git_backup.bundle` and its GPG-encrypted counterpart. Both `sha256sum -c` checks returned **OK**; `gpg --decrypt` succeeded with AES256.CFB and a passphrase; the SHA-256 of decrypted output matched the SHA-256 of the original Git bundle. The command was streamed through `sha256sum` and did not save decrypted output as a separate file. This completes the **local encrypted backup integrity** milestone, in addition to the prior full Git bundle restore check.
 
 The accompanying `lsblk` showed a single internal `nvme0n1` 953.9 GiB disk with partitions and no separately listed USB/removable storage. Therefore, **no external/off-device backup has been confirmed**. The recommended next step is attach an external storage device or choose a secure second destination, verify its mount location, copy only the `.gpg` file and its `.sha256` file, and validate the copied checksum. Do not copy the plaintext Git bundle to an untrusted destination or publish private source/bundles in the public Headquarters or Vault repositories.
+
+## ✅ Backup disposition and workshop handoff (October 19, 2026)
+
+**Local encrypted backup: VERIFIED.** The encrypted `.gpg` file was produced, both plaintext and encrypted checksums passed, and a stream-decryption SHA-256 check matched the original restore-tested Git bundle. **Independent backup: PENDING.** The subsequent `lsblk -e7` listing showed only the built-in NVMe device, no mounted external/removable destination. The user elected to proceed with other lab work without creating an off-device backup yet. No copying, uploading, deletion, or change in HEXWRAITH privacy is implied by this handoff.
+
+Next workshop milestone: audit the *remaining local tools* for output filenames that could collide, and for excessive saved-report permissions. This scan should be read-only and should inspect code/paths, **not print private report contents**. Continue to keep any private tool source/backups out of the public Vault.
 
 ## Suggested RC2 local release checks
 
