@@ -4,7 +4,7 @@
 
 # 🌹⚡ RIFTSEAL | Evidence Fingerprint Forge v1.0.0
 
-**Status: COMPLETED AND TESTED AS A LOCAL RELEASE KIT. Dedicated standalone GitHub repository NOT YET CREATED.** This HQ page documents a real, independently clean-extracted local source package, not a GitHub-hosted source location. The GlitchByte user can download the ZIP and SHA-256 sidecar from their conversation, then create a private dedicated repo when ready.
+**Status (October 19, 2026): Installed and tested on Ubuntu; source committed to its [own dedicated private GitHub repository](https://github.com/Hellfire13666/riftseal-evidence-forge-2026).** The owner verified the release ZIP SHA-256 and all **16/16** Ubuntu tests. GitHub confirms `visibility: private`, branch `main`; only authorized GitHub accounts can access the private source. This HQ page is a public setup guide, not a mirror of the private source.
 
 ## The actual RIFTSEAL tools
 
@@ -14,7 +14,7 @@
 - `art/riftseal_cover.png`: bespoke gold/ruby/electric-cyan crystal seal and rose artwork made for this tool, packaged as an actual asset (not a fake functional screenshot).
 - `tests/test_riftseal_release_v1_0.py`: **16 passing offline tests**, including a repeat run from a **fresh ZIP extraction**.
 
-The original Ubuntu prototype `~/PhantomLabsLaunchers/riftseal-evidence-forge-2026/riftseal_evidence_forge.py` was separately reported to compute SHA-256 of HEXWRAITH RC2 ZIP (35,711 bytes), matching the previously trusted fingerprint. The **new package is versioned and separate**, and hasn't yet been confirmed installed on the user's Ubuntu workstation.
+The original Ubuntu prototype `~/PhantomLabsLaunchers/riftseal-evidence-forge-2026/riftseal_evidence_forge.py` was separately reported to compute SHA-256 of HEXWRAITH RC2 ZIP (35,711 bytes), matching the previously trusted fingerprint. The **new package is versioned and separate**, and the new versioned release has now been installed and tested separately on the owner's Ubuntu workstation.
 
 ## ZIP and verified release fingerprint
 
@@ -67,8 +67,8 @@ python3 -B riftseal_integrity_gate_v1_0.py \
 
 The released code runs offline and avoids overwriting reports, but SHA-256 itself **doesn't establish file authorship, source authenticity, legal chain-of-custody, malware safety, or a race-proof snapshot**. Its direct symlink and metadata checks are bounded protections, not a production security certification. Filesystem filename privacy depends on parent directories and deployment context.
 
-**Dedicated independent repository name reserved as a project plan:** `Hellfire13666/riftseal-evidence-forge-2026`. At last check, **the repository did not exist**. The release package contains `GITHUB_PUBLISH.md` and an explicitly user-triggered private-first `scripts/publish_private_github.sh` helper. Do not claim GitHub publication, a GitHub Release asset or Backup HQ archive until actually completed and verified. The existing public Backup HQ should not receive private sources or reports.
+**Dedicated private source repository:** [`Hellfire13666/riftseal-evidence-forge-2026`](https://github.com/Hellfire13666/riftseal-evidence-forge-2026) (**GitHub-confirmed private**). The owner's Ubuntu helper created and pushed the initial `main` commit; the README, source, sample files, artwork and tests are accessible with permission. The release ZIP/manifest are frozen pre-publication provenance and may describe the repository as pending; their original checksums must not be silently revised. **Pending:** an independently verified fresh clone, version tag/GitHub Release (if desired) and private off-device recovery backup. Do **not** upload its private source or reports to the public Backup HQ.
 
-**Next clean-chat project:** RootSignal Cultivator, independent Cultivation Room tool using SEED → CULTIVATE → TEST → LAUNCH. User requested a break after finishing RIFTSEAL. Keep pending tasks noted and don't repeat old audits.
+**Next project:** RootSignal Cultivator is now in local v1.0.0 release-candidate preparation, derived from its original seedbed. Ubuntu installation and dedicated private repository are separate pending milestones; don't repeat old audits.
 
 Lab navigation: [Headquarters](../../README.md) · [Cultivation Room](../CULTIVATION_ROOM.md) · [Tool Vault](../TOOL_VAULT.md) · [Mandatory Build Charter](../PHANTOM_LABS_MANDATORY_BUILD_CHARTER.md) · [Build Publication Standard](../BUILD_PUBLICATION_STANDARD.md) · [Public Backup HQ](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases).
