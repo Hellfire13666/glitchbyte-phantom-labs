@@ -117,6 +117,14 @@ The user installed a new, independent Python 3 utility locally at `~/PhantomLabs
 
 This demonstrates the first local real-file hashing path and colorful terminal presentation. It is **not** a source audit or proof of full chain-of-custody/authenticity, and separate private JSON saving has not yet been exercised by the user. The user requested returning to distinctive functional projects rather than another broad repetitive permissions-audit cycle. Next engineering feature for RIFTSEAL: add a meaningful offline compare/verification mode under a distinct new source filename, preserving the known-good version and without scanning the network.
 
+## 🌹 RIFTSEAL v1.0.0 release kit: finished and tested, clean-chat handoff (October 19, 2026)
+
+The standalone **RIFTSEAL Evidence Fingerprint Forge v1.0.0** source-only ZIP was built with two functional Python 3 launchers (fingerprint and integrity gate), shared core, original gold/ruby/cyan crystal-seal cover artwork, `README.md` and three real SIMPLE/MEDIUM/EXTRA Ubuntu recipes, synthetic examples, native opt-in `-o`/`--o` mode-`0600` TXT, private JSON mode-`0600`/`0700`, versioned release filenames, publication instructions and next-chat handoff notes. **16/16 offline regression tests passed twice**, once from the original build and once after a clean extraction from the ZIP. Manual matching/mismatching compare cases passed. Verified SHA-256: `c2ce1ad5f8a9a2101b9664664c273a14a0e7b59cbaf5677a7696fe1d9a845a13` for `riftseal-evidence-forge-v1.0.0.zip`. ZIP integrity and every member's manifest hash passed.
+
+**State: tested LOCAL release kit, not a dedicated GitHub source repository.** RIFTSEAL package downloads were provided to the owner in ChatGPT; the intended repository `Hellfire13666/riftseal-evidence-forge-2026` had not yet been created. Do not invent an accessible repository URL or claim owner-side installation, tag, off-device backup, GitHub Release or vault upload. The ZIP's documented setup uses a new `~/PhantomLabsLaunchers/riftseal-evidence-forge-v1_0_0` folder to preserve the working local prototype. [RIFTSEAL individual page](tool-showcases/RIFTSEAL.md) · [Mandatory Build Charter](PHANTOM_LABS_MANDATORY_BUILD_CHARTER.md).
+
+**Next chat after the requested break:** verify the owner's downloaded ZIP if they want installation, create and test its own private repository only after owner approval, and then return to designing **RootSignal Cultivator**. Pending unrelated checks remain recorded; do not restart broad output-safety audits automatically.
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.
