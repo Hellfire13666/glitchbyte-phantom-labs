@@ -28,6 +28,15 @@ The Cultivation Room is **one of the three established laboratories**, not a fou
 
 **[🌹⚡ OPEN THE PERMANENT PHANTOM LABS BUILD CHARTER](PHANTOM_LABS_MANDATORY_BUILD_CHARTER.md)**: each independently released tool gets its **own repo and README, individual HQ page, unique art and Glitch HEX identity, colorful working terminal, own tested SIMPLE/MEDIUM/EXTRA Ubuntu examples, optional save safeguards, launcher/tests, upload door, versioned ZIP/checksum and privacy-appropriate verified recovery route**. Never describe an unreleased prototype as a finished GitHub tool. **RIFTSEAL v1.0.0** is now [committed to its own private GitHub repository](https://github.com/Hellfire13666/riftseal-evidence-forge-2026), following owner-confirmed Ubuntu ZIP verification and **16/16** tests. **RootSignal Cultivator v1.0.0** is the next separate local Cultivation Room release; Ubuntu installation and its dedicated private repository remain pending. Keep previous tools and reports untouched.
 
+## 🌱 Current Cultivation Room launch checkpoint | October 19, 2026
+
+**Two independent working releases, both with their own PRIVATE GitHub source repositories:**
+
+- **[RIFTSEAL Evidence Fingerprint Forge](tool-showcases/RIFTSEAL.md)** · [Private source](https://github.com/Hellfire13666/riftseal-evidence-forge-2026): checksum verified, installed on owner Ubuntu and **16/16** tests passed.
+- **[RootSignal Cultivator](tool-showcases/ROOTSIGNAL.md)** · [Private source](https://github.com/Hellfire13666/rootsignal-cultivator-2026): checksum verified, installed on owner Ubuntu, **16/16** tests passed, and no-write synthetic demo executed. Its second publication-script invocation refused to touch an existing local `.git`, as intended. GitHub independently confirms the private source release commit.
+
+The dated checkpoint here supersedes older historical "not published yet" text below, without rewriting archived milestones or frozen release manifests. Neither tool has a confirmed new independent private off-device backup or GitHub Release asset. Keep existing tools and user data intact; work on new seeds instead of repeating past security audits.
+
 ## 🌈 Workshop-wide publishing rules
 
 Use the [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md) for **every new project or requested upgrade**, whether Python, Go, local creative code, public intelligence, or Firefox tooling. Each build gets its own three [beginner runtime recipes](BEGINNER_RUNTIME_RECIPES.md), honest real-time output, optional saving where supported, distinct artwork, an individual setup page, and cross-links to HQ, Tool Vault, and the *verified* Backup HQ snapshot. Old working tools and past backup archives stay intact.
