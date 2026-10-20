@@ -99,6 +99,21 @@ The user added a separate test at `~/PhantomLabsLaunchers/velvetecho/tests/test_
 
 **Verification scope:** these three tests cover specific output-privacy guards, not comprehensive privacy or security assurance. The symlink rejection applies to the supplied final report directory, not a full multi-component race-proof path audit. **Next gate:** locally archive only the original source, patched source and regression tests with a private mode-`0600` archive and checksum; never include generated persona/phone reports. A public GitHub upload is not authorized by this test result.
 
+## ✅ Scoping checkpoint: Four-family output audit completed; residual risks documented (October 19, 2026)
+
+The user's combined **read-only local Ubuntu inventory** reported the following evidence:
+
+| Tool family | Source behavior found | User's filesystem evidence | Disposition |
+| --- | --- | --- | --- |
+| SUBDOMINATRIX | Three source variants with 5, 5 and 4 exclusive-open calls; no evidence of explicit private creation mode in the scanned variants | Default `~/SUBDOMINATRIX_REPORTS` folder absent | Collisions mitigated by exclusive creation; **future exported reports may inherit permissive umask**, so privacy defaults remain an open improvement. Do not disrupt live discovery during this scoped audit. |
+| Triad Signal | One exclusive open; simplistic AST `PRIVATE CREATE MARKERS` returned NOT DETECTED | User's saved TXT mode **0600** | Already earlier verified private output and no immediate issue identified. HQ source uses explicit `os.open(..., 0o600)`; false-negative private-marker text check is not authoritative for all installed variants. |
+| RosieRiot Overdrive | Four `write_text()` calls, no exclusive open calls found by this scanner | Default output paths/modes were **not** inspected in this run | **Unresolved** potential overwrite or permission behavior; no confirmed incident. Review relevant writer implementations in a future targeted pass, not as an emergency patch. |
+| HEXWAKE Palette Foundry | One exclusive-open call for palette exports and randomized stems in maintained HQ source | Default `~/HexwakePaletteReports` folder absent | Output collision defenses present; permissions may inherit umask. Lower privacy impact for synthetic palettes, not identity reports. |
+
+`[PRIVATE CREATE MARKERS] NOT DETECTED` is a heuristic based on string matching in source, **not proof that files are public or unsafe**. The custom AST inventory also does not cover all writer APIs, imports, shell scripts, or external tool outputs. No live scans, modification of the four tools, or proof of global security certification occurred.
+
+**Scoped Output Safety Audit: COMPLETED**, with bounded open issues above and the earlier VelvetEcho fix/HEXWRAITH tests verified. User previously requested to resume the **Cultivation Room new-tool build phase** rather than indefinite ZIP and permissions rounds. Don't mark overall privacy/security audit complete; retain output-hardening improvements as tracked technical debt.
+
 ## Additional unresolved release gates
 
 - [x] Fix IP Shadow Scraper artwork lookup to use the existing repository `artwork/` file (Phase 25; no artwork bytes changed)
