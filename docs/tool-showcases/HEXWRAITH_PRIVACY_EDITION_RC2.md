@@ -73,6 +73,12 @@ The user ran an owner-only local GPG symmetric encryption command for the restor
 
 **Remaining verification:** the user has not yet reported the command that compares the decrypted encrypted bundle's SHA-256 to the original plain Git bundle. No independent off-device copy has been confirmed. Until then, distinguish successful GPG encryption/decryption from byte-for-byte recovery verification and disaster-recovery redundancy. Never put the encrypted bundle or recovery passphrase in the public Headquarters/Phantom Vault repositories. The user's GPG passphrase must never be entered into a chat or public source file.
 
+## ✅ Encrypted Git bundle integrity and byte-for-byte recovery verified (October 19, 2026)
+
+The user reran checks locally against `~/HexwraithPrivateVault.P1kzcM/hexwraith_private_git_backup.bundle` and its GPG-encrypted counterpart. Both `sha256sum -c` checks returned **OK**; `gpg --decrypt` succeeded with AES256.CFB and a passphrase; the SHA-256 of decrypted output matched the SHA-256 of the original Git bundle. The command was streamed through `sha256sum` and did not save decrypted output as a separate file. This completes the **local encrypted backup integrity** milestone, in addition to the prior full Git bundle restore check.
+
+The accompanying `lsblk` showed a single internal `nvme0n1` 953.9 GiB disk with partitions and no separately listed USB/removable storage. Therefore, **no external/off-device backup has been confirmed**. The recommended next step is attach an external storage device or choose a secure second destination, verify its mount location, copy only the `.gpg` file and its `.sha256` file, and validate the copied checksum. Do not copy the plaintext Git bundle to an untrusted destination or publish private source/bundles in the public Headquarters or Vault repositories.
+
 ## Suggested RC2 local release checks
 
 ```bash
