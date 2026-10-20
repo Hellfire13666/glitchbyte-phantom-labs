@@ -109,9 +109,13 @@ The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md
 
 [🌹 Final workshop handoff and remaining release gates](WORKSHOP_HANDOFF.md). The offline build foundation is verified, but live integrations are not certified.
 
-## 🌹⚡ RIFTSEAL | Evidence Fingerprint Forge v1.0.0 (LOCAL release kit)
+## 🌹⚡ RIFTSEAL | Evidence Fingerprint Forge v1.0.0 (PRIVATE source repository)
 
-**[Open RIFTSEAL's own completed setup/showcase page](tool-showcases/RIFTSEAL.md).** Functional offline Python 3 evidence hashing and Integrity Gate, **16/16 tests passing**, gold/ruby/cyan artwork, native opt-in private saves, and SIMPLE/MEDIUM/EXTRA recipes. A verified ZIP with checksum was delivered in the owner conversation. **Dedicated repository is not yet created**, and this is not listed as a published source door; publish/verify the actual repo and update the Tool Vault door when the owner is ready. Do not treat the temporary ZIP or promo artwork as a network scanner or finished GitHub release.
+**[Public RIFTSEAL setup/showcase](tool-showcases/RIFTSEAL.md)** · **[Dedicated private GitHub source repository](https://github.com/Hellfire13666/riftseal-evidence-forge-2026)** (authorized collaborators only). The owner verified the ZIP checksum, installed on Ubuntu and passed **16/16 offline tests**. GitHub confirms private visibility on `main`. No public source mirror or Backup HQ snapshot is implied. Independent clean-clone and private off-device recovery gates remain pending.
+
+## 🌱 ROOTSIGNAL | Cultivation Engine v1.0.0 (PRIVATE source repository)
+
+**[Independent RootSignal setup/showcase](tool-showcases/ROOTSIGNAL.md)** · **[Dedicated private GitHub source](https://github.com/Hellfire13666/rootsignal-cultivator-2026)** (authorized collaborators only). The owner verified the archived ZIP checksum, extracted the release on Ubuntu, passed **16/16 offline tests**, and ran the synthetic no-write terminal demo. GitHub independently confirms `main`, private visibility, release source, tests and custom artwork. This is an **offline project-seeding/scaffolding utility**, not a network scanner. No public source mirror or Backup HQ copy is implied; an independent clean clone and private off-device backup remain pending.
 
 ## 🌹⚡ ONE-PASTE OPEN COMMANDS // NO ATTACHMENTS
 
