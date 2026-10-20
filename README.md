@@ -40,6 +40,8 @@
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 ```
 
+**🌹⚡ [Mandatory Build Charter](docs/PHANTOM_LABS_MANDATORY_BUILD_CHARTER.md)** · Our permanent standard for **every new tool's own GitHub repository, own tool page, artwork, Glitch HEX identity, colorful code/output, SIMPLE/MEDIUM/EXTRA Ubuntu examples, safe saving, verification, launchers, versioned packages, upload doors and tested recovery**. [Cultivation Room](docs/CULTIVATION_ROOM.md) tracks new builds. Published tools and prototypes are listed separately so no unfinished project is misrepresented as released.
+
 ## 💗 Welcome to Phantom Labs HQ
 
 This is **RosieGlitchbyte's original Phantom Labs HQ**, the home base of GlitchByte Phantom Labs and the next evolution of our original workshop. The existing repository, its full Git history, Python tools, Go projects, security rules and source-available license are retained.
