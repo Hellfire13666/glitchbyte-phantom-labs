@@ -22,6 +22,17 @@ TABLE_MAPPING = re.compile(
 )
 
 
+# These pages document separate release-candidate/private repositories, not
+# executable sources within HQ's tools/ directory. Register them explicitly
+# so an extra page is never mistaken for a missing local-tool showcase.
+INDEPENDENT_RELEASE_SHOWCASES = {
+    "HEXWRAITH_PRIVACY_EDITION_RC1.md",
+    "HEXWRAITH_PRIVACY_EDITION_RC2.md",
+    "RIFTSEAL.md",
+    "ROOTSIGNAL.md",
+}
+
+
 def markdown_links(document):
     text = FENCES.sub("", document.read_text(encoding="utf-8"))
     return [match.group(1) for match in LINK.finditer(text)]
@@ -56,17 +67,33 @@ class ToolRecipeAudit(unittest.TestCase):
         ]
         nested_tools = [p for p in (ROOT / "tools").glob("*/*.py") if p.name != "__init__.py"]
         expected = len(list((ROOT / "tools").glob("*.py"))) + len(nested_tools) + 1
-        self.assertEqual(len(pages), expected, "Each root or nested Python tool and VOIDLANTERN needs one showcase")
+
+        page_names = {p.name for p in pages}
+        self.assertTrue(
+            INDEPENDENT_RELEASE_SHOWCASES <= page_names,
+            "Registered independent release showcase page is missing",
+        )
+        local_pages = [p for p in pages if p.name not in INDEPENDENT_RELEASE_SHOWCASES]
+        self.assertEqual(
+            len(local_pages), expected,
+            "Each HQ Python entry point and VOIDLANTERN needs one local showcase; "
+            "standalone releases are tracked separately",
+        )
+
         vault = VAULT.read_text(encoding="utf-8")
         for page in pages:
             with self.subTest(page=page.name):
                 text = page.read_text(encoding="utf-8")
-                self.assertIn("COPY & PASTE BUILD RECIPE", text)
                 self.assertIn("```bash", text)
-                self.assertIn("troubleshoot", text.lower())
                 self.assertIn("test", text.lower())
                 self.assertIn("run", text.lower())
                 self.assertTrue("report" in text.lower() or "output" in text.lower())
+                if page.name in INDEPENDENT_RELEASE_SHOWCASES:
+                    # RC/private releases have their own source repository and
+                    # may use SIMPLE/MEDIUM/EXTRA rather than the HQ recipe title.
+                    continue
+                self.assertIn("COPY & PASTE BUILD RECIPE", text)
+                self.assertIn("troubleshoot", text.lower())
                 self.assertIn("tool-showcases/" + page.name, vault)
 
     def test_all_local_markdown_links_resolve(self):
