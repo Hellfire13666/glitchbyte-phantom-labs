@@ -85,6 +85,14 @@ The user's read-only inspection of `~/PhantomLabsLaunchers/velvetecho/velvetecho
 
 **Remediation pending user execution:** adjust the existing dedicated VelvetEcho report tree files to `0600`, directories to `0700` (without touching report contents), and verify. Separately create a new uniquely named patched copy of the VelvetEcho launcher implementing owner-only exclusive file creation for new reports and rejecting non-private/symlink output directories; preserve the known-good original and test a synthetic offline demo under permissive `umask 022` or `000`. Do not publish original persona/phone reports or claims of live identity attribution. The report basenames are already low-collision but `'w'` mode does not provide exclusive creation, so patch if appropriate. No code patch is claimed installed as of this checkpoint. Existing disclosures, if any, cannot be undone by later permission changes.
 
+## ✅ VelvetEcho existing reports secured; patched offline demo passed (October 19, 2026)
+
+The user executed the targeted Ubuntu permission repair in `~/VelvetEchoReports`, then verified **17 regular report files now mode `0600`**, **1 directory mode `0700`**, **0 identified symlinks** and `[PASS] Regular report files and directories are private`. The command changed local filesystem permission bits only; it did not delete or rewrite report contents. These changes cannot revoke previous access/copies, if any.
+
+The separate launcher `~/PhantomLabsLaunchers/velvetecho/velvetecho_private_reports_2026.py` exists, and the user ran the synthetic offline demo twice: each reported `[PASS] Synthetic offline demo`, `[PASS] JSON, CSV and HTML reports generated`, **4 test report files with `0600`**, and **report directories with `0700`**, under a deliberately permissive process umask of `022`. This is a local test of that copy, not a claim that the original launcher was patched or that all unauthorized inputs/lifecycle paths were reviewed. The original program uses microsecond timestamps plus random suffixes; the patched copy changes creation/validation of outputs.
+
+**Next gate:** install a separate permanent regression test for VelvetEcho's private report modes and rejection of existing nonprivate/symlink destination folders. Run offline, preserving existing reports and source, then consider a source-only backup and broader compatibility tests. Publishing source or real persona/phone outputs to public GitHub is not part of this phase.
+
 ## Additional unresolved release gates
 
 - [x] Fix IP Shadow Scraper artwork lookup to use the existing repository `artwork/` file (Phase 25; no artwork bytes changed)
