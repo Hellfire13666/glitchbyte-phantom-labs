@@ -80,9 +80,9 @@ The original 17-tool collection remains preserved; HEXWAKE is an additional stan
 
 Separate from the original creative games, CIPHERBOX creates customizable real, reversible puzzles. Its answer keys intentionally contain the original plaintext and must not be shared.
 
-## 🌹 New local completed source kit: RIFTSEAL v1.0.0
+## 🌹 Verified private RIFTSEAL v1.0.0 source repository
 
-**[RIFTSEAL Evidence Fingerprint Forge individual page](tool-showcases/RIFTSEAL.md)** documents two *offline* Python 3 tools (fingerprint/verify/compare), original Glitch HEX cover art, sixteen passing tests, saved outputs only by opt-in, and SIMPLE/MEDIUM/EXTRA recipes. A ZIP/checksum release kit has been verified and shared with the owner. **Its dedicated repository is pending creation and is not falsely described as already published.** Follow the permanent [Build Charter](PHANTOM_LABS_MANDATORY_BUILD_CHARTER.md) for the later private-first publish and recovery milestone.
+**[RIFTSEAL setup/showcase](tool-showcases/RIFTSEAL.md)** · **[Dedicated private GitHub repository](https://github.com/Hellfire13666/riftseal-evidence-forge-2026)** (access required). Two offline Python 3 fingerprint/verify/compare tools with Glitch HEX artwork, verified ZIP SHA-256 and **16/16 passing Ubuntu tests**, opt-in local outputs and SIMPLE/MEDIUM/EXTRA recipes. GitHub confirms the source push and private visibility on `main`. Clean clone and private off-device backup remain pending; nothing was mirrored into public HQ or public Backup HQ.
 
 ## 🚀 Sample commands
 
