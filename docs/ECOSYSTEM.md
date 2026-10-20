@@ -84,6 +84,10 @@ Separate from the original creative games, CIPHERBOX creates customizable real, 
 
 **[RIFTSEAL setup/showcase](tool-showcases/RIFTSEAL.md)** · **[Dedicated private GitHub repository](https://github.com/Hellfire13666/riftseal-evidence-forge-2026)** (access required). Two offline Python 3 fingerprint/verify/compare tools with Glitch HEX artwork, verified ZIP SHA-256 and **16/16 passing Ubuntu tests**, opt-in local outputs and SIMPLE/MEDIUM/EXTRA recipes. GitHub confirms the source push and private visibility on `main`. Clean clone and private off-device backup remain pending; nothing was mirrored into public HQ or public Backup HQ.
 
+## 🌱 RootSignal Cultivator v1.0.0 | PRIVATE source release
+
+[Independent RootSignal Cultivator Ubuntu/setup showcase](tool-showcases/ROOTSIGNAL.md) · [Own private repository](https://github.com/Hellfire13666/rootsignal-cultivator-2026) (**permission required**). Owner verified ZIP integrity, extracted the versioned release, passed **16/16 Ubuntu tests**, and ran the offline synthetic demo. This new SEED → CULTIVATE → TEST → LAUNCH engine keeps private seed registry writes opt-in to actual seed actions, scaffolds uniquely named projects, and can print or explicitly save private growth reports. GitHub confirms the dedicated `main` repository is private. Independent clean-clone, optional tag/Release and private off-device recovery remain separate milestones. The original starter ZIP and prior tools are untouched.
+
 ## 🚀 Sample commands
 
 ### Python
