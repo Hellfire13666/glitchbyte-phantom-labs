@@ -93,6 +93,12 @@ The separate launcher `~/PhantomLabsLaunchers/velvetecho/velvetecho_private_repo
 
 **Next gate:** install a separate permanent regression test for VelvetEcho's private report modes and rejection of existing nonprivate/symlink destination folders. Run offline, preserving existing reports and source, then consider a source-only backup and broader compatibility tests. Publishing source or real persona/phone outputs to public GitHub is not part of this phase.
 
+## ✅ VelvetEcho private-output regression suite passed (October 19, 2026)
+
+The user added a separate test at `~/PhantomLabsLaunchers/velvetecho/tests/test_velvetecho_private_reports_2026.py` and ran it against the preserved separate patched launcher `velvetecho_private_reports_2026.py`. Ubuntu reported `test_private_output ... ok`, `test_reject_permissive_directory ... ok`, `test_reject_symlink_directory ... ok`, and **`Ran 3 tests in 0.187s; OK`**. The private-output test checks four synthetic reports at mode `0600` and a directory at `0700`; the other tests verify no output is created in a mode-`0775` or symlinked target directory. An earlier separate dry run also passed twice under simulated permissive umask. The original VelvetEcho source remains intact, and the existing 17 reports already have mode `0600` in a `0700` directory.
+
+**Verification scope:** these three tests cover specific output-privacy guards, not comprehensive privacy or security assurance. The symlink rejection applies to the supplied final report directory, not a full multi-component race-proof path audit. **Next gate:** locally archive only the original source, patched source and regression tests with a private mode-`0600` archive and checksum; never include generated persona/phone reports. A public GitHub upload is not authorized by this test result.
+
 ## Additional unresolved release gates
 
 - [x] Fix IP Shadow Scraper artwork lookup to use the existing repository `artwork/` file (Phase 25; no artwork bytes changed)
