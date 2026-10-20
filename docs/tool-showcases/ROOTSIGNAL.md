@@ -2,6 +2,10 @@
 
 # 🌱 RootSignal Cultivator v1.0.0 | The Cultivation Room engine
 
+![RootSignal favorite savage tool artwork](../art/rootsignal_savage_favorite.jpg)
+
+*Selected GlitchByte Phantom Labs artwork. Biotech interfaces are conceptual, not live RootSignal output.*
+
 **Status (October 19, 2026): owner-tested on Ubuntu and committed to its [dedicated PRIVATE source repository](https://github.com/Hellfire13666/rootsignal-cultivator-2026).** GitHub independently confirmed private visibility, a `main` release commit, README, manifest, Python source, tests and [custom copper/lime terrarium artwork](https://github.com/Hellfire13666/rootsignal-cultivator-2026/blob/main/art/rootsignal_terrarium.png). These private links require collaborator access. **No public code mirror or Backup HQ archive is implied.**
 
 **Glitch HEX visual identity:** copper + amber + acid lime + deep charcoal. The terminal presents real locally generated seed IDs and stage outcomes, not invented provider data. **SEED → CULTIVATE → TEST → LAUNCH** is the tool's design cycle, not a promise of automatic software certification.
