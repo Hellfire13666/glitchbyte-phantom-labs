@@ -73,6 +73,12 @@ October 19, 2026 Ubuntu evidence: **14 patched-source tests passed**, RC2 ZIP ch
 
 **Next active lab gate: audit remaining tools for fixed-name report overwrites, timestamp collisions and default file permissions**, preserving code/report confidentiality and avoiding live network scans. [HEXWRAITH RC2 evidence](tool-showcases/HEXWRAITH_PRIVACY_EDITION_RC2.md).
 
+## 🛡️ Output Safety Audit: first Ubuntu inventory (October 19, 2026)
+
+The user's read-only Python AST inventory of `~/PhantomLabsLaunchers` parsed **15 Python files** and identified **9 file paths with potential write operations**. This is **not** nine confirmed vulnerabilities. The returned candidate list was: `hexwraith_domain_atlas/hexwraith_domain_atlas_private_2026.py` (7 candidate writes), `hexwraith_domain_atlas/hexwraith_domain_atlas.py` (7), `subdominatrix_live_signal_2026/subdominatrix_live_signal_2026.py` (5), `subdominatrix_live_signal_2026/subdominatrix_updated_2026.py` (5), `rosieriot_overdrive_2026/rosieriot_overdrive.py` (4), `code/subdominatrix.py` (4), `velvetecho/velvetecho_persona_observatory.py` (4), `triad_signal_companion_2026/triad_signal_2026.py` (1), and `code/hexwake_palette_foundry.py` (1). Duplicate variants count separately in this output. The inventory inspects `.write_text()`, `.write_bytes()` and explicit write-mode `open()` calls and is not comprehensive for `subprocess`, other methods or shell scripts.
+
+**First targeted review: VelvetEcho Persona Observatory** because its user/persona research reports deserve conservative private file permissions. Check its four write operations around source lines 319–328, directory creation, output naming and any existing report file permissions. **No patch or leak has been established** from this inventory alone. Conduct the next step read-only, and avoid printing private report contents or copying source into a public repository. The source for HEXWRAITH's *patched* version already has offline 0600/0700 regression coverage, while the original unpatched launcher remains separate. The next audit should also distinguish SUBDOMINATRIX and Triad Signal original/updated variants rather than treating them identically.
+
 ## Additional unresolved release gates
 
 - [x] Fix IP Shadow Scraper artwork lookup to use the existing repository `artwork/` file (Phase 25; no artwork bytes changed)
