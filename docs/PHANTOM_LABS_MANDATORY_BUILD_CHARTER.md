@@ -77,7 +77,9 @@ Each separate tool page should contain its **own**:
 
 **RIFTSEAL v1.0.0 completion note (October 19, 2026):** a source-only kit with custom art, two Python 3 CLI utilities, own README/showcase, three runnable recipes, 16 passing offline tests (including clean extraction), release manifest and ZIP SHA-256 `c2ce1ad5f8a9a2101b9664664c273a14a0e7b59cbaf5677a7696fe1d9a845a13` has been produced. Dedicated GitHub repository, account-side Ubuntu installation and backup remain **pending**, not falsely reported as complete. See [RIFTSEAL page](tool-showcases/RIFTSEAL.md). Resume with the owner-approved publication step, then RootSignal Cultivator; respect the requested clean-chat break.
 
-**Focus:** close scoped output-audit phase without claiming a general security certification; return to **new functional builds**. Immediate build sequence: **(1)** validate RIFTSEAL's Integrity Gate companion and create its distinct art/page/SIMPLE–EXTRA examples; **(2)** develop **RootSignal Cultivator** as a separate, genuinely new Cultivation Room tool; **(3)** publish each independent tool through its own reviewed repository and appropriate linked index/backup gates. Keep older release/backup work tracked rather than repeating it unnecessarily.
+**Publication checkpoint (October 19, 2026; after the preserved historical release-kit notes above):** The owner verified the RIFTSEAL ZIP with `sha256sum -c`, installed it on Ubuntu and passed all **16/16** tests twice. [RIFTSEAL's dedicated private GitHub repository](https://github.com/Hellfire13666/riftseal-evidence-forge-2026) was created and its initial source pushed to `main`; GitHub confirmed **private visibility**. Keep the original release ZIP and manifest frozen. A separate clean-clone verification, version tag/GitHub Release and independent private off-device backup are not yet confirmed.
+
+**Current focus:** Move RootSignal Cultivator from its existing independent v1.0.0 local kit into owner-side Ubuntu testing and a separately approved private repository. Keep prior tools operational; do not reopen completed historical audits.
 
 ---
 
