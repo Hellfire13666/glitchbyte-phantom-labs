@@ -107,6 +107,12 @@ Following HEXWRAITH's private backup and VelvetEcho's remediation (17 existing r
 
 **Milestone status: scoped output audit COMPLETE, residual risks TRACKED.** Return to designing the next unique, functional, colorful Ubuntu/Python 3 tool in the Cultivation Room. Keep existing launchers/source/reports intact; save and publish only if user requests or after validation. The independent encrypted off-device HEXWRAITH backup remains pending.
 
+## 🌹 RIFTSEAL Evidence Fingerprint Forge: first real-file field test verified (October 19, 2026)
+
+The user installed a new, independent Python 3 utility locally at `~/PhantomLabsLaunchers/riftseal-evidence-forge-2026/riftseal_evidence_forge.py` and executed its read-only, no-save SHA-256 file mode against `~/Downloads/hexwraith_privacy_edition_v1_1_1_rc2.zip`. Ubuntu printed the distinctive RIFTSEAL terminal banner, `[MODE] LOCAL FILE FINGERPRINT`, `BYTES 35711`, `[SAVE OFF] Terminal output only`, and `[PASS] RIFTSEAL completed`. Its computed SHA-256 `b1728a0b480eae045ad289e59a69b3d20fd79e787d81bf4561c9f9428bb800a7` **exactly matched the previously verified HEXWRAITH RC2 ZIP fingerprint**.
+
+This demonstrates the first local real-file hashing path and colorful terminal presentation. It is **not** a source audit or proof of full chain-of-custody/authenticity, and separate private JSON saving has not yet been exercised by the user. The user requested returning to distinctive functional projects rather than another broad repetitive permissions-audit cycle. Next engineering feature for RIFTSEAL: add a meaningful offline compare/verification mode under a distinct new source filename, preserving the known-good version and without scanning the network.
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.
