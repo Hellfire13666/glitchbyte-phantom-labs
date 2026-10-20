@@ -63,6 +63,16 @@ October 19, 2026 Ubuntu evidence: **14 patched-source tests passed**, RC2 ZIP ch
 - [ ] Create or select the final standalone HEXWRAITH GitHub repository with explicit owner-approved visibility.
 - [ ] Upload vetted release bytes, verify clone and test, then create a checksum-verified Vault backup.
 
+## 🔐 HEXWRAITH local backup closed; independent copy remains open
+
+- [x] Private RC2 source/tag verified and clean-clone tests passed (14/14), commit `4225c48bcfb4175f58b4781cb00054cd40dc71e3`.
+- [x] Git history bundle generated, clone-restored, and validated by SHA-256.
+- [x] GPG-encrypted bundle created, decrypted, and verified byte-for-byte against the original with **both** checksum files reporting OK.
+- [ ] Create and verify an **independent off-device** copy of the encrypted `.gpg` bundle plus checksum. The user's device inventory showed only a single NVMe disk; this remains pending by explicit choice.
+- [ ] Conduct any additional security/rights review before making HEXWRAITH public or posting a GitHub Release. The standalone source repository is currently private; do **not** use the public Backup Vault for its private data.
+
+**Next active lab gate: audit remaining tools for fixed-name report overwrites, timestamp collisions and default file permissions**, preserving code/report confidentiality and avoiding live network scans. [HEXWRAITH RC2 evidence](tool-showcases/HEXWRAITH_PRIVACY_EDITION_RC2.md).
+
 ## Additional unresolved release gates
 
 - [x] Fix IP Shadow Scraper artwork lookup to use the existing repository `artwork/` file (Phase 25; no artwork bytes changed)
