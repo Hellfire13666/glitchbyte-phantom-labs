@@ -114,6 +114,18 @@ The user's combined **read-only local Ubuntu inventory** reported the following 
 
 **Scoped Output Safety Audit: COMPLETED**, with bounded open issues above and the earlier VelvetEcho fix/HEXWRAITH tests verified. User previously requested to resume the **Cultivation Room new-tool build phase** rather than indefinite ZIP and permissions rounds. Don't mark overall privacy/security audit complete; retain output-hardening improvements as tracked technical debt.
 
+## ✅ RIFTSEAL v1.0.0 code/package done; independent publication pending (October 19, 2026)
+
+RIFTSEAL's two Python 3 utilities (Evidence Forge and Integrity Gate), standalone core, distinct crystal-seal image, individual README/SIMPLE-MEDIUM-EXTRA recipes, example local files, 16 offline unit/regression tests, GITHUB_PUBLISH instructions, new-file-only mode-0600 saving and versioned source kit are **complete and tested in the build environment**. The **16 tests passed on the source directory and again after clean ZIP extraction**; matching and mismatching file comparison smoke tests also passed. ZIP/manifests passed and the SHA-256 of `riftseal-evidence-forge-v1.0.0.zip` is `c2ce1ad5f8a9a2101b9664664c273a14a0e7b59cbaf5677a7696fe1d9a845a13`.
+
+- [x] Source + tests + art + self-contained local ZIP and checksum generated in chat for owner download.
+- [x] Individual [RIFTSEAL setup/showcase page](tool-showcases/RIFTSEAL.md) and tool-vault navigation recorded.
+- [ ] Owner to download and validate/version-install package on Ubuntu; preserve existing original RIFTSEAL source.
+- [ ] Owner to authorize creation of dedicated **private** repo `Hellfire13666/riftseal-evidence-forge-2026`; publish reviewed source/art and verify a clean GitHub clone and tag. No standalone repository existed at last check.
+- [ ] Decide and perform appropriate verified Backup HQ/off-device recovery, preserving public/private boundary.
+
+**Lab handoff:** user requested a break after finishing local RIFTSEAL build. Resume future chat with dedicated repo approval and next distinct project **RootSignal Cultivator**, not repeated broad security audits.
+
 ## Additional unresolved release gates
 
 - [x] Fix IP Shadow Scraper artwork lookup to use the existing repository `artwork/` file (Phase 25; no artwork bytes changed)
