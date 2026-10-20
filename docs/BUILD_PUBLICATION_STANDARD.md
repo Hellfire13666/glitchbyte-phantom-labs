@@ -4,6 +4,8 @@
 
 The purpose is to make every release **beautiful, useful, discoverable, runnable by beginners, and recoverable**. This is a *publication checklist*, not a claim that all legacy projects have already been upgraded.
 
+**Permanent companion:** [Mandatory Build Charter](PHANTOM_LABS_MANDATORY_BUILD_CHARTER.md) explicitly requires a **dedicated repository and README for every new, independently published original tool**, an individual HQ page, distinctive artwork/Glitch HEX styling, verified SIMPLE/MEDIUM/EXTRA examples and an appropriate upload door. Prototypes can remain local/private until approved and validated; publication and backup must never be implied before they occur. This tighter requirement supersedes any older phrase treating a dedicated tool repository as optional for newly released independent projects.
+
 ## 1. Keep the creation unique
 
 - Use a distinctive project name, code filenames, package/folder names, launcher names, artwork identity, and any future report names.
