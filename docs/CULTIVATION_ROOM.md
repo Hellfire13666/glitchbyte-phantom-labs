@@ -101,6 +101,12 @@ The user published annotated Git tag `v1.1.1-rc2` on commit `4225c48bcfb4175f58b
 
 **Next milestone:** `Output Safety Audit` on remaining Ubuntu tools. Read-only review for unsafe fixed output filenames, timestamp collisions, and report-permission defaults. Start from `~/PhantomLabsLaunchers`; avoid reading/reporting stored research contents, changing files, or sending private data to GitHub. Prioritize real evidence and patch only source copies after tests. [Tracked gates](RELEASE_CHECKLIST.md) · [HEXWRAITH record](tool-showcases/HEXWRAITH_PRIVACY_EDITION_RC2.md).
 
+## ⚡ Output Safety Audit handoff complete: Cultivation Room reopened (October 19, 2026)
+
+Following HEXWRAITH's private backup and VelvetEcho's remediation (17 existing reports mode `0600`, directory `0700`, new patched launcher 3/3 offline permission regression tests), the user ran the combined **read-only** audit of four remaining tool families. SUBDOMINATRIX's three variants used exclusive output open calls but lacked proof of restrictive default permissions; no default full-report folder existed. Triad Signal's saved TXT was confirmed `0600`. RosieRiot Overdrive's writes need eventual collision/permission review. HEXWAKE's exclusive output and randomized stems were seen in its maintained HQ source and no default output folder existed. Findings are **not proof of vulnerabilities** or a completed global security audit. Details remain on the [Release Checklist](RELEASE_CHECKLIST.md).
+
+**Milestone status: scoped output audit COMPLETE, residual risks TRACKED.** Return to designing the next unique, functional, colorful Ubuntu/Python 3 tool in the Cultivation Room. Keep existing launchers/source/reports intact; save and publish only if user requests or after validation. The independent encrypted off-device HEXWRAITH backup remains pending.
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.
