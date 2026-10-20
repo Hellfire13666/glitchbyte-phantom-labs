@@ -109,6 +109,10 @@ The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md
 
 [🌹 Final workshop handoff and remaining release gates](WORKSHOP_HANDOFF.md). The offline build foundation is verified, but live integrations are not certified.
 
+## 🌹⚡ RIFTSEAL | Evidence Fingerprint Forge v1.0.0 (LOCAL release kit)
+
+**[Open RIFTSEAL's own completed setup/showcase page](tool-showcases/RIFTSEAL.md).** Functional offline Python 3 evidence hashing and Integrity Gate, **16/16 tests passing**, gold/ruby/cyan artwork, native opt-in private saves, and SIMPLE/MEDIUM/EXTRA recipes. A verified ZIP with checksum was delivered in the owner conversation. **Dedicated repository is not yet created**, and this is not listed as a published source door; publish/verify the actual repo and update the Tool Vault door when the owner is ready. Do not treat the temporary ZIP or promo artwork as a network scanner or finished GitHub release.
+
 ## 🌹⚡ ONE-PASTE OPEN COMMANDS // NO ATTACHMENTS
 
 [**Copy, Paste & Open: HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK and SUBDOMINATRIX**](COPY_PASTE_OPEN.md) · [Launcher source](../scripts/phantom_quickopen.py). One command per tool downloads the official launcher, caches the published script in a separate home folder, generates HTML, and opens Firefox when available. The default network-capable scanner preview performs no live lookups. Original tools' own recipe pages remain available below.
