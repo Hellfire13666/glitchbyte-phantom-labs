@@ -4,6 +4,10 @@
 
 # 🌹⚡ RIFTSEAL | Evidence Fingerprint Forge v1.0.0
 
+![RIFTSEAL favorite savage tool artwork](../art/riftseal_savage_favorite.jpg)
+
+*Selected GlitchByte Phantom Labs artwork. Hashes and illustrated evidence readouts in this cover are fictional design elements.*
+
 **Status (October 19, 2026): Installed and tested on Ubuntu; source committed to its [own dedicated private GitHub repository](https://github.com/Hellfire13666/riftseal-evidence-forge-2026).** The owner verified the release ZIP SHA-256 and all **16/16** Ubuntu tests. GitHub confirms `visibility: private`, branch `main`; only authorized GitHub accounts can access the private source. This HQ page is a public setup guide, not a mirror of the private source.
 
 ## The actual RIFTSEAL tools
