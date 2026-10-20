@@ -113,6 +113,10 @@ The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md
 
 **[Public RIFTSEAL setup/showcase](tool-showcases/RIFTSEAL.md)** · **[Dedicated private GitHub source repository](https://github.com/Hellfire13666/riftseal-evidence-forge-2026)** (authorized collaborators only). The owner verified the ZIP checksum, installed on Ubuntu and passed **16/16 offline tests**. GitHub confirms private visibility on `main`. No public source mirror or Backup HQ snapshot is implied. Independent clean-clone and private off-device recovery gates remain pending.
 
+## 🌱 ROOTSIGNAL | Cultivation Engine v1.0.0 (PRIVATE source repository)
+
+**[Independent RootSignal setup/showcase](tool-showcases/ROOTSIGNAL.md)** · **[Dedicated private GitHub source](https://github.com/Hellfire13666/rootsignal-cultivator-2026)** (authorized collaborators only). The owner verified the archived ZIP checksum, extracted the release on Ubuntu, passed **16/16 offline tests**, and ran the synthetic no-write terminal demo. GitHub independently confirms `main`, private visibility, release source, tests and custom artwork. This is an **offline project-seeding/scaffolding utility**, not a network scanner. No public source mirror or Backup HQ copy is implied; an independent clean clone and private off-device backup remain pending.
+
 ## 🌹⚡ ONE-PASTE OPEN COMMANDS // NO ATTACHMENTS
 
 [**Copy, Paste & Open: HEXWAKE, CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK and SUBDOMINATRIX**](COPY_PASTE_OPEN.md) · [Launcher source](../scripts/phantom_quickopen.py). One command per tool downloads the official launcher, caches the published script in a separate home folder, generates HTML, and opens Firefox when available. The default network-capable scanner preview performs no live lookups. Original tools' own recipe pages remain available below.
