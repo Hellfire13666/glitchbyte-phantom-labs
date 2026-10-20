@@ -95,6 +95,12 @@ The user built a second ZIP while preserving RC1 and the working original HEXWRA
 
 The user published annotated Git tag `v1.1.1-rc2` on commit `4225c48bcfb4175f58b4781cb00054cd40dc71e3`. GitHub returned **private** visibility and confirmed `MANIFEST.json` and `README.md` accessible at that tag. The private repository clone already passed **14/14 tests**, its eight release files matched the verified RC2 ZIP, and the user successfully created/restored a local Git bundle with a passing checksum. This completes the private *tagged source* milestone, not a public release or independent encrypted backup. See [HEXWRAITH RC2 status](tool-showcases/HEXWRAITH_PRIVACY_EDITION_RC2.md). Next practical protection: encrypt and store a separate off-device copy without adding private source to the public Vault.
 
+## 🌹 Lab handoff: HEXWRAITH complete locally, Output Safety Audit next
+
+**Recorded October 19, 2026:** HEXWRAITH `v1.1.1-rc2` is tagged privately at Git commit `4225c48bcfb4175f58b4781cb00054cd40dc71e3`; clean clone passed 14 tests and matched the release manifest. The local Git bundle passed a full restore check; the AES256 GPG encrypted bundle passed encryption/decryption, both SHA-256 sidecar checks and exact plaintext/decrypted digest comparison. **Local encrypted backup verified.** No external/removable drive appeared in the user's `lsblk` output, so **independent off-device backup remains pending**, per the user's request to move on. The public Phantom Backup Vault does *not* contain this private release/bundle.
+
+**Next milestone:** `Output Safety Audit` on remaining Ubuntu tools. Read-only review for unsafe fixed output filenames, timestamp collisions, and report-permission defaults. Start from `~/PhantomLabsLaunchers`; avoid reading/reporting stored research contents, changing files, or sending private data to GitHub. Prioritize real evidence and patch only source copies after tests. [Tracked gates](RELEASE_CHECKLIST.md) · [HEXWRAITH record](tool-showcases/HEXWRAITH_PRIVACY_EDITION_RC2.md).
+
 ## Build path
 
 1. Reserve a unique project name, Python filename, launcher name and report folder.
