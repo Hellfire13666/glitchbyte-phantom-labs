@@ -24,6 +24,10 @@ The Cultivation Room is **one of the three established laboratories**, not a fou
 
 <!-- GLITCHBYTE LAB NAV END -->
 
+## 📜 Mandatory blueprint for every new tool
+
+**[🌹⚡ OPEN THE PERMANENT PHANTOM LABS BUILD CHARTER](PHANTOM_LABS_MANDATORY_BUILD_CHARTER.md)**: each independently released tool gets its **own repo and README, individual HQ page, unique art and Glitch HEX identity, colorful working terminal, own tested SIMPLE/MEDIUM/EXTRA Ubuntu examples, optional save safeguards, launcher/tests, upload door, versioned ZIP/checksum and privacy-appropriate verified recovery route**. Never describe an unreleased prototype as a finished GitHub tool. The next work is **RIFTSEAL Integrity Gate validation**, then **RootSignal Cultivator** as a distinct future project. Keep existing tool source and report files intact.
+
 ## 🌈 Workshop-wide publishing rules
 
 Use the [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md) for **every new project or requested upgrade**, whether Python, Go, local creative code, public intelligence, or Firefox tooling. Each build gets its own three [beginner runtime recipes](BEGINNER_RUNTIME_RECIPES.md), honest real-time output, optional saving where supported, distinct artwork, an individual setup page, and cross-links to HQ, Tool Vault, and the *verified* Backup HQ snapshot. Old working tools and past backup archives stay intact.
