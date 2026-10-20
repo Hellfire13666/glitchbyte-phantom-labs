@@ -79,7 +79,9 @@ Each separate tool page should contain its **own**:
 
 **Publication checkpoint (October 19, 2026; after the preserved historical release-kit notes above):** The owner verified the RIFTSEAL ZIP with `sha256sum -c`, installed it on Ubuntu and passed all **16/16** tests twice. [RIFTSEAL's dedicated private GitHub repository](https://github.com/Hellfire13666/riftseal-evidence-forge-2026) was created and its initial source pushed to `main`; GitHub confirmed **private visibility**. Keep the original release ZIP and manifest frozen. A separate clean-clone verification, version tag/GitHub Release and independent private off-device backup are not yet confirmed.
 
-**Current focus:** Move RootSignal Cultivator from its existing independent v1.0.0 local kit into owner-side Ubuntu testing and a separately approved private repository. Keep prior tools operational; do not reopen completed historical audits.
+**Updated RootSignal checkpoint (October 19, 2026):** The owner verified `rootsignal-cultivator-v1.0.0.zip` and ZIP integrity, extracted into a separate versioned Ubuntu directory, passed **16/16 offline tests**, and ran the synthetic no-write demo. [RootSignal's independent source repository](https://github.com/Hellfire13666/rootsignal-cultivator-2026) exists on `main` and GitHub independently confirmed it is **private**, with release commit `41b9b833`, code, tests, artwork and manifest. The later publisher's `[STOP] Existing Git repository` message was its non-destructive guard, not evidence of publication failure. [Individual RootSignal setup/showcase](tool-showcases/ROOTSIGNAL.md). Its README status update is in a separate draft review PR; frozen ZIP/manifest remain unchanged.
+
+**Next focus:** preserve both private source releases and optional review-PR documentation updates; independently verify a clean clone and arrange a **visibility-matched off-device backup** when authorized. Then resume truly new seeds. Do not rebuild completed tools or restart prior broad audits.
 
 ---
 
