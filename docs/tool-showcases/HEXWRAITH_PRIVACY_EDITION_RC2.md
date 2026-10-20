@@ -67,6 +67,12 @@ The user's Ubuntu clean-clone/private-backup command reported:
 
 The user ran `git push origin v1.1.1-rc2` and Ubuntu reported `[new tag] v1.1.1-rc2 -> v1.1.1-rc2`, `[PASS] Private release tag published`, and commit `4225c48bcfb4175f58b4781cb00054cd40dc71e3`. Using the authenticated GitHub connection, the repository visibility was rechecked as **private** and files `MANIFEST.json` and `README.md` were successfully fetched from ref `v1.1.1-rc2`, confirming GitHub resolves this tag to the expected RC2 source. The tag labels the existing nine-file Git commit. It is **not** a separate GitHub Release or an uploaded RC2 ZIP asset. [Private release tag](https://github.com/Hellfire13666/hexwraith-domain-atlas-privacy-2026/tree/v1.1.1-rc2) (accessible to authorized users only).
 
+## ✅ GPG encrypted local backup created and decrypted (October 19, 2026)
+
+The user ran an owner-only local GPG symmetric encryption command for the restore-tested HEXWRAITH Git bundle. Ubuntu showed `gpg: AES256.CFB encrypted data`, `gpg: encrypted with 1 passphrase`, and `[PASS] Encrypted backup created and decrypted successfully`. The resulting encrypted file is `~/HexwraithPrivateVault.P1kzcM/hexwraith_private_git_backup.bundle.gpg`. The original unencrypted bundle is preserved. The command created a separate adjacent SHA-256 checksum for the encrypted file.
+
+**Remaining verification:** the user has not yet reported the command that compares the decrypted encrypted bundle's SHA-256 to the original plain Git bundle. No independent off-device copy has been confirmed. Until then, distinguish successful GPG encryption/decryption from byte-for-byte recovery verification and disaster-recovery redundancy. Never put the encrypted bundle or recovery passphrase in the public Headquarters/Phantom Vault repositories. The user's GPG passphrase must never be entered into a chat or public source file.
+
 ## Suggested RC2 local release checks
 
 ```bash
