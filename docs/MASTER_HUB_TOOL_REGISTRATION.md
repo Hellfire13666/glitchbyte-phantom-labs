@@ -19,6 +19,10 @@ For a local-only tool such as RIFTSEAL, the main command should do **real local-
 5. **A home in the Master Hub:** dedicated logo/button and project identity for significant published tools, reliable recipes/manual links, status on installed pages, and clear missing-tool behavior.
 6. **Publication and recovery:** checked links from HQ, Tool Vault and corresponding project page; version-specific install and verification evidence; private output excluded from public GitHub; verified snapshot/backups where part of the build standard.
 
+## PHANTOM SPINE adapter version status
+
+**Current guidance:** [PHANTOM SPINE exact adapter compatibility](PHANTOM_SPINE_ADAPTER_STATUS.md). The Live Signal **v0.2.0-rc2 local candidate** uses the real HEXBAZAAR **v0.1.2-rc1 Rosie Savage** script and real public-source requests. Its `shop` command detects files but does not verify successful live provider data. Separate end-to-end Debian tests remain pending. The historical PHANTOM SPINE v0.1.0 and Master Hub v0.2.0 built-in recipe may reference older paths; do not silently overwrite released Hub files to change them. Updated RC2 pages appear through Installed Page Finder as a **separate** new installation.
+
 ## How the hub finds tools
 
 The current v0.2.0 `Installed Page Finder` discovers **HTML** pages directly inside sibling project folders under `~/PhantomLabsLaunchers/`, plus one `docs/*.html` level when the hub is launched via `START_HUB.sh`. It **does not** discover executable Python scripts as clickable HTML pages, install dependencies, run shell commands, or recursively search private directories.
