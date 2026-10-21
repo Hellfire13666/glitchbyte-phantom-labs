@@ -1,6 +1,6 @@
 # 🌹 HEXBAZAAR Live Command Deck v0.1.0 | New lab cycle
 
-**Date:** October 21, 2026. **Stage:** separate locally packaged release candidate, NOT YET an official public GitHub release or Installer Vault copy.
+**Date:** October 21, 2026. **Stage:** the previously local candidate is **officially published** on GitHub as v0.1.0 and independently **verified in Phantom Backup HQ Installer Vault**; older source releases and installed tools remain untouched.
 
 ## Scope
 
@@ -45,6 +45,14 @@ The owner supplied actual Debian terminal evidence after installing the separate
 4. Register the actual public ZIP and .sha256 file in the separately verified Phantom Backup HQ Installer Vault, and confirm archiving success and SHA256SUMS entries.
 5. Only in a separately tested new Master Hub version, update the fixed HEXBAZAAR card to prefer genuine live commands; existing Hub v0.3.0 remains unchanged.
 
-**Current honest status: LOCAL CANDIDATE ONLY. No new public release or Installer Vault backup.**
+## ✅ Public release and physically verified Vault archive
+
+The owner ran the explicit guarded `PUBLISH` script and the [new, separate official GitHub repository](https://github.com/Hellfire13666/hexbazaar-live-command-deck-2026) contains its reviewed source and [public v0.1.0 Release ZIP and SHA256](https://github.com/Hellfire13666/hexbazaar-live-command-deck-2026/releases/tag/v0.1.0). The real public release has ZIP **5,822,079 bytes** SHA-256 `6439e4cd2b6d275b189a18dfc41a262ddcc62dcd1aa4ffb01b67a25ac9906f78` and independent checksum asset SHA-256 `34c328639a1388ab3b93a41469812ea4e1dc78b57517eb5cc453ca5f4af63a8f`. Owner's publisher re-downloaded and verified `HEXBZ-LIVE-COMMAND-DECK-v0.1.0.zip: OK`, with packaged source verifier 17/17 and Deck 7/7 offline tests passing.
+
+The separate [versioned Phantom Backup HQ Installer Vault folder](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/tree/main/installers/hexbazaar-live-command-deck/v0.1.0) physically contains the actual ZIP and exact checksum. [Vault archive workflow #39674856072](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/actions/runs/39674856072) fully **succeeded**, including source-release mirroring, archive checksum validation and immutable publishing. `installers/index.json` and `installers/SHA256SUMS.txt` include both matching digests. Other three Vault releases preserved.
+
+**Owner-side Debian live acceptance:** `hexbazaar-live-deck start` produced 9 genuine public DNS observations (DMARC/NS/public IP/SOA/SPF), `[SAVE OFF]`, using separately installed HEXBAZAAR v0.1.2-rc1. The package does **not** contain or replace the underlying engine. **Native Firefox Copy-button click confirmation remains unverified**, and the historical Master Hub v0.3.0 HEXBAZAAR recipe is still unchanged. A later separate Hub version can add a permanent updated page; it is not part of this released Deck.
+
+**Current verified status: PUBLISHED + VAULT VERIFIED.**
 
 Reference: [Live public-source build standard](LIVE_OSINT_REAL_OUTPUT_STANDARD.md) · [Master Hub publication](MASTER_HUB_V030_RELEASE_CHECKPOINT.md).
