@@ -1,6 +1,6 @@
 # 👻 PHANTOM SPINE | Adapter Compatibility and Live Status
 
-**Lab reference: October 21, 2026.** This is the current version guide. The **Live Signal v0.2.0-rc2 HEXBAZAAR adapter has now passed a real owner-side Debian field run** (113 actual unique observations, 4 usable providers, 0 notices). Its independent native DNS and RIFTSEAL adapter field checks are still pending. This candidate has **not** been published to GitHub Releases or Installer Vault. See the [field evidence notes](PHANTOM_SPINE_RC2_DEBIAN_FIELD_TEST.md).
+**Lab reference: October 21, 2026.** This is the current version guide. The **Live Signal v0.2.0-rc2 has now passed all three primary owner-side Debian field checks**: 113 actual unique HEXBAZAAR observations (4 usable providers); native DNS 6 actual records from 6 usable public HTTPS queries; and the independent matching RIFTSEAL file fingerprint comparison (8,826 bytes). This candidate has **not** been published to GitHub Releases or Installer Vault. See the [field evidence notes](PHANTOM_SPINE_RC2_DEBIAN_FIELD_TEST.md).
 
 ## Which version is which?
 
@@ -8,9 +8,9 @@
 | --- | --- | --- |
 | Original PHANTOM SPINE v0.1.0 | Local workshop/orchestration, legacy HEXBAZAAR references | Historical, **not** confirmed compatible with later HEXBAZAAR |
 | PHANTOM SPINE Quickstart/Visual Portal | HTML instructions, copy buttons and launchers | Does not by itself create live research |
-| **PHANTOM SPINE Live Signal v0.2.0-rc2** | Genuine HTTPS DNS public data lookups; optional real v0.1.2 HEXBAZAAR subprocess; real local file hashing | Offline logic checks pass; **Debian HEXBAZAAR integration field PASS**, independent native DNS and RIFTSEAL field checks pending |
+| **PHANTOM SPINE Live Signal v0.2.0-rc2** | Genuine HTTPS DNS public data lookups; optional real v0.1.2 HEXBAZAAR subprocess; real local file hashing | Offline tests and all three **owner-side Debian field checks PASS**; release packaging and Vault archival pending |
 | HEXBAZAAR v0.1.2-rc1 Rosie Savage | Separate real public-provider engine | **PHANTOM SPINE RC2 end-to-end Debian live output confirmed** (4 usable providers, 113 unique observations, October 21, 2026) |
-| RIFTSEAL Evidence Forge | Local read-only file SHA-256 | Standalone local hashing is real. PHANTOM SPINE `--via riftseal` bridge needs owner-side execution check |
+| RIFTSEAL Evidence Forge | Local read-only file SHA-256 | **Real PHANTOM SPINE `--via riftseal` Debian bridge PASS**: matching SHA-256 and 8,826-byte source file |
 
 ## Exact verified HEXBAZAAR path
 
@@ -68,6 +68,6 @@ Optional real RIFTSEAL adapter check (requires separately installed Evidence For
 
 Use **PHANTOM SPINE Live Signal RC2's five local pages**: `index.html`, `examples.html`, `connections.html`, `adapter-guide.html`, `troubleshooting.html`. They contain 18 copyable commands and versioned compatibility notes. The installed RC2 page files predate the new owner-side HEXBAZAAR field confirmation; use this updated GitHub guide for the latest verification status. Its version-specific short alias `phantom-spine-live-rc2` preserves the original `phantom-spine-live` alias. Master Hub v0.2.0 currently discovers sibling `index.html` pages but its built-in historical PHANTOM SPINE card has **not** been rebuilt or republished; updating that fixed card requires another tested, versioned Master Hub release.
 
-**Security and release gate:** Public-source passive lookups only, no credentials or account bypass. Local evidence uses files the operator selects. No provider data is faked; no reports are automatically saved. Do not publish the RC2 ZIP as a completed release or register it in the [Installer Vault](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/docs/INSTALLER_VAULT.md) until the **remaining native DNS and RIFTSEAL owner-side checks**, distribution review and release verification pass.
+**Security and release gate:** Public-source passive lookups only, no credentials or account bypass. Local evidence uses files the operator selects. No provider data is faked; no reports are automatically saved. Do not publish the RC2 ZIP as a completed release or register it in the [Installer Vault](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/docs/INSTALLER_VAULT.md) until the **distribution rights/privacy review and final versioned release verification** pass. All three primary RC2 owner-side Debian adapter tests have now passed. Archive only a final, genuinely public, checksum-verified release.
 
 Related: [Live OSINT release standard](LIVE_OSINT_REAL_OUTPUT_STANDARD.md) · [Master Hub tool registration](MASTER_HUB_TOOL_REGISTRATION.md).
