@@ -28,6 +28,12 @@ python3 -u "$SCRIPT" example.com --terminal-only --color always -o names.txt
 The legacy `--out DIRECTORY` option is **not** the same as `-o filename.txt`. Each future tool needs its own tested CLI support; this is not a universal preexisting flag. See [SUBDOMINATRIX's guide](tool-showcases/SUBDOMINATRIX.md).
 
 
+## Permanent real-world example requirement
+
+For future network research tools, the [LIVE OPSEC / OSINT release gate](LIVE_OSINT_REAL_OUTPUT_STANDARD.md) requires **two tested, real public-domain query examples** with exact commands, live source/provider status and observed outputs. For example, `facebook.com` can be a public-source domain for passive DNS, certificate or registration records. Name the actual date/version of any recorded result, and warn that results, rate limits and source availability vary. Never present a canned demo, placeholder profile, mocked response or decorative screenshot as live research. Keep useful offline demos for regression tests and teaching, with clear labels. Only use active network checks on authorized scopes.
+
+Local hashing/forensics tools must show actual file results instead; they need no invented internet component.
+
 ## What each recipe must show
 
 | Level | Who it is for | How it should behave |
