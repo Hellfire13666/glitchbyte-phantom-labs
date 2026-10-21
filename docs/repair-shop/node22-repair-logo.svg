@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+<title id="title">GlitchByte Phantom Labs Node Repair Shop</title>
+<desc id="desc">Black repair workshop banner with neon pink and cyan circuitry, luminous wrench, green Node hexagon, and Node 22 repair lettering.</desc>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#080808"/><stop offset=".55" stop-color="#101125"/><stop offset="1" stop-color="#03050b"/></linearGradient>
+  <linearGradient id="magcyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff1493"/><stop offset=".5" stop-color="#8a2be2"/><stop offset="1" stop-color="#00f5ff"/></linearGradient>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="31" height="31" patternUnits="userSpaceOnUse"><path d="M31 0H0V31" fill="none" stroke="#1f2140" stroke-width="1" opacity=".5"/></pattern>
+</defs>
+<rect width="1000" height="360" rx="30" fill="url(#bg)"/>
+<rect width="1000" height="360" rx="30" fill="url(#grid)"/>
+<rect x="10" y="10" width="980" height="340" rx="22" fill="none" stroke="url(#magcyan)" stroke-width="4"/>
+<path d="M20 110H88L116 140H186M18 248H108L143 213H187" fill="none" stroke="#ff1493" stroke-width="4" opacity=".8"/>
+<path d="M980 96H920L890 126H829M983 274H922L899 253H827" fill="none" stroke="#00f5ff" stroke-width="4" opacity=".8"/>
+<g transform="translate(190 177) rotate(-35)">
+  <path d="M-9-116A55 55 0 0 0 35-28L35 89Q60 121 84 89L84-28A55 55 0 0 0 128-116L107-88L76-88L59-116L42-88L11-88Z" transform="translate(-59 0)" fill="#111629" stroke="#00f5ff" stroke-width="9" stroke-linejoin="round" filter="url(#glow)"/>
+  <circle cy="96" r="11" fill="#ff1493"/>
+</g>
+<path d="M209 68L231 82L231 110L209 124L187 110L187 82Z" fill="#111f19" stroke="#b6ff00" stroke-width="4"/>
+<text x="209" y="104" text-anchor="middle" fill="#b6ff00" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">JS</text>
+<text x="318" y="70" font-family="DejaVu Sans,Arial,sans-serif" fill="#a7a8ba" letter-spacing="4" font-weight="bold" font-size="24">GLITCHBYTE PHANTOM LABS</text>
+<text x="318" y="155" font-family="DejaVu Sans,Arial,sans-serif" fill="#ff1493" font-weight="900" font-size="72" filter="url(#glow)">NODE</text>
+<text x="565" y="155" font-family="DejaVu Sans,Arial,sans-serif" fill="#00f5ff" font-weight="900" font-size="72" filter="url(#glow)">REPAIR</text>
+<text x="320" y="219" font-family="DejaVu Sans Mono,monospace" fill="#b6ff00" font-weight="700" font-size="28">NODE.JS 22  //  NVM  //  NPM CI</text>
+<text x="320" y="276" font-family="DejaVu Sans Mono,monospace" fill="#d8e9f3" font-weight="700" font-size="20">DIAGNOSE  ·  PATCH  ·  VERIFY</text>
+<rect x="320" y="296" width="610" height="4" rx="2" fill="url(#magcyan)"/>
+<text x="923" y="327" text-anchor="end" font-family="DejaVu Sans Mono,monospace" fill="#00f5ff" font-size="16">SHOP TICKET 001</text>
+</svg>
