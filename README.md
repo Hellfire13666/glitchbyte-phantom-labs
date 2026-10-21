@@ -2,6 +2,10 @@
 <div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF1493?style=flat-square&logo=github&logoColor=white"></a></div>
 <!-- GLITCHBYTE-UPLOAD-DOOR:END -->
 
+<!-- GLITCHBYTE-MASTER-HUB:START -->
+> 🌹 **MASTER HUB v0.2.0 · ROSIE SWITCHBOARD** | [Beginner one-paste install and desktop instructions](docs/MASTER_HUB_PUBLIC_INSTALL.md) · [Publication checklist](docs/MASTER_HUB_PUBLIC_RELEASE.md) · [Installer source](scripts/install_glitchbyte_master_hub_v020.sh). **Release candidate:** the local ZIP has been verified, but the official public ZIP must still be uploaded and checked before the one-paste downloader works. Existing hub installations and other tools are not replaced.
+<!-- GLITCHBYTE-MASTER-HUB:END -->
+
 <div align="center">
 
 # 🌹 GLITCHBYTE PHANTOM LABS HQ
