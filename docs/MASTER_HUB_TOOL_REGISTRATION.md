@@ -23,7 +23,11 @@ For a local-only tool such as RIFTSEAL, the main command should do **real local-
 
 **Current guidance:** [PHANTOM SPINE exact adapter compatibility](PHANTOM_SPINE_ADAPTER_STATUS.md). The Live Signal **v0.2.0-rc2 local candidate** uses the real HEXBAZAAR **v0.1.2-rc1 Rosie Savage** script and real public-source requests. Its `shop` command detects files but does not verify successful live provider data. The **RC2 → HEXBAZAAR v0.1.2** end-to-end Debian public-source field run now passes (113 actual observations from 4 providers on October 21, 2026); **native DNS also passed (6 real records / 6 usable queries) and RIFTSEAL passed (two matching SHA-256 calculations on an 8,826-byte file)**. See [field test](PHANTOM_SPINE_RC2_DEBIAN_FIELD_TEST.md). The historical PHANTOM SPINE v0.1.0 and Master Hub v0.2.0 built-in recipe may reference older paths; do not silently overwrite released Hub files to change them. Updated RC2 pages appear through Installed Page Finder as a **separate** new installation.
 
-## How the hub finds tools
+## PHANTOM SPINE v0.2.0 public package status
+
+The [v0.2.0 publication checkpoint](PHANTOM_SPINE_V020_PUBLICATION_CHECKPOINT.md) records the user's approved **Rosie and mechanical-spine** public artwork, a new standalone source-available landing page, 17 passing automated tests, an isolated versioned Linux install and the separately SHA-256-verified ZIP. The actual GitHub Release, permanent new Master Hub card and Installer Vault backup must remain **pending** until those public files and verified destinations exist; do not confuse an HTML page or local ZIP with a public download.
+
+
 
 The current v0.2.0 `Installed Page Finder` discovers **HTML** pages directly inside sibling project folders under `~/PhantomLabsLaunchers/`, plus one `docs/*.html` level when the hub is launched via `START_HUB.sh`. It **does not** discover executable Python scripts as clickable HTML pages, install dependencies, run shell commands, or recursively search private directories.
 
