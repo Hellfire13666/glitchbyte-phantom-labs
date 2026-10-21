@@ -19,6 +19,10 @@ The current v0.2.0 `Installed Page Finder` discovers **HTML** pages directly ins
 
 A **new custom branded switch card** is added by building and publishing a new version of the Master Hub with real asset/link tests. It is **not automatically created** just because a new tool was installed. Until the hub is upgraded, the installed-page finder and the tool's GitHub guide provide discovery.
 
+## Required installer Vault registration
+
+Before marking a **publicly released** tool complete, register its exact released ZIP and SHA-256 file under [Phantom Backup HQ approved installers](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/docs/INSTALLER_VAULT_REGISTRY.json), verify the workflow and actual new versioned archive, and confirm its [checksum entry](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/installers/SHA256SUMS.txt). A link alone is not a backup. Locally installed and unreleased tools do **not** get silently uploaded to GitHub.
+
 ## Release acceptance recipe
 
 ```text
