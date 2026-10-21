@@ -10,6 +10,10 @@ This guide is for the downloadable Linux **offline** Master Hub. The hub provide
 
 The published Master Hub v0.2.0 remains unchanged and verified. Its built-in PHANTOM SPINE documentation is historical, and does **not** establish compatibility with newly installed HEXBAZAAR versions. For current HEXBAZAAR v0.1.2-rc1 adapter paths, see [PHANTOM SPINE adapter compatibility](PHANTOM_SPINE_ADAPTER_STATUS.md) and its [Debian field results](PHANTOM_SPINE_RC2_DEBIAN_FIELD_TEST.md). RC2's **HEXBAZAAR, native DNS, and RIFTSEAL** integrations now all have successful real Debian field evidence; **public packaging and release review are still pending**, so RC2 remains unpublished. After separately installing RC2, reopen Master Hub and select its new local HTML entry in Installed Page Finder; no new permanent Hub card is assumed. Only a tested and separately published Master Hub update may alter the built-in recipe.
 
+## Next Hub version prepared, not yet a public installer
+
+**Master Hub v0.3.0** has been built locally with the user-approved Rosie-and-spine artwork and real PHANTOM SPINE v0.2.0 commands. Review its [versioned release checkpoint](MASTER_HUB_V030_RELEASE_CHECKPOINT.md). **Until the v0.3.0 GitHub Release and exact public files are verified, the following v0.2.0 installer remains the official public one.** v0.3.0 is designed for a separate install folder and shortcut, without overwriting v0.2.0.
+
 ## 🌱 One-square installer for your bros (public release)
 
 Copy the *whole* block into a Linux terminal. It fetches the official installer script over HTTPS. The script downloads the pinned v0.2.0 ZIP from the official GitHub release, checks its SHA-256 and archive paths, safely installs to your home directory, adds an application menu entry and a desktop shortcut, then opens the hub.
