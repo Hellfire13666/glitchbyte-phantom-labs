@@ -64,6 +64,14 @@ Add the tool to the [Master Hub registration standard](MASTER_HUB_TOOL_REGISTRAT
 
 The [public Master Hub v0.2.0 release](https://github.com/Hellfire13666/glitchbyte-phantom-labs/releases/tag/master-hub-v0.2.0) and [verified installation guide](MASTER_HUB_PUBLIC_INSTALL.md) are reference examples, not proof that future tools or Ubuntu were tested.
 
+## 4B. Verified Installer Vault copy is mandatory for approved public releases
+
+After each new tool's versioned official ZIP and SHA-256 are published, **register both assets in [Phantom Backup HQ's approved installer registry](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/docs/INSTALLER_VAULT_REGISTRY.json)**. Confirm the [archiver workflow](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/actions/workflows/archive-installers.yml) passes and that the actual ZIP plus checksum are present under the tool's distinct `installers/<tool>/<version>/` folder with a matching [Vault checksum record](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/blob/main/installers/SHA256SUMS.txt).
+
+**This gate applies to every future approved public release package, including Master Hub upgrades.** A source-code snapshot or a link to the release is **not** a substitute for archiving the installation ZIP. Until the copy exists and passes checksum verification, mark that tool's installer Vault backup **pending**, not complete. Separate local/private candidates (such as the current PHANTOM SPINE Visual Portal) must not be automatically uploaded to the public Vault. No automatic scanning or upload of local installed folders is authorized.
+
+The completed [Master Hub v0.2.0 Installer Vault backup](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/tree/main/installers/glitchbyte-phantom-labs-master-hub/v0.2.0) is the first verified example.
+
 ## 5. Publish it through **all relevant hub doors**
 
 A new build or release is only *documented as distributed* after its pages and links have been checked:
