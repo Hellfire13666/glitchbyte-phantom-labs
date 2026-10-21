@@ -8,7 +8,7 @@
 > **UPLOAD DOORS:** [📤 HQ / Cultivation](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) · [📤 Overdrive](https://github.com/Hellfire13666/rosieriot-overdrive-2026/upload/main) · [📤 Vault](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/upload/main)
 
 
-**Adapter update notice:** [PHANTOM SPINE current compatibility](PHANTOM_SPINE_ADAPTER_STATUS.md) and [October 21 Debian HEXBAZAAR live field pass](PHANTOM_SPINE_RC2_DEBIAN_FIELD_TEST.md): 113 actual public-source observations, four usable providers. Native DNS and RIFTSEAL adapter field checks remain outstanding. RC2 is still a local release candidate, not a verified public Tool Vault installer or Phantom Backup HQ backup. Older PHANTOM SPINE recipes may reference legacy HEXBAZAAR paths.
+**Adapter update notice:** [PHANTOM SPINE current compatibility](PHANTOM_SPINE_ADAPTER_STATUS.md) and [October 21 Debian field report](PHANTOM_SPINE_RC2_DEBIAN_FIELD_TEST.md): HEXBAZAAR 113 real observations (four usable providers), native DNS 6 real observations (six usable queries), and RIFTSEAL two matching real SHA-256/byte calculations. All three primary workflows field-tested. RC2 is still a local release candidate, not a verified public Tool Vault installer or Phantom Backup HQ backup. Older PHANTOM SPINE recipes may reference legacy HEXBAZAAR paths.
 
 **The official GlitchByte Phantom Labs tool navigator.**
 **🌈 [SIMPLE · MEDIUM · EXTRA beginner runtime recipes](BEGINNER_RUNTIME_RECIPES.md):** copy-and-paste examples, visible intelligence feedback, optional saving explained, and Firefox notes. Individual tool pages remain the source of truth for their supported options.
