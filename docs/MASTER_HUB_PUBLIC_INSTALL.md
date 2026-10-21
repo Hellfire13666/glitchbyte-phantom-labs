@@ -6,6 +6,10 @@ This guide is for the downloadable Linux **offline** Master Hub. The hub provide
 
 > **Release status: PUBLISHED.** [Official Master Hub v0.2.0 release](https://github.com/Hellfire13666/glitchbyte-phantom-labs/releases/tag/master-hub-v0.2.0) contains both the ZIP and checksum. GitHub's published ZIP digest matches the SHA-256 pinned by the installer. GitHub asset metadata and an owner-run Debian XFCE public-download smoke test both confirm the release archive integrity. A clean first-time installer run and full desktop/GUI interaction walkthrough remain to be verified. See the [release verification record](MASTER_HUB_PUBLIC_RELEASE.md).
 
+## PHANTOM SPINE compatibility note (October 21, 2026)
+
+The published Master Hub v0.2.0 remains unchanged and verified. Its built-in PHANTOM SPINE documentation is historical, and does **not** establish compatibility with newly installed HEXBAZAAR versions. For current HEXBAZAAR v0.1.2-rc1 adapter paths and the new **unpublished** PHANTOM SPINE Live Signal RC2's honest test status, read [PHANTOM SPINE adapter compatibility](PHANTOM_SPINE_ADAPTER_STATUS.md). After separately installing RC2, reopen Master Hub and select its new local HTML entry in Installed Page Finder; no new permanent Hub card is assumed. Only a tested and separately published Master Hub update may alter the built-in recipe.
+
 ## 🌱 One-square installer for your bros (public release)
 
 Copy the *whole* block into a Linux terminal. It fetches the official installer script over HTTPS. The script downloads the pinned v0.2.0 ZIP from the official GitHub release, checks its SHA-256 and archive paths, safely installs to your home directory, adds an application menu entry and a desktop shortcut, then opens the hub.
