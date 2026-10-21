@@ -25,7 +25,7 @@ For a local-only tool such as RIFTSEAL, the main command should do **real local-
 
 ## PHANTOM SPINE v0.2.0 public package status
 
-The [v0.2.0 publication checkpoint](PHANTOM_SPINE_V020_PUBLICATION_CHECKPOINT.md) records the user's approved **Rosie and mechanical-spine** public artwork, a new standalone source-available landing page, 17 passing automated tests, an isolated versioned Linux install and the separately SHA-256-verified ZIP. The actual GitHub Release, permanent new Master Hub card and Installer Vault backup must remain **pending** until those public files and verified destinations exist; do not confuse an HTML page or local ZIP with a public download.
+The [v0.2.0 publication checkpoint](PHANTOM_SPINE_V020_PUBLICATION_CHECKPOINT.md) records the user's approved **Rosie and mechanical-spine** public artwork, a new standalone source-available landing page, 17 passing automated tests, an isolated versioned Linux install and the separately SHA-256-verified ZIP. The actual [PHANTOM SPINE v0.2.0 public GitHub Release](https://github.com/Hellfire13666/phantom-spine-live-signal-2026/releases/tag/v0.2.0) and separate [verified PHANTOM SPINE v0.2.0 Installer Vault copy](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/tree/main/installers/phantom-spine-live-signal/v0.2.0) have now both been verified. **Only the new permanent Master Hub switch card remains pending**; publish it in a separate, tested versioned Master Hub upgrade, not by modifying v0.2.0 in place.
 
 
 
