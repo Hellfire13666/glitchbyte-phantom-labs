@@ -33,9 +33,9 @@ The current v0.2.0 `Installed Page Finder` discovers **HTML** pages directly ins
 
 A **new custom branded switch card** is added by building and publishing a new version of the Master Hub with real asset/link tests. It is **not automatically created** just because a new tool was installed. Until the hub is upgraded, the installed-page finder and the tool's GitHub guide provide discovery.
 
-## Master Hub v0.3.0 candidate: permanent PHANTOM SPINE switch
+## Master Hub v0.3.0 published and archived: permanent PHANTOM SPINE switch
 
-The [v0.3.0 checkpoint](MASTER_HUB_V030_RELEASE_CHECKPOINT.md) records a separately versioned Hub package featuring the **already published** PHANTOM SPINE Live Signal v0.2.0, approved Rosie art, real live-domain recipes, and a unique Desktop v3 launcher. The candidate ZIP and checksum passed local testing, but the **Hub v0.3.0 GitHub Release and Installer Vault mirror remain pending** until the owner publishes the package and the real public copies are verified. Older Master Hub v0.2.0 files and pinned launchers stay unchanged.
+The [v0.3.0 checkpoint](MASTER_HUB_V030_RELEASE_CHECKPOINT.md) records a separately versioned Hub package featuring the **already published** PHANTOM SPINE Live Signal v0.2.0, approved Rosie art, real live-domain recipes, and a unique Desktop v3 launcher. The ZIP and checksum passed local testing and are now **actually published** in the [verified official Hub v0.3.0 GitHub Release](https://github.com/Hellfire13666/glitchbyte-phantom-labs/releases/tag/master-hub-v0.3.0), with a separately verified [Hub v0.3.0 Installer Vault copy](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/tree/main/installers/glitchbyte-phantom-labs-master-hub/v0.3.0). The owner observed the v3 homepage in Firefox; the embedded Copy button's separate Firefox click-test is still pending. Older Master Hub v0.2.0 files and pinned launchers stay unchanged.
 
 ## Required installer Vault registration
 
