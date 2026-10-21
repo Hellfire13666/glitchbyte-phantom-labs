@@ -4,9 +4,9 @@
 
 This guide is for the downloadable Linux **offline** Master Hub. The hub provides Rosie-branded HTML tool navigation, manuals, recipe pages, a local installed-page finder, and desktop launchers. It is **not** a remote shell, it does not install other research tools, and clicking a **Copy** button does not execute the command.
 
-> **Publication status:** The release ZIP is prepared and locally checked, but the GitHub release asset must be uploaded and checked before the single-paste public installer will work. See [Publication checklist](MASTER_HUB_PUBLIC_RELEASE.md). Do not announce the command as live until the release asset is actually downloadable.
+> **Release status: PUBLISHED.** [Official Master Hub v0.2.0 release](https://github.com/Hellfire13666/glitchbyte-phantom-labs/releases/tag/master-hub-v0.2.0) contains both the ZIP and checksum. GitHub's published ZIP digest matches the SHA-256 pinned by the installer. This confirms release metadata and upload integrity; a separate fresh real-machine download-and-UI test is still requested. See the [release verification record](MASTER_HUB_PUBLIC_RELEASE.md).
 
-## 🌱 One-square installer for your bros (after release publication)
+## 🌱 One-square installer for your bros (public release)
 
 Copy the *whole* block into a Linux terminal. It fetches the official installer script over HTTPS. The script downloads the pinned v0.2.0 ZIP from the official GitHub release, checks its SHA-256 and archive paths, safely installs to your home directory, adds an application menu entry and a desktop shortcut, then opens the hub.
 
@@ -22,7 +22,7 @@ You can [review the installer source](../scripts/install_glitchbyte_master_hub_v
 
 ### Requirements
 
-Desktop Linux, `bash`, `python3`, `curl`, `unzip`, `sha256sum` and preferably `xdg-open` for launching in a browser. Debian 13 (Trixie) XFCE is the owner's field-tested desktop. Ubuntu **has not been personally verified** for this hub. The hub is local HTML and Python 3 standard-library code.
+Desktop Linux, `bash`, `python3`, `curl`, `unzip`, `sha256sum` and preferably `xdg-open` for launching in a browser. The owner's desktop is Debian 13 (Trixie) XFCE; earlier hub launch and shortcut use was confirmed. A clean, newly installed v0.2.0 public-download Firefox/XFCE session remains to be verified. Ubuntu **has not been personally verified** for this hub. The hub is local HTML and Python 3 standard-library code.
 
 ## ⚡ Open the hub again
 
@@ -40,7 +40,7 @@ After installation, look for **GlitchByte Phantom Labs Switchboard v2** in the a
 
 ## 🕷️ Using the tool switchboard
 
-The hub has six logo cards: HEXBAZAAR, PHANTOM SPINE, RIFTSEAL, Report Vault, Recipe Library and Art Vault. Each card provides supported page links and tested recipes when available. **Open installed page** works only when a real local HTML file is discovered. A separate command-line tool may have no HTML page; use its documented command instead. Newly installed HTML-based tools appear in **Installed Page Finder** on the next launch; dedicated branded cards are added in later hub updates.
+The hub has six logo cards: HEXBAZAAR, PHANTOM SPINE, RIFTSEAL, Report Vault, Recipe Library and Art Vault. Each card provides supported page links and tested recipes when available. **Open installed page** works only when a real local HTML file is discovered. A separate command-line tool may have no HTML page; use its documented command instead. Newly installed HTML-based tools appear in **Installed Page Finder** on the next launch; dedicated branded cards are added in later hub updates. The [future tool registration standard](MASTER_HUB_TOOL_REGISTRATION.md) explains the one-square installer, tool pages, and branded hub integration expected of each new release.
 
 Never upload the locally generated `catalog.js`, private research reports, credentials, personal file paths, or machine-specific outputs to a public repository. `public-front-door.html` is a preview, not proof that a public web app is hosted.
 
@@ -48,7 +48,8 @@ Never upload the locally generated `catalog.js`, private research reports, crede
 
 - Local v0.2.0 archive ZIP and its SHA-256 were verified; hub static file manifest, internal links and six logo SVGs passed checks.
 - The standalone installer was checked in a clean isolated home directory, including desktop+menu shortcuts, repeat-install preservation and rejecting an invalid ZIP.
-- A live Firefox/XFCE screen test of the new hub and a clean outside GitHub download remain for the owner or a volunteer. Container browser navigation was blocked by administrator policy, so we are **not** claiming a browser render pass.
+- Published GitHub release **metadata** confirms the exact tag, ZIP asset (981,915 bytes), checksum asset and matching ZIP SHA-256. A direct external release-file download could not be performed in the container because DNS was unavailable.
+- A fresh real Firefox/XFCE click-test remains for the owner or a volunteer. The hub's card discovery, search, copy feedback, and no-installed-pages states passed Chromium DOM/JavaScript simulation; actual browser navigation was blocked by administrator policy, so this is **not** a live file-navigation render pass.
 - The repo's [custom source-available licensing notice](../LICENSE-NOTICE.md) allows use under its stated conditions; do not assume unrestricted open-source redistribution rights.
 
 **GlitchByte Approved · Debian Trixie used · Ubuntu validation pending.**
