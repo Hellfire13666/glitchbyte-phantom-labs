@@ -25,10 +25,23 @@ e5b1ef241ab8e3058fae593ecb1ea4fe26d95cdfb9eca1a0e84c656a1025fac7  glitchbyte-pha
 - Installer `bash -n`, fresh temporary Linux-home install, menu shortcut, desktop shortcut, re-install preserving files, and corrupt-ZIP rejection: pass.
 - Source in GitHub `scripts/install_glitchbyte_master_hub_v020.sh` was fetched and matched the previously tested source text.
 
+## Debian Trixie field result: public-download smoke test PASSED
+
+**October 20, 2026, owner-provided Debian XFCE screenshot:** The owner ran the documented public GitHub ZIP download check on the already installed local v0.2.0 hub. Their terminal showed:
+
+- Release ZIP downloaded over HTTPS (curl completed; approximately 958 KiB as displayed).
+- `sha256sum -c` returned success against the exact pinned release SHA-256.
+- `unzip -tq` returned no ZIP-content errors.
+- `python3 -B "$HUB/scripts/verify_hub.py"` returned **28 release files verified**, all static HTML pages/local links verified, and all six branded SVG badges verified.
+- `START_HUB.sh` refreshed the installed-page catalog, reporting **six HTML pages discovered**, without changing sibling tool folders.
+- The terminal printed **`[PASS] PUBLIC DOWNLOAD AND HUB VERIFIED`**; a browser window displayed a **PHANTOM SPINE Connection Recipes** page.
+
+This verifies an external release download and an existing local hub's re-open/render path on the owner's Debian desktop. It **does not** establish a clean first-time public installer run, successful interaction with every navigation/copy button, verified desktop-shortcut v2 behavior, full accessibility, or Ubuntu compatibility. The screenshot has not been uploaded to public GitHub because it contains device/user details.
+
 ## Remaining real-world validation and rights checks
 
-- **Direct external release-file download in this test environment:** not run successfully because outbound DNS for github.com was blocked. GitHub independently reports the release and expected artifact digest, but a clean real public download must still be tried.
-- **Real desktop GUI:** the owner's Debian 13 XFCE desktop is in use, but a fresh v0.2.0 public-download Firefox navigation/appearance click-test is outstanding. Chromium blocked direct `file://` navigation by policy; the script-level DOM tests above are not a substitute.
+- **Public download:** **Owner's Debian XFCE test passed**, including ZIP checksum and integrity, as recorded above. This container could not repeat the external download because outbound DNS for github.com is blocked.
+- **Real desktop GUI:** one hub-associated HTML recipe page was visible in the owner's Debian XFCE browser screenshot. **Individual links, copy actions, menu/desktop launcher activation, and a clean first-install are still unconfirmed**. Chromium in this test environment blocked direct `file://` navigation; simulation tests are separate evidence.
 - **Ubuntu:** no claim of verified user testing.
 - **Distribution review:** confirm artwork redistribution rights and packaged contents against the repository's [custom source-available license](../LICENSE-NOTICE.md). No blanket open-source or security-certification claim is made.
 

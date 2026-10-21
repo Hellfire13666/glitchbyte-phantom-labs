@@ -4,7 +4,7 @@
 
 This guide is for the downloadable Linux **offline** Master Hub. The hub provides Rosie-branded HTML tool navigation, manuals, recipe pages, a local installed-page finder, and desktop launchers. It is **not** a remote shell, it does not install other research tools, and clicking a **Copy** button does not execute the command.
 
-> **Release status: PUBLISHED.** [Official Master Hub v0.2.0 release](https://github.com/Hellfire13666/glitchbyte-phantom-labs/releases/tag/master-hub-v0.2.0) contains both the ZIP and checksum. GitHub's published ZIP digest matches the SHA-256 pinned by the installer. This confirms release metadata and upload integrity; a separate fresh real-machine download-and-UI test is still requested. See the [release verification record](MASTER_HUB_PUBLIC_RELEASE.md).
+> **Release status: PUBLISHED.** [Official Master Hub v0.2.0 release](https://github.com/Hellfire13666/glitchbyte-phantom-labs/releases/tag/master-hub-v0.2.0) contains both the ZIP and checksum. GitHub's published ZIP digest matches the SHA-256 pinned by the installer. GitHub asset metadata and an owner-run Debian XFCE public-download smoke test both confirm the release archive integrity. A clean first-time installer run and full desktop/GUI interaction walkthrough remain to be verified. See the [release verification record](MASTER_HUB_PUBLIC_RELEASE.md).
 
 ## 🌱 One-square installer for your bros (public release)
 
@@ -22,7 +22,7 @@ You can [review the installer source](../scripts/install_glitchbyte_master_hub_v
 
 ### Requirements
 
-Desktop Linux, `bash`, `python3`, `curl`, `unzip`, `sha256sum` and preferably `xdg-open` for launching in a browser. The owner's desktop is Debian 13 (Trixie) XFCE; earlier hub launch and shortcut use was confirmed. A clean, newly installed v0.2.0 public-download Firefox/XFCE session remains to be verified. Ubuntu **has not been personally verified** for this hub. The hub is local HTML and Python 3 standard-library code.
+Desktop Linux, `bash`, `python3`, `curl`, `unzip`, `sha256sum` and preferably `xdg-open` for launching in a browser. The owner's desktop is Debian 13 (Trixie) XFCE; earlier hub launch and shortcut use was confirmed. The owner successfully downloaded and verified the public ZIP and reopened an existing v0.2.0 hub on Debian XFCE; fresh-account installation and all interactive buttons still need real-machine checks. Ubuntu **has not been personally verified** for this hub. The hub is local HTML and Python 3 standard-library code.
 
 ## ⚡ Open the hub again
 
@@ -49,7 +49,8 @@ Never upload the locally generated `catalog.js`, private research reports, crede
 - Local v0.2.0 archive ZIP and its SHA-256 were verified; hub static file manifest, internal links and six logo SVGs passed checks.
 - The standalone installer was checked in a clean isolated home directory, including desktop+menu shortcuts, repeat-install preservation and rejecting an invalid ZIP.
 - Published GitHub release **metadata** confirms the exact tag, ZIP asset (981,915 bytes), checksum asset and matching ZIP SHA-256. A direct external release-file download could not be performed in the container because DNS was unavailable.
-- A fresh real Firefox/XFCE click-test remains for the owner or a volunteer. The hub's card discovery, search, copy feedback, and no-installed-pages states passed Chromium DOM/JavaScript simulation; actual browser navigation was blocked by administrator policy, so this is **not** a live file-navigation render pass.
+- The owner's Debian XFCE screenshot shows the public ZIP download/checksum and hub verify script passing, and an actual PHANTOM SPINE recipe page visible in a browser. This is a public-download and existing-install browser-open smoke test, not a clean install or full UI acceptance test.
+- The hub's card discovery, search, copy feedback, and no-installed-pages states passed Chromium DOM/JavaScript simulation; direct browser navigation was blocked by administrator policy here. Desktop v2 shortcut use and clicking every hub control have not yet been field-confirmed.
 - The repo's [custom source-available licensing notice](../LICENSE-NOTICE.md) allows use under its stated conditions; do not assume unrestricted open-source redistribution rights.
 
 **GlitchByte Approved · Debian Trixie used · Ubuntu validation pending.**
