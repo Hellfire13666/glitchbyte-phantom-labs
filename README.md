@@ -3,7 +3,14 @@
 <!-- GLITCHBYTE-UPLOAD-DOOR:END -->
 
 <!-- GLITCHBYTE-MASTER-HUB:START -->
-> 🌹 **MASTER HUB v0.2.0 · ROSIE SWITCHBOARD** | [Beginner one-paste install and desktop instructions](docs/MASTER_HUB_PUBLIC_INSTALL.md) · [Publication checklist](docs/MASTER_HUB_PUBLIC_RELEASE.md) · [Installer source](scripts/install_glitchbyte_master_hub_v020.sh). **Release candidate:** the local ZIP has been verified, but the official public ZIP must still be uploaded and checked before the one-paste downloader works. Existing hub installations and other tools are not replaced.
+> 🌹 **MASTER HUB v0.2.0 · ROSIE SWITCHBOARD · PUBLISHED** | [Download official release](https://github.com/Hellfire13666/glitchbyte-phantom-labs/releases/tag/master-hub-v0.2.0) · [One-paste installation + XFCE desktop steps](docs/MASTER_HUB_PUBLIC_INSTALL.md) · [Future tool registration](docs/MASTER_HUB_TOOL_REGISTRATION.md) · [Release verification](docs/MASTER_HUB_PUBLIC_RELEASE.md). This is an **offline local HTML hub**, not a remotely hosted application. The installer preserves previous versions and independently installed tools.
+
+**🐧 ONE-SQUARE LINUX INSTALL** (review the [installer source](scripts/install_glitchbyte_master_hub_v020.sh) before running it):
+```bash
+tmp="$(mktemp)" && curl -fsSL --proto '=https' --tlsv1.2 \
+  'https://raw.githubusercontent.com/Hellfire13666/glitchbyte-phantom-labs/main/scripts/install_glitchbyte_master_hub_v020.sh' \
+  -o "$tmp" && bash "$tmp"; result=$?; rm -f -- "$tmp"; test "$result" -eq 0
+```
 <!-- GLITCHBYTE-MASTER-HUB:END -->
 
 <div align="center">
