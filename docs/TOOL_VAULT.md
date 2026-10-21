@@ -8,6 +8,8 @@
 > **UPLOAD DOORS:** [📤 HQ / Cultivation](https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main) · [📤 Overdrive](https://github.com/Hellfire13666/rosieriot-overdrive-2026/upload/main) · [📤 Vault](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/upload/main)
 
 
+**Adapter update notice:** [PHANTOM SPINE current compatibility, real HEXBAZAAR v0.1.2-rc1 paths and pending live acceptance](PHANTOM_SPINE_ADAPTER_STATUS.md). The newer RC2 is a private local release candidate, not a verified public Tool Vault installer or Phantom Backup HQ backup. Older PHANTOM SPINE recipes may reference legacy HEXBAZAAR paths.
+
 **The official GlitchByte Phantom Labs tool navigator.**
 **🌈 [SIMPLE · MEDIUM · EXTRA beginner runtime recipes](BEGINNER_RUNTIME_RECIPES.md):** copy-and-paste examples, visible intelligence feedback, optional saving explained, and Firefox notes. Individual tool pages remain the source of truth for their supported options.
  Choose a project, read its documentation, test and run it locally. This page links to source code that exists in the repository, not hypothetical tools from design mockups.
