@@ -1,6 +1,6 @@
 # 👻 PHANTOM SPINE | Adapter Compatibility and Live Status
 
-**Lab reference: October 21, 2026.** This is the current version guide. The **Live Signal v0.2.0-rc2 has now passed all three primary owner-side Debian field checks**: 113 actual unique HEXBAZAAR observations (4 usable providers); native DNS 6 actual records from 6 usable public HTTPS queries; and the independent matching RIFTSEAL file fingerprint comparison (8,826 bytes). This candidate has **not** been published to GitHub Releases or Installer Vault. See the [field evidence notes](PHANTOM_SPINE_RC2_DEBIAN_FIELD_TEST.md).
+**Lab reference: October 21, 2026.** This is the current version guide. The **Live Signal v0.2.0-rc2 has now passed all three primary owner-side Debian field checks**: 113 actual unique HEXBAZAAR observations (4 usable providers); native DNS 6 actual records from 6 usable public HTTPS queries; and the independent matching RIFTSEAL file fingerprint comparison (8,826 bytes). That historical **RC2** candidate remains separately versioned; the final published **v0.2.0** package, with owner's approved Rosie artwork, is now available as the [PHANTOM SPINE v0.2.0 public GitHub Release](https://github.com/Hellfire13666/phantom-spine-live-signal-2026/releases/tag/v0.2.0) and [verified PHANTOM SPINE v0.2.0 Installer Vault copy](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/tree/main/installers/phantom-spine-live-signal/v0.2.0). See the [final publication checkpoint](PHANTOM_SPINE_V020_PUBLICATION_CHECKPOINT.md). See the [field evidence notes](PHANTOM_SPINE_RC2_DEBIAN_FIELD_TEST.md).
 
 ## Which version is which?
 
@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | Original PHANTOM SPINE v0.1.0 | Local workshop/orchestration, legacy HEXBAZAAR references | Historical, **not** confirmed compatible with later HEXBAZAAR |
 | PHANTOM SPINE Quickstart/Visual Portal | HTML instructions, copy buttons and launchers | Does not by itself create live research |
-| **PHANTOM SPINE Live Signal v0.2.0-rc2** | Genuine HTTPS DNS public data lookups; optional real v0.1.2 HEXBAZAAR subprocess; real local file hashing | Offline tests and all three **owner-side Debian field checks PASS**; release packaging and Vault archival pending |
+| **PHANTOM SPINE Live Signal v0.2.0-rc2** | Genuine HTTPS DNS public data lookups; optional real v0.1.2 HEXBAZAAR subprocess; real local file hashing | Historical RC2 offline tests and all three **owner-side Debian field checks PASS**; final v0.2.0 is separately published and vaulted |
 | HEXBAZAAR v0.1.2-rc1 Rosie Savage | Separate real public-provider engine | **PHANTOM SPINE RC2 end-to-end Debian live output confirmed** (4 usable providers, 113 unique observations, October 21, 2026) |
 | RIFTSEAL Evidence Forge | Local read-only file SHA-256 | **Real PHANTOM SPINE `--via riftseal` Debian bridge PASS**: matching SHA-256 and 8,826-byte source file |
 
