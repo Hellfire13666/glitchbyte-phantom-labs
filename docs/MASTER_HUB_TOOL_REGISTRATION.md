@@ -4,6 +4,12 @@
 
 This applies to **future GlitchByte Phantom Labs tools**. It does not claim that older projects have already been updated.
 
+## Primary Start mode for real research
+
+For each **network OSINT / OPSEC research tool** newly built or upgraded, the hub card should open with a genuine live-source Start command, actual tested public-domain examples, and real-time observations showing source URLs and provider status. Label synthetic/offline tests as **Tests**, never as the main research workflow. Every tool's start commands must be real, compatible with the installed executable version, simple to paste, and non-destructive. See [LIVE OPSEC / OSINT release requirements](LIVE_OSINT_REAL_OUTPUT_STANDARD.md).
+
+For a local-only tool such as RIFTSEAL, the main command should do **real local-file hashing**, not fictitious network activity.
+
 ## Every future independent tool ships with
 
 1. **Unique identity:** distinct project, package, Python/Go source filename, output/report names, artwork, GitHub repository and tool page. Never overwrite a working tool or the installed Master Hub.
