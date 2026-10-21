@@ -56,6 +56,14 @@ Each recipe includes installation or verified prerequisite paths; input placehol
 
 Full guide and Markdown template: **[Beginner Runtime Recipes](BEGINNER_RUNTIME_RECIPES.md)**.
 
+## 4A. One-square public install and Master Hub registration
+
+**Mandatory for each future independently published tool:** ship a complete copy/paste installation block with a checked live official download, pinned integrity verification whenever packaged, no automatic overwrites, and a simple launch/desktop shortcut when relevant. Label prerequisites and support status honestly, and keep tested Easy / Medium / Savage usage separate from installation.
+
+Add the tool to the [Master Hub registration standard](MASTER_HUB_TOOL_REGISTRATION.md). HTML pages in sibling `~/PhantomLabsLaunchers` folders may appear automatically in the **Installed Page Finder** at next hub launch; a **new branded switch card requires a tested, versioned Master Hub update**. Do not claim automatic app installation, executable discovery or special switch buttons that have not been built.
+
+The [public Master Hub v0.2.0 release](https://github.com/Hellfire13666/glitchbyte-phantom-labs/releases/tag/master-hub-v0.2.0) and [verified installation guide](MASTER_HUB_PUBLIC_INSTALL.md) are reference examples, not proof that future tools or Ubuntu were tested.
+
 ## 5. Publish it through **all relevant hub doors**
 
 A new build or release is only *documented as distributed* after its pages and links have been checked:
