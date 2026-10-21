@@ -10,6 +10,12 @@
 
 **Adapter update notice:** [PHANTOM SPINE current compatibility](PHANTOM_SPINE_ADAPTER_STATUS.md) and [October 21 Debian field report](PHANTOM_SPINE_RC2_DEBIAN_FIELD_TEST.md): HEXBAZAAR 113 real observations (four usable providers), native DNS 6 real observations (six usable queries), and RIFTSEAL two matching real SHA-256/byte calculations. All three primary RC2 workflows field-tested. The [v0.2.0 public package with exact owner-approved Rosie-and-spine artwork is now locally built, checksum-sealed and tested](PHANTOM_SPINE_V020_PUBLICATION_CHECKPOINT.md), but **the official GitHub Release and Phantom Backup HQ copy remain pending**. Older PHANTOM SPINE recipes may reference legacy HEXBAZAAR paths.
 
+## 🧰 Repair Shop // Linux installation recovery
+
+**[Enter the Phantom Labs Repair Shop](repair-shop/README.md)** · [Node.js 22 / MXHX Shed repair ticket](repair-shop/NODE22_MXHX_SHED.md) · [Neon Node Repair Shop logo](repair-shop/node22-repair-logo.svg)
+
+**Field-tested on October 21, 2026:** recovered an MX Linux / Debian Trixie system from an active nvm-selected Node.js 0.10.48 (npm 2.15.1) to Node.js 22.23.4 (npm 10.9.9). The MXHX Shed project then installed 429 packages with `npm ci` and started Vite 8.3.4. Browser features were not exhaustively verified. This is a documented repair guide, **not** a new independent scanner or another item in the 24-tool count.
+
 **The official GlitchByte Phantom Labs tool navigator.**
 **🌈 [SIMPLE · MEDIUM · EXTRA beginner runtime recipes](BEGINNER_RUNTIME_RECIPES.md):** copy-and-paste examples, visible intelligence feedback, optional saving explained, and Firefox notes. Individual tool pages remain the source of truth for their supported options.
  Choose a project, read its documentation, test and run it locally. This page links to source code that exists in the repository, not hypothetical tools from design mockups.
