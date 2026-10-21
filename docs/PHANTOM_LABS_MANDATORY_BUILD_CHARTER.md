@@ -32,6 +32,12 @@ This is the **persistent checklist for every future standalone tool**, upgrade a
 - [ ] Rotate among **hot pink #FF1493 / deep black #080808**, acid-lime #B6FF00, electric cyan #00F5FF, ultraviolet #8A2BE2, rich orange/yellow/red and toned-down/natural palettes. A glitch is an **effect**, not one mandatory color. Vary layouts/backgrounds and use only a few intentional props when appropriate; avoid repeating identical faces and compositions.
 - [ ] Keep art distinct from actual screenshots/results, and don't embed trigger/working labels or filler text in artwork unless requested. Create art when the build includes that deliverable; never imply an uncreated image is already in the repository.
 
+### Live intelligence requirement for future network tools
+
+**[LIVE OPSEC / OSINT Release Gate](LIVE_OSINT_REAL_OUTPUT_STANDARD.md) is mandatory** for all future newly built or explicitly upgraded domain, public profile, public web, passive-source, and related network research engines. The primary workflow is **live public-source research**, not an offline fake demonstration. Publish at least two runnable **real-domain** examples with authentic source/provenance details and visible output, plus a one-paste install, separate simple Start, and Easy/Medium/Savage pages. Test versioned adapters end to end before advertising connected modes. No inflated or generated hunt findings. Clearly label rate limits, no results and provider outages. A local utility must remain a genuine local utility rather than pretending to query the internet.
+
+This requirement applies prospectively; existing unverified integrations such as the PHANTOM SPINE newer HEXBAZAAR adapter are not automatically certified. Continue respecting authorized active probing, public-source rules and data privacy.
+
 ### C. Real feedback, examples, and usable operation
 - [ ] High-quality, **colorful terminal startup, progress, source/error notices, results, summary and outcome**. Include meaningful accessible plain-text labels, support non-ANSI output, and show **real** findings from real operations, not invented data.
 - [ ] An **offline synthetic demo** and deterministic tests wherever sensible; label all demo/sample data clearly. Use a true example command for a safe target or user's local file.

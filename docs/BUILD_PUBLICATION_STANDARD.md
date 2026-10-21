@@ -13,6 +13,12 @@ The purpose is to make every release **beautiful, useful, discoverable, runnable
 - Different tools can have different aesthetics, not always Rosie's portrait. Rotate legible Glitch HEX color palettes.
 - Ship working source and instructions, not just a marketing illustration. Label artwork or sample output as illustrative when appropriate.
 
+## Mandatory live research baseline for network intelligence tools
+
+Every new or explicitly upgraded public-data OSINT/OPSEC research tool must meet the [LIVE OPSEC / OSINT release gate](LIVE_OSINT_REAL_OUTPUT_STANDARD.md): **real live provider interactions, actual source-attributed streaming findings, and two runnable examples against real public domains**. Synthetic previews and offline tests remain valid supporting test tools, but cannot replace a real Start workflow or be presented as a successful live hunt. Real failures, rate limits, empty results, obsolete adapters, and slow-network timeouts must be visible, never disguised.
+
+Require separately tested one-square installation, one short repeatable Start command, version-compatible integrations, optional desktop icon, privacy-conscious output defaults, and real Easy / Medium / Savage recipes with verified flags. The requirement applies to tools claiming network research; genuinely local tools (such as SHA-256 fingerprinting) must show real local computations and **must not fake internet requests**.
+
 ## 2. Show meaningful results **as the tool runs**
 
 New and updated tools should have real-time, colorful terminal feedback appropriate to what they do:
