@@ -33,6 +33,18 @@ The existing [official field record](PHANTOM_SPINE_RC2_DEBIAN_FIELD_TEST.md) est
 
 The final v0.2.0 package is the RC2 engine versioned separately with updated code labels, exact user-approved art and current instructions. Its **offline regression and isolated install tests** pass; don't claim the new v0.2.0 binary has received a separate owner-side Debian internet rerun unless the owner performs it.
 
+## ✅ Owner-side Debian field confirmation: final v0.2.0 binary
+
+**October 21, 2026 at 19:05:46 UTC:** Following a locally SHA-256-verified official v0.2.0 installation (24 bundled files verified, 17 Python tests passed, exact short launcher created), the owner ran the **final** `phantom-spine-live-v020` native DNS command:
+
+```bash
+"$HOME/.local/bin/phantom-spine-live-v020" hunt example.com --engine native --providers dns --timeout 8
+```
+
+**Actual observed:** 6 unique public DNS observations from `example.com`: two A (`104.20.23.154`, `172.66.147.243`), two AAAA (`2606:4700:10::6814:179a`, `2606:4700:10::ac42:93f3`), two NS (`hera.ns.cloudflare.com`, `elliott.ns.cloudflare.com`). All 6 requests were usable (HTTP 200, DNS 0), 0 failed, ~11.0 seconds elapsed. Google MX and Cloudflare A/AAAA queries returned 0 accepted records despite successful transport. Source links were printed under `https://dns.google/resolve` and `https://cloudflare-dns.com/dns-query`. `[SAVE OFF]` confirmed no reports requested.
+
+**Scope:** This confirms the **published final v0.2.0** native HTTPS DNS engine on Debian, in addition to prior RC2 HEXBAZAAR and RIFTSEAL field passes. It does **not** imply every external provider always yields records, that the final v0.2.0 HEXBAZAAR/RIFTSEAL adapters were independently rerun by the owner, or that the Master Hub v0.3.0 recipe-page Copy button has separately passed a Firefox click-test. No personal terminal identifiers or private screenshots are included.
+
 ## Completed release milestones and next Master Hub integration
 
 1. **COMPLETE:** Official v0.2.0 public GitHub repository/source, tagged Release ZIP and checksum assets, and owner CLI download/checksum verification.
