@@ -2,6 +2,8 @@
 <div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF1493?style=flat-square&logo=github&logoColor=white"></a></div>
 <!-- GLITCHBYTE-UPLOAD-DOOR:END -->
 
+> 🎨 **NEW · CREATIVE UTILITIES:** [GlitchByte Art Vault Converter and Share Card Doctor](docs/CREATIVE_UTILITIES.md) are **TWO distinct tools**. Art Vault's compression, Desktop launcher, and new-only v2 behavior are **three components of the same converter**, not three tools. Existing tools and Hangout member data are untouched.
+
 <!-- GLITCHBYTE-MASTER-HUB:START -->
 > 🌹 **MASTER HUB v0.2.0 · ROSIE SWITCHBOARD · PUBLISHED** | [Download official release](https://github.com/Hellfire13666/glitchbyte-phantom-labs/releases/tag/master-hub-v0.2.0) · [One-paste installation + XFCE desktop steps](docs/MASTER_HUB_PUBLIC_INSTALL.md) · [Future tool registration](docs/MASTER_HUB_TOOL_REGISTRATION.md) · [Release verification](docs/MASTER_HUB_PUBLIC_RELEASE.md). This is an **offline local HTML hub**, not a remotely hosted application. The installer preserves previous versions and independently installed tools.
 
