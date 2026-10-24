@@ -1,6 +1,6 @@
 # GLITCHBYTE ART VAULT CONVERTER · MX Linux
 
-[![Approved Rosie neon Art Vault Converter v2 poster](../../creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png)](../../creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png)
+[![Approved Rosie neon Art Vault Converter v2 poster](../../docs/creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png)](../../docs/creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png)
 
 **🎨 Official visual:** the owner-approved `convert3.png` Rosie artwork in the [Creative Utilities v1.0.3 showcase](../../docs/creative-utilities-showcase-v1.0.3/README.md). The poster illustrates the workflow; use the actual commands and safety notes in this README to operate the v2 program. Do not reinstall a working v2 shortcut merely to view the artwork.
 
