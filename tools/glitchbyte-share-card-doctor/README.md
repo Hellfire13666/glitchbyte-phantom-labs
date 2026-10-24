@@ -1,6 +1,6 @@
 # GLITCHBYTE SHARE CARD DOCTOR
 
-[![Approved Facebook Sharing Debugger artwork](../../creative-utilities-showcase-v1.0.3/01-FACEBOOK-SHARING-DEBUGGER/assets/APPROVED-FACEBOOK-SHARING-DEBUGGER.png)](../../creative-utilities-showcase-v1.0.3/01-FACEBOOK-SHARING-DEBUGGER/assets/APPROVED-FACEBOOK-SHARING-DEBUGGER.png)
+[![Approved Facebook Sharing Debugger artwork](../../docs/creative-utilities-showcase-v1.0.3/01-FACEBOOK-SHARING-DEBUGGER/assets/APPROVED-FACEBOOK-SHARING-DEBUGGER.png)](../../docs/creative-utilities-showcase-v1.0.3/01-FACEBOOK-SHARING-DEBUGGER/assets/APPROVED-FACEBOOK-SHARING-DEBUGGER.png)
 
 **🎨 Official visual:** the approved Facebook Sharing Debugger image from the [GlitchByte Creative Utilities v1.0.3 showcase](../../docs/creative-utilities-showcase-v1.0.3/README.md). This is illustration for the external Meta debugger, not a screenshot of live results from Share Card Doctor.
 
