@@ -4,6 +4,27 @@
 
 > 🎨 **NEW · CREATIVE UTILITIES:** [GlitchByte Art Vault Converter and Share Card Doctor](docs/CREATIVE_UTILITIES.md) are **TWO distinct tools**. Art Vault's compression, Desktop launcher, and new-only v2 behavior are **three components of the same converter**, not three tools. Existing tools and Hangout member data are untouched.
 
+<details open>
+<summary><strong>🎨 See the two approved Creative Utilities covers</strong></summary>
+
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="docs/creative-utilities-showcase-v1.0.3/01-FACEBOOK-SHARING-DEBUGGER/assets/APPROVED-FACEBOOK-SHARING-DEBUGGER.png"><img alt="Approved neon Rosie Facebook Sharing Debugger cover" src="docs/creative-utilities-showcase-v1.0.3/01-FACEBOOK-SHARING-DEBUGGER/assets/APPROVED-FACEBOOK-SHARING-DEBUGGER.png" width="300"></a>
+<p><strong>Facebook Sharing Debugger</strong><br>Meta's external link-preview cache tool; paired with our read-only Share Card Doctor.</p>
+</td>
+<td width="50%" valign="top">
+<a href="docs/creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png"><img alt="Approved neon Rosie Art Vault Converter v2 poster" src="docs/creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png" width="300"></a>
+<p><strong>Art Vault Converter v2</strong><br>Offline MX Linux WebP optimizer with saved new-picture history. One converter, three project components.</p>
+</td>
+</tr>
+</table>
+
+[Browse the approved two-page artwork and instructions](docs/creative-utilities-showcase-v1.0.3/README.md) · [Phantom Tool Vault](docs/TOOL_VAULT.md)
+
+</details>
+
 <!-- GLITCHBYTE-MASTER-HUB:START -->
 > 🌹 **MASTER HUB v0.2.0 · ROSIE SWITCHBOARD · PUBLISHED** | [Download official release](https://github.com/Hellfire13666/glitchbyte-phantom-labs/releases/tag/master-hub-v0.2.0) · [One-paste installation + XFCE desktop steps](docs/MASTER_HUB_PUBLIC_INSTALL.md) · [Future tool registration](docs/MASTER_HUB_TOOL_REGISTRATION.md) · [Release verification](docs/MASTER_HUB_PUBLIC_RELEASE.md). This is an **offline local HTML hub**, not a remotely hosted application. The installer preserves previous versions and independently installed tools.
 
