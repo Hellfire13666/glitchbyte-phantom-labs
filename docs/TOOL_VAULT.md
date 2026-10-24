@@ -16,6 +16,19 @@
 
 **🎨 Approved art & reference showcase v1.0.3:** [Open the two-page GitHub showcase](creative-utilities-showcase-v1.0.3/README.md) · [Facebook Sharing Debugger art/page](creative-utilities-showcase-v1.0.3/01-FACEBOOK-SHARING-DEBUGGER/) · [Art Vault Converter neon Rosie art and verified v2 instructions](creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/). These are illustrated HTML/reference pages, not a software installer; GitHub stores the page files and images, but the HTML has not been deployed as a live website. Existing converter and social-preview tools are unchanged.
 
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="creative-utilities-showcase-v1.0.3/01-FACEBOOK-SHARING-DEBUGGER/assets/APPROVED-FACEBOOK-SHARING-DEBUGGER.png"><img alt="Approved neon Rosie Facebook Sharing Debugger cover" src="creative-utilities-showcase-v1.0.3/01-FACEBOOK-SHARING-DEBUGGER/assets/APPROVED-FACEBOOK-SHARING-DEBUGGER.png" width="350"></a>
+<p><strong>Facebook Sharing Debugger</strong><br>Meta's external link-preview cache tool; paired with our read-only Share Card Doctor.</p>
+</td>
+<td width="50%" valign="top">
+<a href="creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png"><img alt="Approved neon Rosie Art Vault Converter v2 poster" src="creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png" width="350"></a>
+<p><strong>Art Vault Converter v2</strong><br>Offline MX Linux WebP optimizer with saved new-picture history. One converter, three project components.</p>
+</td>
+</tr>
+</table>
+
 ## 🌹 HEXBAZAAR Live Command Deck | Published and Vault verified
 
 [HEXBAZAAR Live Deck v0.1.0 checkpoint](HEXBZ_LIVE_COMMAND_DECK_V010_CHECKPOINT.md) · [official v0.1.0 public GitHub release](https://github.com/Hellfire13666/hexbazaar-live-command-deck-2026/releases/tag/v0.1.0) · [independent verified Installer Vault ZIP/checksum](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/tree/main/installers/hexbazaar-live-command-deck/v0.1.0). Four branded pages, approved Rosie artwork, Start/Easy/Medium/Savage real public-domain commands via separately installed HEXBAZAAR v0.1.2-rc1, separate short launcher and desktop icon. Underlying engine passed 60 tests, Deck seven, and user's actual Debian `start` live DNS produced nine genuine observations. [Vault archive workflow](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/actions/runs/39674856072) passed with both exact ZIP and SHA-256 asset. All earlier installer backups remain protected. **Firefox Copy-button acceptance still pending**; Master Hub v0.3.0 HEXBAZAAR fixed historical recipe remains unchanged until a future independent Hub update.
