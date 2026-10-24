@@ -1,5 +1,9 @@
 # GLITCHBYTE SHARE CARD DOCTOR
 
+[![Approved Facebook Sharing Debugger artwork](../../creative-utilities-showcase-v1.0.3/01-FACEBOOK-SHARING-DEBUGGER/assets/APPROVED-FACEBOOK-SHARING-DEBUGGER.png)](../../creative-utilities-showcase-v1.0.3/01-FACEBOOK-SHARING-DEBUGGER/assets/APPROVED-FACEBOOK-SHARING-DEBUGGER.png)
+
+**🎨 Official visual:** the approved Facebook Sharing Debugger image from the [GlitchByte Creative Utilities v1.0.3 showcase](../../docs/creative-utilities-showcase-v1.0.3/README.md). This is illustration for the external Meta debugger, not a screenshot of live results from Share Card Doctor.
+
 A **separate tool** from the Art Vault Converter. Checks the public Hangout's Open Graph and X Card tags, link canonicalization, and whether the preview image responds to an HTTPS HEAD request.
 
 - The live link guests share: <https://glitchbyte.alwaysdata.net/hangout>
