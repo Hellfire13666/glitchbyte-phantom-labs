@@ -124,7 +124,7 @@ Reports contain `brand`, `domain`, `created_utc`, and `modules` with the selecte
 
 ## 🧪 Verification, privacy and licensing
 
-This documentation was prepared by inspecting [the current Python source](../../tools/rosieglitchbyte_domain_phantom.py). It does **not** claim that a live external target was scanned or that the full Bash recipe has been executed in an Ubuntu terminal. Source inspection and syntax recommendations are not network integration tests.
+This documentation was prepared by inspecting [the current Python source](../../tools/rosieglitchbyte_domain_phantom.py). It does **not** claim that a live external target was scanned or that the full Bash recipe has been executed in a Linux terminal. Source inspection and syntax recommendations are not network integration tests.
 
 Follow [SECURITY.md](../../SECURITY.md) and [LICENSE-NOTICE.md](../../LICENSE-NOTICE.md). Never commit credentials, private findings, cookies or sensitive reports.
 
