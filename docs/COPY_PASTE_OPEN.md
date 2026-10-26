@@ -8,7 +8,7 @@
 
 **No ChatGPT file attachments. No Git pull. No merge or rebase. No code typed in nano. No shell exit.**
 
-Open a terminal on Ubuntu/Linux, copy **one complete block** below, and your chosen tool generates a real local HTML gallery. Firefox opens automatically when installed on your desktop. Scripts and reports are saved only under `~/PhantomLabsLaunchers/`, so an existing `~/glitchbyte-phantom-labs` checkout is never touched.
+Open a terminal on Linux, copy **one complete block** below, and your chosen tool generates a real local HTML gallery. Firefox opens automatically when installed on your desktop. Scripts and reports are saved only under `~/PhantomLabsLaunchers/`, so an existing `~/glitchbyte-phantom-labs` checkout is never touched.
 
 Each block downloads just the [first-party launcher source](../scripts/phantom_quickopen.py) from the official repository, then the launcher downloads the selected, [published Python tool](../tools/) from GitHub if it is not already cached. Internet is needed to download uncached code. HEXWAKE, CIPHERBOX and GHOSTMARK processing is offline after download; ROSIE SCAN has an explicitly opted-in network mode. **Review downloaded source before execution** if you do not trust it.
 
@@ -16,13 +16,13 @@ Each block downloads just the [first-party launcher source](../scripts/phantom_q
 
 ## 🖥️ How visitors actually trigger a tool
 
-**GitHub shows source code and instructions; clicking a filename, image or documentation link does not execute Python on your computer.** These are **Ubuntu/Linux terminal launchers**, not buttons that run inside GitHub or the browser. They also do not create a terminal command named `hexwake` or `cipherbox`.
+**GitHub shows source code and instructions; clicking a filename, image or documentation link does not execute Python on your computer.** These are **Linux terminal launchers**, not buttons that run inside GitHub or the browser. They also do not create a terminal command named `hexwake` or `cipherbox`.
 
-1. On an Ubuntu/Linux desktop, open **Terminal** (often **Ctrl+Alt+T**).
+1. On an Linux desktop, open **Terminal** (often **Ctrl+Alt+T**).
 2. On this page, choose the tool below. **Copy the entire Bash code block** under that heading (not the raw Python source URL).
 3. **Paste** it into Terminal, then press **Enter**. Wait for `[REPORT]` and, when Firefox is available, `[OPEN] Firefox launched with the new gallery.`
 4. The launcher downloads the official Python files if needed, runs a sample, and creates a real local `.html` report. Firefox opens it on a graphical desktop. **This does not launch a live website or a program inside GitHub.**
-5. If Firefox doesn't open, find the terminal line **`[REPORT] Open this HTML file: /home/.../report.html`**. Paste that full path into Firefox's address bar, or open it with `firefox '/full/path/from/report/line.html'`.
+5. If Firefox doesn't open, find the terminal line beginning **`[REPORT] Open this HTML file:`**. Paste that full path into Firefox's address bar, or open it with `firefox '/full/path/from/report/line.html'`.
 
 **Check Firefox itself first** if necessary (this only opens a public test webpage):
 
@@ -50,7 +50,7 @@ Creates six rotating Glitch HEX palettes with seed 7831 and hot pink base `#FF14
 mkdir -p "$HOME/PhantomLabsLaunchers" && curl -fL --retry 2 "https://raw.githubusercontent.com/Hellfire13666/glitchbyte-phantom-labs/main/scripts/phantom_quickopen.py" -o "$HOME/PhantomLabsLaunchers/phantom_quickopen.py" && python3 "$HOME/PhantomLabsLaunchers/phantom_quickopen.py" cipherbox
 ```
 
-Makes a three-stage fictional codebreaking puzzle, HTML page and separate `.answer.txt` solution. **Never share the answer file.** Cipherbox is educational encoding, not secure encryption. For custom text without putting the message in terminal history, add `--message-file "$HOME/my_message.txt"`.
+Makes a three-stage fictional codebreaking puzzle, HTML page and separate `.answer.txt` solution. **Never share the answer file.** Cipherbox is educational encoding, not secure encryption. For custom text without putting the message in terminal history, add `--message-file ./my_message.txt`.
 
 [Source](../tools/phantom_cipherbox.py) · [Full puzzle guide](tool-showcases/PHANTOM_CIPHERBOX.md)
 
@@ -70,7 +70,7 @@ Default is a **zero-network demonstration** for `example.com`, so people can pre
 mkdir -p "$HOME/PhantomLabsLaunchers" && curl -fL --retry 2 "https://raw.githubusercontent.com/Hellfire13666/glitchbyte-phantom-labs/main/scripts/phantom_quickopen.py" -o "$HOME/PhantomLabsLaunchers/phantom_quickopen.py" && python3 "$HOME/PhantomLabsLaunchers/phantom_quickopen.py" ghostmark
 ```
 
-The default uses **three temporary synthetic files** so no personal documents are read. To inspect a local folder you choose, add `--folder "$HOME/Documents"`. Reports include file paths and SHA-256 values; keep them private. GHOSTMARK never changes, deletes, or uploads originals.
+The default uses **three temporary synthetic files** so no personal documents are read. To inspect a local folder you choose, add `--folder ./example-files` (after creating that folder). Reports include file paths and SHA-256 values; keep them private. GHOSTMARK never changes, deletes, or uploads originals.
 
 [Source](../tools/ghostmark_integrity_atlas.py) · [Full integrity guide](tool-showcases/GHOSTMARK.md)
 
@@ -101,7 +101,7 @@ To collect actual public passive information for a domain you own or are permitt
 
 ### Files and validation
 
-Every tool caches its code in `~/PhantomLabsLaunchers/code/` and stores a fresh unique HTML/JSON report under `~/PhantomLabsLaunchers/reports/<tool>/`. The underlying original tools retain their own report formats and individual [build recipes](TOOL_VAULT.md). The shared [Python Quick Open launcher](../scripts/phantom_quickopen.py) is tested in Ubuntu CI against all five real programs without network, validating the HTML/JSON outputs, folder scan, file preservation and failure paths.
+Every tool caches its code in `~/PhantomLabsLaunchers/code/` and stores a fresh unique HTML/JSON report under `~/PhantomLabsLaunchers/reports/<tool>/`. The underlying original tools retain their own report formats and individual [build recipes](TOOL_VAULT.md). The shared [Python Quick Open launcher](../scripts/phantom_quickopen.py) is tested in Linux CI against all five real programs without network, validating the HTML/JSON outputs, folder scan, file preservation and failure paths.
 
 **This page covers our five newer tools with verified local HTML exports.** Other original tools have their own [full individual recipes](TOOL_VAULT.md) and will receive a Quick Open command when their browser-launch path can be tested. Do not assume a CLI-only tool opens Firefox.
 
