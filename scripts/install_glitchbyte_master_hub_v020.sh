@@ -20,7 +20,7 @@ for cmd in python3 unzip sha256sum; do
 done
 
 if [[ -e "$HUB" || -L "$HUB" ]]; then
-  [[ -f "$HUB/START_HUB.sh" ]] || die "An existing folder is incomplete: $HUB. Please investigate it; nothing was overwritten."
+  [[ -f "$HUB/START_HUB.sh" ]] || die 'An existing installation is incomplete. Nothing was overwritten.'
   say 'Hub is already installed. Preserving all existing files.'
 else
   TMP="$(mktemp -d)" || die 'Cannot create temporary folder.'
@@ -60,7 +60,7 @@ PY
   [[ ! -e "$HUB" && ! -L "$HUB" ]] || die 'Target folder appeared during install; not overwriting.'
   unzip -q -- "$TMP/$ARCHIVE" -d "$ROOT"
   [[ -f "$HUB/START_HUB.sh" && -f "$HUB/assets/hub-icon.svg" ]] || die 'Hub extraction is incomplete; please inspect it.'
-  say "Installed in $HUB"
+  say 'Hub installed successfully.'
 fi
 
 # Create new user-level menu shortcut, only if absent.
@@ -91,7 +91,7 @@ Categories=Development;Utility;
 EOF
   chmod 755 "$DESKTOP"
   if command -v gio >/dev/null 2>&1; then gio set "$DESKTOP" metadata::trusted true 2>/dev/null || true; fi
-  say "Desktop shortcut created: $DESKTOP"
+  say 'Desktop shortcut created.'
 else
   say 'Desktop shortcut already exists. Preserved.'
 fi
@@ -103,8 +103,8 @@ if [[ "${GLITCHBYTE_HUB_SKIP_OPEN:-0}" == 1 ]]; then
 else
   if command -v xdg-open >/dev/null 2>&1; then
     say 'Opening the hub in your browser.'
-    bash "$HUB/START_HUB.sh" || die "Could not open the hub. Try: bash '$HUB/START_HUB.sh'"
+    bash "$HUB/START_HUB.sh" || die 'Could not open the hub. Use its Start Hub launcher.'
   else
-    say "Install xdg-utils, then open: $HUB/index.html"
+    say 'Install xdg-utils, then open the Hub index using your file manager.'
   fi
 fi
