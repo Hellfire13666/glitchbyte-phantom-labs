@@ -25,7 +25,7 @@ GlitchByte Log Constellation reads one or more **local** log/text files, detects
 
 It includes a **safe `--demo` option** that generates a sample log and analyzes it offline. Its basic redaction covers common secret-looking assignments and email addresses, but it **cannot guarantee removal of all sensitive data**. Review files and output carefully before sharing.
 
-## 📋 COPY & PASTE BUILD RECIPE // Linux / Ubuntu (Bash)
+## 📋 COPY & PASTE BUILD RECIPE // Linux (Bash)
 
 **All six stages included: Install → Build → Test → Run → Find Results → Troubleshoot.** This version runs only the tool's self-generated sample data, so it makes **no website requests** and requires no real private logs.
 
@@ -100,7 +100,7 @@ python3 -m json.tool "$HOME/PhantomLabsBuilds/log-constellation-reports/constell
 xdg-open "$HOME/PhantomLabsBuilds/log-constellation-reports/constellation.html"
 ```
 
-The HTML is a locally generated file. The dashboard displays up to 500 matching events at once; narrow the search to see additional matches. `xdg-open` requires a desktop session and may be unavailable on a headless Ubuntu server.
+The HTML is a locally generated file. The dashboard displays up to 500 matching events at once; narrow the search to see additional matches. `xdg-open` requires a desktop session and may be unavailable on a headless Linux server.
 
 ## Troubleshoot
 
@@ -117,7 +117,7 @@ The HTML is a locally generated file. The dashboard displays up to 500 matching 
 
 ## Status and limits
 
-**Source reviewed:** `tools/glitchbyte_log_constellation.py`, including `argparse`, `--demo`, `--out`, HTML/JSON outputs, redaction functions and source hashing. This documentation recipe has **not been end-to-end executed in your Ubuntu terminal**. Syntax checking is a recommended validation step, not a claim of live testing.
+**Source reviewed:** `tools/glitchbyte_log_constellation.py`, including `argparse`, `--demo`, `--out`, HTML/JSON outputs, redaction functions and source hashing. This documentation recipe has **not been end-to-end executed in a Linux terminal**. Syntax checking is a recommended validation step, not a claim of live testing.
 
 This tool uses offline data. It is not an X/Facebook scraper, external OSINT crawler, incident-response guarantee, authenticated log vault, or comprehensive secret scanner. Reports may still expose IP addresses, filenames and log contents. Never commit sensitive logs or reports.
 
