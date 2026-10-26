@@ -14,7 +14,7 @@
 </td>
 <td width="50%" valign="top">
 <a href="creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png"><img alt="Approved neon Rosie Art Vault Converter v2 poster" src="creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png" width="440"></a>
-<p><strong>Art Vault Converter v2</strong><br>Offline MX Linux WebP optimizer with saved new-picture history. One converter, three project components.</p>
+<p><strong>Art Vault Converter v2</strong><br>Offline Debian-based Linux WebP optimizer with saved new-picture history. One converter, three project components.</p>
 </td>
 </tr>
 </table>
@@ -23,7 +23,7 @@
 
 These images are the approved art from the existing public GitHub showcase, not screenshots of running software. Clone or download this repository and open `docs/creative-utilities-showcase-v1.0.3/START-HERE.html` locally in Firefox to navigate the styled HTML pages. GitHub itself displays their source, not an interactive hosted website.
 
-1. [Art Vault Converter](../../tools/glitchbyte-art-vault-converter/README.md): compression engine, one-click Desktop shortcut, and the v2 new-only converter/history. Runs offline on MX Linux.
+1. [Art Vault Converter](../../tools/glitchbyte-art-vault-converter/README.md): compression engine, one-click Desktop shortcut, and the v2 new-only converter/history. Runs offline on Debian-based Linux.
 2. [Share Card Doctor](../../tools/glitchbyte-share-card-doctor/README.md): read-only Open Graph / X Card diagnostics plus the official [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) for manual social cache refresh.
 
 GlitchByte Hangout guest link: **https://glitchbyte.alwaysdata.net/hangout**
