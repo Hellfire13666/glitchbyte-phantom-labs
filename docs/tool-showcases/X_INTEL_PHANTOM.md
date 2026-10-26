@@ -29,7 +29,7 @@ It calls `https://api.x.com/2` using an `X_BEARER_TOKEN` supplied by **you** via
 - A post/username match is **not** proof of real-world identity or misconduct.
 - The source prints per-page `[SCAN]` progress and waits 15 seconds before one retry after an initial HTTP 429. It does not offer a free unlimited or guaranteed full-archive scan.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu/Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find Results → Troubleshoot.**
 
@@ -153,7 +153,7 @@ The JSON export includes collection metadata and API result data; the CSV lists 
 
 ## 🧪 Verification and ownership
 
-All flags, API endpoints, pagination, saved formats and token requirements were verified by **reading** [the current Python source](../../tools/glitchbyterosie_x_intel.py). The complete copy/paste commands have **not** been executed on the user's Ubuntu system, and **no live X API request** was made during this documentation update.
+All flags, API endpoints, pagination, saved formats and token requirements were verified by **reading** [the current Python source](../../tools/glitchbyterosie_x_intel.py). The complete copy/paste commands have **not** been executed on a Linux environment, and **no live X API request** was made during this documentation update.
 
 Follow the [security policy](../../SECURITY.md), the [custom source-available license](../../LICENSE-NOTICE.md), developer platform terms and applicable privacy law.
 
