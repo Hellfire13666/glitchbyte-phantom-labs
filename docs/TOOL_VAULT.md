@@ -126,6 +126,10 @@ The [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md
 | Ghost in My Heart | Interactive romance game | [Open source](../tools/rosie_ghost_heart.py) | [Setup guide](tool-showcases/GHOST_IN_MY_HEART.md) |
 | Find Me If You Love Me | Three-clue romantic puzzle | [Open source](../tools/rosie_hide_seek.py) | [Setup guide](tool-showcases/FIND_ME_IF_YOU_LOVE_ME.md) |
 
+| Art Vault Batch Optimizer | Offline image batch optimization | [Open source](../tools/glitchbyte-art-vault-converter/GLITCHBYTE-ART-VAULT-BATCH-OPTIMIZER-v1.py) | [Setup guide](tool-showcases/ART_VAULT_OPTIMIZER.md) |
+| Art Vault New-Only Converter | Offline new-image processing | [Open source](../tools/glitchbyte-art-vault-converter/glitchbyte_art_new_only_v2.py) | [Setup guide](tool-showcases/ART_VAULT_NEW_ONLY.md) |
+| Share Card Doctor | Read-only public link-preview inspection | [Open source](../tools/glitchbyte-share-card-doctor/share_card_doctor.py) | [Setup guide](tool-showcases/SHARE_CARD_DOCTOR.md) |
+
 <!-- PHANTOM-DOOR-INDEX:END -->
 
 > **Vault inventory:** 16 preserved original Python scripts, seven additional standalone Python tools (HEXWAKE, PHANTOM CIPHERBOX, ROSIE PHANTOM SCAN V2, GHOSTMARK, SUBDOMINATRIX, SCREAMFRAME and VELVETECHO), and the preserved VOIDLANTERN Go project. New tools merge only after their review PRs; linked sources are present on this branch.
