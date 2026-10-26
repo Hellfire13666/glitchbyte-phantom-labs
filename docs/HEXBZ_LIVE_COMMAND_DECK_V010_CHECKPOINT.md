@@ -21,11 +21,11 @@ Four standalone responsive local HTML pages with functional Copy buttons and a u
 - Actual unmodified HEXBAZAAR engine responded to check and shop from the deck in an isolated Linux HOME, and the short alias launched correctly.
 - Zip integrity PASS; 17 separately hash-verified packaged files plus MANIFEST.json; 18 ZIP members.
 - Chromium rendering and clipboard feedback PASS in a controlled set_content sandbox with the approved art. The sandbox blocked direct file:// navigation, so owner-side Firefox click acceptance is still pending.
-- No real public-provider request could be verified from the sandbox. Historical user's Debian HEXBAZAAR observations of 118 (direct run, Oct 20) and 113 (SPINE adapter, Oct 21) are prior results, not a new live Deck run.
+- No real public-provider request could be verified from the sandbox. Previously recorded Linux HEXBAZAAR observations of 118 (direct run, Oct 20) and 113 (SPINE adapter, Oct 21) are prior results, not a new live Deck run.
 
 ## ✅ Owner-side Debian v0.1.0 Deck field test (October 21, 2026)
 
-The owner supplied actual Debian terminal evidence after installing the separately versioned Deck. Observed:
+Linux terminal checks were recorded after installing the separately versioned Deck. Observed:
 
 - `sha256sum -c HEXBZ-LIVE-COMMAND-DECK-v0.1.0.sha256` returned **ZIP: OK**; `unzip -tq` passed; bundled verifier checked **17 real packaged files** with no mismatches.
 - Installation created `hexbazaar-live-deck` short command and independent desktop icon, reporting original engine and Hub unchanged.
@@ -47,7 +47,7 @@ The owner supplied actual Debian terminal evidence after installing the separate
 
 ## ✅ Public release and physically verified Vault archive
 
-The owner ran the explicit guarded `PUBLISH` script and the [new, separate official GitHub repository](https://github.com/Hellfire13666/hexbazaar-live-command-deck-2026) contains its reviewed source and [public v0.1.0 Release ZIP and SHA256](https://github.com/Hellfire13666/hexbazaar-live-command-deck-2026/releases/tag/v0.1.0). The real public release has ZIP **5,822,079 bytes** SHA-256 `6439e4cd2b6d275b189a18dfc41a262ddcc62dcd1aa4ffb01b67a25ac9906f78` and independent checksum asset SHA-256 `34c328639a1388ab3b93a41469812ea4e1dc78b57517eb5cc453ca5f4af63a8f`. Owner's publisher re-downloaded and verified `HEXBZ-LIVE-COMMAND-DECK-v0.1.0.zip: OK`, with packaged source verifier 17/17 and Deck 7/7 offline tests passing.
+The guarded `PUBLISH` workflow completed and the [new, separate official GitHub repository](https://github.com/Hellfire13666/hexbazaar-live-command-deck-2026) contains its reviewed source and [public v0.1.0 Release ZIP and SHA256](https://github.com/Hellfire13666/hexbazaar-live-command-deck-2026/releases/tag/v0.1.0). The real public release has ZIP **5,822,079 bytes** SHA-256 `6439e4cd2b6d275b189a18dfc41a262ddcc62dcd1aa4ffb01b67a25ac9906f78` and independent checksum asset SHA-256 `34c328639a1388ab3b93a41469812ea4e1dc78b57517eb5cc453ca5f4af63a8f`. The release archive was downloaded and verified `HEXBZ-LIVE-COMMAND-DECK-v0.1.0.zip: OK`, with packaged source verifier 17/17 and Deck 7/7 offline tests passing.
 
 The separate [versioned Phantom Backup HQ Installer Vault folder](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/tree/main/installers/hexbazaar-live-command-deck/v0.1.0) physically contains the actual ZIP and exact checksum. [Vault archive workflow #39674856072](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/actions/runs/39674856072) fully **succeeded**, including source-release mirroring, archive checksum validation and immutable publishing. `installers/index.json` and `installers/SHA256SUMS.txt` include both matching digests. Other three Vault releases preserved.
 
