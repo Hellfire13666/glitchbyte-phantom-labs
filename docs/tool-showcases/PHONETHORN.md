@@ -4,7 +4,7 @@
 
 [Standalone PHONETHORN repository](https://github.com/Hellfire13666/phonethorn-ghost-signal) · [Upload files](https://github.com/Hellfire13666/phonethorn-ghost-signal/upload/main) · [Tool Vault](../TOOL_VAULT.md) · [Cultivation Room](../CULTIVATION_ROOM.md)
 
-> **Publication status (2026-10-26):** The standalone repository is public, but its full top-level installer/README, chosen Cosmic Kitty + cartoon Rosie artwork, and final MX Linux user-machine checks are not independently confirmed. Do not describe this as a verified GitHub Release or a confirmed Backup HQ archive.
+> **Publication status (2026-10-26):** The standalone repository is public, but its full top-level installer/README, chosen Cosmic Kitty + cartoon Rosie artwork, and final Debian-based Linux user-machine checks are not independently confirmed. Do not describe this as a verified GitHub Release or a confirmed Backup HQ archive.
 
 ## What it does
 
@@ -27,7 +27,7 @@ phonethorn --phone "+14155552671" --web-intel
 phonethorn --phone "+14155552671" --fusion --out "$HOME/PhoneThornReports"
 ```
 
-The example number is illustrative. These commands describe the v0.5.0 candidate, **not independently confirmed end-to-end on the owner's MX Linux installation**. Refer to the standalone repository's actual `INSTALL.sh` after that file is verified on `main`.
+The example number is illustrative. These commands describe the v0.5.0 candidate, **not independently confirmed end-to-end on the owner's Debian-based Linux installation**. Refer to the standalone repository's actual `INSTALL.sh` after that file is verified on `main`.
 
 ## Lab routing
 
