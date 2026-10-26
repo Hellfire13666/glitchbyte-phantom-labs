@@ -27,7 +27,7 @@
 - `reveal()` decodes hexadecimal into a letter. Hex is reversible encoding, **not encryption**.
 - It does **not write its own report files**. The recipe below saves a transcript without changing the game.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu / Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find / Read Output → Troubleshoot.**
 
@@ -130,7 +130,7 @@ Answer each riddle at `YOUR ANSWER >`. The game accepts retries and shows hints 
 
 ## 🧪 Verification, safety and license
 
-The tool's three answers, retry behavior, animations, hidden letter and absence of CLI flags were confirmed by inspecting [its actual Python source](../../tools/rosie_catch_me_chaos.py). The recipe contains a reproducible offline smoke test, but it **has not been executed end-to-end in your Ubuntu environment** during this documentation update.
+The tool's three answers, retry behavior, animations, hidden letter and absence of CLI flags were confirmed by inspecting [its actual Python source](../../tools/rosie_catch_me_chaos.py). The recipe contains a reproducible offline smoke test, but it **has not been executed end-to-end in a Linux environment** during this documentation update.
 
 No credentials, login sessions or external accounts are involved. The hex letter is not cryptographically secure. Follow the repository's [security guidance](../../SECURITY.md) and [custom source-available license](../../LICENSE-NOTICE.md).
 
