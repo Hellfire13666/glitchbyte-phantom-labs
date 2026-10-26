@@ -32,7 +32,7 @@
     "recipes/start-here.html": "73beff2dfd4b46d6ca423de0e8010e0afc30920ecaa9d27c8b7eeaf3cf0658f9",
     "scripts/refresh_catalog.py": "83fb619112eaa7cf552456d4a63f1fa0a318f8449ade9e6053f57367867d0c57",
     "scripts/verify_hub.py": "f1141e09de6d470b71d85b2a9e2aea0fb4f83de424061af9288e7a4375cb67d8",
-    "tests/test_master_hub_v030.py": "e73408965e8a18ae073781caebbbd9613803b6d54057b4de2d00dc1054d14d04"
+    "tests/test_master_hub_v030.py": "c3d74ed2d1f08601957c948c8f5c13677558b773fa7fcebe32f3cb871329b392"
   },
   "format": "GlitchByte Master Hub",
   "version": "v0.3.0"
