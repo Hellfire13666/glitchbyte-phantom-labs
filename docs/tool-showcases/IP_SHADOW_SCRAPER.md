@@ -65,7 +65,7 @@ python3 glitchbyte-phantom-labs/tools/rosie_ip_shadow_scraper.py \
 
 # 5. FIND RESULTS: exact output directory configured by the program.
 REPORT_DIR="$(python3 -c 'from pathlib import Path; print(Path.home() / "RosieGlitchByte_IP_Shadow_Reports")')"
-find "$REPORT_DIR" -maxdepth 1 -type f -name 'rosie_ip_192.0.2.1_*.json' -printf '%f\n'f '%f\n'
+find "$REPORT_DIR" -maxdepth 1 -type f -name 'rosie_ip_192.0.2.1_*.json' -printf '%f\n'
 echo "Open the actual saved file with: python3 -m json.tool /actual/path.json"
 ```
 
