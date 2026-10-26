@@ -1,4 +1,4 @@
-# GLITCHBYTE ART VAULT CONVERTER · MX Linux
+# GLITCHBYTE ART VAULT CONVERTER · Debian-based Linux
 
 [![Approved Rosie neon Art Vault Converter v2 poster](../../docs/creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png)](../../docs/creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png)
 
@@ -9,14 +9,14 @@
 | Piece | Purpose | Files |
 | --- | --- | --- |
 | 1 · Compression engine | Convert PNG/JPG/WebP and other still images into privacy-conscious WebP copies, normally at or below 900 KiB | `GLITCHBYTE-ART-VAULT-BATCH-OPTIMIZER-v1.py` |
-| 2 · One-click Desktop shortcut | Install the familiar MX Linux XFCE shortcut; choose Execute/Allow Launching if prompted | `INSTALL_GLITCHBYTE_CONVERTER.sh` |
+| 2 · One-click Desktop shortcut | Install the familiar Debian-based Linux XFCE shortcut; choose Execute/Allow Launching if prompted | `INSTALL_GLITCHBYTE_CONVERTER.sh` |
 | 3 · New-only upgrade | Remember completed images outside the output folder, avoiding duplicate conversions after deleting uploaded WebPs | `glitchbyte_art_new_only_v2.py` and `INSTALL_NEW_ONLY_v2.sh` |
 
 **Recommended for current installations:** v2. If yesterday's Desktop shortcut is already working, **do not reinstall** just to use the GitHub copy. These files are source preservation and optional reinstall recipes.
 
-## MX Linux: first-time v2 install
+## Debian-based Linux: first-time v2 install
 
-1. Download the four files in this directory to **one local folder** on MX Linux.
+1. Download the four files in this directory to **one local folder** on Debian-based Linux.
 2. In a terminal in that folder, run `sudo apt install python3-pil` only if Pillow is not installed.
 3. Run `bash INSTALL_NEW_ONLY_v2.sh` **once**. The installer saves the program under `~/.local/share/glitchbyte-phantom-labs/art-vault-new-only-v2/` and creates **GlitchByte Art Vault Converter** on your Desktop.
 
@@ -49,4 +49,4 @@ python3 GLITCHBYTE-ART-VAULT-BATCH-OPTIMIZER-v1.py \
 
 The historical installer `INSTALL_GLITCHBYTE_CONVERTER.sh` installs a v1 shortcut. Use **v2**, not v1, if you want "new only" history, and do not run both installers in succession as each targets the same Desktop shortcut.
 
-**Requirements:** Linux, Python 3, Pillow (Debian/MX Linux package `python3-pil`). Completely offline processing; nothing is uploaded to GitHub or Hangout by this tool. No member information, passwords, or live backups are included in this repository.
+**Requirements:** Linux, Python 3, Pillow (Debian/Debian-based Linux package `python3-pil`). Completely offline processing; nothing is uploaded to GitHub or Hangout by this tool. No member information, passwords, or live backups are included in this repository.
