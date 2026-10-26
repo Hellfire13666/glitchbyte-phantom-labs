@@ -30,9 +30,10 @@ jobs:
         run: |
           set -euo pipefail
           echo "Public HTTPS clone: no Git URL rewrite and no stored token."
-          git -c credential.helper= clone --depth 1 \
+          git -c credential.helper= clone --no-checkout --filter=blob:none \
             https://github.com/Hellfire13666/glitchbyte-phantom-labs.git \
             "$RUNNER_TEMP/phantom-public-clone"
+          git -C "$RUNNER_TEMP/phantom-public-clone" checkout --detach "$GITHUB_SHA"
           test -f "$RUNNER_TEMP/phantom-public-clone/README.md"
           test -f "$RUNNER_TEMP/phantom-public-clone/LICENSE-NOTICE.md"
           test -f "$RUNNER_TEMP/phantom-public-clone/SECURITY.md"
