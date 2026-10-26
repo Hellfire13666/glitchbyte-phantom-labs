@@ -1,6 +1,6 @@
 # 🌹 HEXWRAITH Domain Atlas: Privacy Edition v1.1.1 RC1
 
-**Status: locally built, tested and checksum-verified on Ubuntu on October 19, 2026. NOT yet uploaded to GitHub.** This page is a release-candidate record, not a claim that GitHub Headquarters or Phantom Backup HQ contains the ZIP/source.
+**Status: locally built, tested and checksum-verified on Linux on October 19, 2026. NOT yet uploaded to GitHub.** This page is a release-candidate record, not a claim that GitHub Headquarters or Phantom Backup HQ contains the ZIP/source.
 
 ## Release identity
 
@@ -15,7 +15,7 @@
 | Package behavior | Staged patched implementation under standard and private filenames; README, JSON hash manifest and tests, with research reports excluded by the packaging script |
 | Publication | **Pending**; neither public source nor a release ZIP has been uploaded as a result of this local build |
 
-## Field validation on Ubuntu
+## Field validation on Linux
 
 - Existing local HEXWRAITH `reports/` directory changed to mode `0700` via `chmod -R go-rwx`. A subsequent `find` reported **zero files with group/other permission bits**.
 - Local patched script was created separately with mode `0600` and `--help` succeeded. Original launcher was preserved.
@@ -31,11 +31,11 @@ The user ran `unzip -Z -1 ~/Downloads/hexwraith_privacy_edition_v1_1_1_rc1.zip` 
 
 ## ✅ Internal hashes and basic credential-pattern scan (October 19, 2026)
 
-The user's read-only Ubuntu audit of the local seven-member RC1 ZIP returned **`[HASH CHECK] PASS`** for hashes listed in `MANIFEST.json` and **`[CREDENTIAL PATTERNS] NONE FOUND`** for four classes: PEM private key delimiters, GitHub token formats, AWS access key IDs and common literal credential assignments. No matched secret values were printed. The code output was partially shell-garbled in the pasted terminal input, but the displayed summary contained these exact pass results.
+The read-only Linux audit of the local seven-member RC1 ZIP returned **`[HASH CHECK] PASS`** for hashes listed in `MANIFEST.json` and **`[CREDENTIAL PATTERNS] NONE FOUND`** for four classes: PEM private key delimiters, GitHub token formats, AWS access key IDs and common literal credential assignments. No matched secret values were printed. The code output was partially shell-garbled in the pasted terminal input, but the displayed summary contained these exact pass results.
 
 **Limits:** This is only a pattern-based screening, not a human inspection of the packaged source or an exhaustive secrets scan. The seven-member archive currently **does not include a dedicated license file**. [Headquarters' existing license notice](../../LICENSE-NOTICE.md) is custom source-available (unmodified use allowed under conditions, redistribution/modifications need permission), *not* an OSI open-source license. Before public HEXWRAITH publication, choose the license for this separate tool, review its actual imports and metadata, and package the chosen notice; adding files changes the ZIP SHA-256, so do **not** silently change the pinned RC1 checksum.
 
-## Verify the local candidate (Ubuntu)
+## Verify the local candidate (Linux)
 
 ```bash
 cd "$HOME/Downloads"
