@@ -31,7 +31,7 @@ Its reports are created together in the requested output directory:
 
 **These four fixed filenames are replaced every time you run the tool in the same output folder.** Use a different `--output` location for separate runs. Input notes remain your files, except `--demo` writes or replaces `demo_notes.txt` inside the chosen input directory.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu/Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find Results → Troubleshoot.**
 
@@ -77,7 +77,7 @@ find "$WORKSPACE/sample-reports" -maxdepth 1 -type f \
 python3 -m json.tool "$WORKSPACE/sample-reports/signal_garden.json" >/dev/null
 echo "JSON parsed successfully."
 echo "Open HTML: $WORKSPACE/sample-reports/signal_garden.html"
-echo 'On a graphical Ubuntu desktop, run: xdg-open "$HOME/PhantomLabsBuilds/signal-garden-station/sample-reports/signal_garden.html"'
+echo 'On a graphical Linux desktop, run: xdg-open "$HOME/PhantomLabsBuilds/signal-garden-station/sample-reports/signal_garden.html"'
 ```
 
 **Why no pip or Go install?** The current source uses only Python's standard library, reads local files, and does not need a compiler or API credentials.
@@ -123,7 +123,7 @@ The browser command requires a Linux graphical desktop. For headless systems, in
 
 ## 🧪 Verification and safety
 
-The flags, file filters, four output filenames and demo behavior were checked by inspecting [the actual Python source](../../tools/rosie_signal_garden.py). **The full paste-ready recipe has not been executed end-to-end in the user's Ubuntu environment.** The demo is illustrative until you run it locally.
+The flags, file filters, four output filenames and demo behavior were checked by inspecting [the actual Python source](../../tools/rosie_signal_garden.py). **The full paste-ready recipe has not been executed end-to-end in the Linux environment.** The demo is illustrative until you run it locally.
 
 The generated report may reproduce local notes, dates, URLs, and file hashes. Do not publish it without review. Read the repository's [security policy](../../SECURITY.md) and [custom source-available license](../../LICENSE-NOTICE.md).
 
