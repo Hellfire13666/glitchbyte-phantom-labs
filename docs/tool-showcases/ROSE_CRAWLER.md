@@ -26,7 +26,7 @@ Its status labels are `manual review`, `restricted`, `uncertain`, `not found` an
 
 Output formats are **searchable HTML, JSON and CSV**, all created together by the existing script. It is not a recursive crawler, authenticated account tool or a way to bypass robots restrictions.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu/Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 Six steps: **Install → Build → Test → Run → Find Results → Troubleshoot**.
 
@@ -40,7 +40,7 @@ set -e
 command -v python3 >/dev/null 2>&1 || { echo "Python 3 required."; exit 1; }
 command -v git >/dev/null 2>&1 || { echo "Git required."; exit 1; }
 
-WORKSPACE="$HOME/PhantomLabsBuilds/rose-crawler-station"
+WORKSPACE="./rose-crawler-station"
 mkdir -p "$WORKSPACE"
 cd "$WORKSPACE"
 
@@ -88,20 +88,20 @@ echo 'xdg-open "/actual/path/to/your/rose_report.html"'
 Use a public handle you have a legitimate reason to research. Run from any directory, using the actual Python source path:
 
 ```bash
-python3 "$HOME/PhantomLabsBuilds/rose-crawler-station/glitchbyte-phantom-labs/tools/rose_crawler.py" \
+python3 "./rose-crawler-station/glitchbyte-phantom-labs/tools/rose_crawler.py" \
   YOUR_PUBLIC_HANDLE \
   --platforms GitHub,GitLab,Reddit \
-  --output "$HOME/PhantomLabsBuilds/rose-crawler-station/reports"
+  --output "./rose-crawler-station/reports"
 ```
 
 The command above is **offline**, since it omits `--fetch`. After reviewing platform conditions and your authorization, an optional network request mode is:
 
 ```bash
-python3 "$HOME/PhantomLabsBuilds/rose-crawler-station/glitchbyte-phantom-labs/tools/rose_crawler.py" \
+python3 "./rose-crawler-station/glitchbyte-phantom-labs/tools/rose_crawler.py" \
   YOUR_PUBLIC_HANDLE \
   --fetch --delay 3 \
   --platforms GitHub,GitLab \
-  --output "$HOME/PhantomLabsBuilds/rose-crawler-station/reports"
+  --output "./rose-crawler-station/reports"
 ```
 
 Use `--list` for the exact platform spellings. The `--delay` minimum is **2 seconds** and the default is **2.5 seconds**. A robots.txt failure generally results in a restricted status rather than a profile fetch. A website's response or redirects can still produce uncertain results.
@@ -111,7 +111,7 @@ Use `--list` for the exact platform spellings. The `--delay` minimum is **2 seco
 The source constructs the filename as `rose_<username>_<YYYYMMDD_HHMMSS_microseconds>_<random-suffix>` and saves matching `.html`, `.json`, and `.csv` files under the directory supplied by `--output` (default: `~/RoseCrawlerReports`).
 
 ```bash
-find "$HOME/PhantomLabsBuilds/rose-crawler-station/reports" -type f \
+find "./rose-crawler-station/reports" -type f \
   \( -name '*.html' -o -name '*.json' -o -name '*.csv' \)
 ```
 
@@ -143,7 +143,7 @@ The filename strings above are examples, not files known to exist on your machin
 
 ## 🧪 Review and safety notes
 
-The flags, platform list, report formats and behavior above were inspected in [the current source](../../tools/rose_crawler.py). The full Bash recipe has **not been run end-to-end in your Ubuntu environment**, and no social website was queried as part of this documentation update. A syntax check is recommended; it is not proof that a live profile fetch will work.
+The flags, platform list, report formats and behavior above were inspected in [the current source](../../tools/rose_crawler.py). The full Bash recipe has **not been run end-to-end in your Linux environment**, and no social website was queried as part of this documentation update. A syntax check is recommended; it is not proof that a live profile fetch will work.
 
 Phase 25 changes only the report filename construction in the original source; platform research logic is unchanged. Respect platforms, privacy and the repository's [SECURITY.md](../../SECURITY.md) and [LICENSE-NOTICE.md](../../LICENSE-NOTICE.md). Do not commit sensitive reports or use a matching username to make identity accusations.
 
@@ -154,7 +154,7 @@ Phase 25 changes only the report filename construction in the original source; p
 First install the shared [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md). It saves what this existing tool **prints in the terminal**, not its hidden data or structured files. Both `-o` and `--o` work **on the runner** before the `--` separator:
 
 ```bash
-SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+SAVER="./easy-save/phantom_easy_save.py"
 # From your HQ repository checkout root:
 python3 "$SAVER" --o rose_crawler_help.txt -- python3 -u tools/rose_crawler.py --help
 ```
