@@ -45,7 +45,7 @@ set -e
 # 1. INSTALL: Python 3 and Git, no pip dependencies.
 command -v python3 >/dev/null 2>&1 || { echo "Python 3 required"; exit 1; }
 command -v git >/dev/null 2>&1 || { echo "Git required"; exit 1; }
-WORKSPACE="./hexwake-foundry"
+WORKSPACE="$(pwd)/hexwake-foundry"
 mkdir -p "$WORKSPACE"
 cd "$WORKSPACE"
 if [ ! -f glitchbyte-phantom-labs/tools/hexwake_palette_foundry.py ]; then
@@ -95,7 +95,7 @@ echo "Open an HTML file above using xdg-open on a graphical Linux desktop."
 ## Create a completely different color direction
 
 ```bash
-python3 "./hexwake-foundry/glitchbyte-phantom-labs/tools/hexwake_palette_foundry.py" \
+python3 ./hexwake-foundry/glitchbyte-phantom-labs/tools/hexwake_palette_foundry.py" \
   --seed 7831 --count 6 --base '#B6FF00' \
   --out "./hexwake-foundry/lime-exports"
 ```
