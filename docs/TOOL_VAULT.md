@@ -41,7 +41,7 @@
 
 **[Enter the Phantom Labs Repair Shop](repair-shop/README.md)** · [Node.js 22 / MXHX Shed repair ticket](repair-shop/NODE22_MXHX_SHED.md) · [Neon Node Repair Shop logo](repair-shop/node22-repair-logo.svg)
 
-**Field-tested on October 21, 2026:** recovered an Debian-based Linux / Debian Trixie system from an active nvm-selected Node.js 0.10.48 (npm 2.15.1) to Node.js 22.23.4 (npm 10.9.9). The MXHX Shed project then installed 429 packages with `npm ci` and started Vite 8.3.4. Browser features were not exhaustively verified. This is a documented repair guide, **not** a new independent scanner or another item in the 24-tool count.
+**Compatibility verification:** recovered an Debian-based Linux / Debian Trixie system from an active nvm-selected Node.js 0.10.48 (npm 2.15.1) to Node.js 22.23.4 (npm 10.9.9). The MXHX Shed project then installed 429 packages with `npm ci` and started Vite 8.3.4. Browser features were not exhaustively verified. This is a documented repair guide, **not** a new independent scanner or another item in the 24-tool count.
 
 **The official GlitchByte Phantom Labs tool navigator.**
 **🌈 [SIMPLE · MEDIUM · EXTRA beginner runtime recipes](BEGINNER_RUNTIME_RECIPES.md):** copy-and-paste examples, visible intelligence feedback, optional saving explained, and Firefox notes. Individual tool pages remain the source of truth for their supported options.
