@@ -24,7 +24,7 @@ The second concept file has not yet been uploaded under its expected name.
 
 **⚡ NO-DOWNLOAD-ATTACHMENT QUICK START:** [Copy one terminal command, generate HTML and open Firefox](../COPY_PASTE_OPEN.md). No Git pull, merge or rebase. The command is hosted in our GitHub lab and uses its own safe home folder.
 
-**⚡ HOW TO TRIGGER THIS TOOL:** Clicking GitHub's source link only displays code. To **run the program and open Firefox**, [open the one-paste launcher instructions](../COPY_PASTE_OPEN.md#-how-visitors-actually-trigger-a-tool), copy the complete Bash command for this tool, paste it into an **Ubuntu/Linux Terminal**, and press **Enter**. Wait for the local `[REPORT]` HTML path. Firefox opens automatically if installed; otherwise open that saved HTML path manually. These are not one-click GitHub apps, and typing a tool name alone is not a shell command.
+**⚡ HOW TO TRIGGER THIS TOOL:** Clicking GitHub's source link only displays code. To **run the program and open Firefox**, [open the one-paste launcher instructions](../COPY_PASTE_OPEN.md#-how-visitors-actually-trigger-a-tool), copy the complete Bash command for this tool, paste it into an **Linux terminal**, and press **Enter**. Wait for the local `[REPORT]` HTML path. Firefox opens automatically if installed; otherwise open that saved HTML path manually. These are not one-click GitHub apps, and typing a tool name alone is not a shell command.
 
 
 **Independent Python 3 tool · Responsive Rosie-branded HTML dashboard · JSON evidence · 11 report panels · Optional Findomain + WHOIS**
@@ -51,7 +51,7 @@ Research a public domain with a small, bounded set of conventional lookups. Repo
 
 An offline run exercises the **real rendering and export pipeline** but deliberately performs no remote lookups. Use a public domain you own or are authorized to examine for live checks. DNS, RDAP and certificate transparency are external services, so live results may be stale or unavailable. Missing security headers alone do **not** establish a vulnerability.
 
-## 📋 COPY & PASTE BUILD RECIPE // UBUNTU / LINUX BASH
+## 📋 COPY & PASTE BUILD RECIPE // LINUX BASH
 
 **Install → Build → Test → Run → Find Results → Troubleshoot**
 
@@ -129,7 +129,7 @@ Without a domain argument, the script prompts you. By default, reports go to `~/
 ### 🛠️ Troubleshooting
 
 - **Git clone fails:** Verify Git and network connectivity. Do not reset or rebase your original repository.
-- **Python missing:** Install Python 3 on Ubuntu before running the recipe.
+- **Python missing:** Install Python 3 on Linux before running the recipe.
 - **Findomain or WHOIS not installed:** Optional stages are skipped. RDAP is part of the main script.
 - **No results:** Public services may be unreachable, redacted or empty. Check the report Notes panel.
 - **Firefox not installed / no graphical desktop:** Open the saved `.html` file manually using a browser.
