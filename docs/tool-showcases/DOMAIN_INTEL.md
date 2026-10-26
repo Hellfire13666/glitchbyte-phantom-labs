@@ -33,7 +33,7 @@ The existing source provides six selectable modes, using the *actual* `--mode` f
 
 The optional `dnspython` package adds DNS record types; without it, base IP resolution still works and the report explains the limitation. The script prints individual mode results as they complete, but does **not** show a site-by-site progress counter because it scans one chosen domain.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu or Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find Results → Troubleshoot.** Copy this block into Bash. The code only starts a network request **after** you type a domain you are permitted to assess.
 
@@ -46,7 +46,7 @@ command -v python3 >/dev/null 2>&1 || { echo "Install Python 3 first."; exit 1; 
 command -v git >/dev/null 2>&1 || { echo "Install Git first."; exit 1; }
 
 # Keep releases outside the working repository, without overwriting files.
-WORKSPACE="$HOME/PhantomLabsBuilds/domain-intel-station"
+WORKSPACE="$(pwd)/domain-intel-station"
 mkdir -p "$WORKSPACE"
 cd "$WORKSPACE"
 if [ ! -f "glitchbyte-phantom-labs/tools/glitchbyte_domain_intel.py" ]; then
@@ -89,7 +89,7 @@ echo 'python3 -m json.tool /path/to/glitchbyte_DOMAIN_TIMESTAMP.json | less'
 **Optional extended DNS records:** If your system has `python3-venv` installed, you can create a private virtual environment inside `$HOME/PhantomLabsBuilds/domain-intel-station` and install `dnspython`. This is optional and not required for the recipe above:
 
 ```bash
-cd "$HOME/PhantomLabsBuilds/domain-intel-station"
+cd domain-intel-station
 python3 -m venv .venv
 .venv/bin/python -m pip install 'dnspython>=2.6,<3'
 .venv/bin/python glitchbyte-phantom-labs/tools/glitchbyte_domain_intel.py --help
@@ -102,7 +102,7 @@ If `venv` is unavailable, install your distribution's `python3-venv` package fir
 Replace `your-authorized-domain.org` with a real domain you control or have permission to assess:
 
 ```bash
-cd "$HOME/PhantomLabsBuilds/domain-intel-station/reports"
+cd domain-intel-station/reports
 python3 ../glitchbyte-phantom-labs/tools/glitchbyte_domain_intel.py \
   your-authorized-domain.org --mode 6 --no-color
 ```
@@ -122,7 +122,7 @@ The fields include `tool`, `domain`, `timestamp_utc`, `mode`, and `results`. The
 To find and read your real report:
 
 ```bash
-find "$HOME/PhantomLabsBuilds/domain-intel-station/reports" -type f -name 'glitchbyte_*.json'
+find "./domain-intel-station/reports" -type f -name 'glitchbyte_*.json'
 python3 -m json.tool "/full/path/to/your-actual-report.json" | less
 ```
 
@@ -154,7 +154,7 @@ The command line flags and output location above were confirmed from [the curren
 For this existing tool, use the tested shared [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md) to capture its **printed terminal output** in a new plain TXT without changing the tool's own CLI. First install the runner using that linked guide, then **from the HQ repository root** try the harmless help-only test:
 
 ```bash
-SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+SAVER="./easy-save/phantom_easy_save.py"
 python3 "$SAVER" --o domain_intel_terminal.txt -- python3 -u tools/glitchbyte_domain_intel.py --help
 ```
 
