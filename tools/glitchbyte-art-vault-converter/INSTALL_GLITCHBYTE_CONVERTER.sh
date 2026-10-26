@@ -30,8 +30,8 @@ if command -v xdg-user-dir >/dev/null 2>&1; then
 fi
 printf "${PINK}GLITCHBYTE PHANTOM LABS // ART VAULT CONVERTER${RESET}\n"
 printf "${CYAN}================================================${RESET}\n"
-printf '1) Originals folder: %s\n' "$SOURCE"
-printf '2) Smaller copies:   %s\n\n' "$DEST"
+echo '1) Originals folder: GlitchByte-To-Upload'
+printf '2) Smaller copies: GlitchByte-Upload-Ready\n\n'
 mkdir -p "$SOURCE"
 if ! command -v python3 >/dev/null 2>&1; then
   echo '[STOP] Python 3 is not installed.'
@@ -69,7 +69,7 @@ chmod 755 "$DESKTOP_FILE"
 cp "$DESKTOP_FILE" "$HOME/.local/share/applications/glitchbyte-art-vault-converter.desktop"
 mkdir -p "$DESKTOP_DIR/GlitchByte-To-Upload"
 printf '\n[PASS] ONE-CLICK CONVERTER INSTALLED\n'
-printf '[SHORTCUT] %s\n' "$DESKTOP_FILE"
-printf '[INPUT] %s\n' "$DESKTOP_DIR/GlitchByte-To-Upload"
-printf '[OUTPUT] %s\n' "$DESKTOP_DIR/GlitchByte-Upload-Ready"
+echo '[SHORTCUT] Desktop launcher created'
+echo '[INPUT] GlitchByte-To-Upload'
+echo '[OUTPUT] GlitchByte-Upload-Ready'
 echo '[NEXT] Copy your pictures into input and double-click the desktop shortcut.'
