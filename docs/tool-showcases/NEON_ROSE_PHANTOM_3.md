@@ -33,7 +33,7 @@ The tool offers `--no-animation` and an optional positional domain, and saves a 
 
 The source has **no `--output`, `--out`, `--json` or CSV/HTML export flags**. Do not copy command examples from the other Domain Phantom tools without checking their version-specific report paths.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu / Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find / Read Results → Troubleshoot.**
 
@@ -120,7 +120,7 @@ The displayed `/actual/path/to/report.json` is a placeholder, not a generated fi
 
 | Symptom | Fix |
 | --- | --- |
-| `python3` / `git` missing | Install them using the Ubuntu/Linux package manager |
+| `python3` / `git` missing | Install them using the Linux package manager |
 | Unexpected repository folder exists | Inspect the existing contents rather than overwriting them |
 | Invalid domain / prohibited port | Supply an ordinary public domain without credentials or nonstandard ports |
 | Public IP check refuses a target | Stop; do not work around the non-public-address restriction |
@@ -132,7 +132,7 @@ The displayed `/actual/path/to/report.json` is a placeholder, not a generated fi
 
 ## 🧪 Verification and safety
 
-The flags, eight modules, JSON structure and report path were verified by inspecting the [original Python file](../../tools/rosieglitchbyte_neon_rose_phantom_3.py). The full recipe **has not been executed end-to-end on the user's Ubuntu system** and no live target was queried in this documentation task.
+The flags, eight modules, JSON structure and report path were verified by inspecting the [original Python file](../../tools/rosieglitchbyte_neon_rose_phantom_3.py). The full recipe **has not been executed end-to-end on the Linux environment** and no live target was queried in this documentation task.
 
 Respect the repository's [security policy](../../SECURITY.md), [custom source-available license](../../LICENSE-NOTICE.md), network permissions and privacy expectations. Do not upload sensitive report output or infer individual identities from shared infrastructure.
 
