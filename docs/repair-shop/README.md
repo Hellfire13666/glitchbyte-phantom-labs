@@ -10,7 +10,7 @@ This shop stores **observed, documented repairs** for local tool installations a
 
 | Repair ticket | System / symptom | State |
 | --- | --- | --- |
-| [NODE-2026-001: MXHX Shed / Node 0.10 → Node 22](NODE22_MXHX_SHED.md) | MX Linux (Debian Trixie); ancient nvm-selected Node.js fails modern ES modules and npm installation | **Field-tested: Node 22, npm ci, and Vite startup passed** |
+| [NODE-2026-001: MXHX Shed / Node 0.10 → Node 22](NODE22_MXHX_SHED.md) | Debian-based Linux (Debian Trixie); ancient nvm-selected Node.js fails modern ES modules and npm installation | **Field-tested: Node 22, npm ci, and Vite startup passed** |
 
 ## Repair shop rules
 
