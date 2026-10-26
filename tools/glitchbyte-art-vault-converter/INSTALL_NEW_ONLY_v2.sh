@@ -70,4 +70,4 @@ printf '[READY]   %s\n' "$DEST"
 printf '[HISTORY] %s\n' "$HOME/.local/state/glitchbyte-phantom-labs/art-vault-new-only-v2-history.json"
 echo '[RULE] Existing pictures were remembered on first install. Only NEW pictures added afterward convert.'
 echo '[NEXT] Copy NEW pictures into GlitchByte-To-Upload and double-click the familiar converter icon.'
-echo '[TIP] On MX Linux XFCE, right-click desktop icon and choose Execute or Allow Launching if asked.'
+echo '[TIP] On Debian-based Linux XFCE, right-click desktop icon and choose Execute or Allow Launching if asked.'
