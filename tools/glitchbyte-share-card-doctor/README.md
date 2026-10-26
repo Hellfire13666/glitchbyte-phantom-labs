@@ -10,7 +10,7 @@ A **separate tool** from the Art Vault Converter. Checks the public Hangout's Op
 - The picture: <https://glitchbyte.alwaysdata.net/social-preview-assets/og-image.jpg>
 - The Facebook/Messenger cache tool: **[Meta Sharing Debugger](https://developers.facebook.com/tools/debug/)**
 
-## SIMPLE (MX Linux / Ubuntu)
+## SIMPLE (Debian-based Linux / Ubuntu)
 
 ```bash
 python3 tools/glitchbyte-share-card-doctor/share_card_doctor.py
