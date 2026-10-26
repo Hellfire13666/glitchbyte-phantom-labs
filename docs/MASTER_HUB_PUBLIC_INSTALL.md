@@ -2,7 +2,7 @@
 
 **CURRENT OFFICIAL HUB RELEASE: v0.3.0.** [Published Master Hub v0.3.0 ZIP + checksum](https://github.com/Hellfire13666/glitchbyte-phantom-labs/releases/tag/master-hub-v0.3.0) · [separately checksum-verified Installer Vault copy](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases/tree/main/installers/glitchbyte-phantom-labs-master-hub/v0.3.0) · [verified release checkpoint](MASTER_HUB_V030_RELEASE_CHECKPOINT.md).
 
-The v0.3.0 Hub features the owner's exact Rosie-and-spine artwork, permanent PHANTOM SPINE v0.2.0 switch and real copyable commands, plus all previous switchboard tools. The Hub is **offline HTML navigation**, not a network scanner; executing a command requires pasting it into a terminal with that separate tool installed. The owner confirmed v0.3.0 opens correctly in Firefox on Debian; the embedded Copy button's individual click verification remains pending. Ubuntu testing remains pending.
+The v0.3.0 Hub features the owner's exact Rosie-and-spine artwork, permanent PHANTOM SPINE v0.2.0 switch and real copyable commands, plus all previous switchboard tools. The Hub is **offline HTML navigation**, not a network scanner; executing a command requires pasting it into a terminal with that separate tool installed. The v0.3.0 Hub has been opened successfully in Firefox on Debian-based Linux; individual Copy-button verification remains pending. Ubuntu testing remains pending.
 
 ## 🌹 Master Hub v0.3.0: one-square official public install
 
@@ -68,7 +68,7 @@ You can [review the installer source](../scripts/install_glitchbyte_master_hub_v
 
 ### Requirements
 
-Desktop Linux, `bash`, `python3`, `curl`, `unzip`, `sha256sum` and preferably `xdg-open` for launching in a browser. The owner's desktop is Debian 13 (Trixie) XFCE; earlier hub launch and shortcut use was confirmed. The owner successfully downloaded and verified the public ZIP and reopened an existing v0.2.0 hub on Debian XFCE; fresh-account installation and all interactive buttons still need real-machine checks. Ubuntu **has not been personally verified** for this hub. The hub is local HTML and Python 3 standard-library code.
+Desktop Linux, `bash`, `python3`, `curl`, `unzip`, `sha256sum`, and preferably `xdg-open` for browser launching. Public ZIP verification and existing-install browser opening were confirmed on Debian-based Linux; fresh-account installation and all interactive controls remain unverified. The Hub uses local HTML and Python 3 standard-library code.
 
 ## ⚡ Open the hub again
 
@@ -95,8 +95,8 @@ Never upload the locally generated `catalog.js`, private research reports, crede
 - Local v0.2.0 archive ZIP and its SHA-256 were verified; hub static file manifest, internal links and six logo SVGs passed checks.
 - The standalone installer was checked in a clean isolated home directory, including desktop+menu shortcuts, repeat-install preservation and rejecting an invalid ZIP.
 - Published GitHub release **metadata** confirms the exact tag, ZIP asset (981,915 bytes), checksum asset and matching ZIP SHA-256. A direct external release-file download could not be performed in the container because DNS was unavailable.
-- The owner's Debian XFCE screenshot shows the public ZIP download/checksum and hub verify script passing, and an actual PHANTOM SPINE recipe page visible in a browser. This is a public-download and existing-install browser-open smoke test, not a clean install or full UI acceptance test.
+- Debian-based Linux checks confirmed public ZIP download/checksum, Hub verification and browser opening of a PHANTOM SPINE recipe page. This is a public-download and existing-install smoke test, not a clean install or full UI acceptance test.
 - The hub's card discovery, search, copy feedback, and no-installed-pages states passed Chromium DOM/JavaScript simulation; direct browser navigation was blocked by administrator policy here. Desktop v2 shortcut use and clicking every hub control have not yet been field-confirmed.
 - The repo's [custom source-available licensing notice](../LICENSE-NOTICE.md) allows use under its stated conditions; do not assume unrestricted open-source redistribution rights.
 
-**GlitchByte Approved · Debian Trixie used · Ubuntu validation pending.**
+**GlitchByte Approved · Debian-based Linux tested · additional distribution validation pending.**
