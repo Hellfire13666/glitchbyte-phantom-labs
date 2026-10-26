@@ -40,7 +40,7 @@ set -e
 command -v python3 >/dev/null 2>&1 || { echo "Python 3 required."; exit 1; }
 command -v git >/dev/null 2>&1 || { echo "Git required."; exit 1; }
 
-WORKSPACE="./rose-crawler-station"
+WORKSPACE="$(pwd)/rose-crawler-station"
 mkdir -p "$WORKSPACE"
 cd "$WORKSPACE"
 
@@ -88,7 +88,7 @@ echo 'xdg-open "/actual/path/to/your/rose_report.html"'
 Use a public handle you have a legitimate reason to research. Run from any directory, using the actual Python source path:
 
 ```bash
-python3 "./rose-crawler-station/glitchbyte-phantom-labs/tools/rose_crawler.py" \
+python3 ./rose-crawler-station/glitchbyte-phantom-labs/tools/rose_crawler.py" \
   YOUR_PUBLIC_HANDLE \
   --platforms GitHub,GitLab,Reddit \
   --output "./rose-crawler-station/reports"
