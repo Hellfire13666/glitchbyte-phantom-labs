@@ -33,7 +33,7 @@ With no flags, a nine-option **interactive** menu provides imports, optional CSV
 
 `--username` makes a public X request with a 12-second timeout and at most 400 KB of the returned page; a 200 status is not verified account existence or identity. For a safe first run, use a **local sample CSV**, without `--username`.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu / Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find / Read Reports → Troubleshoot**
 
@@ -154,7 +154,7 @@ The `--username` mode **fetches X profile metadata** and can yield a login page 
 
 ## 🧪 Verification and safety
 
-The flags, output paths, local data handling, sample overwrite behavior and live metadata distinctions were established by inspecting [the original source](../../tools/rosieglitchbyte_hackgirl.py). The complete Bash recipe **has not yet been executed end to end on your Ubuntu system**. The recipe's validation commands run *when you paste them*, and no live account was queried in preparing this documentation.
+The flags, output paths, local data handling, sample overwrite behavior and live metadata distinctions were established by inspecting [the original source](../../tools/rosieglitchbyte_hackgirl.py). The complete Bash recipe **has not yet been executed end to end on a Linux environment**. The recipe's validation commands run *when you paste them*, and no live account was queried in preparing this documentation.
 
 Imported post content and public descriptions can still include personal information. Do not post raw research reports without reviewing them. Follow [SECURITY.md](../../SECURITY.md) and the repository's [custom source-available license](../../LICENSE-NOTICE.md).
 
