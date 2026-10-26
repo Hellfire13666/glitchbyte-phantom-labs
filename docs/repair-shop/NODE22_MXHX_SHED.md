@@ -10,7 +10,7 @@
 
 A Linux computer can obtain the MXHX Shed project but an npm installation fails and running the dev server ends in a syntax error at a modern JavaScript import in scripts/with-app-env.mjs.
 
-**Observed system:** MX Linux / Debian Trixie, nvm 0.39.1. The active runtime was **Node.js v0.10.48 with npm v2.15.1**, while MXHX Shed's published README requires **Node.js 22**.
+**Observed system:** Debian-based Linux / Debian Trixie, nvm 0.39.1. The active runtime was **Node.js v0.10.48 with npm v2.15.1**, while MXHX Shed's published README requires **Node.js 22**.
 
 ### Error fingerprints
 
@@ -99,6 +99,6 @@ The installation also printed deprecation warnings for Recharts and ESLint. Thes
 
 ## Scope
 
-Repair tested on one user's MX Linux computer for the publicly documented MXHX Shed project. It did **not** alter the brother's upstream repository, globally uninstall old Node runtimes, or prove unrelated tools work. No GitHub clone was repeated and no system-wide Node replacement was needed.
+Repair tested on one user's Debian-based Linux computer for the publicly documented MXHX Shed project. It did **not** alter the brother's upstream repository, globally uninstall old Node runtimes, or prove unrelated tools work. No GitHub clone was repeated and no system-wide Node replacement was needed.
 
 **Ticket state: Node version, dependencies and dev-server boot passed; app feature verification remains a separate task.**
