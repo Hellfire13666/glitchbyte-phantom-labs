@@ -99,6 +99,6 @@ The installation also printed deprecation warnings for Recharts and ESLint. Thes
 
 ## Scope
 
-Repair tested on one user's Debian-based Linux computer for the publicly documented MXHX Shed project. It did **not** alter the brother's upstream repository, globally uninstall old Node runtimes, or prove unrelated tools work. No GitHub clone was repeated and no system-wide Node replacement was needed.
+Repair validated in a Debian-based Linux environment for the publicly documented MXHX Shed project. It did **not** alter the upstream repository, globally uninstall old Node runtimes, or prove unrelated tools work. No GitHub clone was repeated and no system-wide Node replacement was needed.
 
 **Ticket state: Node version, dependencies and dev-server boot passed; app feature verification remains a separate task.**
