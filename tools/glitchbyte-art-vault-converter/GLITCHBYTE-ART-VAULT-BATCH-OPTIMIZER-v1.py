@@ -121,7 +121,7 @@ def main(argv=None):
         from PIL import Image
     except ImportError:
         print("[MISSING] Pillow image support is not installed.")
-        print("[ONE-TIME FIX] In MX Linux terminal: sudo apt install python3-pil")
+        print("[ONE-TIME FIX] In Debian-based Linux terminal: sudo apt install python3-pil")
         return 2
     _, _, failures = process_folder(source, dest, args.force)
     return 1 if failures else 0
