@@ -28,7 +28,7 @@ The source generates public profile links for **GitHub, GitLab, Codeberg, Reddit
 
 A 0.4-second pause follows each checkable site request. Network requests use a 7-second timeout. This is **not** a verification or attribution engine, a login bypass, or a private-account lookup.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu/Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find Results → Troubleshoot.**
 
@@ -125,7 +125,7 @@ The JSON includes `username`, `checked_at_utc`, a disclaimer, and a `results` ar
 
 ## 🧪 Evidence and safety
 
-The CLI flags and platform list are verified against [the actual Python source](../../tools/rosie_username_intel.py). This documentation update **does not claim** a real platform was queried or that the full recipe was tested end to end on Ubuntu. Python syntax checking is a local validation step, not a guarantee of live results.
+The CLI flags and platform list are verified against [the actual Python source](../../tools/rosie_username_intel.py). This documentation update **does not claim** a real platform was queried or that the full recipe was tested end to end on Linux. Python syntax checking is a local validation step, not a guarantee of live results.
 
 Follow [SECURITY.md](../../SECURITY.md), the [custom source-available license](../../LICENSE-NOTICE.md), applicable platform terms and privacy protections. **Never treat a shared handle as proof that accounts belong to the same person.**
 
