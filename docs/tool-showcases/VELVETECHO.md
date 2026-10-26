@@ -14,7 +14,7 @@
 
 [Actual Python source](../../tools/velvetecho-persona-observatory/velvetecho_persona_observatory.py) · [Full README](../../tools/velvetecho-persona-observatory/README.md) · [Custom catalog example](../../tools/velvetecho-persona-observatory/catalog.example.json) · [Offline tests](../../tests/test_velvetecho_persona_observatory.py) · [Tool Vault](../TOOL_VAULT.md)
 
-## 📋 COPY & PASTE BUILD RECIPE // UBUNTU / LINUX
+## 📋 COPY & PASTE BUILD RECIPE // LINUX
 
 **Install → Build → Test → Run → Read reports → Troubleshoot.** Zero pip dependencies; requires Git and Python 3.9+. Independent install station so you do not merge or reset your existing project:
 
@@ -75,7 +75,7 @@ Phone format statuses are `FORMAT_OK`, `INVALID`, and `UNKNOWN`. These make no c
 
 ## Troubleshoot
 
-- **No Python 3 / Git:** Install packages from your Ubuntu distribution; no extra pip packages.
+- **No Python 3 / Git:** Install packages from your Linux distribution; no extra pip packages.
 - **Live run rejected:** Supply `--authorized` and ensure the usernames are your own or you have permission.
 - **Empty/blocked results:** Robots policies, bot blocking, login gates, and site changes can prevent conclusive outcomes; never assume absence.
 - **Firefox missing:** Use the printed HTML `[REPORT]` path with `xdg-open` or another desktop browser.
