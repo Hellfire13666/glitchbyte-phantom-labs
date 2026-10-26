@@ -24,7 +24,7 @@
 
 The full presentation intentionally pauses during printing. To view the letter quickly, use the separate offline decoding recipe below rather than inventing a speed flag or changing the source.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu/Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find/Read Output → Troubleshoot**
 
@@ -118,7 +118,7 @@ The transcript can contain ANSI control characters. Do not expect built-in JSON,
 
 ## 🧪 Review, privacy and licensing
 
-All behavior described here was verified by inspecting [the original Python source](../../tools/rosie_dark_desire.py), including the `FRAGMENTS` list, decoder, animations and absence of command-line options or network access. **This is a source-reviewed recipe, not a claim of an executed end-to-end Ubuntu test.**
+All behavior described here was verified by inspecting [the original Python source](../../tools/rosie_dark_desire.py), including the `FRAGMENTS` list, decoder, animations and absence of command-line options or network access. **This is a source-reviewed recipe, not a claim of an executed end-to-end Linux test.**
 
 The text is creative fiction. Hexadecimal text is readable by anyone with a decoder, so don't use it to conceal sensitive messages. Follow [SECURITY.md](../../SECURITY.md) and the repository's [custom source-available license](../../LICENSE-NOTICE.md).
 
