@@ -4,7 +4,7 @@ This checklist applies to every public tool, recipe, artwork and release across 
 
 ## Before publishing
 - [ ] Use **Linux** or **Debian-based Linux** in public instructions; do not publish the developer's personal workstation details.
-- [ ] Use `$HOME`, `$USER`, and example placeholders instead of real computer names or personal filesystem paths.
+- [ ] Use relative project paths and neutral placeholders instead of personal computer names, local account names, or absolute filesystem paths. Shell-internal environment variables may remain where required for correct operation.
 - [ ] Review README, shell installers, Python/Go source, launchers, demos, and screenshots for accidental identifying information.
 - [ ] Check archives, HTML reports, text outputs, metadata and example files before distribution.
 - [ ] Keep access credentials in local configuration, never in public source or examples.
