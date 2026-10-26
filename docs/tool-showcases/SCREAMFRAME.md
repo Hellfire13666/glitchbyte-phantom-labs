@@ -12,7 +12,7 @@
 
 **New, independent GlitchByte Phantom Labs offline image-investigation workstation.**
 
-[Python 3 source](../../tools/screamframe-pixel-autopsy/screamframe_pixel_autopsy.py) · [Project README and tested Ubuntu recipe](../../tools/screamframe-pixel-autopsy/README.md) · [Offline tests](../../tools/screamframe-pixel-autopsy/tests/test_screamframe_pixel_autopsy.py) · [Synthetic sample](../../tools/screamframe-pixel-autopsy/examples/screamframe_synthetic_fixture.json)
+[Python 3 source](../../tools/screamframe-pixel-autopsy/screamframe_pixel_autopsy.py) · [Project README and tested Linux recipe](../../tools/screamframe-pixel-autopsy/README.md) · [Offline tests](../../tools/screamframe-pixel-autopsy/tests/test_screamframe_pixel_autopsy.py) · [Synthetic sample](../../tools/screamframe-pixel-autopsy/examples/screamframe_synthetic_fixture.json)
 
 ## What it does
 
@@ -20,7 +20,7 @@ Collects metadata for your **own local image files** without sending their pixel
 
 The original dark-and-lime HTML identity uses midnight charcoal, radioactive lime, signal orange, restrained terminal typography and visual thumbnail cards. No external stylesheet, tracking pixel, remote font, or hosted javascript.
 
-## 📋 COPY & PASTE BUILD RECIPE // UBUNTU/LINUX
+## 📋 COPY & PASTE BUILD RECIPE // LINUX
 
 This builds an independent folder, never resets or merges an existing project. `apt`, `git clone`, and `pip install` are the only setup steps requiring network access.
 
@@ -59,7 +59,7 @@ The demo should print a fresh `screamframe_echo_*.html` and matching `.json` fil
 find "$HOME/PhantomLabsBuilds/screamframe-pixel-studio/screamframe-reports" -maxdepth 1 -type f \( -name 'screamframe_echo_*.html' -o -name 'screamframe_echo_*.json' \)
 ```
 
-Tested locally with Python 3 and Pillow 12.3.0: 8 dedicated unit tests passed, compilation succeeded, and the synthetic demo produced 4 inspected images / 1 identical set / 2 visual pairs / 1 format mismatch / 0 skips. GitHub Actions / Ubuntu CI, external screenshot quality, and long-running scans have not been separately certified by those local tests.
+Tested locally with Python 3 and Pillow 12.3.0: 8 dedicated unit tests passed, compilation succeeded, and the synthetic demo produced 4 inspected images / 1 identical set / 2 visual pairs / 1 format mismatch / 0 skips. GitHub Actions / Linux CI, external screenshot quality, and long-running scans have not been separately certified by those local tests.
 
 **Boundaries:** no networking, no OCR, no file modification or deletion, no proof of forgery, limited metadata extraction. EXIF fields are untrusted. Scan avoids symlinks, limits size and pixel count, caps total files, and skips its report folder. Reports still contain filenames, hashes, timestamps and optionally thumbnails, so keep them private.
 
