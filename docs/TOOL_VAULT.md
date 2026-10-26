@@ -2,6 +2,10 @@
 <div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF1493?style=flat-square&logo=github&logoColor=white"></a></div>
 <!-- GLITCHBYTE-UPLOAD-DOOR:END -->
 
+## 🐈‍⬛ PHONETHORN // GHOST SIGNAL · Cosmic Kitties (Cultivation)
+
+[**Open the PHONETHORN dedicated lab page**](tool-showcases/PHONETHORN.md) · [Standalone GitHub repository](https://github.com/Hellfire13666/phonethorn-ghost-signal) · [Cultivation Room](CULTIVATION_ROOM.md). Phone metadata, public business-contact research links, Holmes-inspired GEO clues, device-recovery guidance, and evidence reports. **v0.5.0 GitHub release, complete installer verification, and Backup HQ copy pending**; no live handset GPS from a number.
+
 # 🕷️ PHANTOM TOOL VAULT
 
 > **QUICK LAB DOORS:** [👻 Phantom Labs HQ](../README.md) · [🌱 Cultivation Room](CULTIVATION_ROOM.md) · [⚡ RosieRiot Overdrive](https://github.com/Hellfire13666/rosieriot-overdrive-2026) · [🔐 Phantom Backup HQ](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases)  
