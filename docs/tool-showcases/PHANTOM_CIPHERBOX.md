@@ -12,7 +12,7 @@
 
 **⚡ NO-DOWNLOAD-ATTACHMENT QUICK START:** [Copy one terminal command, generate HTML and open Firefox](../COPY_PASTE_OPEN.md). No Git pull, merge or rebase. The command is hosted in our GitHub lab and uses its own safe home folder.
 
-**⚡ HOW TO TRIGGER THIS TOOL:** Clicking GitHub's source link only displays code. To **run the program and open Firefox**, [open the one-paste launcher instructions](../COPY_PASTE_OPEN.md#-how-visitors-actually-trigger-a-tool), copy the complete Bash command for this tool, paste it into an **Ubuntu/Linux Terminal**, and press **Enter**. Wait for the local `[REPORT]` HTML path. Firefox opens automatically if installed; otherwise open that saved HTML path manually. These are not one-click GitHub apps, and typing a tool name alone is not a shell command.
+**⚡ HOW TO TRIGGER THIS TOOL:** Clicking GitHub's source link only displays code. To **run the program and open Firefox**, [open the one-paste launcher instructions](../COPY_PASTE_OPEN.md#-how-visitors-actually-trigger-a-tool), copy the complete Bash command for this tool, paste it into an **Linux terminal**, and press **Enter**. Wait for the local `[REPORT]` HTML path. Firefox opens automatically if installed; otherwise open that saved HTML path manually. These are not one-click GitHub apps, and typing a tool name alone is not a shell command.
 
 
 **Standalone Python 3 · Real reversible coding puzzles · Markdown, HTML and JSON · Private answer key · Zero external services**
@@ -36,7 +36,7 @@
 
 Encodings include **hexadecimal UTF-8**, **Base64 UTF-8**, **ROT13**, and **character reversal**. The chosen operations are embedded in the puzzle as ordered *decoding clues*, making every puzzle solvable. The HTML and Markdown puzzle files contain **no plaintext answer**. The `.answer.txt` export **does contain the entire original message** and intermediate stages, so keep it private.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu/Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 Six-stage **Install → Build → Test → Run → Find/Read Outputs → Troubleshoot**.
 
@@ -120,7 +120,7 @@ Never share the `.answer.txt` file if you want someone else to solve the puzzle.
 
 | Issue | Fix |
 | --- | --- |
-| Git or Python 3 missing | Install them with Ubuntu's package manager |
+| Git or Python 3 missing | Install them with your Linux package manager |
 | Clone failed | Check the repository URL and connectivity |
 | An existing folder blocks installation | Inspect it; the recipe refuses to overwrite files |
 | `--message` is empty | Supply non-whitespace text or an appropriate UTF-8 message file |
@@ -128,7 +128,7 @@ Never share the `.answer.txt` file if you want someone else to solve the puzzle.
 | `--verify` says NO MATCH | Decode every clue in order; exact case, punctuation and whitespace matter |
 | Report files not found | Inspect the `--out` folder and printed `[SAVED]` paths |
 | Puzzle reveals the answer | The `.answer.txt` file intentionally shows the solution; do not share it |
-| HTML won't open on an Ubuntu server | Open the saved HTML on a graphical desktop or inspect Markdown |
+| HTML won't open on a headless Linux server | Open the saved HTML on a graphical desktop or inspect Markdown |
 
 ## Testing and boundaries
 
