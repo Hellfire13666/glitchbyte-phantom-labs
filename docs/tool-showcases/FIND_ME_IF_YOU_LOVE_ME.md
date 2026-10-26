@@ -24,7 +24,7 @@ The program uses only Python standard-library modules and never contacts the net
 
 **Hex is an encoding, not encryption.** Anybody with the source can decode the letter.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu / Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find & Read Output → Troubleshoot.**
 
@@ -126,7 +126,7 @@ Answer prompts directly. The existing game has no fast-mode flag, so this comman
 
 ## 🧪 Verification and safety
 
-The source, its three gates, answer matching, timing and decoded finale were inspected directly in [`rosie_hide_seek.py`](../../tools/rosie_hide_seek.py). The smoke test above **checks the real game logic when run**, but the complete Bash recipe was **not executed end to end on your Ubuntu system** during this documentation update.
+The source, its three gates, answer matching, timing and decoded finale were inspected directly in [`rosie_hide_seek.py`](../../tools/rosie_hide_seek.py). The smoke test above **checks the real game logic when run**, but the complete Bash recipe was **not executed end to end on a Linux environment** during this documentation update.
 
 This is a fictional romance game, not malware or a secure method of storing secrets. Review the repository [security policy](../../SECURITY.md) and [custom source-available license](../../LICENSE-NOTICE.md).
 
