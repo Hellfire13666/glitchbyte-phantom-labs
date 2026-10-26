@@ -13,7 +13,7 @@
 </td>
 <td width="50%" valign="top">
 <a href="02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png"><img alt="Approved neon Rosie Art Vault Converter v2 poster" src="02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png" width="440"></a>
-<p><strong>Art Vault Converter v2</strong><br>Offline MX Linux WebP optimizer with saved new-picture history. One converter, three project components.</p>
+<p><strong>Art Vault Converter v2</strong><br>Offline Debian-based Linux WebP optimizer with saved new-picture history. One converter, three project components.</p>
 </td>
 </tr>
 </table>
@@ -43,4 +43,4 @@ Approved poster SHA-256: `71f22910af269fde6dc184a3e995908ee41bf3d3afccba839c06d3
 
 Source repository: https://github.com/Hellfire13666/glitchbyte-phantom-labs
 
-**Status:** Published as artwork and documentation in this public repository; no standalone website deployment or new MX Linux installation is implied.
+**Status:** Published as artwork and documentation in this public repository; no standalone website deployment or new Debian-based Linux installation is implied.
