@@ -16,7 +16,7 @@
 </td>
 <td width="50%" valign="top">
 <a href="docs/creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png"><img alt="Approved neon Rosie Art Vault Converter v2 poster" src="docs/creative-utilities-showcase-v1.0.3/02-ART-VAULT-CONVERTER/assets/ART-VAULT-CONVERTER-ROSIE-NEON-v2.png" width="300"></a>
-<p><strong>Art Vault Converter v2</strong><br>Offline MX Linux WebP optimizer with saved new-picture history. One converter, three project components.</p>
+<p><strong>Art Vault Converter v2</strong><br>Offline Debian-based Linux WebP optimizer with saved new-picture history. One converter, three project components.</p>
 </td>
 </tr>
 </table>
