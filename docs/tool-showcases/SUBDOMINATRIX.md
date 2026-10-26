@@ -90,7 +90,7 @@ if command -v firefox >/dev/null 2>&1; then
 fi
 ```
 
-## 🔧 Findomain slow-internet correction (Checklist #3)
+## 🔧 Findomain timeout handling
 
 A Linux compatibility test collected public-source hostname candidates while an optional Findomain invocation timed out. The tool was limiting Findomain to **24 seconds** because the public-provider `--timeout 8` was also used to derive a CLI deadline. The optional failure message hid the reason, and `subprocess.run` discarded partial output on timeout. A crt.sh HTTP 502 was a separate provider problem, not a failure of the overall collection.
 
@@ -102,7 +102,7 @@ A Linux compatibility test collected public-source hostname candidates while an 
 - The program runs no automatic provider retry on HTTP 429, respects the provider's rate limit, and continues other sources.
 - `--terminal-only` still creates **no report files**; without it, the original four report formats and Firefox opening work as before.
 
-**Recommended live public-source test (new source on main):**
+**Optional standalone-variant command (run only where this variant is installed):**
 
 ```bash
 export PATH="$(python3 -c 'from pathlib import Path; print(Path.home() / ".local/bin")'):$(go env GOPATH 2>/dev/null)/bin:$PATH"
@@ -120,6 +120,8 @@ The standalone variant uses a separate script. Run its commands from the directo
 **Want real intelligence scrolling by without saved files?** The upgraded source provides `--terminal-only` and `--color always` while keeping the original Firefox/HTML/JSON/CSV/TXT workflow unchanged. These options are now published on the `main` branch. Local older copies must be refreshed explicitly; the original Firefox/export mode continues working.
 
 ### Terminal-only, public-source research, no report files
+
+For the following HQ examples, open a terminal in the `subdominatrix-station` folder created by the first-run recipe. The standalone variant above is a separate installation.
 
 ```bash
 SCRIPT="./glitchbyte-phantom-labs/tools/subdominatrix.py"
@@ -160,7 +162,7 @@ The Extra command only queries public-domain sources and the installed public di
 
 See also our [SIMPLE · MEDIUM · EXTRA runtime cookbook](../BEGINNER_RUNTIME_RECIPES.md) for the full explanation. These examples use **existing** documented options, not new `--simple`/`--medium`/`--extra` flags.
 
-Set the script location once after completing the build instructions below:
+From the `subdominatrix-station` folder, set the script location once after completing the build instructions above:
 
 ```bash
 SCRIPT="./glitchbyte-phantom-labs/tools/subdominatrix.py"
@@ -205,6 +207,8 @@ mkdir -p ./glitchbyte-launcher && curl -fL --retry 2 "https://raw.githubusercont
 **This exact launcher works on the GitHub main branch only after the release PR is merged.** An unmerged branch's URL cannot be downloaded from `/main/`. The standalone full recipe above also requires the release's source to be on main. Do not run pictured/mock installation commands from the promotional design.
 
 ### Real authorized research with Subfinder and Findomain
+
+Run from the `subdominatrix-station` folder created by the first-run recipe.
 
 Only perform DNS and HTTP checks for domains you own or have permission to inspect. For public passive collection, supply a real public DNS domain:
 
