@@ -26,7 +26,7 @@ The Python source is a **single-file terminal game** with five gates. Players so
 - The letter is encoded as plain UTF-8 **hex**, which anyone can decode. It is not secret-key encryption and does not provide confidentiality.
 - The original game **does not save JSON, CSV, HTML or a log file**. You can optionally capture its terminal output to a text file using Bash, without modifying the game.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu / Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find/Read Output → Troubleshoot**
 
@@ -121,7 +121,7 @@ Type answers at the `[YOUR REPLY]` prompt. Incorrect guesses show hints after re
 
 ## 🧪 Verification and responsible use
 
-The five puzzle gates, `--fast` behavior, hex decoding, lack of export flags and absence of network activity were confirmed by inspecting [the original Python source](../../tools/rosie_ghost_heart.py). The copy-and-paste workflow was **source-reviewed**, but not executed on the user's Ubuntu machine in this documentation update. The final chapter assertions in the recipe act as a reproducible local smoke test.
+The five puzzle gates, `--fast` behavior, hex decoding, lack of export flags and absence of network activity were confirmed by inspecting [the original Python source](../../tools/rosie_ghost_heart.py). The copy-and-paste workflow was **source-reviewed**, but not executed on a Linux environment in this documentation update. The final chapter assertions in the recipe act as a reproducible local smoke test.
 
 The game is fictional and intended for consenting adult readers as a creative surprise, not a way to conceal private messages or collect credentials. Follow the repository's [security policy](../../SECURITY.md) and [custom source-available license](../../LICENSE-NOTICE.md).
 
