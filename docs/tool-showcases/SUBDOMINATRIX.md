@@ -28,7 +28,7 @@
 
 **Not in this release:** global asset geolocation, screenshots, automatic technology fingerprints beyond selected headers, vulnerability scoring, login automation, unlimited crawling, brute-force enumeration, or automatic ownership attribution. These appear only as design directions in the concept picture, not as implemented features.
 
-## 🧪 COPY & PASTE BUILD RECIPE // Ubuntu/Linux first run
+## 🧪 COPY & PASTE BUILD RECIPE // Linux first run
 
 **Install → Build → Test → Run → Find results → Troubleshoot.** The first Bash block is independently exercised in Linux CI under a disposable home folder. It generates an **offline synthetic preview**, not a live scan. It uses a dedicated checkout and does not alter a user's original Git clone.
 
@@ -37,7 +37,7 @@
 command -v python3 >/dev/null 2>&1 && echo "Python 3 found"
 command -v git >/dev/null 2>&1 && echo "Git found"
 
-STATION="$HOME/PhantomLabsBuilds/subdominatrix"
+STATION="$(pwd)/subdominatrix-station"
 mkdir -p "$STATION"
 cd "$STATION"
 
@@ -92,7 +92,7 @@ fi
 
 ## 🔧 Findomain slow-internet correction (Checklist #3)
 
-The October 19, 2026 Ubuntu test returned **51 unique public-source hostname candidates** but reported `[OPTIONAL] findomain: failed | 0 records`. A separate direct `findomain -t facebook.com` run had previously completed successfully in 23 seconds. The tool was limiting Findomain to **24 seconds** because the public-provider `--timeout 8` was also used to derive a CLI deadline. The optional failure message hid the reason, and `subprocess.run` discarded partial output on timeout. A crt.sh HTTP 502 was a separate provider problem, not a failure of the overall collection.
+A Linux compatibility test collected public-source hostname candidates while an optional Findomain invocation timed out. The tool was limiting Findomain to **24 seconds** because the public-provider `--timeout 8` was also used to derive a CLI deadline. The optional failure message hid the reason, and `subprocess.run` discarded partial output on timeout. A crt.sh HTTP 502 was a separate provider problem, not a failure of the overall collection.
 
 **New behavior:**
 
@@ -105,13 +105,13 @@ The October 19, 2026 Ubuntu test returned **51 unique public-source hostname can
 **Recommended live public-source test (new source on main):**
 
 ```bash
-export PATH="$HOME/.local/bin:$HOME/go/bin:$PATH"
-SCRIPT="$HOME/PhantomLabsLaunchers/subdominatrix_live_signal_2026/subdominatrix_live_signal_2026.py"
+export PATH="$(python3 -c 'from pathlib import Path; print(Path.home() / ".local/bin")'):$(go env GOPATH 2>/dev/null)/bin:$PATH"
+SCRIPT="./subdominatrix_live_signal_2026.py"
 python3 -u "$SCRIPT" facebook.com --terminal-only --color always \
   --findomain --timeout 8 --cli-timeout 60 --max-results 1000
 ```
 
-The path shown above is the workshop's separately downloaded upgrade. If not installed there, use the build recipe below and substitute your actual source path. Download a fresh copy after the fix is merged. A successful public-source run can be **partial** when a remote provider returns HTTP 502 or 429; hostname candidates do not establish current active services.
+The standalone variant uses a separate script. Run its commands from the directory containing that installed script, or use the HQ checkout recipe above. Download a fresh copy after the fix is merged. A successful public-source run can be **partial** when a remote provider returns HTTP 502 or 429; hostname candidates do not establish current active services.
 
 ---
 
@@ -122,7 +122,7 @@ The path shown above is the workshop's separately downloaded upgrade. If not ins
 ### Terminal-only, public-source research, no report files
 
 ```bash
-SCRIPT="$HOME/PhantomLabsBuilds/subdominatrix/glitchbyte-phantom-labs/tools/subdominatrix.py"
+SCRIPT="./glitchbyte-phantom-labs/tools/subdominatrix.py"
 python3 -u "$SCRIPT" example.com --terminal-only --color always --timeout 8
 ```
 
@@ -149,7 +149,7 @@ python3 -u "$SCRIPT" example.com --terminal-only --color always --timeout 8
 ### 🔥 EXTRA | More passive sources, still no active probes
 
 ```bash
-export PATH="$HOME/.local/bin:$HOME/go/bin:$PATH"
+export PATH="$(python3 -c 'from pathlib import Path; print(Path.home() / ".local/bin")'):$(go env GOPATH 2>/dev/null)/bin:$PATH"
 python3 -u "$SCRIPT" example.com --terminal-only --color always \
   --findomain --subfinder --timeout 10 --max-results 1200
 ```
@@ -163,7 +163,7 @@ See also our [SIMPLE · MEDIUM · EXTRA runtime cookbook](../BEGINNER_RUNTIME_RE
 Set the script location once after completing the build instructions below:
 
 ```bash
-SCRIPT="$HOME/PhantomLabsBuilds/subdominatrix/glitchbyte-phantom-labs/tools/subdominatrix.py"
+SCRIPT="./glitchbyte-phantom-labs/tools/subdominatrix.py"
 ```
 
 **🌱 SIMPLE | Safe first-run preview, no network lookups**
@@ -196,10 +196,10 @@ python3 "$SCRIPT" YOUR-AUTHORIZED-DOMAIN.example \
 
 ### 🕷️ One-paste launcher, once the PR is merged
 
-GitHub source links **do not execute Python**. Copy this *whole* block into the Ubuntu terminal, press Enter, and wait for the reported local HTML path. Firefox opens automatically if installed. This uses an isolated `~/PhantomLabsLaunchers` directory, not any old Git checkout.
+GitHub source links **do not execute Python**. Copy this *whole* block into the Linux terminal, press Enter, and wait for the reported local HTML path. Firefox opens automatically if installed. This uses a separate local launcher directory rather than modifying an existing Git checkout.
 
 ```bash
-mkdir -p "$HOME/PhantomLabsLaunchers" && curl -fL --retry 2 "https://raw.githubusercontent.com/Hellfire13666/glitchbyte-phantom-labs/main/scripts/phantom_quickopen.py" -o "$HOME/PhantomLabsLaunchers/phantom_quickopen.py" && python3 "$HOME/PhantomLabsLaunchers/phantom_quickopen.py" subdominatrix
+mkdir -p ./glitchbyte-launcher && curl -fL --retry 2 "https://raw.githubusercontent.com/Hellfire13666/glitchbyte-phantom-labs/main/scripts/phantom_quickopen.py" -o ./glitchbyte-launcher/phantom_quickopen.py && python3 ./glitchbyte-launcher/phantom_quickopen.py subdominatrix
 ```
 
 **This exact launcher works on the GitHub main branch only after the release PR is merged.** An unmerged branch's URL cannot be downloaded from `/main/`. The standalone full recipe above also requires the release's source to be on main. Do not run pictured/mock installation commands from the promotional design.
@@ -209,7 +209,7 @@ mkdir -p "$HOME/PhantomLabsLaunchers" && curl -fL --retry 2 "https://raw.githubu
 Only perform DNS and HTTP checks for domains you own or have permission to inspect. For public passive collection, supply a real public DNS domain:
 
 ```bash
-SCRIPT="$HOME/PhantomLabsBuilds/subdominatrix/glitchbyte-phantom-labs/tools/subdominatrix.py"
+SCRIPT="./glitchbyte-phantom-labs/tools/subdominatrix.py"
 python3 "$SCRIPT" example.com --subfinder --findomain \
   --dns-check --http-check --max-verify 40 --max-results 800
 ```
@@ -221,7 +221,7 @@ The `subfinder` and `findomain` binaries are optional; they must already be inst
 New **`-o` / `--output-txt`** saves only the deduplicated discovered hostnames, one per line, while keeping the colorful real-time terminal findings. **Without `-o` in terminal-only mode, nothing is saved.**
 
 ```bash
-SCRIPT="$HOME/PhantomLabsLaunchers/subdominatrix_live_signal_2026/subdominatrix_live_signal_2026.py"
+SCRIPT="./subdominatrix_live_signal_2026.py"
 python3 -u "$SCRIPT" facebook.com --terminal-only --color always \
   --findomain --timeout 8 --cli-timeout 60 -o facebook_hosts.txt
 ```
