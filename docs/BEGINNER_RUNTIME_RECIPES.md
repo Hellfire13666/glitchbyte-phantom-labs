@@ -6,7 +6,7 @@
 
 **Publishing this everywhere:** Our [Build → Run → Publish → Vault standard](BUILD_PUBLICATION_STANDARD.md) explains how every new tool gets unique artwork/source, these three verified recipes, colorful live results, accurate save/Firefox notes, and links through HQ, Cultivation, Tool Vault, and verified Backup HQ.
 
-**✅ Tested in the lab:** `python3 "$SAVER" --o findomain_results.txt -- findomain -t facebook.com` displayed Findomain's public-source results and a saved TXT transcript in Ubuntu after 21 seconds. Public data can be incomplete; this output contains both findings and provider messages, not a normalized hostname-only export. [Full guide](EASY_SAVE_ALL_TOOLS.md).
+**✅ Tested in the lab:** `python3 "$SAVER" --o findomain_results.txt -- findomain -t facebook.com` displayed Findomain's public-source results and a saved TXT transcript in Linux after 21 seconds. Public data can be incomplete; this output contains both findings and provider messages, not a normalized hostname-only export. [Full guide](EASY_SAVE_ALL_TOOLS.md).
 
 ## 💾 Universal `-o` / `--o` saver instructions
 
@@ -14,14 +14,14 @@
 
 ## 🌹 Triad Forge: bounded Simple / Medium / Extra commands
 
-[Read the real Triad Signal integration guide](integrations/TRIAD_SIGNAL_2026.md). All three Go tools were located on Ubuntu; **Waybackurls passed live**, printing 20 URL lines. The earlier passive Amass and GAU runs each timed out at 45 seconds; a GAU missing `~/.gau.toml` message is nonfatal. The new companion runs independently bounded source checks concurrently, prints real `FOUND`/`TIMEOUT`/`PARTIAL-TIMEOUT` labels and supports opt-in native `-o`/`--o` clean candidate TXT. Its separate CI/offline verification and Ubuntu end-to-end test must be distinguished from the original tools' checks.
+[Read the real Triad Signal integration guide](integrations/TRIAD_SIGNAL_2026.md). All three Go tools were located on Linux; **Waybackurls passed live**, printing 20 URL lines. The earlier passive Amass and GAU runs each timed out at 45 seconds; a GAU missing `~/.gau.toml` message is nonfatal. The new companion runs independently bounded source checks concurrently, prints real `FOUND`/`TIMEOUT`/`PARTIAL-TIMEOUT` labels and supports opt-in native `-o`/`--o` clean candidate TXT. Its separate CI/offline verification and Linux end-to-end test must be distinguished from the original tools' checks.
 
 ## 💾 Easy save convention for updated tools
 
 Where implemented, use **`-o name.txt`** to keep plain-text results while still displaying real-time intelligence in the terminal. If omitted from terminal-only tools, nothing is saved. For SUBDOMINATRIX's updated source, `-o` creates only the requested hostname TXT and never overwrites an existing file:
 
 ```bash
-SCRIPT="$HOME/PhantomLabsLaunchers/subdominatrix_live_signal_2026/subdominatrix_live_signal_2026.py"
+SCRIPT="./subdominatrix_live_signal_2026.py"
 python3 -u "$SCRIPT" example.com --terminal-only --color always -o names.txt
 ```
 
@@ -38,14 +38,14 @@ Local hashing/forensics tools must show actual file results instead; they need n
 
 | Level | Who it is for | How it should behave |
 |---|---|---|
-| 🌱 **SIMPLE** | First-time Ubuntu user | Small, safe first run; copy/paste command; understandable output |
+| 🌱 **SIMPLE** | First-time Linux user | Small, safe first run; copy/paste command; understandable output |
 | ⚡ **MEDIUM** | Curious beginner | Real public-source findings or broader local analysis, visible progress and clear limits |
 | 🔥 **EXTRA** | Experienced beginner | Additional *documented* modules or a longer/broader workload; explicit scope, rate limits and authorization for active checks |
 
 For **each individual tool's** `README.md` or build recipe, include:
 
 1. **Prerequisites and install location**, with a real download/build step or a link to one.
-2. Three **copy-and-paste Ubuntu examples** using verified options, marked SIMPLE / MEDIUM / EXTRA.
+2. Three **copy-and-paste Linux examples** using verified options, marked SIMPLE / MEDIUM / EXTRA.
 3. **Expected screen feedback** (for example START, SOURCE OK, FOUND, PARTIAL, TIMEOUT, SUMMARY), clearly distinguishing illustrative examples from live findings.
 4. **What the results mean**: evidence source, counts, deduplication, false positives and unknown/unavailable status. A discovered hostname does not prove that a service is online or who owns it.
 5. **Output behavior**: whether this *version* saves files automatically, where they go, and how to opt in/out if supported. **Preferred for new and updated live terminal tools: display immediately; save only on request.** Never claim existing tools already implement this if they don't.
@@ -59,11 +59,11 @@ For **each individual tool's** `README.md` or build recipe, include:
 
 ## 🌹 SUBDOMINATRIX Live Signal recipes (published)
 
-**Updated SUBDOMINATRIX Findomain recipe:** use `--terminal-only --findomain --timeout 8 --cli-timeout 60` to separate source and CLI limits, show live findings, and avoid saved report files. See [the complete revised tool guide](tool-showcases/SUBDOMINATRIX.md) for tested syntax, provider errors, and the offline/Firefox distinction. CI and the user's Ubuntu live retest passed: 151 unique candidate hostnames, with only the user-requested TXT saved.
+**Updated SUBDOMINATRIX Findomain recipe:** use `--terminal-only --findomain --timeout 8 --cli-timeout 60` to separate source and CLI limits, show live findings, and avoid saved report files. See [the complete revised tool guide](tool-showcases/SUBDOMINATRIX.md) for tested syntax, provider errors, and the offline/Firefox distinction. CI and the user's Linux live retest passed: 151 unique candidate hostnames, with only the user-requested TXT saved.
 
 
 
-The updated [SUBDOMINATRIX build page](tool-showcases/SUBDOMINATRIX.md) now supports `--terminal-only --color always` for real public-source discoveries with **no saved report files**, while keeping the original automatic Firefox/HTML export behavior when that flag is omitted. The three updated runnable examples are in its guide. Remember: this flag belongs to SUBDOMINATRIX and is not available in all tools.
+Run relative-path examples from the corresponding extracted project directory. The updated [SUBDOMINATRIX build page](tool-showcases/SUBDOMINATRIX.md) now supports `--terminal-only --color always` for real public-source discoveries with **no saved report files**, while keeping the original automatic Firefox/HTML export behavior when that flag is omitted. The three updated runnable examples are in its guide. Remember: this flag belongs to SUBDOMINATRIX and is not available in all tools.
 
 ## 🌐 Verified external Findomain recipes
 
@@ -71,14 +71,14 @@ For **Findomain**, an already-installed third-party tool, use our [Simple / Medi
 
 ---
 
-## ⚡ Example A: ROSIERIOT OVERDRIVE (installed Ubuntu tools)
+## ⚡ Example A: ROSIERIOT OVERDRIVE (installed Linux tools)
 
 Read the [RosieRiot tool repository](https://github.com/Hellfire13666/rosieriot-overdrive-2026) and run `--help` before using its original engine. The separate v3 passive launcher tested in the workshop may be installed locally but **is not included in the published Overdrive ZIP** at the time of writing.
 
 **SIMPLE — one public-source Subfinder run, live lines, no report file requested**
 
 ```bash
-export PATH="$HOME/go/bin:$PATH"
+export PATH="$(go env GOPATH)/bin:$PATH"
 subfinder -d example.com -silent
 ```
 
@@ -87,7 +87,7 @@ Public-source candidates appear as they are returned. `-silent` hides banners, *
 **MEDIUM — the workshop's locally installed passive launcher (only if present)**
 
 ```bash
-LAB="$HOME/PhantomLabsLaunchers/rosieriot_overdrive_2026"
+LAB="./rosieriot_overdrive_2026"
 test -f "$LAB/run_rosieriot_live.sh" || echo "LOCAL LIVE LAUNCHER NOT INSTALLED"
 # Only run after the launcher is present:
 bash "$LAB/run_rosieriot_live.sh" example.com
@@ -98,7 +98,7 @@ The tested local v3 wrapper displays public-source progress, candidate hostnames
 **EXTRA — opt-in scoped DNS/HTTP modules in the published Python engine**
 
 ```bash
-LAB="$HOME/PhantomLabsLaunchers/rosieriot_overdrive_2026"
+LAB="./rosieriot_overdrive_2026"
 python3 -u "$LAB/rosieriot_overdrive.py" \
   --target YOUR-AUTHORIZED-DOMAIN.example \
   --live --authorized --color always \
@@ -117,7 +117,7 @@ Replace the placeholder with a domain you own or are explicitly permitted to ass
 Complete setup: [Subdominatrix's tested build recipe](tool-showcases/SUBDOMINATRIX.md). These commands assume that setup is done, with the published source at the path below.
 
 ```bash
-SCRIPT="$HOME/PhantomLabsBuilds/subdominatrix/glitchbyte-phantom-labs/tools/subdominatrix.py"
+SCRIPT="./tools/subdominatrix.py"
 python3 "$SCRIPT" --help
 ```
 
@@ -153,7 +153,7 @@ Requires explicit authorization to test the target domain; uses the installed Su
 
 ## 🖥️ A reusable three-level recipe block for future projects
 
-Copy this *Markdown template* into each new tool's documentation and replace placeholders with the **real**, tested commands. **Do not paste the placeholders into Ubuntu.**
+Copy this *Markdown template* into each new tool's documentation and replace placeholders with the **real**, tested commands. **Do not paste the placeholders into Linux.**
 
 ```text
 ### 🌱 SIMPLE | First successful run
