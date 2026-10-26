@@ -76,17 +76,17 @@ else
   # Mode 1 checks public DNS; choose mode 2-6 for additional lookups.
   python3 "$WORKSPACE/glitchbyte-phantom-labs/tools/glitchbyte_domain_intel.py" \
     "$DOMAIN" --mode 1 --no-color
-  echo "JSON reports in $PWD:"
+  echo "JSON reports saved in the station reports directory:"
   find . -maxdepth 1 -type f -name 'glitchbyte_*.json' -print
 fi
 
 # 5. FIND RESULTS even if you chose not to run a lookup.
-echo "Results directory: $WORKSPACE/reports"
+echo "Results are saved in the station reports directory."
 echo "To inspect a saved report, run:"
 echo 'python3 -m json.tool /path/to/glitchbyte_DOMAIN_TIMESTAMP.json | less'
 ```
 
-**Optional extended DNS records:** If your system has `python3-venv` installed, you can create a private virtual environment inside `$HOME/PhantomLabsBuilds/domain-intel-station` and install `dnspython`. This is optional and not required for the recipe above:
+**Optional extended DNS records:** If your system has `python3-venv` installed, you can create a private virtual environment inside the dedicated `domain-intel-station` folder and install `dnspython`. This is optional and not required for the recipe above:
 
 ```bash
 cd domain-intel-station
@@ -133,7 +133,7 @@ The example JSON filename above is a *pattern*, not proof that any real domain w
 | Problem | Remedy |
 | --- | --- |
 | `python3` or `git` not found | Install through your distribution's package manager and reopen your terminal |
-| `cd` fails | Verify your working directory with `pwd`; the recipe uses `~/PhantomLabsBuilds/domain-intel-station` |
+| `cd` fails | Verify your working directory with `pwd`; the recipe uses the dedicated station folder |
 | `No module named dns` / limited DNS output | Extended records are optional; use the isolated `dnspython` steps above |
 | Timeout, certificate or HTTP error | Confirm connectivity, permission and target availability; check the `error` field in saved results |
 | No JSON appears | Ensure a valid domain was entered; look in the directory from which the script was invoked |
@@ -143,7 +143,7 @@ The example JSON filename above is a *pattern*, not proof that any real domain w
 
 ## 🧪 Evidence and release status
 
-The command line flags and output location above were confirmed from [the current Python source](../../tools/glitchbyte_domain_intel.py). Source inspection is **not** an end-to-end Ubuntu test, a successful live domain lookup, or verification of a vulnerability. The copy-and-paste recipe has not been executed against a live domain during this documentation build.
+The command line flags and output location above were confirmed from [the current Python source](../../tools/glitchbyte_domain_intel.py). Source inspection is **not** an end-to-end Linux test, a successful live domain lookup, or verification of a vulnerability. The copy-and-paste recipe has not been executed against a live domain during this documentation build.
 
 **Safety:** Use public information responsibly, follow [SECURITY.md](../../SECURITY.md), and respect the repository's [custom source-available license](../../LICENSE-NOTICE.md). Do not upload identifying private data, access credentials, session tokens or sensitive results.
 
