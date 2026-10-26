@@ -12,7 +12,7 @@
 
 **⚡ NO-DOWNLOAD-ATTACHMENT QUICK START:** [Copy one terminal command, generate HTML and open Firefox](../COPY_PASTE_OPEN.md). No Git pull, merge or rebase. The command is hosted in our GitHub lab and uses its own safe home folder.
 
-**⚡ HOW TO TRIGGER THIS TOOL:** Clicking GitHub's source link only displays code. To **run the program and open Firefox**, [open the one-paste launcher instructions](../COPY_PASTE_OPEN.md#-how-visitors-actually-trigger-a-tool), copy the complete Bash command for this tool, paste it into an **Ubuntu/Linux Terminal**, and press **Enter**. Wait for the local `[REPORT]` HTML path. Firefox opens automatically if installed; otherwise open that saved HTML path manually. These are not one-click GitHub apps, and typing a tool name alone is not a shell command.
+**⚡ HOW TO TRIGGER THIS TOOL:** Clicking GitHub's source link only displays code. To **run the program and open Firefox**, [open the one-paste launcher instructions](../COPY_PASTE_OPEN.md#-how-visitors-actually-trigger-a-tool), copy the complete Bash command for this tool, paste it into an **Linux Terminal**, and press **Enter**. Wait for the local `[REPORT]` HTML path. Firefox opens automatically if installed; otherwise open that saved HTML path manually. These are not one-click GitHub apps, and typing a tool name alone is not a shell command.
 
 
 **Original offline Python 3 design tool · Reproducible Glitch HEX palettes · JSON, CSS and HTML**
@@ -32,7 +32,7 @@ A separate color-design station with its own identity, not an upgrade to an exis
 
 The HTML report displays a responsive gallery of swatches. The CSS exports selectors `.hexwake-1` etc. with reusable `--hx-primary`, `--hx-rgb-shift` and related variables. Contrast suggestions do not replace an accessibility review.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu/Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find/Read Reports → Troubleshoot**
 
@@ -45,7 +45,7 @@ set -e
 # 1. INSTALL: Python 3 and Git, no pip dependencies.
 command -v python3 >/dev/null 2>&1 || { echo "Python 3 required"; exit 1; }
 command -v git >/dev/null 2>&1 || { echo "Git required"; exit 1; }
-WORKSPACE="$HOME/PhantomLabsBuilds/hexwake-foundry"
+WORKSPACE="./hexwake-foundry"
 mkdir -p "$WORKSPACE"
 cd "$WORKSPACE"
 if [ ! -f glitchbyte-phantom-labs/tools/hexwake_palette_foundry.py ]; then
@@ -95,9 +95,9 @@ echo "Open an HTML file above using xdg-open on a graphical Linux desktop."
 ## Create a completely different color direction
 
 ```bash
-python3 "$HOME/PhantomLabsBuilds/hexwake-foundry/glitchbyte-phantom-labs/tools/hexwake_palette_foundry.py" \
+python3 "./hexwake-foundry/glitchbyte-phantom-labs/tools/hexwake_palette_foundry.py" \
   --seed 7831 --count 6 --base '#B6FF00' \
-  --out "$HOME/PhantomLabsBuilds/hexwake-foundry/lime-exports"
+  --out "./hexwake-foundry/lime-exports"
 ```
 
 ## Reports
@@ -108,7 +108,7 @@ The actual output folder contains `hexwake_<seed>_<random>.json`, a matching `.c
 
 | Issue | Check |
 | --- | --- |
-| Missing Git or Python | Install Python 3 and Git using your Ubuntu package manager |
+| Missing Git or Python | Install Python 3 and Git using your Linux package manager |
 | Repository directory already exists | Recipe refuses to overwrite another checkout |
 | Invalid color | Supply a quoted six-digit hex, e.g. `'#FF1493'` |
 | Invalid count | Choose an integer from 1 to 12 |
@@ -128,7 +128,7 @@ The actual output folder contains `hexwake_<seed>_<random>.json`, a matching `.c
 Get the [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md) first. The runner can save this tool's **printed terminal output** in a new plain-text file without changing its own CLI; `-o` and `--o` work **on the runner before the `--` separator**.
 
 ```bash
-SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+SAVER="./easy-save/phantom_easy_save.py"
 # From the HQ repository root, safe help-only preview:
 python3 "$SAVER" -o hexwake_help.txt -- python3 -u tools/hexwake_palette_foundry.py --help
 ```
