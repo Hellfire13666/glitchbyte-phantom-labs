@@ -33,7 +33,7 @@ The six inspected headers are `Strict-Transport-Security`, `Content-Security-Pol
 
 **Missing headers are not proof of an exploitable vulnerability.** This utility is not a credential guesser, crawler, exploit, or port scanner.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu or Linux (Bash)
+## 📋 COPY & PASTE BUILD RECIPE // Linux (Bash)
 
 **Recipe verified against VOIDLANTERN's documented Go flags and source.** It checks for Go 1.21+, runs local tests and vet, builds the executable, prompts you for **a website you own or have explicit authorization to assess**, and saves a dated JSON report. Paste the whole block into a **Bash terminal** from any directory. Network checks begin only after you enter a target.
 
@@ -41,7 +41,7 @@ The six inspected headers are `Strict-Transport-Security`, `Content-Security-Pol
 # PHANTOM LABS // VOIDLANTERN complete build recipe
 set -e
 if ! command -v git >/dev/null 2>&1; then
-  echo "Install Git first (for Ubuntu: sudo apt update && sudo apt install git)"
+  echo "Install Git first using your Linux package manager"
   exit 1
 fi
 if ! command -v go >/dev/null 2>&1; then
@@ -77,7 +77,7 @@ else
 fi
 ```
 
-**Prerequisites:** Git, Go **1.21 or newer**, and Python 3 only for pretty-printing JSON. The Go project itself has no third-party Go dependencies. On Ubuntu, install Git via `sudo apt install git` if it is missing; install a sufficiently recent Go distribution following your operating system's trusted instructions.
+**Prerequisites:** Git, Go **1.21 or newer**, and Python 3 only for pretty-printing JSON. The Go project itself has no third-party Go dependencies. On Debian-based Linux, install Git via `sudo apt install git` if missing; install a sufficiently recent Go distribution following your operating system's trusted instructions.
 
 **Important:** This paste-from-anywhere recipe assumes you don't already have a **different directory named `glitchbyte-phantom-labs`** in the current working directory. If you do, `cd` into your actual repo and use the manual steps below instead. It runs the released `main` branch, so this Phase 3 recipe will be visible there only after this PR is merged.
 
@@ -107,7 +107,7 @@ Then enter your own approved URL into the command documented in **Run it** below
 
 ## 🛠️ Install / Build / Test
 
-These commands are for Bash on Ubuntu/Linux; builds also support macOS and Windows with Go installed.
+These commands are for Bash on Linux; builds also support macOS and Windows with Go installed.
 
 From the repository root:
 
