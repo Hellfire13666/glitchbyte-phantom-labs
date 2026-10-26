@@ -34,7 +34,7 @@ The real script accepts `--username`, `--keyword`, `--import-file`, `--filter`, 
 
 Its optional public page request uses a 12-second timeout and reads at most 600,000 bytes of the response. Platform restrictions, redirects and login placeholders can make metadata misleading. The script **does not authenticate, collect cookies or pull account timelines**.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu / Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find Reports → Troubleshoot.** Paste this entire block. Its first demonstration uses a **local CSV of invented sample posts**. The only internet access is the initial Git clone when needed; the analysis itself stays offline.
 
@@ -148,7 +148,7 @@ These last two filenames are placeholders; use the **exact saved paths** printed
 
 ## 🧪 Verification, privacy and license
 
-Commands, mode distinctions, file formats and paths were checked against [the actual Python source](../../tools/glitchbyterosie_x_no_api.py). This documentation update **has not run the full recipe on your Ubuntu machine**, nor sent a request to X. The fictitious sample posts are test data, not account findings.
+Commands, mode distinctions, file formats and paths were checked against [the actual Python source](../../tools/glitchbyterosie_x_no_api.py). This documentation update **has not run the full recipe on a Linux environment**, nor sent a request to X. The fictitious sample posts are test data, not account findings.
 
 Respect privacy and platform policies. Avoid publishing imports containing private individuals' information. Follow the repository's [security policy](../../SECURITY.md) and [custom source-available license](../../LICENSE-NOTICE.md).
 
