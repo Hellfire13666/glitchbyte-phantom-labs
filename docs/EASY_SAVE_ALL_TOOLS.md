@@ -12,10 +12,10 @@ The shared easy-save runner was tested by the workshop user on Ubuntu with `pyth
 
 ### A. Native result export, where implemented
 
-Native `-o` / `--o` writes the tool's actual clean result data. SUBDOMINATRIX writes deduplicated hostnames, one per line:
+Native `-o` / `--o` writes the tool's actual clean result data. SUBDOMINATRIX writes deduplicated hostnames, one per line. Run the following inside the installed Subdominatrix project directory:
 
 ```bash
-SCRIPT="$HOME/PhantomLabsLaunchers/subdominatrix_live_signal_2026/subdominatrix_live_signal_2026.py"
+SCRIPT="./subdominatrix_live_signal_2026.py"
 python3 -u "$SCRIPT" example.com --terminal-only --color always --o names.txt
 ```
 
@@ -25,20 +25,20 @@ Omit the output flag in terminal-only mode and SUBDOMINATRIX does not write any 
 
 [`phantom_easy_save.py`](../scripts/phantom_easy_save.py) runs an executable and copies whatever it **prints to the terminal** to one new TXT without ANSI color codes. Terminal colors remain on screen. This is a **transcript**, not the tool's own structured export.
 
-**Install once on Ubuntu:**
+**Install locally on Debian-based Linux:**
 
 ```bash
-mkdir -p "$HOME/PhantomLabsLaunchers/easy-save"
+mkdir -p ./easy-save
 curl -fL --retry 1 --connect-timeout 12 --max-time 60 \
   "https://raw.githubusercontent.com/Hellfire13666/glitchbyte-phantom-labs/main/scripts/phantom_easy_save.py" \
-  -o "$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
-python3 "$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py" --help
+  -o ./easy-save/phantom_easy_save.py
+python3 ./easy-save/phantom_easy_save.py --help
 ```
 
-**Run an existing program with saving:**
+**Run from the directory where you installed `easy-save`:**
 
 ```bash
-SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+SAVER="./easy-save/phantom_easy_save.py"
 python3 "$SAVER" -o results.txt -- python3 -u /path/to/the_real_tool.py ACTUAL_ARGUMENTS
 ```
 
@@ -59,7 +59,7 @@ python3 "$SAVER" -- python3 -u /path/to/the_real_tool.py ACTUAL_ARGUMENTS
 **Real harmless test, no scanning:**
 
 ```bash
-SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+SAVER="./easy-save/phantom_easy_save.py"
 python3 "$SAVER" -o hello.txt -- python3 -u -c 'print("HELLO PHANTOM LABS")'
 cat hello.txt
 ```
@@ -78,8 +78,8 @@ from pathlib import Path
 import re
 import unicodedata
 
-source = Path.home() / "findomain_results.txt"
-output = Path.home() / "findomain_results_clean.txt"
+source = Path.cwd() / "findomain_results.txt"
+output = Path.cwd() / "findomain_results_clean.txt"
 
 s = source.read_bytes().decode("utf-8", errors="replace")
 s = re.sub(r"\x1b\][^\x07\x1b]*(?:\x07|\x1b\\)", "", s)
@@ -91,7 +91,7 @@ with output.open("x", encoding="utf-8") as handle:
     handle.write(s)
 print("CLEAN TXT:", output)
 PY
-less "$HOME/findomain_results_clean.txt"
+less ./findomain_results_clean.txt
 ```
 
 The new filename must not already exist. **This sanitizes text; it does not remove headers and provider messages or turn a transcript into a clean hostname-only database.** To get *only hostnames*, use a tool's native export where supported.
