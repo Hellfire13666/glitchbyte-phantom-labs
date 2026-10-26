@@ -33,7 +33,7 @@ The current tool displays a completion summary for each selected module. It uses
 
 **Safety limitation:** The source checks DNS results for public addresses before many requests and rejects non-public results. DNS can change between checking and connecting, so this is **not a complete SSRF/network isolation guarantee**. Use only domains you own or are authorized to inspect, and do not expose this CLI as an untrusted public service.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu/Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find Results → Troubleshoot.**
 
@@ -47,7 +47,7 @@ set -e
 command -v python3 >/dev/null 2>&1 || { echo "Python 3 required."; exit 1; }
 command -v git >/dev/null 2>&1 || { echo "Git required."; exit 1; }
 
-WORKSPACE="$HOME/PhantomLabsBuilds/domain-phantom-station"
+WORKSPACE="$(pwd)/domain-phantom-station"
 mkdir -p "$WORKSPACE"
 cd "$WORKSPACE"
 if [ ! -f glitchbyte-phantom-labs/tools/rosieglitchbyte_domain_phantom.py ]; then
@@ -70,9 +70,9 @@ python3 glitchbyte-phantom-labs/tools/rosieglitchbyte_domain_phantom.py \
   example.org --mode 7 --no-animation
 
 # 5. FIND RESULTS: output location is fixed by the source.
-REPORT_DIR="$HOME/RosieGlitchByte_Domain_Intel"
-echo "Report directory: $REPORT_DIR"
-find "$REPORT_DIR" -maxdepth 1 -type f -name 'example_org_*.json' -print
+REPORT_DIR="$(python3 -c 'from pathlib import Path; print(Path.home() / "RosieGlitchByte_Domain_Intel")')"
+echo "Report files:"
+find "$REPORT_DIR" -maxdepth 1 -type f -name 'example_org_*.json' -printf '%f\n'
 
 # Read the most recently modified matching report, if present.
 LATEST=$(find "$REPORT_DIR" -maxdepth 1 -type f -name 'example_org_*.json' \
@@ -84,14 +84,14 @@ fi
 
 **Important:** The tool uses `~/RosieGlitchByte_Domain_Intel` as its output directory. Its CLI currently has **no `--out` flag**. Filename format is `<domain_with_underscores>_YYYYMMDD_HHMMSS.json`, using the machine's local clock. Running twice in the same second could replace a report. Keep copies in another folder if preserving every run matters.
 
-The `find -printf` command is for GNU Find, standard on Ubuntu/Linux. This recipe is not intended for Windows PowerShell.
+The `find -printf` command is for GNU Find, standard on Linux. This recipe is not intended for Windows PowerShell.
 
 ## 🌐 Optional authorized public-domain lookup
 
 For a domain you control or are permitted to investigate, replace the placeholder with your actual domain:
 
 ```bash
-cd "$HOME/PhantomLabsBuilds/domain-phantom-station"
+cd domain-phantom-station
 python3 glitchbyte-phantom-labs/tools/rosieglitchbyte_domain_phantom.py \
   your-authorized-domain.org --mode 1 --no-animation
 ```
@@ -101,7 +101,8 @@ For additional public website, TLS or robots.txt lookups, change `--mode` to 2�
 ## 📊 Read the report
 
 ```bash
-find "$HOME/RosieGlitchByte_Domain_Intel" -type f -name '*.json'
+REPORT_DIR="$(python3 -c 'from pathlib import Path; print(Path.home() / "RosieGlitchByte_Domain_Intel")')"
+find "$REPORT_DIR" -type f -name '*.json' -printf '%f\n'
 python3 -m json.tool "/full/path/to/actual_report.json" | less
 ```
 
@@ -117,7 +118,7 @@ Reports contain `brand`, `domain`, `created_utc`, and `modules` with the selecte
 | TLS certificate or DNS failure | Check connectivity, authorization, certificate and DNS configuration; do not disable certificate verification |
 | Redirect reported rather than followed | Expected: the HTTP requester disables redirects |
 | RDAP mode has only a URL | Expected: mode 7 does **not** download RDAP data |
-| No report found | Check `~/RosieGlitchByte_Domain_Intel` and the printed `[ARCHIVED]` path |
+| No report found | Check the report directory `RosieGlitchByte_Domain_Intel` and the printed `[ARCHIVED]` path |
 | Repeated report filename | Preserve the earlier JSON separately before rerunning within the same second |
 | Terminal animation annoying | Use `--no-animation` |
 
@@ -134,7 +135,7 @@ Follow [SECURITY.md](../../SECURITY.md) and [LICENSE-NOTICE.md](../../LICENSE-NO
 For this existing tool, use the tested shared [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md) to capture its **printed terminal output** in a new plain TXT without changing the tool's own CLI. First install the runner using that linked guide, then **from the HQ repository root** try the harmless help-only test:
 
 ```bash
-SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
+SAVER="./easy-save/phantom_easy_save.py"
 python3 "$SAVER" --o domain_phantom_terminal.txt -- python3 -u tools/rosieglitchbyte_domain_phantom.py --help
 ```
 
