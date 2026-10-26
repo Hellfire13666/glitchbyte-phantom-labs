@@ -2,6 +2,10 @@
 <div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-A5D600?style=flat-square&logo=github&logoColor=white"></a></div>
 <!-- GLITCHBYTE-UPLOAD-DOOR:END -->
 
+## 🐈‍⬛ Current build station: PHONETHORN v0.5.0 · Cosmic Kitties
+
+[PHONETHORN development/status guide](tool-showcases/PHONETHORN.md) · [Separate source repository](https://github.com/Hellfire13666/phonethorn-ghost-signal). **Assigned to Cultivation** for MX Linux end-to-end verification, full GitHub installer/README and approved artwork upload, verified simple command recipes, and eventual independent checksum-backed installer archive. The HQ Tool Vault catalogs it; RosieRiot Overdrive remains separate and unchanged. **No release/backup certification yet.**
+
 # 🌱 Cultivation Room | Foundation & Building Lab
 
 **Phantom Labs HQ** · Tool blueprints · Python 3 / Go · Ubuntu/Linux · Testing · Patches
