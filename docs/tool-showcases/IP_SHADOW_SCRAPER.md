@@ -30,7 +30,7 @@ Mode `9` is labeled “passive” in the existing interface but **includes a TLS
 
 The [repository security policy](../../SECURITY.md) was corrected in Phase 24 to reflect the verifying TLS context. Offline mocked regression tests cover the configuration, but authorized live certificate verification and a full security review remain outstanding. Do **not** regard this documentation review as a formal security audit.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu/Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
 **Install → Build → Test → Run → Find Results → Troubleshoot.** This first-run recipe performs only local classification of reserved documentation IP `192.0.2.1`. The initial Git clone needs internet, but the tool makes **no DNS, HTTP or TLS requests in mode 1**.
 
@@ -41,7 +41,7 @@ set -e
 # 1. INSTALL
 command -v python3 >/dev/null 2>&1 || { echo "Python 3 is required."; exit 1; }
 command -v git >/dev/null 2>&1 || { echo "Git is required."; exit 1; }
-WORKSPACE="$HOME/PhantomLabsBuilds/ip-shadow-station"
+WORKSPACE="$(pwd)/ip-shadow-station"
 mkdir -p "$WORKSPACE"
 cd "$WORKSPACE"
 if [ ! -f glitchbyte-phantom-labs/tools/rosie_ip_shadow_scraper.py ]; then
@@ -64,8 +64,8 @@ python3 glitchbyte-phantom-labs/tools/rosie_ip_shadow_scraper.py \
   192.0.2.1 --mode 1
 
 # 5. FIND RESULTS: exact output directory configured by the program.
-REPORT_DIR="$HOME/RosieGlitchByte_IP_Shadow_Reports"
-find "$REPORT_DIR" -maxdepth 1 -type f -name 'rosie_ip_192.0.2.1_*.json' -print
+REPORT_DIR="$(python3 -c 'from pathlib import Path; print(Path.home() / "RosieGlitchByte_IP_Shadow_Reports")')"
+find "$REPORT_DIR" -maxdepth 1 -type f -name 'rosie_ip_192.0.2.1_*.json' -printf '%f\n'f '%f\n'
 echo "Open the actual saved file with: python3 -m json.tool /actual/path.json"
 ```
 
@@ -76,7 +76,7 @@ The source saves a JSON report after each completed mode under `~/RosieGlitchByt
 For an IP address you own or have a legitimate reason to examine, first substitute its actual public address:
 
 ```bash
-cd "$HOME/PhantomLabsBuilds/ip-shadow-station"
+cd ip-shadow-station
 python3 glitchbyte-phantom-labs/tools/rosie_ip_shadow_scraper.py \
   YOUR_AUTHORIZED_IP --mode 2
 ```
@@ -88,7 +88,8 @@ HTTP/HTTPS HEAD modes `6` and `7` prompt for explicit confirmation. Only proceed
 ## 📊 Read the JSON
 
 ```bash
-find "$HOME/RosieGlitchByte_IP_Shadow_Reports" -type f -name '*.json'
+REPORT_DIR="$(python3 -c 'from pathlib import Path; print(Path.home() / "RosieGlitchByte_IP_Shadow_Reports")')"
+find "$REPORT_DIR" -type f -name '*.json' -printf '%f\n'
 python3 -m json.tool "/full/path/to/the_actual_report.json" | less
 ```
 
@@ -110,7 +111,7 @@ The output contains `brand`, `timestamp_utc` and a `results` object keyed by the
 
 ## 🧪 Verification and safety
 
-Prepared after inspecting [the current Python source](../../tools/rosie_ip_shadow_scraper.py). The full Bash recipe has **not been executed end-to-end in Ubuntu**, and no external target was queried during this documentation update. Source inspection is not a security audit.
+Prepared after inspecting [the current Python source](../../tools/rosie_ip_shadow_scraper.py). The full Bash recipe has **not been executed end-to-end on Linux**, and no external target was queried during this documentation update. Source inspection is not a security audit.
 
 Check [SECURITY.md](../../SECURITY.md) and the [custom source-available license](../../LICENSE-NOTICE.md) before using or sharing this tool. Do not commit private reports, credentials, sessions or personal data.
 
@@ -121,8 +122,8 @@ Check [SECURITY.md](../../SECURITY.md) and the [custom source-available license]
 Install the shared [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md) first. It captures **actual printed terminal output** without rewriting this legacy tool. Both `-o` and `--o` work **on the runner**, before the `--` separator:
 
 ```bash
-SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
-# From your HQ repository checkout root:
+SAVER="./easy-save/phantom_easy_save.py"
+# From the HQ repository root after installing the Easy Save runner at ./easy-save/:
 python3 "$SAVER" --o ip_shadow_scraper_help.txt -- python3 -u tools/rosie_ip_shadow_scraper.py --help
 ```
 
