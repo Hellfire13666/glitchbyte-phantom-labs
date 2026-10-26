@@ -29,9 +29,9 @@
 
 Mode 5 reports `open` versus `closed_or_filtered`; it cannot reliably distinguish a closed port from packet filtering. The tool does not perform stealth scanning, credentials tests, exploit checks or private content access.
 
-## 📋 COPY & PASTE BUILD RECIPE // Ubuntu/Linux Bash
+## 📋 COPY & PASTE BUILD RECIPE // Linux Bash
 
-**Install → Build → Test → Run → Find Results → Troubleshoot.** The first run only classifies the reserved documentation address `192.0.2.1`. **It does not contact the address**, perform port checks, or require any API key. The optional initial Git clone contacts GitHub.
+**Install → Build → Test → Run → Find Results → Troubleshoot.** Start in the directory where you want to create a dedicated station folder. The first run only classifies the reserved documentation address `192.0.2.1`. **It does not contact the address**, perform port checks, or require any API key. The optional initial Git clone contacts GitHub.
 
 ```bash
 # PHANTOM LABS // IP SPECTER FIRST RUN
@@ -41,7 +41,7 @@ set -e
 command -v python3 >/dev/null 2>&1 || { echo "Install Python 3 first."; exit 1; }
 command -v git >/dev/null 2>&1 || { echo "Install Git first."; exit 1; }
 
-WORKSPACE="$HOME/PhantomLabsBuilds/ip-specter-station"
+WORKSPACE="$(pwd)/ip-specter-station"
 mkdir -p "$WORKSPACE"
 cd "$WORKSPACE"
 
@@ -65,21 +65,21 @@ python3 glitchbyte-phantom-labs/tools/rosieglitchbyte_ip_specter.py \
   192.0.2.1 --mode 1
 
 # 5. FIND RESULTS: fixed output directory set by the source.
-REPORT_DIR="$HOME/RosieGlitchByte_IP_Reports"
+REPORT_DIR="$(python3 -c 'from pathlib import Path; print(Path.home() / "RosieGlitchByte_IP_Reports")')"
 echo "Saved reports:"
 find "$REPORT_DIR" -maxdepth 1 -type f \
-  -name 'ip_specter_192.0.2.1_1_*.json' -print
+  -name 'ip_specter_192.0.2.1_1_*.json' -printf '%f\n'
 echo "Inspect your real file with: python3 -m json.tool /actual/path/report.json"
 ```
 
-The original script prints the archived file's exact location. Reports use `~/RosieGlitchByte_IP_Reports/ip_specter_<IP>_<mode>_<UTC timestamp>.json`, and there is **no `--out` flag**. An IPv6 filename replaces colons with hyphens. Runs in the same second with the same IP/mode may replace one another.
+The current tool prints the archived file's exact local path. Keep that output and its reports private. Reports use `~/RosieGlitchByte_IP_Reports/ip_specter_<IP>_<mode>_<UTC timestamp>.json`, and there is **no `--out` flag**. An IPv6 filename replaces colons with hyphens. Runs in the same second with the same IP/mode may replace one another.
 
 ### Optional permitted public lookups
 
 **Only for an IP you own or have a legitimate reason to check**, use the actual mode flags below. Replace the placeholder with a valid IP:
 
 ```bash
-cd "$HOME/PhantomLabsBuilds/ip-specter-station"
+cd ip-specter-station
 # Reverse DNS / public RDAP only when appropriate
 python3 glitchbyte-phantom-labs/tools/rosieglitchbyte_ip_specter.py \
   YOUR_PUBLIC_IP --mode 6
@@ -94,7 +94,8 @@ Mode `5` makes TCP connections to ports 22, 80 and 443. It should only be select
 ### Find and read the report
 
 ```bash
-find "$HOME/RosieGlitchByte_IP_Reports" -type f -name '*.json'
+REPORT_DIR="$(python3 -c 'from pathlib import Path; print(Path.home() / "RosieGlitchByte_IP_Reports")')"
+find "$REPORT_DIR" -type f -name '*.json' -printf '%f\n'
 python3 -m json.tool "/full/path/to/your-actual-report.json" | less
 ```
 
@@ -116,7 +117,7 @@ The JSON contains `tool`, `timestamp_utc`, `target`, `mode` and `results`. The c
 
 ## 🧪 Evidence, privacy and limitations
 
-The supported flags, six modes and report path were confirmed by inspecting [the existing source](../../tools/rosieglitchbyte_ip_specter.py). This **documentation update is not an executed Ubuntu end-to-end test**, and no external IP address was queried here. Mode 1 is offline, but modes 2–6 have different networking and authorization requirements.
+The supported flags, six modes and report path were confirmed by inspecting [the existing source](../../tools/rosieglitchbyte_ip_specter.py). This **documentation update is not an executed Linux end-to-end test**, and no external IP address was queried here. Mode 1 is offline, but modes 2–6 have different networking and authorization requirements.
 
 Network metadata does not identify an individual; IP addresses may be shared or dynamically assigned. Review [SECURITY.md](../../SECURITY.md) and the repository's [custom source-available license](../../LICENSE-NOTICE.md). Never commit private scan output, credentials or personal information.
 
@@ -127,8 +128,8 @@ Network metadata does not identify an individual; IP addresses may be shared or 
 Install the shared [Phantom Easy Save runner](../EASY_SAVE_ALL_TOOLS.md) first. It captures **actual printed terminal output** without rewriting this legacy tool. Both `-o` and `--o` work **on the runner**, before the `--` separator:
 
 ```bash
-SAVER="$HOME/PhantomLabsLaunchers/easy-save/phantom_easy_save.py"
-# From your HQ repository checkout root:
+SAVER="./easy-save/phantom_easy_save.py"
+# From the HQ checkout root after installing Easy Save at ./easy-save/:
 python3 "$SAVER" --o ip_specter_help.txt -- python3 -u tools/rosieglitchbyte_ip_specter.py --help
 ```
 
