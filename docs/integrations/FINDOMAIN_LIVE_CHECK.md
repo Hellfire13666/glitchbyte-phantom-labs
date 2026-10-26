@@ -1,4 +1,4 @@
-# 🌹⚡ FINDOMAIN | Live public-source discovery on Ubuntu
+# 🌹⚡ FINDOMAIN | Live public-source discovery on Linux
 
 **GlitchByte Phantom Labs · Checklist #2 · Verified user-side live run on October 19, 2026**
 
@@ -6,13 +6,13 @@
 
 > **Findomain is an externally maintained tool, not a GlitchByte-authored binary.** Our lab verified an already installed copy and documents how to run it; we do not bundle or silently replace its executable. [Official Findomain upstream](https://github.com/Findomain/Findomain) and [installation/usage guide](https://github.com/Findomain/Findomain/blob/master/docs/INSTALLATION.md).
 
-## ✅ What was checked on Ubuntu
+## ✅ What was checked on Linux
 
-- The command `findomain -t facebook.com` produced live hostname observations, visibly querying CertSpotter, crt.sh, Sublist3r, Threatcrowd, AnubisDB, urlscan.io, and Threatminer. The user's run reported **23 seconds** and finished normally. This verifies the already-installed executable's live public-source mode **for that test**, not the freshness or reachability of every hostname.
+- The command `findomain -t facebook.com` produced live hostname observations, visibly querying CertSpotter, crt.sh, Sublist3r, Threatcrowd, AnubisDB, urlscan.io, and Threatminer. The recorded run took **23 seconds** and finished normally. This verifies the already-installed executable's live public-source mode **for that test**, not the freshness or reachability of every hostname.
 - Shell resolution showed a working candidate at `$HOME/.local/bin/findomain`, selected before `/usr/bin/findomain`.
 - The old `/usr/bin/findomain` was a **9-byte text file containing `Not Found`**, not an ELF executable, and `dpkg -S` did not recognize it. The working user-local installation takes precedence. **Do not overwrite or delete system binaries blindly**; if PATH order changes, inspect `type -a findomain` again.
 - Findomain's basic `-t` run printed output without specifying a report filename. No saved report was requested in that command.
-- The user's Findomain build's complete `--help` output and advanced flags have **not yet been inspected**. Check local `findomain --help` before using advanced features documented upstream.
+- The installed Findomain build's complete `--help` output and advanced flags have **not yet been inspected**. Check local `findomain --help` before using advanced features documented upstream.
 
 ## 🌱 SIMPLE | Discover public candidate subdomains, no report
 
@@ -92,4 +92,4 @@ findomain --help
 - **No hostnames:** means no candidates returned in this pass, **not** proof the domain has no subdomains.
 - **Privacy & scope:** consult service terms and rate limits; do not publish private reconnaissance or treat naming conventions as proof of sensitive access.
 
-**Checklist outcome:** Findomain's basic live public-source discovery **PASSED** on the user's machine in 23 seconds. Cleaning the invalid lower-priority `/usr/bin/findomain` is optional maintenance and not needed for the currently working executable. No custom Python code or verified backup archive was created by this documentation step.
+**Checklist outcome:** Findomain's basic live public-source discovery **PASSED** in the recorded Linux test in 23 seconds. Cleaning the invalid lower-priority `/usr/bin/findomain` is optional maintenance and not needed for the currently working executable. No custom Python code or verified backup archive was created by this documentation step.
