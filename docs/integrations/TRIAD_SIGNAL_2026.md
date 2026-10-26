@@ -34,7 +34,7 @@ The standalone, CI-tested `triad_signal_2026.py` companion was run by the user a
 | GAU | `timeout / 0 candidates` at 50.01s | Warned of missing optional `~/.gau.toml`, used defaults |
 | Waybackurls | `complete-no-results / 0 candidates` at 0.87s | Exit 0 but zero URLs in this run, in contrast to the earlier independent 20-line run |
 
-**`[SAVED] TXT /home/example/triad_check2.txt | 0 candidate lines`** verifies explicit save-file creation, not populated results. The script produced accurate module-level status, returned to the shell, and did not modify the original local Triad Forge installer ZIP. **Installed commands, launcher feedback, timeout handling and optional save are verified on Ubuntu.** Complete live collection from Amass/GAU and consistent archive results are **not** verified. Provider availability and this demonstration domain can affect results; do not treat zero candidates as proof that a domain lacks hosts or archived URLs.
+**`[SAVED] TXT $HOME/triad_check2.txt | 0 candidate lines`** verifies explicit save-file creation, not populated results. The script produced accurate module-level status, returned to the shell, and did not modify the original local Triad Forge installer ZIP. **Installed commands, launcher feedback, timeout handling and optional save are verified on Ubuntu.** Complete live collection from Amass/GAU and consistent archive results are **not** verified. Provider availability and this demonstration domain can affect results; do not treat zero candidates as proof that a domain lacks hosts or archived URLs.
 
 ## 🔐 Saved-TXT privacy patch (October 19, 2026)
 
