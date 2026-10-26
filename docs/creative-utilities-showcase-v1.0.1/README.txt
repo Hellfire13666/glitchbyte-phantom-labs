@@ -4,7 +4,7 @@ Open START-HERE.html in Firefox or Chromium; choose page 01 or 02.
 
 01 FACEBOOK SHARING DEBUGGER = Meta external link preview resource. Original approved Rosie art preserved exactly.
 Official resource: https://developers.facebook.com/tools/debug/
-02 ART VAULT CONVERTER = local MX Linux WebP tool; one tool with Python core + installer + recipe.
+02 ART VAULT CONVERTER = local Debian-based Linux WebP tool; one tool with Python core + installer + recipe.
 
 These are offline reference HTML pages and artwork only. Nothing installs or changes website settings.
 The Art Vault converter package is a separate v1.1.0 ZIP and SHA256 file, NOT contained in this page ZIP.
