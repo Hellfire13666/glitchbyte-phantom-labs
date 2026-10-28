@@ -2,6 +2,11 @@
 <div align="right"><a href="https://github.com/Hellfire13666/glitchbyte-phantom-labs/upload/main"><img alt="UPLOAD FILES" src="https://img.shields.io/badge/UPLOAD-FILES-FF1493?style=flat-square&logo=github&logoColor=white"></a></div>
 <!-- GLITCHBYTE-UPLOAD-DOOR:END -->
 
+<!-- GLITCHBYTE-VISITOR-BADGE:START -->
+[![Page Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FHellfire13666%2Fglitchbyte-phantom-labs&count_bg=%23FF1493&title_bg=%23080808&icon=&icon_color=%23FFFFFF&title=PAGE+VIEWS&edge_flat=false)](https://github.com/Hellfire13666/glitchbyte-phantom-labs)
+<!-- GLITCHBYTE-VISITOR-BADGE:END -->
+
+
 > 🎨 **NEW · CREATIVE UTILITIES:** [GlitchByte Art Vault Converter and Share Card Doctor](docs/CREATIVE_UTILITIES.md) are **TWO distinct tools**. Art Vault's compression, Desktop launcher, and new-only v2 behavior are **three components of the same converter**, not three tools. Existing tools and Hangout member data are untouched.
 
 <details open>
