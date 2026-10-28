@@ -3,7 +3,7 @@
 <!-- GLITCHBYTE-UPLOAD-DOOR:END -->
 
 <!-- GLITCHBYTE-VISITOR-BADGE:START -->
-[![Page Views](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FHellfire13666%2Fglitchbyte-phantom-labs&label=PAGE%20VIEWS&icon=emoji-smile&color=%23FF1493&style=flat-square)](https://github.com/Hellfire13666/glitchbyte-phantom-labs)
+[![Page Views](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FHellfire13666%2Fglitchbyte-phantom-labs&label=PAGE%20VIEWS&icon=skull&color=%23FF1493&style=flat-square)](https://github.com/Hellfire13666/glitchbyte-phantom-labs)
 <!-- GLITCHBYTE-VISITOR-BADGE:END -->
 
 
