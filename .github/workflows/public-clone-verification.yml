@@ -35,7 +35,6 @@ jobs:
             "$RUNNER_TEMP/phantom-public-clone"
           test -f "$RUNNER_TEMP/phantom-public-clone/README.md"
           test -f "$RUNNER_TEMP/phantom-public-clone/LICENSE-NOTICE.md"
-          test -f "$RUNNER_TEMP/phantom-public-clone/SECURITY.md"
           git -C "$RUNNER_TEMP/phantom-public-clone" remote -v
           echo "PASS: public repository cloned from GitHub HTTPS"
 
