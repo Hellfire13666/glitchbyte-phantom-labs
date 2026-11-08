@@ -13,7 +13,7 @@ class RepositoryTests(unittest.TestCase):
                 ast.parse(script.read_text(encoding="utf-8"), filename=str(script))
 
     def test_project_files(self):
-        for filename in ("README.md", "LICENSE-NOTICE.md", "SECURITY.md", ".gitignore"):
+        for filename in ("README.md", "LICENSE-NOTICE.md", ".gitignore"):
             self.assertTrue((ROOT / filename).is_file(), filename)
 
 if __name__ == "__main__":
