@@ -62,7 +62,7 @@ tmp="$(mktemp)" && curl -fsSL --proto '=https' --tlsv1.2 \
 
 **🌈 NEW FOR BEGINNERS:** [SIMPLE · MEDIUM · EXTRA runtime recipes](docs/BEGINNER_RUNTIME_RECIPES.md) show exactly how to run tools, read real terminal findings, understand timeouts, and choose optional file saving. These are documentation examples, not universal flags.
 
-[**👻 PHANTOM LABS HQ**](https://github.com/Hellfire13666/glitchbyte-phantom-labs) · [**🕷️ PHANTOM TOOL VAULT**](docs/TOOL_VAULT.md) · [**🔐 PHANTOM BACKUP HQ**](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases) · [**🔍 ECOSYSTEM**](docs/ECOSYSTEM.md) · [**📚 START HERE**](docs/TOOL_STARTER_GUIDE.md) · [**🌹 ROSIE ARTWORK**](docs/ROSIE_VISUAL_STANDARD.md) · [**🛡️ SECURITY**](SECURITY.md)
+[**👻 PHANTOM LABS HQ**](https://github.com/Hellfire13666/glitchbyte-phantom-labs) · [**🕷️ PHANTOM TOOL VAULT**](docs/TOOL_VAULT.md) · [**🔐 PHANTOM BACKUP HQ**](https://github.com/Hellfire13666/glitchbyte-phantom-labs-releases) · [**🔍 ECOSYSTEM**](docs/ECOSYSTEM.md) · [**📚 START HERE**](docs/TOOL_STARTER_GUIDE.md) · [**🌹 ROSIE ARTWORK**](docs/ROSIE_VISUAL_STANDARD.md)
 
 </div>
 
@@ -103,7 +103,7 @@ Our three official destinations are **Phantom Labs HQ** (the original workshop a
 | 🐍 **PYTHON LAB** | [Python scripts, crawlers, research and creative code](tools/) |
 | ⚙️ **GO LAB** | [VOIDLANTERN source, tests and build instructions](tools/go/voidlantern-go/) |
 | 🌹 **ART & IDENTITY** | [Approved Rosie reference rules and official hero upload](docs/ROSIE_VISUAL_STANDARD.md) |
-| 🔐 **SAFETY** | [Security guidance](SECURITY.md) and [release checklist](docs/RELEASE_CHECKLIST.md) |
+| 🔐 **SAFETY** | [Release checklist](docs/RELEASE_CHECKLIST.md) |
 
 **💾 NEW EASY SAVE:** SUBDOMINATRIX now supports `-o names.txt` to save only the discovered hostname candidates, one per line, while colorful live terminal output continues. Omit `-o` in `--terminal-only` mode for no saved reports. Full Firefox/HTML reports remain available in legacy mode. [Copy-and-paste instructions](docs/tool-showcases/SUBDOMINATRIX.md).
 
