@@ -332,7 +332,7 @@ Our approved Rosie hero artwork is uploaded as [`artwork/labface2.png`](artwork/
 
 Copyright © 2026 RosieGlitchbyte, to the extent applicable. This repository has a **custom source-available license**, not an unrestricted open-source license. Review [LICENSE-NOTICE.md](LICENSE-NOTICE.md) before redistributing or modifying source code. AI-assisted content may not be copyright-protectable in every jurisdiction.
 
-The repository is publicly accessible, but the legacy tool collection is a **preservation/release-candidate archive**. Syntax tests and limited unit tests do not prove full live functionality or security auditing. Consult [SECURITY.md](SECURITY.md) and [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md). Do not publish credentials, tokens, browser cookies, sensitive reports, or private data.
+The repository is publicly accessible, but the legacy tool collection is a **preservation/release-candidate archive**. Syntax tests and limited unit tests do not prove full live functionality or security auditing. Consult [the release checklist](docs/RELEASE_CHECKLIST.md). Do not publish credentials, tokens, browser cookies, sensitive reports, or private data.
 
 ---
 
