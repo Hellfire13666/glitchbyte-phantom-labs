@@ -16,7 +16,7 @@ The new GitHub Actions workflow:
 
 1. Checks out the proposed branch for comparison.
 2. Performs a real shallow public HTTPS clone of `https://github.com/Hellfire13666/glitchbyte-phantom-labs.git`, with no Git URL rewrite and no supplied token.
-3. Checks that the downloaded repository contains `README.md`, `SECURITY.md`, and `LICENSE-NOTICE.md`.
+3. Checks that the downloaded repository contains `README.md` and `LICENSE-NOTICE.md`.
 4. Compares SHA-256 hashes of the Python and Go source files in the proposed branch against the downloaded public repository's files, confirming they remain unchanged.
 5. Runs the actual **offline Python terminal tests** inside the downloaded repository.
 6. Runs `go test ./...`, `go vet ./...`, and `go build` inside the downloaded VOIDLANTERN project.
@@ -42,6 +42,6 @@ The successful Phase 23 Ubuntu run is linked above. This workflow runs on reposi
 - All optional command examples beyond the first-run build blocks.
 - Public cloning from every user's network or on every Linux distribution.
 
-This phase does **not** change tool source code, Go code, the custom license, SECURITY.md, approved Rosie artwork, or Git history. It verifies build delivery, not real-world investigation outcomes.
+This phase does **not** change tool source code, Go code, the custom license, approved Rosie artwork, or Git history. It verifies build delivery, not real-world investigation outcomes.
 
 [← Official homepage](../README.md) · [← Tool Vault](TOOL_VAULT.md)
